@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "AI Tools - Background Remover, Object Remover & Image Expander",
+    "description": "Professional AI-powered image editing tools. Remove backgrounds, erase unwanted objects, and expand image boundaries with one click."
+  },
+  "page": {
+    "title": "AI Image Tools",
+    "show_sections": [
+      "hero",
+      "tools",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Professional AI Image Tools",
+        "description": "Transform your images with our suite of powerful AI-powered editing tools. Fast, accurate, and incredibly easy to use.",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "tools background"
+        }
+      },
+      "tools": {
+        "block": "showcases",
+        "id": "tools-list",
+        "title": "All Available Tools",
+        "description": "Choose the perfect tool for your image editing needs.",
+        "items": [
+          {
+            "title": "Background Remover",
+            "description": "Remove image backgrounds instantly with AI precision. Perfect for product photos, portraits, and more.",
+            "image": { "src": "/imgs/features/landing-page.png", "alt": "Background Remover" },
+            "url": "/tools/background-remover",
+            "target": "_self",
+            "button": {
+              "title": "Try Now",
+              "url": "/tools/background-remover",
+              "target": "_self",
+              "icon": "RiEraserLine"
+            }
+          },
+          {
+            "title": "Object Remover",
+            "description": "Erase unwanted objects from your photos seamlessly. Remove people, text, watermarks, and more.",
+            "image": { "src": "/imgs/features/admin-settings.png", "alt": "Object Remover" },
+            "url": "/tools/object-remover",
+            "target": "_self",
+            "button": {
+              "title": "Try Now",
+              "url": "/tools/object-remover",
+              "target": "_self",
+              "icon": "RiMagicLine"
+            }
+          },
+          {
+            "title": "Image Expander",
+            "description": "Expand your image boundaries intelligently. AI fills in the extended areas naturally.",
+            "image": { "src": "/imgs/features/user-billing.png", "alt": "Image Expander" },
+            "url": "/tools/image-expander",
+            "target": "_self",
+            "button": {
+              "title": "Try Now",
+              "url": "/tools/image-expander",
+              "target": "_self",
+              "icon": "RiAspectRatioLine"
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Ready to Edit Your Images?",
+        "description": "Start using our professional AI tools today.",
+        "buttons": [
+          {
+            "title": "Explore All Tools",
+            "url": "/tools",
+            "target": "_self",
+            "icon": "RiApps2Line"
+          }
+        ]
+      }
+    }
+  }
+}

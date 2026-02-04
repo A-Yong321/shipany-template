@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "title": "热门 AI 照片特效 - AI 拥抱、怀孕、名人合照等",
+    "description": "发现电影般的 AI 照片特效。立即创建 AI 拥抱、AI 怀孕照片、与名人自拍以及角色旋转展示。"
+  },
+  "page": {
+    "title": "热门 AI 照片特效",
+    "show_sections": [
+      "hero",
+      "effects",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "热门 AI 照片特效",
+        "description": "通过专业的 AI 照片特效让您的照片栩栩如生。从 AI 拥抱到名人自拍，几秒钟内即可创建令人惊叹的视觉内容。",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "照片特效背景"
+        }
+      },
+      "effects": {
+        "block": "effects-section",
+        "id": "photo-effects-list",
+        "title": "探索所有照片特效",
+        "description": "从我们广泛的专业 AI 照片特效中进行选择。",
+        "items_label": "自然风格",
+        "tabs": [
+          {
+            "id": "photo",
+            "label": "全部照片",
+            "items": [
+              {
+                "id": "ai-fake-date",
+                "title": "AI 虚拟约会",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "AI 虚拟约会" },
+                "badge": "NEW",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date"
+              },
+              {
+                "id": "hug-generator",
+                "title": "拥抱生成器",
+                "image": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "拥抱生成器" },
+                "badge": "HOT",
+                "count": "200K",
+                "url": "/photo-effects/hug-generator"
+              },
+              {
+                "id": "pregnant-ai",
+                "title": "AI 怀孕特效",
+                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "AI 怀孕" },
+                "badge": "HOT",
+                "count": "90K",
+                "url": "/photo-effects/pregnant-ai"
+              },
+              {
+                "id": "character-360",
+                "title": "角色 360 度展示",
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "角色展示" },
+                "badge": "NEW",
+                "count": "15K",
+                "url": "/photo-effects/character-360"
+              },
+              {
+                "id": "russian-girlfriend",
+                "title": "俄罗斯女友",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "俄罗斯女友" },
+                "badge": "HOT",
+                "count": "180K",
+                "url": "/photo-effects/russian-girlfriend"
+              },
+              {
+                "id": "princess-hug",
+                "title": "公主抱",
+                "image": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "公主抱" },
+                "count": "75K",
+                "url": "/photo-effects/princess-hug"
+              },
+              {
+                "id": "celebrity-selfie",
+                "title": "名人合拍",
+                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "名人合拍" },
+                "badge": "HOT",
+                "count": "2.1M",
+                "url": "/photo-effects/celebrity-selfie"
+              },
+              {
+                "id": "side-hug",
+                "title": "侧身拥抱",
+                "image": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "侧身拥抱" },
+                "count": "95K",
+                "url": "/photo-effects/side-hug"
+              },
+              {
+                "id": "chinese-girlfriend",
+                "title": "中国女友",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "中国女友" },
+                "badge": "NEW",
+                "count": "40K",
+                "url": "/photo-effects/chinese-girlfriend"
+              },
+              {
+                "id": "french-girlfriend",
+                "title": "法国女友",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "法国女友" },
+                "count": "35K",
+                "url": "/photo-effects/french-girlfriend"
+              }
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "准备好转换您的照片了吗？",
+        "description": "选择一个特效，立即看到奇迹发生。",
+        "buttons": [
+          {
+            "title": "尝试所有特效",
+            "url": "/#effects",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ]
+      }
+    }
+  }
+}

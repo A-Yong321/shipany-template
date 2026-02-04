@@ -1,0 +1,98 @@
+{
+  "background-remover": {
+    "metadata": {
+      "title": "AI Background Remover - Remove Image Backgrounds Instantly",
+      "description": "Remove backgrounds from images with AI precision. Perfect for product photos, portraits, and professional editing."
+    },
+    "page": {
+      "title": "AI Background Remover",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Remove Backgrounds Instantly",
+          "description": "Professional AI-powered background removal. Get pixel-perfect results in seconds.",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Background Remover" },
+          "buttons": [
+            { "title": "Start Removing", "url": "/ai-image-generator", "icon": "RiEraserLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Pixel-Perfect Precision",
+              "description": "Our AI accurately detects edges and preserves fine details like hair and fur.",
+              "image": { "src": "/imgs/features/landing-page.png", "alt": "Precision" }
+            },
+            {
+              "title": "Batch Processing",
+              "description": "Remove backgrounds from multiple images at once to save time.",
+              "image": { "src": "/imgs/features/admin-settings.png", "alt": "Batch" },
+              "reverse": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "object-remover": {
+    "metadata": {
+      "title": "AI Object Remover - Erase Unwanted Objects from Photos",
+      "description": "Remove unwanted objects, people, text, and watermarks from your photos seamlessly with AI."
+    },
+    "page": {
+      "title": "AI Object Remover",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Erase Anything from Your Photos",
+          "description": "Remove unwanted objects, people, text, and watermarks with AI magic.",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Object Remover" },
+          "buttons": [
+            { "title": "Start Erasing", "url": "/ai-image-generator", "icon": "RiMagicLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Smart Content Fill",
+              "description": "AI intelligently fills the removed area to match the surrounding environment.",
+              "image": { "src": "/imgs/features/admin-settings.png", "alt": "Smart Fill" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "image-expander": {
+    "metadata": {
+      "title": "AI Image Expander - Extend Image Boundaries Intelligently",
+      "description": "Expand your image boundaries with AI. Intelligently generate content to fill extended areas."
+    },
+    "page": {
+      "title": "AI Image Expander",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Expand Your Images Intelligently",
+          "description": "Extend image boundaries and let AI fill in the rest naturally.",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Image Expander" },
+          "buttons": [
+            { "title": "Start Expanding", "url": "/ai-image-generator", "icon": "RiAspectRatioLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Natural Extension",
+              "description": "AI analyzes your image and generates seamless extensions that blend perfectly.",
+              "image": { "src": "/imgs/features/user-billing.png", "alt": "Natural" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

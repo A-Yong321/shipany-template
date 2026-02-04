@@ -15,14 +15,14 @@ export default async function DynamicPage({
       {page.title && !page.sections?.hero && (
         <h1 className="sr-only">{page.title}</h1>
       )}
-      {page?.sections &&
-        Object.keys(page.sections).map(async (sectionKey: string) => {
+      {(() => {
+        const sectionKeys = page.show_sections || Object.keys(page.sections || {});
+        
+        return sectionKeys.map(async (sectionKey: string) => {
           const section = page.sections?.[sectionKey];
+          // Skip if section doesn't exist or is disabled
+          // Note: If iterating show_sections, section might be undefined if not in sections object
           if (!section || section.disabled === true) {
-            return null;
-          }
-
-          if (page.show_sections && !page.show_sections.includes(sectionKey)) {
             return null;
           }
 
@@ -48,7 +48,8 @@ export default async function DynamicPage({
                 return null;
               }
           }
-        })}
+        });
+      })()}
     </>
   );
 }

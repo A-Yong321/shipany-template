@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "API 平台 - 将 1photoAI 视觉特效集成到您的应用中",
+    "description": "强大的 AI 视频和照片生成 API。通过我们的企业级 API 方案扩展您的创意工作流。"
+  },
+  "page": {
+    "title": "1photoAI API 平台",
+    "show_sections": [
+      "hero",
+      "features",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "使用 AI 视觉 API 赋能您的业务",
+        "description": "连接到我们的高性能 API，大规模生成热门 AI 视频和专业照片特效。",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "API 平台背景"
+        },
+        "buttons": [
+          {
+            "title": "API 文档",
+            "url": "https://docs.1photoai.com",
+            "target": "_blank",
+            "variant": "default"
+          }
+        ]
+      },
+      "features": {
+        "block": "feature-split",
+        "id": "api-features",
+        "title": "企业级 AI 基础设施",
+        "description": "为需要速度、质量和可靠性的开发人员而构建。",
+        "items": [
+          {
+            "title": "超快生成速度",
+            "description": "我们优化的 GPU 基础设施确保您的用户在几秒钟内获得结果，而不是几分钟。",
+            "image": { "src": "/imgs/features/landing-page.png", "alt": "快生成" }
+          },
+          {
+            "title": "无缝集成",
+            "description": "简单的 RESTful API 架构，提供完善的文档和主流语言的 SDK。",
+            "image": { "src": "/imgs/features/admin-settings.png", "alt": "易集成" },
+            "reverse": true
+          },
+          {
+            "title": "可扩展性能",
+            "description": "无论您是处理 100 个还是 1,000,000 个请求，我们的系统都会自动扩展以满足您的需求。",
+            "image": { "src": "/imgs/features/user-billing.png", "alt": "可扩展性" }
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "准备好开始开发了吗？",
+        "description": "立即获取您的 API 密钥，开始转换视觉内容。",
+        "buttons": [
+          {
+            "title": "获取 API 密钥",
+            "url": "/settings/apikeys",
+            "target": "_self",
+            "icon": "Key"
+          }
+        ]
+      }
+    }
+  }
+}

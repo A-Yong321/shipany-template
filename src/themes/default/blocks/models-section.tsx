@@ -17,7 +17,7 @@ export function ModelsSection({
   return (
     <section
       id={section.id}
-      className={cn('py-20 md:py-32 bg-black relative overflow-hidden', className)}
+      className={cn('pt-10 pb-20 md:pt-16 md:pb-32 bg-black relative overflow-hidden', className)}
     >
         {/* Background Ambient Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none" />

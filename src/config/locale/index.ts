@@ -54,4 +54,11 @@ export const localeMessagesPaths = [
   'pages/showcases',
   'pages/blog',
   'pages/updates',
+  'pages/tools',
+  'pages/tool-details',
+  'pages/video-effects',
+  'pages/video-effect-details',
+  'pages/photo-effects',
+  'pages/api-platform',
 ];
+

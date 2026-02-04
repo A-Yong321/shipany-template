@@ -1,0 +1,68 @@
+{
+  "ai-kissing": {
+    "metadata": {
+      "title": "AI 接吻视频生成器 - 在线创作热门接吻视频",
+      "description": "将两张照片转换为真实的 AI 接吻视频。使用我们的热门 AI 接吻特效，在几秒钟内创作出浪漫的电影级视频。"
+    },
+    "page": {
+      "title": "AI 接吻视频生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "生成热门 AI 接吻视频",
+          "description": "使用我们先进的 AI 技术，将您的照片转换成真实的接吻视频。",
+          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+          "buttons": [
+            { "title": "立即尝试 AI 接吻", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "电影级质量",
+              "description": "我们的 AI 确保平滑的过渡和真实的动作，带来真正的电影般体验。",
+              "image": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_2.png" }
+            },
+            {
+              "title": "简单易用",
+              "description": "上传一张或两张照片，选择 AI 接吻特效，见证奇迹发生。",
+              "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
+              "reverse": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-muscle": {
+    "metadata": {
+      "title": "AI 肌肉生成器 - 立即为您的照片添加肌肉",
+      "description": "为您的照片添加专业的健美肌肉。我们的 AI 肌肉特效可创建真实、高质量的转换效果。"
+    },
+    "page": {
+      "title": "AI 肌肉生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "专业 AI 肌肉转换",
+          "description": "只需点击一下，即可在照片中获得您梦寐以求的身材。",
+          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "buttons": [
+            { "title": "立即添加肌肉", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "真实质感",
+              "description": "自然的皮肤光效和肌肉纹理，看起来非常真实。",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

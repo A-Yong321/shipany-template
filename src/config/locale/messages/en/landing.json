@@ -14,11 +14,6 @@
     "nav": {
       "items": [
         {
-          "title": "Features",
-          "url": "/#features",
-          "icon": "Sparkles"
-        },
-        {
           "title": "Tools",
           "icon": "RiAppsLine",
           "children": [
@@ -47,6 +42,21 @@
               "icon": "RiApps2Line"
              }
           ]
+        },
+        {
+          "title": "Video Effects",
+          "url": "/video-effects",
+          "icon": "Video"
+        },
+        {
+          "title": "Photo Effects",
+          "url": "/photo-effects",
+          "icon": "Image"
+        },
+        {
+          "title": "API",
+          "url": "/api-platform",
+          "icon": "Code"
         },
         {
           "title": "Pricing",
@@ -144,8 +154,13 @@
           "title": "Company",
           "children": [
             {
-              "title": "About",
-              "url": "/about",
+              "title": "About Us",
+              "url": "/about-us",
+              "target": "_self"
+            },
+            {
+              "title": "API Platform",
+              "url": "/api-platform",
               "target": "_self"
             },
              {

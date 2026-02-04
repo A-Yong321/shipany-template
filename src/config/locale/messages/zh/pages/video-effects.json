@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "title": "热门 AI 视频特效 - AI 接吻、肌肉、拥抱等",
+    "description": "探索 100 多种热门 AI 视频特效。将您的照片转换为 AI 接吻视频，添加 AI 肌肉，生成 AI 拥抱以及更多流行视觉效果。"
+  },
+  "page": {
+    "title": "热门 AI 视频特效",
+    "show_sections": [
+      "hero",
+      "effects",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "热门 AI 视频特效",
+        "description": "通过 AI 接吻、AI 肌肉、AI 拥抱等流行 AI 视频特效转换您的照片。",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "视频特效背景"
+        }
+      },
+      "effects": {
+        "block": "effects-section",
+        "id": "video-effects-list",
+        "title": "探索所有视频特效",
+        "description": "从我们广泛的热门 AI 视频特效中选择，让您的照片变得生动起来。",
+        "items_label": "自然风格",
+        "tabs": [
+          {
+            "id": "video",
+            "label": "全部视频",
+            "items": [
+              {
+                "id": "ai-kissing",
+                "title": "AI 接吻视频生成器",
+                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI 接吻" },
+                "badge": "HOT",
+                "count": "3M",
+                "url": "/video-effects/ai-kissing"
+              },
+              {
+                "id": "ai-muscle",
+                "title": "AI 肌肉生成器",
+                "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png", "alt": "AI 肌肉" },
+                "badge": "HOT",
+                "count": "149.4K",
+                "url": "/video-effects/ai-muscle"
+              },
+              {
+                "id": "ai-bikini",
+                "title": "AI 比基尼",
+                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI 比基尼" },
+                "badge": "HOT",
+                "count": "127.1K",
+                "url": "/video-effects/ai-bikini"
+              },
+              {
+                "id": "ai-jiggle",
+                "title": "AI 身体抖动特效",
+                "image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png", "alt": "AI 抖动" },
+                "badge": "HOT",
+                "count": "73.9K",
+                "url": "/video-effects/ai-jiggle"
+              },
+              {
+                "id": "ai-twerk",
+                "title": "AI 电臀舞",
+                "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "AI 电臀舞" },
+                "badge": "NEW",
+                "count": "50K",
+                "url": "/video-effects/ai-twerk"
+              },
+              {
+                "id": "ai-kissing-cheek",
+                "title": "AI 脸颊之吻",
+                "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "AI 脸颊之吻" },
+                "badge": "HOT",
+                "count": "1.2M",
+                "url": "/video-effects/ai-kissing-cheek"
+              },
+              {
+                "id": "ai-dance-pop",
+                "title": "AI 抖动 V2",
+                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI 抖动 V2" },
+                "count": "25K",
+                "url": "/video-effects/ai-dance-pop"
+              },
+              {
+                "id": "super-muscle",
+                "title": "超级肌肉",
+                "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png", "alt": "超级肌肉" },
+                "count": "90K",
+                "url": "/video-effects/super-muscle"
+              },
+              {
+                "id": "body-jiggle",
+                "title": "身体晃动",
+                "image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png", "alt": "身体晃动" },
+                "count": "66K",
+                "url": "/video-effects/body-jiggle"
+              },
+              {
+                "id": "twerk-master",
+                "title": "电臀舞高手",
+                "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "电臀舞高手" },
+                "badge": "HOT",
+                "count": "110K",
+                "url": "/video-effects/twerk-master"
+              }
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "释放您的创造力",
+        "description": "只需点击一下即可将任何照片转换为热门杰作。",
+        "buttons": [
+          {
+            "title": "立即开始创作",
+            "url": "/#effects",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ]
+      }
+    }
+  }
+}

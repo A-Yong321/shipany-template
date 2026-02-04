@@ -1,0 +1,98 @@
+{
+  "background-remover": {
+    "metadata": {
+      "title": "AI 背景移除 - 即时移除图片背景",
+      "description": "使用 AI 精度移除图片背景。非常适合产品照片、肖像和专业编辑。"
+    },
+    "page": {
+      "title": "AI 背景移除",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "即时移除背景",
+          "description": "专业的 AI 驱动背景移除。几秒钟内获得像素级完美结果。",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "背景移除" },
+          "buttons": [
+            { "title": "开始移除", "url": "/ai-image-generator", "icon": "RiEraserLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "像素级精度",
+              "description": "我们的 AI 准确检测边缘并保留头发和毛发等精细细节。",
+              "image": { "src": "/imgs/features/landing-page.png", "alt": "精度" }
+            },
+            {
+              "title": "批量处理",
+              "description": "一次性从多张图片中移除背景以节省时间。",
+              "image": { "src": "/imgs/features/admin-settings.png", "alt": "批量" },
+              "reverse": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "object-remover": {
+    "metadata": {
+      "title": "AI 物体移除 - 从照片中擦除不需要的物体",
+      "description": "使用 AI 无缝移除照片中不需要的物体、人物、文字和水印。"
+    },
+    "page": {
+      "title": "AI 物体移除",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "从照片中擦除任何内容",
+          "description": "使用 AI 魔法移除不需要的物体、人物、文字和水印。",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "物体移除" },
+          "buttons": [
+            { "title": "开始擦除", "url": "/ai-image-generator", "icon": "RiMagicLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "智能内容填充",
+              "description": "AI 智能填充移除区域以匹配周围环境。",
+              "image": { "src": "/imgs/features/admin-settings.png", "alt": "智能填充" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "image-expander": {
+    "metadata": {
+      "title": "AI 图片扩展 - 智能扩展图片边界",
+      "description": "使用 AI 扩展您的图片边界。智能生成内容以填充扩展区域。"
+    },
+    "page": {
+      "title": "AI 图片扩展",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "智能扩展您的图片",
+          "description": "扩展图片边界，让 AI 自然填充其余部分。",
+          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "图片扩展" },
+          "buttons": [
+            { "title": "开始扩展", "url": "/ai-image-generator", "icon": "RiAspectRatioLine" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "自然扩展",
+              "description": "AI 分析您的图片并生成完美融合的无缝扩展。",
+              "image": { "src": "/imgs/features/user-billing.png", "alt": "自然" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

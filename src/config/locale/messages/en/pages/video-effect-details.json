@@ -1,0 +1,68 @@
+{
+  "ai-kissing": {
+    "metadata": {
+      "title": "AI Kissing Video Generator - Create Viral Kiss Videos Online",
+      "description": "Transform two photos into a realistic AI kissing video. Use our viral AI Kissing effect to create romantic, cinematic videos in seconds."
+    },
+    "page": {
+      "title": "AI Kissing Video Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Generate Viral AI Kissing Videos",
+          "description": "Turn your photos into realistic kissing videos with our advanced AI technology.",
+          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+          "buttons": [
+            { "title": "Try AI Kissing Now", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Cinematic Quality",
+              "description": "Our AI ensures smooth transitions and realistic movements for a truly movie-like experience.",
+              "image": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_2.png" }
+            },
+            {
+              "title": "Easy to Use",
+              "description": "Upload one or two photos, select the AI Kissing effect, and let the magic happen.",
+              "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
+              "reverse": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-muscle": {
+    "metadata": {
+      "title": "AI Muscle Generator - Add Muscles to Your Photos Instantly",
+      "description": "Add professional bodybuilder muscles to your photos. Our AI Muscle effect creates realistic, high-quality transformations."
+    },
+    "page": {
+      "title": "AI Muscle Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Professional AI Muscle Transformation",
+          "description": "Get the body you've always wanted in your photos with one click.",
+          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "buttons": [
+            { "title": "Add Muscles Now", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Realistic Texture",
+              "description": "Natural skin lighting and muscle definition that looks authentic.",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

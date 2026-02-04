@@ -2,66 +2,48 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
       "introduce",
-      "benefits",
-      "usage",
       "features",
-      "stats",
-      "testimonials",
-      "faq",
-      "cta"
+      "effects",
+      "creations",
+      "cta",
+      "faq"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "一小时快速上线你的 AI 创业项目",
-        "highlight_text": "一小时",
-        "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 项目模板。<br/>集成常用功能，快速上线你的产品。",
+        "title": "一张照片，无限可能",
+        "highlight_text": "无限可能",
+        "description": "使用 1PhotoAI 释放您的创造力。体验我们的旗舰模型及行业所有顶尖模型。",
         "announcement": {
           "badge": "全新",
-          "title": "🎉 ShipAny 模板二已发布",
+          "title": "🎉 享受限时 50% 优惠！",
           "url": "/pricing"
         },
-        "tip": "🎁 前 1000 名用户特价优惠",
-        "buttons": [
-          {
-            "title": "立即开始",
-            "icon": "Zap",
-            "url": "/pricing",
-            "target": "_self",
-            "variant": "default"
-          },
-          {
-            "title": "阅读文档",
-            "icon": "BookOpenText",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline"
-          }
+        "tip": "",
+        "input_placeholder": "输入您的想法进行生成",
+        "tools": [
+          { "id": "video", "icon": "RiVideoLine", "label": "AI 视频" },
+          { "id": "text-to-video", "icon": "RiFileTextLine", "label": "文字/图片转视频" },
+          { "id": "pollo-2", "icon": "RiFlashlightLine", "label": "Pollo 2.5" }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ 用户在使用 ShipAny 上站",
+        "examples": [
+           { "emoji": "👑", "text": "加冕" },
+           { "emoji": "🌬️", "text": "随风而逝" },
+           { "emoji": "🧱", "text": "游戏屋建造者" }
+        ],
+        "show_avatars": false,
         "show_award": false,
-        "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
-        },
+        "image": {},
+        "image_invert": {},
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
-          "alt": "hero"
+          "alt": "hero 背景"
         }
       },
       "logos": {
-        "title": "ShipAny 使用以下技术栈构建",
+        "id": "logos",
+        "title": "助力来自顶尖公司的创作者",
         "items": [
           {
             "title": "Next.js",
@@ -71,24 +53,10 @@
             }
           },
           {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
             "title": "TailwindCSS",
             "image": {
               "src": "/imgs/logos/tailwindcss.svg",
               "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
             }
           },
           {
@@ -101,51 +69,43 @@
         ]
       },
       "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "ShipAny 是什么？",
-        "label": "产品简介",
-        "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 脚手架，包括丰富模板、组件及文档。",
-        "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
-        },
+        "block": "models-section",
+        "id": "models-showcase",
+        "title": "10 秒生成 AI 照片",
+        "description": "1PhotoAI 是一款 AI 照片生成器，只需 10 秒即可提供专业的高质量职业照。从增强您的职业社交网络资料，到生成独特的社交媒体头像或动漫图像。",
+        "input_placeholder": "输入您的想法进行生成",
         "items": [
           {
-            "title": "开箱即用的模板",
-            "description": "从数十款生产级 AI SaaS 模板中选择，快速开启你的项目。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "introduce"
-            }
+            "id": "video-generators",
+            "title": "AI 视频生成器",
+            "description": "通过 1PhotoAI 视频生成器，您可以体验我们的旗舰 Pollo 2.5 视频模型以及行业内所有顶尖视频模型，包括：",
+            "icon": "RiVideoLine",
+            "tags": [
+               "Pollo 2.5", "可灵 AI", "Veo 3", "Sora 2", "Runway", "Vidu AI"
+            ],
+            "button": {
+                "title": "AI 视频生成器",
+                "url": "/video-generator"
+            },
+            "logos": [
+                "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg", "/imgs/logos/runway.svg"
+            ]
           },
           {
-            "title": "基础设施搭建",
-            "description": "内置最佳实践，即刻拥有可扩展的基础设施。",
-            "icon": "RiDatabase2Line",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "introduce"
-            }
-          },
-          {
-            "title": "极速部署",
-            "description": "AI SaaS 产品快速上线，助力小时级交付。",
-            "icon": "RiCloudyFill",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "introduce"
-            }
-          },
-          {
-            "title": "AI 集成",
-            "description": "通过内置的 AI SDK，轻松为你的项目集成 AI 能力。",
-            "icon": "RiRobot2Line",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "introduce"
-            }
+            "id": "image-generators",
+            "title": "AI 图像生成器",
+            "description": "1PhotoAI 图像生成器采用了我们最先进的 Image 2.0 模型，以及当今其他领先的图像模型，包括：",
+            "icon": "RiImageLine",
+             "tags": [
+               "Nano Banana", "Midjourney", "Flux AI", "Stable Diffusion", "Dall-E"
+            ],
+            "button": {
+                "title": "AI 图像生成器",
+                "url": "/image-generator"
+            },
+            "logos": [
+                "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
+            ]
           }
         ],
         "className": "bg-muted"
@@ -234,41 +194,292 @@
         "className": "bg-muted"
       },
       "features": {
+        "block": "feature-split",
         "id": "features",
-        "title": "ShipAny 核心功能",
-        "description": "一切你需要的工具，助力 AI SaaS 项目高效上线。",
+        "title": "为什么选择 1PhotoAI",
         "items": [
           {
-            "title": "Next.js 项目模板",
-            "description": "生产就绪、支持 SEO 与多语言的 Next.js 脚手架。",
-            "icon": "RiNextjsFill"
+            "title": "图像创作与艺术生成",
+            "description": "立即将文本转化为令人惊叹的高质量艺术作品。从文本转图像到照片转卡通，我们为您的所有创作需求提供专业工具。",
+            "sub_items": [
+              { "title": "人像卡通化", "description": "一键将您的自拍照变成惊人的卡通作品。" },
+              { "title": "角色一致性", "description": "在不同的场景和姿势中保持角色的一致性。" },
+              { "title": "即时风格转换", "description": "立即为您的照片应用任何艺术风格。" }
+            ],
+            "button": {
+              "title": "尝试 AI 图像生成器",
+              "url": "/image-generator"
+            },
+            "image": {
+              "src": "/imgs/image.png",
+              "alt": "AI 图像创作"
+            },
+            "reverse": false
           },
           {
-            "title": "身份认证与支付",
-            "description": "集成谷歌 OAuth、一键登录，以及 Stripe 支付。",
-            "icon": "RiKey2Fill"
-          },
-          {
-            "title": "数据基础设施",
-            "description": "内置 Supabase，稳定可靠的数据存储。",
-            "icon": "RiDatabase2Line"
-          },
-          {
-            "title": "一键部署",
-            "description": "自动化部署到 Vercel 或 Cloudflare，极速上线。",
-            "icon": "RiCloudy2Fill"
-          },
-          {
-            "title": "商业分析",
-            "description": "集成 Google Analytics、Search Console，助力业务增长。",
-            "icon": "RiBarChart2Line"
-          },
-          {
-            "title": "AI 原生基础设施",
-            "description": "预置 AI 集成、积分系统和 API 售卖能力。",
-            "icon": "RiRobot2Line"
+            "title": "视频创作 - 将文本/图片转为视频",
+            "description": "将您的脚本或图像转换为电影感视频。我们的先进 AI 模型能够理解物理属性和运动，创作出逼真的效果。",
+            "sub_items": [
+              { "title": "文本转视频", "description": "直接根据文本描述生成视频。" },
+              { "title": "图片转视频", "description": "让您的静态图像焕发活力。" },
+              { "title": "视频风格转换", "description": "转换现有视频的风格。" }
+            ],
+            "button": {
+              "title": "尝试 AI 视频生成器",
+              "url": "/video-generator"
+            },
+            "image": {
+              "src": "/videos/AI_Kissing.mp4",
+              "alt": "AI 视频创作",
+              "type": "video"
+            },
+            "reverse": true
           }
-        ]
+        ],
+        "className": "bg-black"
+      },
+      "effects": {
+        "block": "effects-section",
+        "id": "effects",
+        "title": "热门 AI 视频与照片特效",
+        "description": "想为爱人添加甜蜜的吻，还是用 AI 肌肉壮大身材？想将照片变成吉卜力风格艺术，还是与名人自拍？没问题！拥有超过 150 种视频和照片特效，让你的视觉创意成真！",
+        "items_label": "自然风格",
+        "tabs": [
+          {
+            "id": "video",
+            "label": "视频特效",
+            "items": [
+              {
+                "title": "AI 接吻视频",
+                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "AI 接吻" },
+                "video": "/videos/AI_Kissing.mp4",
+                "badge": "HOT",
+                "count": "3M"
+              },
+              {
+                "title": "AI 肌肉生成器",
+                "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "AI 肌肉" },
+                "video": "/videos/肌肉展示.mp4",
+                "badge": "HOT",
+                "count": "149.4K"
+              },
+              {
+                "title": "AI 肚皮舞",
+                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI 肚皮舞" },
+                "video": "/videos/肚皮舞.mp4",
+                "badge": "HOT",
+                "count": "127.1K"
+              },
+              {
+                "title": "AI 身体抖动特效",
+                "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "AI 抖动" },
+                "video": "/videos/抖动身体.mp4",
+                "badge": "HOT",
+                "count": "73.9K"
+              },
+              {
+                "title": "AI 电臀舞",
+                "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "AI 电臀舞" },
+                "video": "/videos/扭臀舞.mp4",
+                "badge": "NEW",
+                "count": "50K"
+              },
+              {
+                "title": "AI 电摇舞",
+                "image": { "src": "/imgs/cms/Twerk_电摇舞_1.png", "alt": "AI 电摇舞" },
+                "video": "/videos/电摇舞.mp4",
+                "count": "45K"
+              },
+              {
+                "title": "AI 正常接吻",
+                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI 接吻" },
+                "video": "/videos/正常接吻.mp4",
+                "count": "40K"
+              },
+              {
+                "title": "印度女友接吻",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_印度女友_1.png", "alt": "印度女友" },
+                "video": "/videos/AI_Kissing_印度女友.mp4",
+                "count": "35K"
+              },
+              {
+                "title": "俄罗斯女友接吻",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "俄罗斯女友" },
+                "video": "/videos/俄罗斯女友.mp4",
+                "badge": "HOT",
+                "count": "1.2M"
+              },
+              {
+                "title": "街舞展示",
+                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png", "alt": "街舞" },
+                "video": "/videos/街舞.mp4",
+                "count": "25K"
+              },
+              {
+                "title": "侏罗纪奇遇",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_女友约会_1.png", "alt": "侏罗纪" },
+                "video": "/videos/侏罗纪奇遇.mp4",
+                "count": "15K"
+              },
+              {
+                "title": "登月漫步",
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "登月漫步" },
+                "video": "/videos/登月漫步.mp4",
+                "count": "90K"
+              },
+              {
+                "title": "过年场景",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "过年" },
+                "video": "/videos/过年场景.mp4",
+                "count": "66K"
+              },
+              {
+                "title": "进入嘴巴特效",
+                "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "进入嘴巴" },
+                "video": "/videos/进入嘴巴.mp4",
+                "badge": "HOT",
+                "count": "110K"
+              },
+              {
+                "title": "360度旋转展示",
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "360旋转" },
+                "video": "/videos/AI_360_Rotation.mp4",
+                "count": "33K"
+              }
+            ]
+          },
+          {
+            "id": "photo",
+            "label": "照片特效",
+            "items": [
+              {
+                "title": "AI 虚拟约会",
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "虚拟约会原图" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png", "alt": "AI 虚拟约会" },
+                "badge": "NEW",
+                "count": "50K"
+              },
+              {
+                "title": "拥抱生成器",
+                "beforeImage": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "拥抱原图" },
+                "image": { "src": "/imgs/cms/Hug_拥抱_2.png", "alt": "拥抱" },
+                "badge": "HOT",
+                "count": "200K"
+              },
+              {
+                "title": "AI 怀孕特效",
+                "beforeImage": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "怀孕原图" },
+                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png", "alt": "AI 怀孕" },
+                "badge": "HOT",
+                "count": "90K"
+              },
+              {
+                "title": "法式接吻",
+                "beforeImage": { "src": "/imgs/cms/AI-Kissing_法式接吻_1.png", "alt": "法式接吻原图" },
+                "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png", "alt": "法式接吻" },
+                "badge": "HOT",
+                "count": "1.5M"
+              },
+              {
+                "title": "额头之吻",
+                "beforeImage": { "src": "/imgs/cms/AI-Kissing_额头之吻_1.png", "alt": "额头之吻原图" },
+                "image": { "src": "/imgs/cms/AI-Kissing_额头之吻_2.png", "alt": "额头之吻" },
+                "count": "45K"
+              },
+              {
+                "title": "咬嘴唇之吻",
+                "beforeImage": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_1.png", "alt": "咬嘴唇原图" },
+                "image": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_2.png", "alt": "咬嘴唇" },
+                "count": "120K"
+              },
+              {
+                "title": "名人合拍",
+                "beforeImage": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "名人合拍原图" },
+                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", "alt": "名人合拍" },
+                "badge": "HOT",
+                "count": "2.1M"
+              },
+              {
+                "title": "公主抱",
+                "beforeImage": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "公主抱原图" },
+                "image": { "src": "/imgs/cms/Hug_公主抱_2.png", "alt": "公主抱" },
+                "count": "75K"
+              },
+              {
+                "title": "背后环抱",
+                "beforeImage": { "src": "/imgs/cms/Hug_背后环抱_1.png", "alt": "背后环抱原图" },
+                "image": { "src": "/imgs/cms/Hug_背后环抱_2.png", "alt": "背后环抱" },
+                "count": "88K"
+              },
+              {
+                "title": "托举式抱",
+                "beforeImage": { "src": "/imgs/cms/Hug_托举式抱_1.png", "alt": "托举式抱原图" },
+                "image": { "src": "/imgs/cms/Hug_托举式抱_2.png", "alt": "托举式抱" },
+                "count": "54K"
+              },
+              {
+                "title": "日本女友",
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_日本女友_1.png", "alt": "日本女友原图" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_日本女友_2.png", "alt": "日本女友" },
+                "count": "130K"
+              },
+              {
+                "title": "法国女友",
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "法国女友原图" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png", "alt": "法国女友" },
+                "count": "95K"
+              },
+              {
+                "title": "中国女友",
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "中国女友原图" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png", "alt": "中国女友" },
+                "count": "210K"
+              },
+              {
+                "title": "360度肌肉展示",
+                "beforeImage": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "360肌肉原图" },
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "360肌肉" },
+                "count": "15K"
+              },
+              {
+                "title": "脸颊之吻",
+                "beforeImage": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "脸颊之吻原图" },
+                "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png", "alt": "脸颊之吻" },
+                "count": "42K"
+              }
+            ]
+          }
+        ],
+        "className": "bg-black"
+      },
+      "creations": {
+        "block": "creations-section",
+        "id": "creations",
+        "title": "探索 1PhotoAI 用户作品",
+        "tabs": [
+            { "id": "all", "label": "全部" },
+            { "id": "videos", "label": "视频" },
+            { "id": "effects", "label": "AI 特效" },
+            { "id": "avatars", "label": "头像" },
+            { "id": "images", "label": "图片" },
+            { "id": "loras", "label": "LoRAs" },
+            { "id": "shorts", "label": "短视频" }
+        ],
+        "items": [
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "作品 1" }, "user": "用户 1" },
+          { "image": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "作品 2" }, "user": "用户 2" },
+          { "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "作品 3" }, "user": "用户 3" },
+          { "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "作品 4" }, "type": "video", "user": "用户 4" },
+          { "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "作品 5" }, "type": "video", "user": "用户 5" },
+          { "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "作品 6" }, "user": "用户 6" },
+          { "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "作品 7" }, "type": "video", "user": "用户 7" },
+          { "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "作品 8" }, "user": "用户 8" },
+          { "image": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "作品 9" }, "user": "用户 9" },
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "作品 10" }, "user": "用户 10" },
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "作品 11" }, "user": "用户 11" },
+           { "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "作品 12" }, "user": "用户 12" }
+        ],
+        "className": "bg-black"
       },
       "stats": {
         "id": "stats",
@@ -353,52 +564,41 @@
       },
       "faq": {
         "id": "faq",
-        "title": "关于 ShipAny 的常见问题",
-        "description": "还有其他问题？欢迎加入 Discord 或发邮件联系我们。",
+        "title": "常见问题",
+        "description": "有疑问？我们为您解答。",
         "items": [
           {
-            "question": "ShipAny 是什么？怎么帮到我？",
-            "answer": "ShipAny 是专为 AI SaaS 创业设计的 NextJS 全套脚手架，内含开箱即用的模板、基础设施搭建和部署工具，让你数小时内上线 AI 产品。"
+            "question": "什么是 1photoai?",
+            "answer": "1photoai 是一个集图像创作和电影感视频生成于一体的全能平台。通过 1photoai，您可以获得专业的视觉创作工具，包括视频生成、图像增强和各种创意滤镜。"
           },
           {
-            "question": "使用 ShipAny 需要很高的技术水平吗？",
-            "answer": "有基础编程知识即可上手。ShipAny 面向开发者友好，详细文档和模板让初学者也能轻松起步，不需深厚 AI 或云计算背景。"
+            "question": "如何开始使用 1photoai?",
+            "answer": "只需注册一个免费账户，从我们的创意功能库中选择您需要的工具，即可开始创作。无需任何技术背景——通过我们直观的界面，每个人都能轻松使用 1photoai。"
           },
           {
-            "question": "ShipAny 支持哪些类型的 AI SaaS 项目？",
-            "answer": "ShipAny 支持内容生成、数据分析、AI 聊天机器人、图片/内容生成器等多种主流 AI 应用场景。"
+            "question": "我可以用 1photoai 创作哪些内容?",
+            "answer": "通过 1photoai，您可以生成视频、将图像增强至 4K 画质、应用创意滤镜、根据文本生成视觉内容、进行视频换脸、制作舞蹈视频等。"
           },
           {
-            "question": "用 ShipAny 一般多久能上线？",
-            "answer": "借助 ShipAny，可在数小时内拿到产品原型并上线生产环境，预配置的一键部署大幅缩短开发周期。"
+            "question": "你们提供免费试用吗?",
+            "answer": "是的！您可以试用 1photoai 的免费版本来探索平台并测试各种功能。通过免费计划，您可以在升级前体验创作质量。"
           },
           {
-            "question": "ShipAny 的基础设施包括哪些内容？",
-            "answer": "包含认证、数据库、API 集成、支付、云端部署等全栈解决方案，全部遵循业界最佳实践预配置。"
-          },
-          {
-            "question": "模板是否支持定制自己的品牌？",
-            "answer": "当然支持！所有模板均可自定义设计、功能和品牌，既保持基础架构稳定，又能满足个性扩展需求。"
+            "question": "我可以随时取消订阅吗?",
+            "answer": "是的，您可以随时在账户设置中取消订阅。取消后，您仍可继续使用高级功能直至当前计费周期结束。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "发布你的第一个 AI SaaS 项目",
-        "description": "从这里出发，用 ShipAny 极速交付。",
+        "title": "准备好开始创作了吗?",
+        "description": "立即加入 1photoai，释放您的创造力。",
         "buttons": [
           {
-            "title": "获取 ShipAny",
-            "url": "https://shipany.ai",
-            "target": "_blank",
+            "title": "免费开始使用",
+            "url": "/login",
+            "target": "_self",
             "icon": "Zap"
-          },
-          {
-            "title": "阅读文档",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline",
-            "icon": "BookOpenText"
           }
         ],
         "className": "bg-muted"

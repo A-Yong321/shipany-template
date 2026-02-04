@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "API Platform - Integrate 1photoAI Visual Effects into Your App",
+    "description": "Powerful AI video and photo generation APIs. Scale your creative workflows with our enterprise-grade API solution."
+  },
+  "page": {
+    "title": "1photoAI API Platform",
+    "show_sections": [
+      "hero",
+      "features",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Empower Your Business with AI Visual APIs",
+        "description": "Connect to our high-performance API to generate viral AI videos and professional photo effects at scale.",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "api platform background"
+        },
+        "buttons": [
+          {
+            "title": "API Documentation",
+            "url": "https://docs.1photoai.com",
+            "target": "_blank",
+            "variant": "default"
+          }
+        ]
+      },
+      "features": {
+        "block": "feature-split",
+        "id": "api-features",
+        "title": "Enterprise-Grade AI Infrastructure",
+        "description": "Built for developers who need speed, quality, and reliability.",
+        "items": [
+          {
+            "title": "Ultra-Fast Generation",
+            "description": "Our optimized GPU infrastructure ensures your users get results in seconds, not minutes.",
+            "image": { "src": "/imgs/features/landing-page.png", "alt": "Fast generation" }
+          },
+          {
+            "title": "Seamless Integration",
+            "description": "Simple RESTful API architecture with comprehensive documentation and SDKs for all major languages.",
+            "image": { "src": "/imgs/features/admin-settings.png", "alt": "Easy integration" },
+            "reverse": true
+          },
+          {
+            "title": "Scalable Performance",
+            "description": "Whether you're processing 100 or 1,000,000 requests, our system scales automatically to meet your demand.",
+            "image": { "src": "/imgs/features/user-billing.png", "alt": "Scalability" }
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Ready to Start Building?",
+        "description": "Get your API key today and start transforming visual content.",
+        "buttons": [
+          {
+            "title": "Get API Key",
+            "url": "/settings/apikeys",
+            "target": "_self",
+            "icon": "Key"
+          }
+        ]
+      }
+    }
+  }
+}

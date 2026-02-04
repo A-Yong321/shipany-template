@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "AI 工具 - 背景移除、物体移除与图片扩展",
+    "description": "专业的 AI 驱动图片编辑工具。一键移除背景、擦除不需要的物体、智能扩展图片边界。"
+  },
+  "page": {
+    "title": "AI 图片工具",
+    "show_sections": [
+      "hero",
+      "tools",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "专业 AI 图片工具",
+        "description": "使用我们强大的 AI 驱动编辑工具套件转换您的图片。快速、准确、极其易用。",
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "工具背景"
+        }
+      },
+      "tools": {
+        "block": "showcases",
+        "id": "tools-list",
+        "title": "所有可用工具",
+        "description": "为您的图片编辑需求选择完美的工具。",
+        "items": [
+          {
+            "title": "背景移除",
+            "description": "使用 AI 精度即时移除图片背景。非常适合产品照片、肖像等。",
+            "image": { "src": "/imgs/features/landing-page.png", "alt": "背景移除" },
+            "url": "/tools/background-remover",
+            "target": "_self",
+            "button": {
+              "title": "立即尝试",
+              "url": "/tools/background-remover",
+              "target": "_self",
+              "icon": "RiEraserLine"
+            }
+          },
+          {
+            "title": "物体移除",
+            "description": "无缝擦除照片中不需要的物体。移除人物、文字、水印等。",
+            "image": { "src": "/imgs/features/admin-settings.png", "alt": "物体移除" },
+            "url": "/tools/object-remover",
+            "target": "_self",
+            "button": {
+              "title": "立即尝试",
+              "url": "/tools/object-remover",
+              "target": "_self",
+              "icon": "RiMagicLine"
+            }
+          },
+          {
+            "title": "图片扩展",
+            "description": "智能扩展您的图片边界。AI 自然填充扩展区域。",
+            "image": { "src": "/imgs/features/user-billing.png", "alt": "图片扩展" },
+            "url": "/tools/image-expander",
+            "target": "_self",
+            "button": {
+              "title": "立即尝试",
+              "url": "/tools/image-expander",
+              "target": "_self",
+              "icon": "RiAspectRatioLine"
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "准备好编辑您的图片了吗？",
+        "description": "立即开始使用我们的专业 AI 工具。",
+        "buttons": [
+          {
+            "title": "探索所有工具",
+            "url": "/tools",
+            "target": "_self",
+            "icon": "RiApps2Line"
+          }
+        ]
+      }
+    }
+  }
+}

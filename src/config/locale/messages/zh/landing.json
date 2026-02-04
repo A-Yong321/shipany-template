@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "ShipAny Two",
+      "title": "1photoai",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny Two",
+        "alt": "1photoai",
         "width": 100,
         "height": 100
       },
@@ -14,14 +14,49 @@
     "nav": {
       "items": [
         {
-          "title": "功能亮点",
-          "url": "/#features",
-          "icon": "Sparkles"
+          "title": "工具",
+          "icon": "RiAppsLine",
+          "children": [
+             {
+              "title": "背景移除",
+              "description": "移除图片背景",
+              "url": "/tools/background-remover",
+              "icon": "RiEraserLine"
+             },
+             {
+              "title": "物体移除",
+              "description": "移除不想要的物体",
+              "url": "/tools/object-remover",
+              "icon": "RiMagicLine"
+             },
+             {
+              "title": "图片扩图",
+              "description": "扩展图片边界",
+              "url": "/tools/image-expander",
+              "icon": "RiAspectRatioLine"
+             },
+             {
+              "title": "所有工具",
+              "description": "查看所有 14+ 工具",
+              "url": "/tools",
+              "icon": "RiApps2Line"
+             }
+          ]
         },
         {
-          "title": "案例展示",
-          "url": "/showcases",
-          "icon": "Box"
+          "title": "视频特效",
+          "url": "/video-effects",
+          "icon": "Video"
+        },
+        {
+          "title": "照片特效",
+          "url": "/photo-effects",
+          "icon": "Image"
+        },
+        {
+          "title": "API 平台",
+          "url": "/api-platform",
+          "icon": "Code"
         },
         {
           "title": "价格",
@@ -29,59 +64,9 @@
           "icon": "DollarSign"
         },
         {
-          "title": "AI",
-          "icon": "RiRobot2Line",
-          "children": [
-            {
-              "title": "AI 图片生成器",
-              "description": "使用 AI 生成图片",
-              "url": "/ai-image-generator",
-              "icon": "RiImage2Line"
-            },
-            {
-              "title": "AI 音乐生成器",
-              "description": "使用 AI 生成美妙的音乐",
-              "url": "/ai-music-generator",
-              "icon": "RiMusic2Line"
-            },
-            {
-              "title": "AI 视频生成器",
-              "description": "使用 AI 生成视频",
-              "url": "/ai-video-generator",
-              "icon": "RiVideoLine"
-            },
-            {
-              "title": "AI 聊天机器人",
-              "description": "与 AI 聊天机器人对话",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
-            }
-          ]
-        },
-        {
-          "title": "内容",
-          "icon": "FileText",
-          "children": [
-            {
-              "title": "博客",
-              "description": "阅读博客文章",
-              "url": "/blog",
-              "icon": "Newspaper"
-            },
-            {
-              "title": "更新日志",
-              "description": "阅读更新日志",
-              "url": "/updates",
-              "icon": "Clock"
-            },
-            {
-              "title": "文档",
-              "description": "阅读文档",
-              "url": "/docs",
-              "target": "_blank",
-              "icon": "BookOpenText"
-            }
-          ]
+          "title": "博客",
+          "url": "/blog",
+          "icon": "Newspaper"
         }
       ]
     },
@@ -92,14 +77,14 @@
       "show_sign_out": true,
       "items": [
         {
+          "title": "我的创作",
+          "url": "/dashboard",
+          "icon": "RiGalleryLine"
+        },
+        {
           "title": "账单",
           "url": "/settings/billing",
           "icon": "CreditCard"
-        },
-        {
-          "title": "活动",
-          "url": "/activity",
-          "icon": "Activity"
         }
       ]
     },
@@ -107,26 +92,26 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "此网站是 ShipAny 模板的演示站点，购买 ShipAny 模板，请访问 <a href='https://shipany.ai/zh/pricing' class='text-orange-300' target='_blank'>ShipAny 官网</a>"
+      "text": "🎉 欢迎来到 1photoai！今天就开始创作精美视觉内容吧。"
     }
   },
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "ShipAny Two",
-      "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 模板。丰富模板与组件，极速交付你的产品。",
+      "title": "1photoai",
+      "description": "专业的精美视觉内容创作平台。将文本转化为图像、生成视频、创作 AI 艺术和头像。",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny Two",
-        "width": 100,
-        "height": 100
+        "alt": "1photoai",
+        "width": 1024,
+        "height": 1024
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "关于我们",
+          "title": "产品",
           "children": [
             {
               "title": "功能亮点",
@@ -134,13 +119,13 @@
               "target": "_self"
             },
             {
-              "title": "案例展示",
-              "url": "/showcases",
+              "title": "价格",
+              "url": "/pricing",
               "target": "_self"
             },
             {
-              "title": "价格",
-              "url": "/pricing",
+              "title": "工具",
+              "url": "/tools",
               "target": "_self"
             }
           ]
@@ -158,30 +143,35 @@
               "url": "/blog",
               "target": "_self"
             },
-            {
-              "title": "对话",
-              "url": "/chat",
-              "target": "_blank"
+             {
+              "title": "帮助中心",
+              "url": "/help",
+              "target": "_self"
             }
           ]
         },
         {
-          "title": "合作伙伴",
+          "title": "公司",
           "children": [
             {
-              "title": "ShipAny",
-              "url": "https://shipany.ai",
-              "target": "_blank"
+              "title": "关于我们",
+              "url": "/about-us",
+              "target": "_self"
             },
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
+              "title": "API 平台",
+              "url": "/api-platform",
+              "target": "_self"
+            },
+             {
+              "title": "服务条款",
+              "url": "/terms-of-service",
+              "target": "_self"
             },
             {
-              "title": "MCP.so",
-              "url": "https://mcp.so",
-              "target": "_blank"
+              "title": "隐私政策",
+              "url": "/privacy-policy",
+              "target": "_self"
             }
           ]
         }
@@ -192,25 +182,19 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/your-app-name",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "Github",
-          "url": "https://github.com/your-app-name",
+          "url": "https://x.com/1photoai",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/your-app-name",
+          "url": "https://discord.gg/1photoai",
           "target": "_blank"
         },
         {
           "title": "邮箱",
           "icon": "Mail",
-          "url": "mailto:support@your-domain.com",
+          "url": "mailto:support@1photoai.com",
           "target": "_self"
         }
       ]

@@ -106,7 +106,7 @@ export function CreationsSection({
               </div>
               
               <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                   <p className="text-xs text-white/90 font-medium">Pollo.ai</p>
+                   <p className="text-xs text-white/90 font-medium">1PhotoAI</p>
               </div>
             </div>
           ))}
