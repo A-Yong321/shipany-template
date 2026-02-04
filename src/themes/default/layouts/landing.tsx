@@ -26,3 +26,8 @@ export default async function LandingLayout({
     </div>
   );
 }
+
+// NOTE: The `children` prop passed to LandingLayout (from `page.tsx`) contains the `DynamicPage` component which iterates over sections.
+// Ideally, we should check `src/themes/default/pages/dynamic-page.tsx` (the `Page` component) to see how it renders blocks.
+// `landing.tsx` is just the layout (header + footer), the content is in `children`.
+// So I need to verify where the block rendering logic resides. It's likely in `dynamic-page.tsx` or similar.

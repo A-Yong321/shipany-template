@@ -13,46 +13,30 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "All-in-One AI Image & Video Creation Platform",
+        "title": "Your One-Stop AI Image & Video Creation Platform",
         "highlight_text": "Creation Platform",
-        "description": "Professional platform for creating stunning visual content. Transform text into images, generate videos, create AI art and headshots.<br/>Free tools for photo editing, text to image, and image to video conversion.",
+        "description": "",
         "announcement": {
           "badge": "New",
-          "title": "🎉 1photoai Launch Special",
+          "title": "🎉 Enjoy Limited-Time 50% OFF!",
           "url": "/pricing"
         },
-        "tip": "🎁 Start creating for free today",
-        "buttons": [
-          {
-            "title": "Start Creating",
-            "icon": "Zap",
-            "url": "/login",
-            "target": "_self",
-            "variant": "default"
-          },
-          {
-            "title": "Explore Tools",
-            "icon": "Telescope",
-            "url": "/#features",
-            "target": "_self",
-            "variant": "outline"
-          }
+        "tip": "",
+        "input_placeholder": "Enter your idea to generate",
+        "tools": [
+          { "id": "video", "icon": "RiVideoLine", "label": "AI Video" },
+          { "id": "text-to-video", "icon": "RiFileTextLine", "label": "Text/Image to Video" },
+          { "id": "pollo-2", "icon": "RiFlashlightLine", "label": "Pollo 2.0" }
         ],
-        "show_avatars": true,
-        "avatars_tip": "Trusted by 10,000+ creators",
+        "examples": [
+           { "emoji": "👑", "text": "Crowning" },
+           { "emoji": "🌬️", "text": "Spoken to the Wind" },
+           { "emoji": "🧱", "text": "Playhouse Builder" }
+        ],
+        "show_avatars": false,
         "show_award": false,
-        "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "AI Creation Dashboard",
-          "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "AI Creation Dashboard",
-          "width": 1200,
-          "height": 800
-        },
+        "image": {},
+        "image_invert": {},
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
           "alt": "hero background"
@@ -93,51 +77,43 @@
         ]
       },
       "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "What is 1photoai",
-        "label": "About Us",
-        "description": "1photoai is an all-in-one platform for creating stunning images and cinematic videos. We provide professional visual creation tools including video generation, image enhancement, and various creative filters.",
-        "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "Interface Preview"
-        },
+        "block": "models-section",
+        "id": "models-showcase",
+        "title": "ALL the Great AI Video & Image Models in ONE Place!",
+        "description": "With Pollo AI, you can tap into our flagship models and all top-tier models in the industry.",
+        "input_placeholder": "Enter your idea to generate",
         "items": [
           {
-            "title": "AI Image Generation",
-            "description": "Transform text into stunning high-quality images instantly with our advanced models.",
-            "icon": "RiImage2Line",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "Image Generation"
-            }
-          },
-          {
-            "title": "Video Creation",
-            "description": "Create cinematic videos from text or images. Bring your static content to life.",
+            "id": "video-generators",
+            "title": "AI Video Generators",
+            "description": "With Pollo AI video generator, you can tap into our flagship Pollo 2.5 video model and all top-tier video models in the industry, including:",
             "icon": "RiVideoLine",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "Video Creation"
-            }
+            "tags": [
+               "Pollo 2.5", "Veo 3", "Sora 2", "Kling AI", "Hailuo AI", "PixVerse AI", "Runway", "Vidu AI", "Luma AI", "Pika AI", "Seedance", "Wan AI", "Hunyuan"
+            ],
+            "button": {
+                "title": "AI Video Generator",
+                "url": "/video-generator"
+            },
+            "logos": [
+                "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg"
+            ]
           },
           {
-            "title": "Photo Editing Tools",
-            "description": "14+ powerful tools including background remover, object eraser, and photo restoration.",
-            "icon": "RiEditLine",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "Photo Editing"
-            }
-          },
-          {
-            "title": "Style Transfer",
-            "description": "Transform your photos with 437+ unique artistic styles and filters.",
-            "icon": "RiPaletteLine",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "Style Transfer"
-            }
+            "id": "image-generators",
+            "title": "AI Image Generators",
+            "description": "Pollo AI image generator features our cutting-edge Image 2.0 model, alongside other leading image models available today, including:",
+            "icon": "RiImageLine",
+             "tags": [
+               "Nano Banana", "Midjourney", "Recraft", "Ideogram", "Stable Diffusion", "Flux AI", "Seedream", "Dall-E", "Imagen", "GPT-4o", "Flux Kontext", "Qwen Image", "Wan AI"
+            ],
+            "button": {
+                "title": "AI Image Generator",
+                "url": "/image-generator"
+            },
+            "logos": [
+                "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
+            ]
           }
         ],
         "className": "bg-muted"

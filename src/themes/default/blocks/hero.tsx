@@ -1,14 +1,13 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Plus, Clock, Monitor, Smartphone, MoreHorizontal, ArrowUp, Sparkles, Wind, Box } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
-import { Button } from '@/shared/components/ui/button';
-import { Highlighter } from '@/shared/components/ui/highlighter';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
-
-import { SocialAvatars } from './social-avatars';
 
 export function Hero({
   section,
@@ -17,6 +16,8 @@ export function Hero({
   section: Section;
   className?: string;
 }) {
+  const [activeTool, setActiveTool] = useState(section.tools?.[0]?.id || 'video');
+
   const highlightText = section.highlight_text ?? '';
   let texts = null;
   if (highlightText) {
@@ -27,150 +28,147 @@ export function Hero({
     <section
       id={section.id}
       className={cn(
-        `pt-24 pb-8 md:pt-36 md:pb-8`,
+        `pt-20 pb-16 md:pt-32 md:pb-24 overflow-visible`, // Reduced top padding to bring content closer to nav
         section.className,
         className
       )}
     >
-      {section.announcement && (
-        <Link
-          href={section.announcement.url || ''}
-          target={section.announcement.target || '_self'}
-          className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto mb-8 flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-        >
-          <span className="text-foreground text-sm">
-            {section.announcement.title}
-          </span>
-          <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
-
-          <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-            <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-              <span className="flex size-6">
-                <ArrowRight className="m-auto size-3" />
-              </span>
-              <span className="flex size-6">
-                <ArrowRight className="m-auto size-3" />
-              </span>
-            </div>
-          </div>
-        </Link>
-      )}
-
-      <div className="relative mx-auto max-w-full px-4 text-center md:max-w-5xl">
-        {texts && texts.length > 0 ? (
-          <h1 className="text-foreground text-4xl font-semibold text-balance sm:mt-12 sm:text-6xl">
-            {texts[0]}
-            <Highlighter action="underline" color="#FF9800">
-              {highlightText}
-            </Highlighter>
-            {texts[1]}
-          </h1>
-        ) : (
-          <h1 className="text-foreground text-4xl font-semibold text-balance sm:mt-12 sm:text-6xl">
-            {section.title}
-          </h1>
-        )}
-
-        <p
-          className="text-muted-foreground mt-8 mb-8 text-lg text-balance"
-          dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
-        />
-
-        {section.buttons && (
-          <div className="flex items-center justify-center gap-4">
-            {section.buttons.map((button, idx) => (
-              <Button
-                asChild
-                size={button.size || 'default'}
-                variant={button.variant || 'default'}
-                className="px-4 text-sm"
-                key={idx}
-              >
-                <Link href={button.url ?? ''} target={button.target ?? '_self'}>
-                  {button.icon && <SmartIcon name={button.icon as string} />}
-                  <span>{button.title}</span>
-                </Link>
-              </Button>
-            ))}
-          </div>
-        )}
-
-        {section.tip && (
-          <p
-            className="text-muted-foreground mt-6 block text-center text-sm"
-            dangerouslySetInnerHTML={{ __html: section.tip ?? '' }}
-          />
-        )}
-
-        {section.show_avatars && (
-          <SocialAvatars tip={section.avatars_tip || ''} />
-        )}
-      </div>
-
-      {(section.image?.src || section.image_invert?.src) && (
-        <div className="border-foreground/10 relative mt-8 border-y sm:mt-16">
-          <div className="relative z-10 mx-auto max-w-6xl border-x px-3">
-            <div className="border-x">
-              <div
-                aria-hidden
-                className="h-3 w-full bg-[repeating-linear-gradient(-45deg,var(--color-foreground),var(--color-foreground)_1px,transparent_1px,transparent_4px)] opacity-5"
-              />
-              {section.image_invert?.src && (
-                <Image
-                  className="border-border/25 relative z-2 hidden w-full border dark:block"
-                  src={section.image_invert.src}
-                  alt={section.image_invert.alt || section.image?.alt || ''}
-                  width={
-                    section.image_invert.width || section.image?.width || 1200
-                  }
-                  height={
-                    section.image_invert.height || section.image?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image_invert.src.startsWith('http')}
-                />
-              )}
-              {section.image?.src && (
-                <Image
-                  className="border-border/25 relative z-2 block w-full border dark:hidden"
-                  src={section.image.src}
-                  alt={section.image.alt || section.image_invert?.alt || ''}
-                  width={
-                    section.image.width || section.image_invert?.width || 1200
-                  }
-                  height={
-                    section.image.height || section.image_invert?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image.src.startsWith('http')}
-                />
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-
+      {/* Background Image / Gradient */}
       {section.background_image?.src && (
-        <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block">
-          <div className="from-background/80 via-background/80 to-background absolute inset-0 z-10 bg-gradient-to-b" />
+        <div className="absolute inset-0 -z-10 h-full w-full overflow-hidden">
+           {/* Darker overlay for better text contrast */}
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/90 via-background/80 to-background" />
           <Image
             src={section.background_image.src}
             alt={section.background_image.alt || ''}
-            className="object-cover opacity-60 blur-[0px]"
+            className="object-cover opacity-50"
             fill
             loading="lazy"
-            sizes="(max-width: 768px) 0vw, 100vw"
+            sizes="100vw"
             quality={70}
             unoptimized={section.background_image.src.startsWith('http')}
           />
         </div>
       )}
+
+      {/* Announcement Pill */}
+      {section.announcement && (
+        <div className="flex justify-center mb-8">
+            <Link
+            href={section.announcement.url || ''}
+            target={section.announcement.target || '_self'}
+            className="hover:scale-105 active:scale-95 group flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 px-4 py-1.5 transition-all duration-300 backdrop-blur-sm"
+            >
+            <span className="text-xl">🎉</span>
+            <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent font-medium text-sm">
+                {section.announcement.title}
+            </span>
+            </Link>
+        </div>
+      )}
+
+      <div className="relative mx-auto max-w-5xl px-4 text-center z-20">
+        
+        {/* Main Title */}
+        <h1 className="text-foreground text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance mb-12 drop-shadow-sm">
+            {section.title || "Your One-Stop AI Creation Platform"}
+        </h1>
+
+        {/* Input Interface Container */}
+        <div className="bg-zinc-900/40 backdrop-blur-xl border border-white/10 rounded-3xl p-2 md:p-3 shadow-2xl ring-1 ring-white/5 mx-auto max-w-4xl text-left">
+            
+            {/* Tool Tabs */}
+            <div className="flex flex-wrap gap-2 mb-3 px-1">
+                {section.tools?.map((tool: any) => (
+                    <button
+                        key={tool.id}
+                        onClick={() => setActiveTool(tool.id)}
+                        className={cn(
+                            "flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200",
+                            activeTool === tool.id 
+                                ? "bg-zinc-800 text-white shadow-lg ring-1 ring-white/10" 
+                                : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
+                        )}
+                    >
+                        <SmartIcon name={tool.icon} size={18} className={activeTool === tool.id ? "text-pink-500" : ""} />
+                        {tool.label}
+                    </button>
+                ))}
+            </div>
+
+            {/* Input Area */}
+            <div className="bg-zinc-800/50 rounded-2xl p-4 md:p-5 relative group focus-within:ring-1 focus-within:ring-pink-500/50 transition-all">
+                
+                {/* Text Area */}
+                <textarea 
+                    placeholder={section.input_placeholder || "Describe your creation..."}
+                    className="w-full bg-transparent border-none outline-none text-lg text-white placeholder:text-zinc-500 resize-none min-h-[80px] md:min-h-[100px]"
+                />
+
+                {/* Bottom Controls */}
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4">
+                    
+                    {/* Left: Upload Button */}
+                    <button className="flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-700/50 text-zinc-400 hover:bg-zinc-700 hover:text-white transition-colors">
+                        <Plus size={24} />
+                    </button>
+
+                    {/* Right: Settings & Generate */}
+                    <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+                        
+                        {/* Settings Pills (Mock) */}
+                        <div className="flex items-center gap-2 mr-auto md:mr-0">
+                             <div className="hidden md:flex items-center gap-2">
+                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/50 border border-white/5 text-xs text-zinc-400 hover:text-zinc-200">
+                                    <Clock size={12} /> 5s
+                                </button>
+                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/50 border border-white/5 text-xs text-zinc-400 hover:text-zinc-200">
+                                    <Monitor size={12} /> 480p
+                                </button>
+                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900/50 border border-white/5 text-xs text-zinc-400 hover:text-zinc-200">
+                                    <Smartphone size={12} /> 16:9
+                                </button>
+                            </div>
+                            <button className="flex items-center justify-center w-8 h-8 rounded-lg bg-zinc-900/50 border border-white/5 text-zinc-400 hover:text-zinc-200 md:hidden">
+                                <MoreHorizontal size={16} />
+                            </button>
+                             <button className="hidden md:flex items-center justify-center w-8 h-8 rounded-lg bg-zinc-900/50 border border-white/5 text-zinc-400 hover:text-zinc-200">
+                                <MoreHorizontal size={16} />
+                            </button>
+                        </div>
+
+                         {/* Divider */}
+                         <div className="h-6 w-px bg-white/10 hidden md:block" />
+
+                        {/* Generate Button */}
+                        <div className="flex items-center gap-3 ml-auto">
+                             <div className="w-2 h-2 rounded-full border border-zinc-500 hidden md:block" />
+                             <button className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-white text-black hover:bg-pink-50 hover:scale-105 transition-all shadow-lg shadow-white/10">
+                                <ArrowUp size={24} />
+                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* Examples / Prompts */}
+         {section.examples && (
+            <div className="flex flex-wrap justify-center gap-3 mt-6">
+                {(section.examples as any[]).map((example, idx) => (
+                    <button 
+                        key={idx}
+                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800/40 border border-white/5 text-sm text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200 hover:border-white/10 transition-all"
+                    >
+                        <span>{example.emoji}</span>
+                        <span>{example.text}</span>
+                    </button>
+                ))}
+            </div>
+        )}
+
+      </div>
     </section>
   );
 }
+
