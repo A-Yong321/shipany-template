@@ -5,10 +5,10 @@
       "logos",
       "introduce",
       "features",
-      "stats",
-      "testimonials",
-      "faq",
-      "cta"
+      "effects",
+      "creations",
+      "cta",
+      "faq"
     ],
     "sections": {
       "hero": {
@@ -119,125 +119,148 @@
         "className": "bg-muted"
       },
       "features": {
+        "block": "feature-split",
         "id": "features",
-        "title": "14+ Powerful Image Editing Tools",
-        "description": "Everything you need to perfect your visual content.",
+        "title": "Why Choose 1photoai",
         "items": [
           {
-            "title": "Background Remover",
-            "description": "Remove backgrounds from images instantly with AI precision.",
-            "icon": "RiEraserLine"
+            "title": "Image Creation & Art Generation",
+            "description": "Transform text into stunning high-quality art instantly. From text-to-image to photo-to-cartoon, we provide professional tools for all your creative needs.",
+            "sub_items": [
+              { "title": "Portrait Cartoon", "description": "Turn your selfies into amazing cartoons with one click." },
+              { "title": "Character Persistence", "description": "Keep character consistency across different scenes and poses." },
+              { "title": "Instant Style Transfer", "description": "Apply any artistic style to your photos instantly." }
+            ],
+            "button": {
+              "title": "Try AI Image Generator",
+              "url": "/image-generator"
+            },
+            "image": {
+              "src": "/imgs/image.png",
+              "alt": "AI Image Creation"
+            },
+            "reverse": false
           },
           {
-            "title": "AI Object Remover",
-            "description": "Erase unwanted objects from photos seamlessly.",
-            "icon": "RiMagicLine"
-          },
-          {
-            "title": "Watermark Removal",
-            "description": "Remove watermarks and logos from images professionally.",
-            "icon": "RiDropLine"
-          },
-          {
-            "title": "Recolor Image",
-            "description": "Change and adjust colors in your images with AI.",
-            "icon": "RiPaletteFill"
-          },
-          {
-            "title": "AI Image Expander",
-            "description": "Expand image boundaries with AI-generated content.",
-            "icon": "RiAspectRatioLine"
-          },
-          {
-            "title": "Photo Restoration",
-            "description": "Restore and enhance old or damaged photos.",
-            "icon": "RiHistoryLine"
-          },
-          {
-            "title": "Colorize Photo",
-            "description": "Add realistic colors to black and white photos.",
-            "icon": "RiContrastDropLine"
-          },
-          {
-            "title": "AI Clothes Changer",
-            "description": "Try on different outfits virtually with AI.",
-            "icon": "RiTShirtLine"
-          },
-          {
-            "title": "Hairstyle Changer",
-            "description": "Preview different hairstyles on your photos.",
-            "icon": "RiUserSmileLine"
-          },
-          {
-            "title": "AI Facial Expression",
-            "description": "Change facial expressions in photos naturally.",
-            "icon": "RiEmotionHappyLine"
-          },
-          {
-            "title": "AI Age Progression",
-            "description": "See how you'll look at different ages.",
-            "icon": "RiTimeLine"
-          },
-          {
-            "title": "Gender Swap",
-            "description": "Transform gender appearance in photos realistically.",
-            "icon": "RiWomenLine"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "Trusted by Creators Worldwide",
-        "description": "Join thousands of users creating amazing content with 1photoai.",
-        "items": [
-          {
-            "title": "1M+",
-            "description": "Images Generated"
-          },
-          {
-            "title": "500k+",
-            "description": "Videos Created"
-          },
-          {
-            "title": "14+",
-            "description": "AI Tools"
+            "title": "Video Creation - Turn Text/Images to Video",
+            "description": "Convert your scripts or images into cinematic videos. Our advanced AI models understand physics and motion to create realistic results.",
+            "sub_items": [
+              { "title": "Text to Video", "description": "Generate videos directly from text descriptions." },
+              { "title": "Image to Video", "description": "Bring your static images to life with motion." },
+              { "title": "Video Style Transfer", "description": "Transform the style of existing videos." }
+            ],
+            "button": {
+              "title": "Try AI Video Generator",
+              "url": "/video-generator"
+            },
+            "image": {
+              "src": "/videos/AI_Kissing.mp4",
+              "alt": "AI Video Creation",
+              "type": "video"
+            },
+            "reverse": true
           }
         ],
-        "className": "bg-muted"
+        "className": "bg-black"
       },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "What Our Users Say",
-        "description": "See how 1photoai is changing the way people create content.",
-        "items": [
+      "effects": {
+        "block": "effects-section",
+        "id": "effects",
+        "title": "Viral AI Videos and Photo Effects",
+        "description": "Want to add a sweet kiss for your loved one or bulk up with AI muscles? Want to turn your photos into Ghibli-style art or snap a selfie with celebrities? No problem! With over 150 video and photo effects, bring your vision to life!",
+        "items_label": "Natural Mess",
+        "tabs": [
           {
-            "name": "Sarah Jenkins",
-            "role": "Content Creator",
-            "quote": "1photoai has completely transformed my workflow. The video generation capabilities are mind-blowing!",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "Sarah"
-            }
+            "id": "video",
+            "label": "Video Effects",
+            "items": [
+              {
+                "title": "AI Kissing Video Generator",
+                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI Kissing" },
+                "badge": "HOT",
+                "count": "3M"
+              },
+              {
+                "title": "AI Muscle Generator",
+                "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png", "alt": "AI Muscle" },
+                "badge": "HOT",
+                "count": "149.4K"
+              },
+              {
+                "title": "AI Bikini",
+                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI Bikini" },
+                "badge": "HOT",
+                "count": "127.1K"
+              },
+              {
+                "title": "AI Jiggle Video Effect",
+                "image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png", "alt": "AI Jiggle" },
+                "badge": "HOT",
+                "count": "73.9K"
+              }
+            ]
           },
           {
-            "name": "Mike Chen",
-            "role": "Digital Artist",
-            "quote": "The style transfer tools are incredible. I can explore so many artistic directions in minutes.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "Mike"
-            }
-          },
-          {
-            "name": "Emily Ross",
-            "role": "Marketing Manager",
-            "quote": "We use the background remover and object eraser daily for our product photos. It's a huge time saver.",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "Emily"
-            }
+            "id": "photo",
+            "label": "Photo Effects",
+            "items": [
+              {
+                "title": "AI Fake Date",
+                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "AI Fake Date" },
+                "badge": "NEW",
+                "count": "50K"
+              },
+              {
+                "title": "Hug Generator",
+                "image": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "Hug Generator" },
+                "badge": "HOT",
+                "count": "200K"
+              },
+              {
+                "title": "Pregnant AI",
+                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "Pregnant AI" },
+                "badge": "HOT",
+                "count": "90K"
+              },
+              {
+                "title": "Character 360",
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "Character 360" },
+                "badge": "NEW",
+                "count": "15K"
+              }
+            ]
           }
-        ]
+        ],
+        "className": "bg-black"
+      },
+      "creations": {
+        "block": "creations-section",
+        "id": "creations",
+        "title": "Explore Pollo AI's User Creations",
+        "tabs": [
+            { "id": "all", "label": "All" },
+            { "id": "videos", "label": "Videos" },
+            { "id": "effects", "label": "AI Effects" },
+            { "id": "avatars", "label": "Avatars" },
+            { "id": "images", "label": "Images" },
+            { "id": "loras", "label": "LoRAs" },
+            { "id": "shorts", "label": "Shorts" }
+        ],
+        "items": [
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Creation 1" }, "user": "User1" },
+          { "image": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "Creation 2" }, "user": "User2" },
+          { "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "Creation 3" }, "user": "User3" },
+          { "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "Creation 4" }, "type": "video", "user": "User4" },
+          { "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "Creation 5" }, "type": "video", "user": "User5" },
+          { "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "Creation 6" }, "user": "User6" },
+          { "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "Creation 7" }, "type": "video", "user": "User7" },
+          { "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "Creation 8" }, "user": "User8" },
+          { "image": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "Creation 9" }, "user": "User9" },
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "Creation 10" }, "user": "User10" },
+          { "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "Creation 11" }, "user": "User11" },
+           { "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "Creation 12" }, "user": "User12" }
+        ],
+        "className": "bg-black"
       },
       "faq": {
         "id": "faq",
