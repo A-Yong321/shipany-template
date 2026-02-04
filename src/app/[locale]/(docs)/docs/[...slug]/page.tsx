@@ -47,7 +47,8 @@ export default async function DocsContentPage(props: {
 }
 
 export async function generateStaticParams() {
-  return source.generateParams('slug', 'locale');
+  const params = await source.generateParams('slug', 'locale');
+  return params.filter((param) => param.slug && param.slug.length > 0);
 }
 
 export async function generateMetadata(props: {

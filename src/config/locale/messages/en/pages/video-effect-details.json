@@ -13,8 +13,32 @@
           "description": "Turn your photos into realistic kissing videos with our advanced AI technology.",
           "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
           "buttons": [
-            { "title": "Try AI Kissing Now", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try AI Kissing Now", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Kissing Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Romantic", 
+                "prompt": "A couple kissing romantically in sunset, cinematic style, 4k detail",
+                "image": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
+              { 
+                "category": "French Kiss", 
+                "prompt": "French kiss between two people, passionate and close-up, high quality, photorealistic",
+                 "image": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              },
+              { 
+                "category": "Cute", 
+                "prompt": "Gentle cheek kiss, cute and affectionate moment, soft lighting",
+                 "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -79,8 +103,27 @@
           "description": "Get the body you've always wanted in your photos with one click.",
           "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
           "buttons": [
-            { "title": "Add Muscles Now", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Add Muscles Now", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Muscle Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Bodybuilder", 
+                "prompt": "Man showing off huge muscles, flexing powerfully, professional bodybuilder physique",
+                "image": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
+              { 
+                "category": "360 View", 
+                "prompt": "Muscular physique 360 rotation, detailed muscle definition",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -109,8 +152,27 @@
           "description": "Transform your photos into stunning beach scenes with AI-generated bikini effects.",
           "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
           "buttons": [
-            { "title": "Try AI Bikini Now", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try AI Bikini Now", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Bikini Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Beach", 
+                "prompt": "Woman in bikini walking on beach, summer vibe, natural lighting",
+                "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+              },
+              { 
+                "category": "Tropical", 
+                "prompt": "Bikini beach scene with tropical atmosphere, sunset glow",
+                "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -139,8 +201,27 @@
           "description": "Create entertaining videos with AI-powered body jiggle effects.",
           "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
           "buttons": [
-            { "title": "Try Jiggle Effect", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try Jiggle Effect", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Jiggle Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Fun", 
+                "prompt": "Body jiggle effect on dancing person, fun and bouncy movement",
+                "image": "/imgs/cms/Jiggle_抖动身体_1.png"
+              },
+              { 
+                "category": "Dynamic", 
+                "prompt": "Dynamic body jiggle with natural physics, entertaining effect",
+                "image": "/imgs/cms/Jiggle_抖动身体_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -169,8 +250,27 @@
           "description": "Transform photos into energetic twerk dance videos with AI technology.",
           "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
           "buttons": [
-            { "title": "Try Twerk Effect", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try Twerk Effect", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Twerk Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Energetic", 
+                "prompt": "Person twerking energetically in trendy environment, viral dance style",
+                "image": "/imgs/cms/Twerk_扭臀舞_1.png"
+              },
+              { 
+                "category": "Professional", 
+                "prompt": "Professional twerk dance performance, high energy, club atmosphere",
+                "image": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -349,8 +449,27 @@
           "description": "Generate emotional and heartwarming hug moments with AI technology.",
           "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
           "buttons": [
-            { "title": "Try AI Hug", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try AI Hug", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Hug Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Warm", 
+                "prompt": "Warm hug between friends or couple, emotional embrace, heartwarming moment",
+                "image": "/imgs/cms/Hug_拥抱_1.png"
+              },
+              { 
+                "category": "Reunion", 
+                "prompt": "Emotional reunion hug, tears of joy, cinematic lighting",
+                "image": "/imgs/cms/Hug_拥抱_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -379,8 +498,27 @@
           "description": "Create professional 360-degree rotation videos with smooth camera movements.",
           "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
           "buttons": [
-            { "title": "Try 360 Rotation", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try 360 Rotation", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 360 Rotation Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Character", 
+                "prompt": "360 degree rotation around person or object, smooth cinematic camera movement",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+              },
+              { 
+                "category": "Product", 
+                "prompt": "Professional 360 product showcase, studio lighting, detailed view",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -409,8 +547,27 @@
           "description": "Create stunning zoom effects from space to Earth surface with AI.",
           "background_image": { "src": "/imgs/bg/tree.jpg" },
           "buttons": [
-            { "title": "Try Earth Zoom", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "Try Earth Zoom", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Earth Zoom Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Zoom In", 
+                "prompt": "Zoom in from space to Earth surface, dramatic reveal, cinematic style",
+                "image": "/imgs/bg/tree.jpg"
+              },
+              { 
+                "category": "Zoom Out", 
+                "prompt": "Zoom out from city street to full Earth view in space, epic scale",
+                "image": "/imgs/features/landing-page.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",

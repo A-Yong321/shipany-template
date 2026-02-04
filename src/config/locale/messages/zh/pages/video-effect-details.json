@@ -13,8 +13,32 @@
           "description": "使用我们先进的 AI 技术,将您的照片转换成真实的接吻视频。",
           "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
           "buttons": [
-            { "title": "立即尝试 AI 接吻", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "立即尝试 AI 接吻", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 接吻生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "浪漫", 
+                "prompt": "夕阳下一对情侣浪漫接吻，电影感，4k细节",
+                 "image": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
+              { 
+                "category": "法式", 
+                "prompt": "两人的法式深吻，激情特写，高质量，逼真",
+                 "image": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              },
+              { 
+                "category": "可爱", 
+                "prompt": "温柔的脸颊亲吻，可爱亲昵的瞬间，柔和光线",
+                 "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -49,8 +73,27 @@
           "description": "只需点击一下,即可在照片中获得您梦寐以求的身材。",
           "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
           "buttons": [
-            { "title": "立即添加肌肉", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "立即添加肌肉", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 肌肉生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "健美", 
+                "prompt": "男子展示巨大肌肉，有力地展示，专业健美体格",
+                "image": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
+              { 
+                "category": "360视角", 
+                "prompt": "肌肉体格360度旋转，详细肌肉线条",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -79,8 +122,27 @@
           "description": "使用AI生成的比基尼效果将您的照片转换为惊艳的海滩场景。",
           "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
           "buttons": [
-            { "title": "试用AI比基尼", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用AI比基尼", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI比基尼生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "海滩", 
+                "prompt": "女子穿比基尼在海滩漫步，夏日氛围，自然光线",
+                "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+              },
+              { 
+                "category": "热带", 
+                "prompt": "热带氛围的比基尼海滩场景，日落余晖",
+                "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -109,8 +171,27 @@
           "description": "使用AI驱动的身体抖动效果创建有趣的视频。",
           "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
           "buttons": [
-            { "title": "试用抖动效果", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用抖动效果", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI抖动生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "有趣", 
+                "prompt": "跳舞人物的身体抖动效果，有趣的弹跳运动",
+                "image": "/imgs/cms/Jiggle_抖动身体_1.png"
+              },
+              { 
+                "category": "动态", 
+                "prompt": "自然物理效果的动态身体抖动，娱乐效果",
+                "image": "/imgs/cms/Jiggle_抖动身体_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -139,8 +220,27 @@
           "description": "使用AI技术将照片转换为充满活力的扭臀舞视频。",
           "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
           "buttons": [
-            { "title": "试用扭臀效果", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用扭臀效果", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI扭臀舞生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "充满活力", 
+                "prompt": "人物在时尚环境中充满活力地扭臀，病毒式舞蹈风格",
+                "image": "/imgs/cms/Twerk_扭臀舞_1.png"
+              },
+              { 
+                "category": "专业", 
+                "prompt": "专业扭臀舞表演，高能量，俱乐部氛围",
+                "image": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -319,8 +419,27 @@
           "description": "使用AI技术生成充满情感和温馨的拥抱瞬间。",
           "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
           "buttons": [
-            { "title": "试用AI拥抱", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用AI拥抱", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI拥抱生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "温暖", 
+                "prompt": "朋友或情侣之间的温暖拥抱，情感拥抱，温馨瞬间",
+                "image": "/imgs/cms/Hug_拥抱_1.png"
+              },
+              { 
+                "category": "重逢", 
+                "prompt": "情感重逢拥抱，喜极而泣，电影感光线",
+                "image": "/imgs/cms/Hug_拥抱_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -349,8 +468,27 @@
           "description": "创建流畅镜头运动的专业360度旋转视频。",
           "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
           "buttons": [
-            { "title": "试用360旋转", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用360旋转", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 360旋转生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "角色", 
+                "prompt": "围绕人物或物体360度旋转，流畅的电影感镜头运动",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+              },
+              { 
+                "category": "产品", 
+                "prompt": "专业360产品展示，工作室灯光，详细视角",
+                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -379,8 +517,27 @@
           "description": "使用AI创建从太空到地表的惊艳缩放效果。",
           "background_image": { "src": "/imgs/bg/tree.jpg" },
           "buttons": [
-            { "title": "试用地球缩放", "url": "/ai-video-generator", "icon": "Zap" }
+            { "title": "试用地球缩放", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI地球缩放生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "放大", 
+                "prompt": "从太空放大到地球表面，戏剧性揭示，电影感",
+                "image": "/imgs/bg/tree.jpg"
+              },
+              { 
+                "category": "缩小", 
+                "prompt": "从城市街道缩小到太空中的地球全景，史诗般的规模",
+                "image": "/imgs/features/landing-page.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
