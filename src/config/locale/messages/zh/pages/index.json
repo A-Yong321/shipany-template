@@ -85,7 +85,7 @@
             ],
             "button": {
                 "title": "AI 视频生成器",
-                "url": "/video-generator"
+                "url": "/ai-video-generator"
             },
             "logos": [
                 "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg", "/imgs/logos/runway.svg"
@@ -101,7 +101,7 @@
             ],
             "button": {
                 "title": "AI 图像生成器",
-                "url": "/image-generator"
+                "url": "/ai-image-generator"
             },
             "logos": [
                 "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
@@ -208,7 +208,7 @@
             ],
             "button": {
               "title": "尝试 AI 图像生成器",
-              "url": "/image-generator"
+              "url": "/ai-image-generator"
             },
             "image": {
               "src": "/imgs/image.png",
@@ -226,7 +226,7 @@
             ],
             "button": {
               "title": "尝试 AI 视频生成器",
-              "url": "/video-generator"
+              "url": "/ai-video-generator"
             },
             "image": {
               "src": "/videos/AI_Kissing.mp4",
