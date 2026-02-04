@@ -1,0 +1,302 @@
+{
+  "ai-fake-date": {
+    "metadata": {
+      "title": "AI假约会生成器 - 浪漫约会照片",
+      "description": "使用AI创建浪漫的假约会照片。在咖啡厅场景中生成情侣瞬间。"
+    },
+    "page": {
+      "title": "AI假约会生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建浪漫约会照片",
+          "description": "使用AI在美丽的咖啡厅场景中生成逼真的假约会场景。",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "buttons": [
+            { "title": "试用假约会", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "浪漫氛围",
+              "description": "创建逼真的咖啡厅和约会场景中的美丽情侣瞬间。",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "hug-generator": {
+    "metadata": {
+      "title": "拥抱生成器 - 温暖拥抱照片",
+      "description": "使用AI创建温馨的拥抱照片。生成充满情感的拥抱瞬间。"
+    },
+    "page": {
+      "title": "AI拥抱照片生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "生成温暖拥抱照片",
+          "description": "使用AI技术创建感人的拥抱瞬间。",
+          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "buttons": [
+            { "title": "试用拥抱生成器", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "情感连接",
+              "description": "创建自然姿势和表情的温馨拥抱瞬间。",
+              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "pregnant-ai": {
+    "metadata": {
+      "title": "孕妇AI生成器 - 孕妇照片",
+      "description": "使用AI创建美丽的孕妇照片。生成逼真的孕妇形象。"
+    },
+    "page": {
+      "title": "孕妇AI照片生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建美丽的孕妇照片",
+          "description": "使用AI技术生成逼真的孕妇照片。",
+          "background_image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" },
+          "buttons": [
+            { "title": "试用孕妇AI", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "自然美丽",
+              "description": "创建带有幸福表情和自然姿势的逼真孕妇照片。",
+              "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "character-360": {
+    "metadata": {
+      "title": "角色360 - 全身旋转照片",
+      "description": "创建360度角色旋转照片。从各个角度展示全身。"
+    },
+    "page": {
+      "title": "角色360生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "360°角色展示",
+          "description": "使用AI创建专业的360度角色旋转照片。",
+          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "buttons": [
+            { "title": "试用角色360", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "完整视角",
+              "description": "通过专业的360度旋转从各个角度展示角色。",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "russian-girlfriend": {
+    "metadata": {
+      "title": "俄罗斯女友AI - 浪漫约会照片",
+      "description": "使用俄罗斯女友AI创建浪漫照片。生成美丽的情侣瞬间。"
+    },
+    "page": {
+      "title": "俄罗斯女友AI生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建俄罗斯女友照片",
+          "description": "使用美丽的俄罗斯女友AI生成浪漫情侣照片。",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" },
+          "buttons": [
+            { "title": "试用俄罗斯女友", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "浪漫瞬间",
+              "description": "创建逼真的俄罗斯女友场景的美丽情侣照片。",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "princess-hug": {
+    "metadata": {
+      "title": "公主抱生成器 - 浪漫抱抱照片",
+      "description": "使用AI创建公主抱照片。生成浪漫的抱抱瞬间。"
+    },
+    "page": {
+      "title": "公主抱生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建公主抱照片",
+          "description": "使用AI技术生成浪漫的公主抱瞬间。",
+          "background_image": { "src": "/imgs/cms/Hug_公主抱_1.png" },
+          "buttons": [
+            { "title": "试用公主抱", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "浪漫姿态",
+              "description": "创建自然姿势和表情的美丽公主抱瞬间。",
+              "image": { "src": "/imgs/cms/Hug_公主抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "celebrity-selfie": {
+    "metadata": {
+      "title": "名人自拍AI - 与名人合影",
+      "description": "使用AI创建与名人的自拍。生成与名人的逼真照片。"
+    },
+    "page": {
+      "title": "名人自拍生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "与名人自拍",
+          "description": "使用AI与您最喜欢的名人创建逼真的自拍。",
+          "background_image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" },
+          "buttons": [
+            { "title": "试用名人自拍", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "逼真融合",
+              "description": "创建与名人有趣姿势的自然自拍。",
+              "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "side-hug": {
+    "metadata": {
+      "title": "侧身拥抱生成器 - 休闲拥抱照片",
+      "description": "使用AI创建侧身拥抱照片。生成休闲友好的拥抱瞬间。"
+    },
+    "page": {
+      "title": "侧身拥抱照片生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建侧身拥抱照片",
+          "description": "使用AI技术生成友好的侧身拥抱瞬间。",
+          "background_image": { "src": "/imgs/cms/Hug_侧身依抱_1.png" },
+          "buttons": [
+            { "title": "试用侧身拥抱", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "休闲友好",
+              "description": "创建休闲温暖表情的自然侧身拥抱瞬间。",
+              "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "chinese-girlfriend": {
+    "metadata": {
+      "title": "中国女友AI - 浪漫约会照片",
+      "description": "使用中国女友AI创建浪漫照片。生成美丽的情侣瞬间。"
+    },
+    "page": {
+      "title": "中国女友AI生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建中国女友照片",
+          "description": "使用美丽的中国女友AI生成浪漫情侣照片。",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" },
+          "buttons": [
+            { "title": "试用中国女友", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "美丽瞬间",
+              "description": "创建逼真的中国女友场景的浪漫情侣照片。",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "french-girlfriend": {
+    "metadata": {
+      "title": "法国女友AI - 浪漫巴黎照片",
+      "description": "使用法国女友AI创建浪漫照片。生成美丽的巴黎情侣瞬间。"
+    },
+    "page": {
+      "title": "法国女友AI生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建法国女友照片",
+          "description": "使用美丽的法国女友AI生成浪漫情侣照片。",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" },
+          "buttons": [
+            { "title": "试用法国女友", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "巴黎浪漫",
+              "description": "在浪漫场景中创建法国女友的美丽情侣照片。",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

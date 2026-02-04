@@ -1,0 +1,302 @@
+{
+  "ai-fake-date": {
+    "metadata": {
+      "title": "AI Fake Date Generator - Romantic Date Photos",
+      "description": "Create romantic fake date photos with AI. Generate couple moments in cafe settings."
+    },
+    "page": {
+      "title": "AI Fake Date Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Romantic Date Photos",
+          "description": "Generate realistic fake date scenes with AI in beautiful cafe settings.",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "buttons": [
+            { "title": "Try Fake Date", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Romantic Atmosphere",
+              "description": "Create beautiful couple moments with realistic cafe and date settings.",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "hug-generator": {
+    "metadata": {
+      "title": "Hug Generator - Warm Embrace Photos",
+      "description": "Create heartwarming hug photos with AI. Generate emotional embrace moments."
+    },
+    "page": {
+      "title": "AI Hug Photo Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Generate Warm Hug Photos",
+          "description": "Create touching hug moments with AI technology.",
+          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "buttons": [
+            { "title": "Try Hug Generator", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Emotional Connection",
+              "description": "Create heartwarming embrace moments with natural poses and expressions.",
+              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "pregnant-ai": {
+    "metadata": {
+      "title": "Pregnant AI Generator - Maternity Photos",
+      "description": "Create beautiful pregnancy photos with AI. Generate realistic maternity images."
+    },
+    "page": {
+      "title": "Pregnant AI Photo Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Beautiful Maternity Photos",
+          "description": "Generate realistic pregnancy photos with AI technology.",
+          "background_image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" },
+          "buttons": [
+            { "title": "Try Pregnant AI", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Natural & Beautiful",
+              "description": "Create realistic maternity photos with happy expressions and natural poses.",
+              "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "character-360": {
+    "metadata": {
+      "title": "Character 360 - Full Body Rotation Photos",
+      "description": "Create 360-degree character rotation photos. Showcase full body from all angles."
+    },
+    "page": {
+      "title": "Character 360 Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "360° Character Showcase",
+          "description": "Create professional 360-degree character rotation photos with AI.",
+          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "buttons": [
+            { "title": "Try Character 360", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Complete View",
+              "description": "Showcase characters from all angles with professional 360-degree rotation.",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "russian-girlfriend": {
+    "metadata": {
+      "title": "Russian Girlfriend AI - Romantic Date Photos",
+      "description": "Create romantic photos with Russian girlfriend AI. Generate beautiful couple moments."
+    },
+    "page": {
+      "title": "Russian Girlfriend AI Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Russian Girlfriend Photos",
+          "description": "Generate romantic couple photos with beautiful Russian girlfriend AI.",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" },
+          "buttons": [
+            { "title": "Try Russian Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Romantic Moments",
+              "description": "Create beautiful couple photos with realistic Russian girlfriend scenarios.",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "princess-hug": {
+    "metadata": {
+      "title": "Princess Hug Generator - Romantic Carry Photos",
+      "description": "Create princess hug photos with AI. Generate romantic carrying moments."
+    },
+    "page": {
+      "title": "Princess Hug Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Princess Hug Photos",
+          "description": "Generate romantic princess carry moments with AI technology.",
+          "background_image": { "src": "/imgs/cms/Hug_公主抱_1.png" },
+          "buttons": [
+            { "title": "Try Princess Hug", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Romantic Gesture",
+              "description": "Create beautiful princess carry moments with natural poses and expressions.",
+              "image": { "src": "/imgs/cms/Hug_公主抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "celebrity-selfie": {
+    "metadata": {
+      "title": "Celebrity Selfie AI - Photos with Famous People",
+      "description": "Create selfies with celebrities using AI. Generate realistic photos with famous people."
+    },
+    "page": {
+      "title": "Celebrity Selfie Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Take Selfies with Celebrities",
+          "description": "Create realistic selfies with your favorite celebrities using AI.",
+          "background_image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" },
+          "buttons": [
+            { "title": "Try Celebrity Selfie", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Realistic Blend",
+              "description": "Create natural-looking selfies with celebrities in fun poses.",
+              "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "side-hug": {
+    "metadata": {
+      "title": "Side Hug Generator - Casual Embrace Photos",
+      "description": "Create side hug photos with AI. Generate casual and friendly embrace moments."
+    },
+    "page": {
+      "title": "Side Hug Photo Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Side Hug Photos",
+          "description": "Generate friendly side embrace moments with AI technology.",
+          "background_image": { "src": "/imgs/cms/Hug_侧身依抱_1.png" },
+          "buttons": [
+            { "title": "Try Side Hug", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Casual & Friendly",
+              "description": "Create natural side hug moments with casual and warm expressions.",
+              "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "chinese-girlfriend": {
+    "metadata": {
+      "title": "Chinese Girlfriend AI - Romantic Date Photos",
+      "description": "Create romantic photos with Chinese girlfriend AI. Generate beautiful couple moments."
+    },
+    "page": {
+      "title": "Chinese Girlfriend AI Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Chinese Girlfriend Photos",
+          "description": "Generate romantic couple photos with beautiful Chinese girlfriend AI.",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" },
+          "buttons": [
+            { "title": "Try Chinese Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Beautiful Moments",
+              "description": "Create romantic couple photos with realistic Chinese girlfriend scenarios.",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "french-girlfriend": {
+    "metadata": {
+      "title": "French Girlfriend AI - Romantic Paris Photos",
+      "description": "Create romantic photos with French girlfriend AI. Generate beautiful Parisian couple moments."
+    },
+    "page": {
+      "title": "French Girlfriend AI Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create French Girlfriend Photos",
+          "description": "Generate romantic couple photos with beautiful French girlfriend AI.",
+          "background_image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" },
+          "buttons": [
+            { "title": "Try French Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Parisian Romance",
+              "description": "Create beautiful couple photos with French girlfriend in romantic settings.",
+              "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

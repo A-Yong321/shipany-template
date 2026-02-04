@@ -112,10 +112,11 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
   };
 
   return (
-    <div
+    <Link
+      href={item.url || '#'}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer"
+      className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer block"
     >
       {/* Before Image (原图) - 用于照片特效 */}
       {item.beforeImage && (
@@ -181,15 +182,6 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
           )}
         </div>
 
-        {/* Play Button Icon - 仅在视频特效时显示 */}
-        {item.video && !item.beforeImage && (
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
-            <div className="h-14 w-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-              <Play size={24} className="fill-white text-white ml-1" />
-            </div>
-          </div>
-        )}
-
         {/* Bottom Text */}
         <div className="transform transition-transform duration-300 group-hover:-translate-y-2 relative z-10">
           <h3 className="text-xl font-bold text-white leading-tight">{item.title}</h3>
@@ -198,6 +190,6 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

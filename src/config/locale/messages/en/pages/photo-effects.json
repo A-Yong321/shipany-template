@@ -34,7 +34,8 @@
               {
                 "id": "ai-fake-date",
                 "title": "AI Fake Date",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "AI Fake Date" },
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "Before AI Fake Date" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png", "alt": "AI Fake Date" },
                 "badge": "NEW",
                 "count": "50K",
                 "url": "/photo-effects/ai-fake-date"
@@ -42,7 +43,8 @@
               {
                 "id": "hug-generator",
                 "title": "Hug Generator",
-                "image": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "Hug Generator" },
+                "beforeImage": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "Before Hug Generator" },
+                "image": { "src": "/imgs/cms/Hug_拥抱_2.png", "alt": "Hug Generator" },
                 "badge": "HOT",
                 "count": "200K",
                 "url": "/photo-effects/hug-generator"
@@ -50,7 +52,8 @@
               {
                 "id": "pregnant-ai",
                 "title": "Pregnant AI",
-                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "Pregnant AI" },
+                "beforeImage": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "Before Pregnant AI" },
+                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png", "alt": "Pregnant AI" },
                 "badge": "HOT",
                 "count": "90K",
                 "url": "/photo-effects/pregnant-ai"
@@ -58,7 +61,8 @@
               {
                 "id": "character-360",
                 "title": "Character 360",
-                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "Character 360" },
+                "beforeImage": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "Before Character 360" },
+                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "Character 360" },
                 "badge": "NEW",
                 "count": "15K",
                 "url": "/photo-effects/character-360"
@@ -66,7 +70,8 @@
               {
                 "id": "russian-girlfriend",
                 "title": "Russian Girlfriend",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Russian Girlfriend" },
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Before Russian Girlfriend" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png", "alt": "Russian Girlfriend" },
                 "badge": "HOT",
                 "count": "180K",
                 "url": "/photo-effects/russian-girlfriend"
@@ -74,14 +79,16 @@
               {
                 "id": "princess-hug",
                 "title": "Princess Hug",
-                "image": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "Princess Hug" },
+                "beforeImage": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "Before Princess Hug" },
+                "image": { "src": "/imgs/cms/Hug_公主抱_2.png", "alt": "Princess Hug" },
                 "count": "75K",
                 "url": "/photo-effects/princess-hug"
               },
               {
                 "id": "celebrity-selfie",
                 "title": "Celebrity Selfie",
-                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "Celebrity Selfie" },
+                "beforeImage": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "Before Celebrity Selfie" },
+                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", "alt": "Celebrity Selfie" },
                 "badge": "HOT",
                 "count": "2.1M",
                 "url": "/photo-effects/celebrity-selfie"
@@ -89,14 +96,16 @@
               {
                 "id": "side-hug",
                 "title": "Side Hug",
-                "image": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "Side Hug" },
+                "beforeImage": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "Before Side Hug" },
+                "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png", "alt": "Side Hug" },
                 "count": "95K",
                 "url": "/photo-effects/side-hug"
               },
               {
                 "id": "chinese-girlfriend",
                 "title": "Chinese Girlfriend",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "Chinese Girlfriend" },
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "Before Chinese Girlfriend" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png", "alt": "Chinese Girlfriend" },
                 "badge": "NEW",
                 "count": "40K",
                 "url": "/photo-effects/chinese-girlfriend"
@@ -104,7 +113,8 @@
               {
                 "id": "french-girlfriend",
                 "title": "French Girlfriend",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "French Girlfriend" },
+                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "Before French Girlfriend" },
+                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png", "alt": "French Girlfriend" },
                 "count": "35K",
                 "url": "/photo-effects/french-girlfriend"
               }

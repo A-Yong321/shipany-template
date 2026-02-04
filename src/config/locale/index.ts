@@ -59,6 +59,7 @@ export const localeMessagesPaths = [
   'pages/video-effects',
   'pages/video-effect-details',
   'pages/photo-effects',
+  'pages/photo-effect-details',
   'pages/api-platform',
 ];
 

@@ -31,6 +31,36 @@
               "reverse": true
             }
           ]
+        },
+        "related_tools": {
+          "block": "related-tools",
+          "title": "You May Also Like",
+          "items": [
+            {
+              "title": "AI Hug Generator",
+              "description": "Create heartwarming hug videos with AI.",
+              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" },
+              "url": "/video-effects/ai-hug"
+            },
+            {
+              "title": "AI Two-Person Kissing",
+              "description": "Generate romantic kissing videos.",
+              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "url": "/video-effects/ai-kissing"
+            },
+            {
+              "title": "AI Twerk Dance",
+              "description": "Create viral twerk dance videos using AI.",
+              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "url": "/video-effects/ai-twerk"
+            },
+             {
+              "title": "AI Muscle Generator",
+              "description": "Add professional bodybuilder muscles to your photos.",
+              "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+              "url": "/video-effects/ai-muscle"
+            }
+          ]
         }
       }
     }
@@ -59,6 +89,336 @@
               "title": "Realistic Texture",
               "description": "Natural skin lighting and muscle definition that looks authentic.",
               "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-bikini": {
+    "metadata": {
+      "title": "AI Bikini Video Generator - Beach Summer Vibes",
+      "description": "Create stunning bikini beach videos with AI. Transform photos into summer beach scenes with realistic movements."
+    },
+    "page": {
+      "title": "AI Bikini Video Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Beach Summer Videos",
+          "description": "Transform your photos into stunning beach scenes with AI-generated bikini effects.",
+          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "buttons": [
+            { "title": "Try AI Bikini Now", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Summer Beach Vibes",
+              "description": "Create realistic beach scenes with natural lighting and summer atmosphere.",
+              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-jiggle": {
+    "metadata": {
+      "title": "AI Jiggle Video Effect - Fun Body Movement Generator",
+      "description": "Add fun jiggle effects to your videos. Create bouncy, energetic movements with AI technology."
+    },
+    "page": {
+      "title": "AI Jiggle Video Effect",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Add Fun Jiggle Effects",
+          "description": "Create entertaining videos with AI-powered body jiggle effects.",
+          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "buttons": [
+            { "title": "Try Jiggle Effect", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Dynamic Movement",
+              "description": "Natural and fun body movements that look realistic and entertaining.",
+              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-twerk": {
+    "metadata": {
+      "title": "AI Twerk Dance Generator - Trending Dance Moves",
+      "description": "Create viral twerk dance videos with AI. Generate energetic dance movements instantly."
+    },
+    "page": {
+      "title": "AI Twerk Dance Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Generate Trending Twerk Videos",
+          "description": "Transform photos into energetic twerk dance videos with AI technology.",
+          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "buttons": [
+            { "title": "Try Twerk Effect", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Trendy Dance Moves",
+              "description": "Create popular dance videos with realistic movements and energy.",
+              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-kissing-cheek": {
+    "metadata": {
+      "title": "AI Cheek Kiss Generator - Cute Affectionate Moments",
+      "description": "Create adorable cheek kiss videos with AI. Generate gentle, affectionate moments."
+    },
+    "page": {
+      "title": "AI Cheek Kiss Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Cute Cheek Kiss Videos",
+          "description": "Generate gentle and affectionate cheek kiss moments with AI.",
+          "background_image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" },
+          "buttons": [
+            { "title": "Try Cheek Kiss", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Gentle & Affectionate",
+              "description": "Create sweet and cute moments with natural cheek kiss animations.",
+              "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-dance-pop": {
+    "metadata": {
+      "title": "AI Pop Dance Generator - Create Viral Dance Videos",
+      "description": "Generate trending pop dance videos with AI. Create high-energy dance movements."
+    },
+    "page": {
+      "title": "AI Pop Dance Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Viral Pop Dance Videos",
+          "description": "Transform photos into energetic pop dance performances with AI.",
+          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "buttons": [
+            { "title": "Try Pop Dance", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "High Energy Moves",
+              "description": "Create trending dance videos with professional choreography and movements.",
+              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "super-muscle": {
+    "metadata": {
+      "title": "Super Muscle AI - Extreme Bodybuilder Transformation",
+      "description": "Create extreme muscle transformations with AI. Add professional bodybuilder physique to photos."
+    },
+    "page": {
+      "title": "Super Muscle AI Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Extreme Muscle Transformation",
+          "description": "Get the ultimate bodybuilder physique in your photos with AI.",
+          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "buttons": [
+            { "title": "Try Super Muscle", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Professional Physique",
+              "description": "Extreme muscle definition with realistic texture and lighting.",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "body-jiggle": {
+    "metadata": {
+      "title": "Body Jiggle Effect - Fun Bouncy Movements",
+      "description": "Add entertaining body jiggle effects to videos. Create fun and bouncy movements."
+    },
+    "page": {
+      "title": "Body Jiggle Effect Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Add Bouncy Body Effects",
+          "description": "Create fun videos with realistic body jiggle movements.",
+          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "buttons": [
+            { "title": "Try Body Jiggle", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Natural Bounce",
+              "description": "Realistic and entertaining body movements with natural physics.",
+              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "twerk-master": {
+    "metadata": {
+      "title": "Twerk Master AI - Professional Dance Generator",
+      "description": "Create professional twerk dance videos with AI. Master-level dance movements."
+    },
+    "page": {
+      "title": "Twerk Master AI Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Master Twerk Dance Videos",
+          "description": "Generate professional-level twerk dance performances with AI.",
+          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "buttons": [
+            { "title": "Try Twerk Master", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Professional Moves",
+              "description": "Master-level dance choreography with smooth and energetic movements.",
+              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-hug": {
+    "metadata": {
+      "title": "AI Hug Generator - Warm Embrace Videos",
+      "description": "Create heartwarming hug videos with AI. Generate emotional embrace moments."
+    },
+    "page": {
+      "title": "AI Hug Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Create Warm Hug Videos",
+          "description": "Generate emotional and heartwarming hug moments with AI technology.",
+          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "buttons": [
+            { "title": "Try AI Hug", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Emotional Connection",
+              "description": "Create touching moments with realistic and warm embrace animations.",
+              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-360-rotation": {
+    "metadata": {
+      "title": "AI 360 Rotation - Cinematic Character Rotation",
+      "description": "Create smooth 360-degree rotation videos. Cinematic character showcase with AI."
+    },
+    "page": {
+      "title": "AI 360 Rotation Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "360° Cinematic Rotation",
+          "description": "Create professional 360-degree rotation videos with smooth camera movements.",
+          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "buttons": [
+            { "title": "Try 360 Rotation", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Smooth Cinematic",
+              "description": "Professional camera rotation with cinematic quality and smooth transitions.",
+              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "ai-earth-zoom": {
+    "metadata": {
+      "title": "AI Earth Zoom - Dramatic Space to Earth Effect",
+      "description": "Create dramatic earth zoom effects. Zoom from space to surface with AI."
+    },
+    "page": {
+      "title": "AI Earth Zoom Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Dramatic Earth Zoom Effects",
+          "description": "Create stunning zoom effects from space to Earth surface with AI.",
+          "background_image": { "src": "/imgs/bg/tree.jpg" },
+          "buttons": [
+            { "title": "Try Earth Zoom", "url": "/ai-video-generator", "icon": "Zap" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Cinematic Reveal",
+              "description": "Dramatic zoom effects with smooth transitions from space to ground level.",
+              "image": { "src": "/imgs/features/landing-page.png" }
             }
           ]
         }

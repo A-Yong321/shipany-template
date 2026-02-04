@@ -35,6 +35,7 @@
                 "id": "ai-kissing",
                 "title": "AI Kissing Video Generator",
                 "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI Kissing" },
+                "video": "/videos/AI_Kissing.mp4",
                 "badge": "HOT",
                 "count": "3M",
                 "url": "/video-effects/ai-kissing"
@@ -43,6 +44,7 @@
                 "id": "ai-muscle",
                 "title": "AI Muscle Generator",
                 "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png", "alt": "AI Muscle" },
+                "video": "/videos/肌肉展示.mp4",
                 "badge": "HOT",
                 "count": "149.4K",
                 "url": "/video-effects/ai-muscle"
@@ -51,6 +53,7 @@
                 "id": "ai-bikini",
                 "title": "AI Bikini",
                 "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI Bikini" },
+                "video": "/videos/肚皮舞.mp4",
                 "badge": "HOT",
                 "count": "127.1K",
                 "url": "/video-effects/ai-bikini"
@@ -59,6 +62,7 @@
                 "id": "ai-jiggle",
                 "title": "AI Jiggle Video Effect",
                 "image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png", "alt": "AI Jiggle" },
+                "video": "/videos/抖动身体.mp4",
                 "badge": "HOT",
                 "count": "73.9K",
                 "url": "/video-effects/ai-jiggle"
@@ -67,6 +71,7 @@
                 "id": "ai-twerk",
                 "title": "AI Twerk Dance",
                 "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "AI Twerk" },
+                "video": "/videos/扭臀舞.mp4",
                 "badge": "NEW",
                 "count": "50K",
                 "url": "/video-effects/ai-twerk"
@@ -83,6 +88,7 @@
                 "id": "ai-dance-pop",
                 "title": "AI Dance Pop",
                 "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI Dance Pop" },
+                "video": "/videos/肚皮舞.mp4",
                 "count": "25K",
                 "url": "/video-effects/ai-dance-pop"
               },
@@ -90,6 +96,7 @@
                 "id": "super-muscle",
                 "title": "Super Muscle",
                 "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png", "alt": "Super Muscle" },
+                "video": "/videos/肌肉展示.mp4",
                 "count": "90K",
                 "url": "/video-effects/super-muscle"
               },
@@ -97,6 +104,7 @@
                 "id": "body-jiggle",
                 "title": "Body Jiggle",
                 "image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png", "alt": "Body Jiggle" },
+                "video": "/videos/抖动身体.mp4",
                 "count": "66K",
                 "url": "/video-effects/body-jiggle"
               },
@@ -104,6 +112,7 @@
                 "id": "twerk-master",
                 "title": "Twerk Master",
                 "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "Twerk Master" },
+                "video": "/videos/扭臀舞.mp4",
                 "badge": "HOT",
                 "count": "110K",
                 "url": "/video-effects/twerk-master"
