@@ -1,0 +1,309 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "logos",
+      "introduce",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "All-in-One AI Image & Video Creation Platform",
+        "highlight_text": "Creation Platform",
+        "description": "Professional platform for creating stunning visual content. Transform text into images, generate videos, create AI art and headshots.<br/>Free tools for photo editing, text to image, and image to video conversion.",
+        "announcement": {
+          "badge": "New",
+          "title": "🎉 1photoai Launch Special",
+          "url": "/pricing"
+        },
+        "tip": "🎁 Start creating for free today",
+        "buttons": [
+          {
+            "title": "Start Creating",
+            "icon": "Zap",
+            "url": "/login",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "Explore Tools",
+            "icon": "Telescope",
+            "url": "/#features",
+            "target": "_self",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": true,
+        "avatars_tip": "Trusted by 10,000+ creators",
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/admin.png",
+          "alt": "AI Creation Dashboard",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "AI Creation Dashboard",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/tree.jpg",
+          "alt": "hero background"
+        }
+      },
+      "logos": {
+        "id": "logos",
+        "title": "Empowering creators from top companies",
+        "items": [
+          {
+            "title": "Next.js",
+            "image": {
+              "src": "/imgs/logos/nextjs.svg",
+              "alt": "Next.js"
+            }
+          },
+          {
+            "title": "React",
+            "image": {
+              "src": "/imgs/logos/react.svg",
+              "alt": "React"
+            }
+          },
+          {
+            "title": "TailwindCSS",
+            "image": {
+              "src": "/imgs/logos/tailwindcss.svg",
+              "alt": "TailwindCSS"
+            }
+          },
+          {
+            "title": "Vercel",
+            "image": {
+              "src": "/imgs/logos/vercel.svg",
+              "alt": "Vercel"
+            }
+          }
+        ]
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "What is 1photoai",
+        "label": "About Us",
+        "description": "1photoai is an all-in-one platform for creating stunning images and cinematic videos. We provide professional visual creation tools including video generation, image enhancement, and various creative filters.",
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "Interface Preview"
+        },
+        "items": [
+          {
+            "title": "AI Image Generation",
+            "description": "Transform text into stunning high-quality images instantly with our advanced models.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "/imgs/features/1.png",
+              "alt": "Image Generation"
+            }
+          },
+          {
+            "title": "Video Creation",
+            "description": "Create cinematic videos from text or images. Bring your static content to life.",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/imgs/features/2.png",
+              "alt": "Video Creation"
+            }
+          },
+          {
+            "title": "Photo Editing Tools",
+            "description": "14+ powerful tools including background remover, object eraser, and photo restoration.",
+            "icon": "RiEditLine",
+            "image": {
+              "src": "/imgs/features/3.png",
+              "alt": "Photo Editing"
+            }
+          },
+          {
+            "title": "Style Transfer",
+            "description": "Transform your photos with 437+ unique artistic styles and filters.",
+            "icon": "RiPaletteLine",
+            "image": {
+              "src": "/imgs/features/4.png",
+              "alt": "Style Transfer"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "14+ Powerful Image Editing Tools",
+        "description": "Everything you need to perfect your visual content.",
+        "items": [
+          {
+            "title": "Background Remover",
+            "description": "Remove backgrounds from images instantly with AI precision.",
+            "icon": "RiEraserLine"
+          },
+          {
+            "title": "AI Object Remover",
+            "description": "Erase unwanted objects from photos seamlessly.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Watermark Removal",
+            "description": "Remove watermarks and logos from images professionally.",
+            "icon": "RiDropLine"
+          },
+          {
+            "title": "Recolor Image",
+            "description": "Change and adjust colors in your images with AI.",
+            "icon": "RiPaletteFill"
+          },
+          {
+            "title": "AI Image Expander",
+            "description": "Expand image boundaries with AI-generated content.",
+            "icon": "RiAspectRatioLine"
+          },
+          {
+            "title": "Photo Restoration",
+            "description": "Restore and enhance old or damaged photos.",
+            "icon": "RiHistoryLine"
+          },
+          {
+            "title": "Colorize Photo",
+            "description": "Add realistic colors to black and white photos.",
+            "icon": "RiContrastDropLine"
+          },
+          {
+            "title": "AI Clothes Changer",
+            "description": "Try on different outfits virtually with AI.",
+            "icon": "RiTShirtLine"
+          },
+          {
+            "title": "Hairstyle Changer",
+            "description": "Preview different hairstyles on your photos.",
+            "icon": "RiUserSmileLine"
+          },
+          {
+            "title": "AI Facial Expression",
+            "description": "Change facial expressions in photos naturally.",
+            "icon": "RiEmotionHappyLine"
+          },
+          {
+            "title": "AI Age Progression",
+            "description": "See how you'll look at different ages.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "Gender Swap",
+            "description": "Transform gender appearance in photos realistically.",
+            "icon": "RiWomenLine"
+          }
+        ]
+      },
+      "stats": {
+        "id": "stats",
+        "title": "Trusted by Creators Worldwide",
+        "description": "Join thousands of users creating amazing content with 1photoai.",
+        "items": [
+          {
+            "title": "1M+",
+            "description": "Images Generated"
+          },
+          {
+            "title": "500k+",
+            "description": "Videos Created"
+          },
+          {
+            "title": "14+",
+            "description": "AI Tools"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "What Our Users Say",
+        "description": "See how 1photoai is changing the way people create content.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "Content Creator",
+            "quote": "1photoai has completely transformed my workflow. The video generation capabilities are mind-blowing!",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Sarah"
+            }
+          },
+          {
+            "name": "Mike Chen",
+            "role": "Digital Artist",
+            "quote": "The style transfer tools are incredible. I can explore so many artistic directions in minutes.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Mike"
+            }
+          },
+          {
+            "name": "Emily Ross",
+            "role": "Marketing Manager",
+            "quote": "We use the background remover and object eraser daily for our product photos. It's a huge time saver.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Emily"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "description": "Got questions? We've got answers.",
+        "items": [
+          {
+            "question": "What is 1photoai?",
+            "answer": "1photoai is an all-in-one platform for creating stunning images and cinematic videos. Using 1photoai, you get professional visual creation tools including video generation, image enhancement, and various creative filters."
+          },
+          {
+            "question": "How do I get started with 1photoai?",
+            "answer": "Simply sign up for a free account, choose your desired tool from our collection of creative features, and start creating. No technical skills required – using 1photoai is easy for everyone with our intuitive interface."
+          },
+          {
+            "question": "What types of content can I create with 1photoai?",
+            "answer": "With 1photoai, you can create videos, enhance images to 4K quality, apply creative filters, generate visuals from text, swap faces in videos, create dance videos, and much more."
+          },
+          {
+            "question": "Do you offer a free trial?",
+            "answer": "Yes! You can try 1photoai with our free tier to explore the platform and test various features. using the free plan, you can experience the quality before upgrading."
+          },
+          {
+            "question": "Can I cancel my subscription anytime?",
+            "answer": "Yes, you can cancel your subscription at any time from your account settings. If you cancel, you'll continue to have access to premium features until the end of your current billing period."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Ready to Start Creating?",
+        "description": "Join 1photoai today and unleash your creativity.",
+        "buttons": [
+          {
+            "title": "Get Started for Free",
+            "url": "/login",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

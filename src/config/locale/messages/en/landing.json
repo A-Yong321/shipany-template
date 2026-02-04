@@ -1,0 +1,202 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "1photoai",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "1photoai",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Features",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Tools",
+          "icon": "RiAppsLine",
+          "children": [
+             {
+              "title": "Background Remover",
+              "description": "Remove image background",
+              "url": "/tools/background-remover",
+              "icon": "RiEraserLine"
+             },
+             {
+              "title": "Object Remover",
+              "description": "Remove unwanted objects",
+              "url": "/tools/object-remover",
+              "icon": "RiMagicLine"
+             },
+             {
+              "title": "Image Expander",
+              "description": "Expand image boundaries",
+              "url": "/tools/image-expander",
+              "icon": "RiAspectRatioLine"
+             },
+             {
+              "title": "All Tools",
+              "description": "View all 14+ tools",
+              "url": "/tools",
+              "icon": "RiApps2Line"
+             }
+          ]
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "Blog",
+          "url": "/blog",
+          "icon": "Newspaper"
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "My Creations",
+          "url": "/dashboard",
+          "icon": "RiGalleryLine"
+        },
+        {
+          "title": "Billing",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "🎉 Welcome to 1photoai! Start creating stunning visuals today."
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "1photoai",
+      "description": "Professional platform for creating stunning visual content. Transform text into images, generate videos, create AI art and headshots.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "1photoai",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Product",
+          "children": [
+            {
+              "title": "Features",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "Tools",
+              "url": "/tools",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "children": [
+            {
+              "title": "Documentation",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Blog",
+              "url": "/blog",
+              "target": "_self"
+            },
+             {
+              "title": "Help Center",
+              "url": "/help",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Company",
+          "children": [
+            {
+              "title": "About",
+              "url": "/about",
+              "target": "_self"
+            },
+             {
+              "title": "Terms",
+              "url": "/terms-of-service",
+              "target": "_self"
+            },
+            {
+              "title": "Privacy",
+              "url": "/privacy-policy",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/1photoai",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/1photoai",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@1photoai.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}
