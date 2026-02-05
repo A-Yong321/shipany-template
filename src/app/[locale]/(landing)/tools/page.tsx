@@ -1,8 +1,7 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 
-import { getThemePage } from '@/core/theme';
 import { getMetadata } from '@/shared/lib/seo';
-import { DynamicPage } from '@/shared/types/blocks/landing';
+import { ToolsPage } from '@/themes/default/pages/tools-page';
 
 export const revalidate = 3600;
 
@@ -11,26 +10,16 @@ export const generateMetadata = getMetadata({
   canonicalUrl: '/tools',
 });
 
-export default async function ToolsPage({
+export default async function ToolsPageRoute({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ type?: string }>;
 }) {
   const { locale } = await params;
+  const { type } = await searchParams;
   setRequestLocale(locale);
 
-  // load tools data
-  const t = await getTranslations('pages.tools');
-
-  // build page sections
-  const page: DynamicPage = {
-    title: t.raw('page.title'),
-    sections: t.raw('page.sections'),
-    show_sections: t.raw('page.show_sections'),
-  };
-
-  // load page component
-  const Page = await getThemePage('dynamic-page');
-
-  return <Page locale={locale} page={page} />;
+  return <ToolsPage locale={locale} initialType={type} />;
 }

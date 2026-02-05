@@ -943,7 +943,163 @@
         "faq": {
              "block": "faq",
              "title": "FAQs",
-             "items": [{ "question": "What is the resolution?", "answer": "We support up to 4K resolution output." }]
+             "items": [{ "question": "What is the resolution?", "answer": "We support output resolutions up to 4K." }]
+        }
+      }
+    }
+  },
+  "ai-dance": {
+    "metadata": {
+      "title": "AI Dance Generator - Make Photos Dance",
+      "description": "Use AI technology to make static photos dance. Support various dance styles including belly dance and more."
+    },
+    "page": {
+      "title": "AI Dance Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Make Your Photos Dance",
+          "description": "Use AI technology to bring dynamic dance movements to your photos.",
+          "background_image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Dance Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Dance Generator",
+          "description": "Bring static photos to life with various dance styles.",
+          "images": [{ "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" }]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What dance styles are supported?", "answer": "We support belly dance and many other dance styles." }]
+        }
+      }
+    }
+  },
+  "mimic": {
+    "metadata": {
+      "title": "AI Mimic Effect - Make Photos Mimic Movements",
+      "description": "Use AI technology to make photos mimic various movements, including hot pole dance, twerk, electro dance and more."
+    },
+    "page": {
+      "title": "AI Mimic Effect",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI Mimic Effect",
+          "description": "Make your photos mimic various movements and dances.",
+          "background_image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Mimic Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Mimic Effect",
+          "description": "Make photos mimic various movements including hot pole dance, twerk, electro dance, Chanel dance, AI standing split, Reze dance, and waist twist.",
+          "images": [
+            { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+            { "src": "/img_video/imgs/模仿_扭臀舞_2.png" },
+            { "src": "/img_video/imgs/模仿_电摇舞_2.png" }
+          ]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What movements are supported?", "answer": "We support hot pole dance, twerk, electro dance, Chanel dance and many other movements." }]
+        }
+      }
+    }
+  },
+  "visual-effects": {
+    "metadata": {
+      "title": "AI Visual Effects - Creative Visual Effects",
+      "description": "Use AI technology to add stunning visual effects to photos, including explosion effects, ocean dress, dimension crossing and more."
+    },
+    "page": {
+      "title": "AI Visual Effects",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI Visual Effects",
+          "description": "Add stunning visual effects to your photos.",
+          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Visual Effects Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Visual Effects",
+          "description": "Add various creative visual effects to photos, including AI explosion effect, epic explosion walk, ocean dress, dimension crossing, entering mouth, and helicopter hangar transformation.",
+          "images": [
+            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+            { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png" },
+            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" }
+          ]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What visual effects are supported?", "answer": "We support explosion effects, ocean dress, dimension crossing and many other creative visual effects." }]
+        }
+      }
+    }
+  },
+  "role-swap": {
+    "metadata": {
+      "title": "AI Role Swap - Creative Scene Transformation",
+      "description": "Use AI technology to achieve creative role swapping, including AI tiger hug, rainy walk, meeting future child and more scenes."
+    },
+    "page": {
+      "title": "AI Role Swap",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI Role Swap",
+          "description": "Achieve creative role swapping and scene transformation.",
+          "background_image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Role Swap Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Role Swap",
+          "description": "Achieve various creative role swap scenes, including AI tiger hug, rainy walk, meeting future child, meeting old me, luxury car ride, interrogation room, scream, and rainy night.",
+          "images": [
+            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+            { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
+            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
+          ]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What scenes are supported?", "answer": "We support AI tiger hug, rainy walk, meeting future child and many other creative scenes." }]
         }
       }
     }

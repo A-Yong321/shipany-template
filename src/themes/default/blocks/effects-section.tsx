@@ -10,7 +10,12 @@ import { Section } from '@/shared/types/blocks/landing';
 
 type EffectItem = {
   title: string;
-  image: {
+  // 新数据结构 (from tools.ts)
+  originalSrc?: string;
+  effectSrc?: string;
+  videoSrc?: string;
+  // 旧数据结构 (向后兼容)
+  image?: {
     src: string;
     alt: string;
   };
@@ -95,6 +100,13 @@ export function EffectsSection({
 function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  // 兼容新旧数据结构
+  const originalImage = item.originalSrc || item.beforeImage?.src || item.image?.src;
+  const effectImage = item.effectSrc || item.image?.src;
+  const videoSrc = item.videoSrc || item.video;
+  const hasVideo = !!videoSrc;
+  const hasEffectImage = !!item.effectSrc || !!item.beforeImage;
+
   const handleMouseEnter = () => {
     if (videoRef.current) {
       videoRef.current.play().catch(() => {
@@ -118,38 +130,36 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
       onMouseLeave={handleMouseLeave}
       className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer block"
     >
-      {/* Before Image (原图) - 用于照片特效 */}
-      {item.beforeImage && (
+      {/* 原图 - 始终显示 */}
+      {originalImage && (
         <Image
-          src={item.beforeImage.src}
-          alt={item.beforeImage.alt}
+          src={originalImage}
+          alt={item.title}
           fill
-          className="object-cover transition-opacity duration-700 group-hover:opacity-0"
+          className={cn(
+            "object-cover transition-opacity duration-700",
+            hasVideo || hasEffectImage ? "group-hover:opacity-0" : "group-hover:scale-110"
+          )}
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
         />
       )}
 
-      {/* Main Image / Thumbnail (效果图或视频封面) */}
-      <Image
-        src={item.image.src}
-        alt={item.image.alt}
-        fill
-        className={cn(
-          "object-cover transition-all duration-500",
-          item.beforeImage 
-            ? "opacity-0 group-hover:opacity-100" 
-            : item.video 
-              ? "group-hover:scale-110 group-hover:opacity-0"
-              : "group-hover:scale-110"
-        )}
-        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
-      />
+      {/* 效果图 - 仅用于照片特效(无视频时) */}
+      {effectImage && !hasVideo && (
+        <Image
+          src={effectImage}
+          alt={`${item.title} - 效果`}
+          fill
+          className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
+        />
+      )}
 
-      {/* Video Overlay - 仅用于视频特效 */}
-      {item.video && (
+      {/* 视频 - 仅用于视频特效 */}
+      {hasVideo && (
         <video
           ref={videoRef}
-          src={item.video}
+          src={videoSrc}
           className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           muted
           loop

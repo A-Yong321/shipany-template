@@ -1,96 +1,188 @@
 {
-  "background-remover": {
+  "text-to-image": {
     "metadata": {
-      "title": "AI 背景移除 - 即时移除图片背景",
-      "description": "使用 AI 精度移除图片背景。非常适合产品照片、肖像和专业编辑。"
+      "title": "AI 文生图生成器 - 创建 AI 艺术",
+      "description": "用 AI 将文字转化为惊艳的图片。"
     },
     "page": {
-      "title": "AI 背景移除",
+      "title": "AI 文生图生成器",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "即时移除背景",
-          "description": "专业的 AI 驱动背景移除。几秒钟内获得像素级完美结果。",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "背景移除" },
-          "buttons": [
-            { "title": "开始移除", "url": "/ai-image-generator", "icon": "RiEraserLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "人像", "prompt": "一个美丽的女人肖像，赛博朋克风格，霓虹灯", "image": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              { "category": "风景", "prompt": "未来城市景观，日落，飞行汽车", "image": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              { "category": "动漫", "prompt": "魔法森林中的动漫风格角色", "image": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" },
+              { "category": "科幻", "prompt": "降落在外星球的科幻飞船", "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
+        "intro": {
+          "title": "将文字转化为艺术",
+          "description": "使用我们先进的 A​​I 模型，从简单的文字描述创建令人惊叹的图片。",
+          "images": [{ "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何创作 AI 艺术？",
+          "description": "几秒钟内生成惊艳图片。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "输入文字描述。" },
+            { "title": "步骤 2", "description": "选择风格和宽高比。" },
+            { "title": "步骤 3", "description": "点击生成。" }
+          ],
+          "button": { "title": "立即创作图片", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "可以商用吗？", "answer": "是的，您拥有这些图片的版权。" }]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门效果",
           "items": [
-            {
-              "title": "像素级精度",
-              "description": "我们的 AI 准确检测边缘并保留头发和毛发等精细细节。",
-              "image": { "src": "/imgs/features/landing-page.png", "alt": "精度" }
-            },
-            {
-              "title": "批量处理",
-              "description": "一次性从多张图片中移除背景以节省时间。",
-              "image": { "src": "/imgs/features/admin-settings.png", "alt": "批量" },
-              "reverse": true
-            }
+            { "title": "图生图", "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }, "url": "/image-to-image" },
+            { "title": "文生视频", "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }, "url": "/text-to-video" },
+            { "title": "图生视频", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/image-to-video" }
           ]
         }
       }
     }
   },
-  "object-remover": {
+  "image-to-image": {
     "metadata": {
-      "title": "AI 物体移除 - 从照片中擦除不需要的物体",
-      "description": "使用 AI 无缝移除照片中不需要的物体、人物、文字和水印。"
+      "title": "AI 图生图生成器 - 转换照片风格",
+      "description": "用 AI 将现有照片转换为新风格。"
     },
     "page": {
-      "title": "AI 物体移除",
+      "title": "AI 图生图生成器",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "从照片中擦除任何内容",
-          "description": "使用 AI 魔法移除不需要的物体、人物、文字和水印。",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "物体移除" },
-          "buttons": [
-            { "title": "开始擦除", "url": "/ai-image-generator", "icon": "RiMagicLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "赛博", "prompt": "转换为赛博朋克风格", "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+              { "category": "油画", "prompt": "油画风格转换", "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" },
+              { "category": "动漫", "prompt": "将照片转换为动漫风格", "image": "/imgs/cms/Twerk_扭臀舞_1.png" },
+              { "category": "素描", "prompt": "铅笔素描绘画风格", "image": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
+        "intro": {
+          "title": "重塑您的照片风格",
+          "description": "使用我们的图生图转换工具，给您的照片焕然一新的外观。",
+          "images": [{ "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何重塑照片风格？",
+          "description": "轻松转换风格。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "上传图片。" },
+            { "title": "步骤 2", "description": "描述新风格。" },
+            { "title": "步骤 3", "description": "生成。" }
+          ],
+          "button": { "title": "立即重塑风格", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "会保持形状吗？", "answer": "是的，它会保留结构。" }]
+        }
+      }
+    }
+  },
+  "text-to-video": {
+    "metadata": {
+      "title": "AI 文生视频生成器 - 创建 AI 视频",
+      "description": "将文字描述转化为视频片段。"
+    },
+    "page": {
+      "title": "AI 文生视频生成器",
+      "sections": {
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "电影感", "prompt": "群山的电影感无人机镜头", "image": "/imgs/cms/Jiggle_抖动身体_1.png" },
+              { "category": "卡通", "prompt": "可爱的卡通角色跳舞", "image": "/imgs/cms/Jiggle_抖动身体_2.png" },
+              { "category": "自然", "prompt": "花开的延时摄影", "image": "/imgs/cms/Muscle_肌肉展示_2.png" }
+            ]
+          }
+        },
+        "intro": {
+          "title": "文生视频魔法",
+          "description": "简要描述您的场景，看 AI 将其转化为视频。",
+          "images": [{ "src": "/imgs/cms/Jiggle_抖动身体_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何创作 AI 视频？",
+          "description": "将文字转化为视频片段。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "编写提示词。" },
+            { "title": "步骤 2", "description": "点击生成。" },
+            { "title": "步骤 3", "description": "下载您的视频。" }
+          ],
+          "button": { "title": "创建视频", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "视频长度？", "answer": "通常 2-4 秒。" }]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门效果",
           "items": [
-            {
-              "title": "智能内容填充",
-              "description": "AI 智能填充移除区域以匹配周围环境。",
-              "image": { "src": "/imgs/features/admin-settings.png", "alt": "智能填充" }
-            }
+            { "title": "文生图", "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }, "url": "/text-to-image" },
+            { "title": "图生图", "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }, "url": "/image-to-image" },
+            { "title": "图生视频", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/image-to-video" }
           ]
         }
       }
     }
   },
-  "image-expander": {
+  "image-to-video": {
     "metadata": {
-      "title": "AI 图片扩展 - 智能扩展图片边界",
-      "description": "使用 AI 扩展您的图片边界。智能生成内容以填充扩展区域。"
+      "title": "AI 图生视频生成器 - 让照片动起来",
+      "description": "用 AI 视频生成让静态照片栩栩如生。"
     },
     "page": {
-      "title": "AI 图片扩展",
+      "title": "AI 图生视频生成器",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "智能扩展您的图片",
-          "description": "扩展图片边界，让 AI 自然填充其余部分。",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "图片扩展" },
-          "buttons": [
-            { "title": "开始扩展", "url": "/ai-image-generator", "icon": "RiAspectRatioLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "运动", "prompt": "给这个场景添加微妙的运动", "image": "/imgs/cms/Hug_拥抱_1.png" },
+              { "category": "变形", "prompt": "将主体变形为其他东西", "image": "/imgs/cms/Hug_拥抱_2.png" },
+              { "category": "缩放", "prompt": "缓慢放大效果", "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
-          "items": [
-            {
-              "title": "自然扩展",
-              "description": "AI 分析您的图片并生成完美融合的无缝扩展。",
-              "image": { "src": "/imgs/features/user-billing.png", "alt": "自然" }
-            }
-          ]
+        "intro": {
+          "title": "让您的照片动起来",
+          "description": "将任何静态图片转化为动态视频片段。",
+          "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何让照片动起来？",
+          "description": "赋予图片生命。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "上传照片。" },
+            { "title": "步骤 2", "description": "描述运动（可选）。" },
+            { "title": "步骤 3", "description": "生成动画。" }
+          ],
+          "button": { "title": "立即动画化", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "逼真吗？", "answer": "是的，运动流畅。" }]
         }
       }
     }

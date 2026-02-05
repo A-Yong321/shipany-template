@@ -55,7 +55,7 @@
                 {
                   "title": "View More",
                   "description": "Explore all video effects",
-                  "url": "/video-effects",
+                  "url": "/tools?type=video",
                   "icon": "ArrowRight"
                 }
               ]
@@ -98,7 +98,7 @@
                 {
                   "title": "View More",
                   "description": "Explore all photo effects",
-                  "url": "/photo-effects",
+                  "url": "/tools?type=photo",
                   "icon": "ArrowRight"
                 }
               ]

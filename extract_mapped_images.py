@@ -47,11 +47,11 @@ try:
         row = img.anchor._from.row + 1
         col = img.anchor._from.col + 1
         
-        # We want Col D (4) -> _1 and Col F (6) -> _2
+        # We want Col D (4) -> _1 and Col E (5) -> _2
         # Debug: check rows/cols
         # print(f"Img {i} at {row},{col}")
 
-        if col not in [4, 6]:
+        if col not in [4, 5]:
             continue
             
         # Lookup metadata
@@ -69,9 +69,9 @@ try:
         c_clean = clean_name(c_val)
         
         suffix = None
-        if col == 4: # Column D
+        if col == 4: # Column D - 原图
             suffix = "1"
-        elif col == 6: # Column F
+        elif col == 5: # Column E - 效果图
             suffix = "2"
         
         filename = f"{b_clean}_{c_clean}_{suffix}.png"

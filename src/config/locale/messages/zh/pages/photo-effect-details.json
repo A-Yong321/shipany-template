@@ -1,20 +1,44 @@
 {
   "ai-fake-date": {
     "metadata": {
-      "title": "AI假约会生成器 - 浪漫约会照片",
-      "description": "使用AI创建浪漫的假约会照片。在咖啡厅场景中生成情侣瞬间。"
+      "title": "AI 假约会生成器 - 浪漫约会照片",
+      "description": "使用 AI 创建浪漫的假约会照片。在咖啡厅场景中生成情侣瞬间。"
     },
     "page": {
-      "title": "AI假约会生成器",
+      "title": "AI 假约会生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "创建浪漫约会照片",
-          "description": "使用AI在美丽的咖啡厅场景中生成逼真的假约会场景。",
+          "description": "使用 AI 在美丽的咖啡厅场景中生成逼真的假约会场景。",
           "background_image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
           "buttons": [
-            { "title": "试用假约会", "url": "/ai-image-generator", "icon": "Zap" }
+            { "title": "试用假约会", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 假约会生成器",
+          "data": {
+            "examples": [
+              { 
+                "category": "咖啡厅", 
+                "prompt": "舒适咖啡厅里的浪漫约会，桌上的拿铁拉花，柔和灯光",
+                "image": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
+              },
+              { 
+                "category": "晚餐", 
+                "prompt": "烛光晚餐约会，高级餐厅氛围，优雅着装",
+                "image": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
+              },
+              { 
+                "category": "公园", 
+                "prompt": "公园漫步约会，牵手，秋叶",
+                "image": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -25,6 +49,41 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "创建浪漫约会照片",
+          "description": "使用 AI 生成逼真的假约会场景。非常适合社交媒体或仅仅是为了好玩。",
+          "images": [
+            { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+            { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 假约会？",
+          "description": "几秒钟内创建约会照片。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择约会场景。" },
+            { "title": "步骤 2", "description": "上传您的照片。" },
+            { "title": "步骤 3", "description": "生成您的约会照片。" }
+          ],
+          "button": { "title": "创建约会照片", "url": "#tool" }
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [
+            { "question": "逼真吗？", "answer": "是的，我们的 AI 创建照片级逼真的融合效果。" }
+          ]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门效果",
+          "items": [
+            { "title": "AI 拥抱", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/video-effects/ai-hug" }
+          ]
         }
       }
     }
@@ -32,15 +91,15 @@
   "hug-generator": {
     "metadata": {
       "title": "拥抱生成器 - 温暖拥抱照片",
-      "description": "使用AI创建温馨的拥抱照片。生成充满情感的拥抱瞬间。"
+      "description": "使用 AI 创建温馨的拥抱照片。生成充满情感的拥抱瞬间。"
     },
     "page": {
-      "title": "AI拥抱照片生成器",
+      "title": "AI 拥抱照片生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "生成温暖拥抱照片",
-          "description": "使用AI技术创建感人的拥抱瞬间。",
+          "description": "使用 AI 技术创建感人的拥抱瞬间。",
           "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
           "buttons": [
             { "title": "试用拥抱生成器", "url": "/ai-image-generator", "icon": "Zap" }
@@ -55,25 +114,36 @@
               "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "温暖拥抱照片",
+          "description": "使用 AI 生成感人的拥抱照片。",
+          "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "免费吗？", "answer": "是的，免费试用。" }]
         }
       }
     }
   },
   "pregnant-ai": {
     "metadata": {
-      "title": "孕妇AI生成器 - 孕妇照片",
-      "description": "使用AI创建美丽的孕妇照片。生成逼真的孕妇形象。"
+      "title": "孕妇 AI 生成器 - 孕妇照片",
+      "description": "使用 AI 创建美丽的孕妇照片。生成逼真的孕妇形象。"
     },
     "page": {
-      "title": "孕妇AI照片生成器",
+      "title": "孕妇 AI 照片生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "创建美丽的孕妇照片",
-          "description": "使用AI技术生成逼真的孕妇照片。",
+          "description": "使用 AI 技术生成逼真的孕妇照片。",
           "background_image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" },
           "buttons": [
-            { "title": "试用孕妇AI", "url": "/ai-image-generator", "icon": "Zap" }
+            { "title": "试用孕妇 AI", "url": "/ai-image-generator", "icon": "Zap" }
           ]
         },
         "features": {
@@ -85,25 +155,36 @@
               "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png" }
             }
           ]
+        },
+         "intro": {
+          "block": "tool-intro",
+          "title": "孕妇 AI 照片",
+          "description": "用美丽的 AI 照片可视化怀孕。",
+          "images": [{ "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "逼真吗？", "answer": "是的，高度逼真的结果。" }]
         }
       }
     }
   },
   "character-360": {
     "metadata": {
-      "title": "角色360 - 全身旋转照片",
-      "description": "创建360度角色旋转照片。从各个角度展示全身。"
+      "title": "角色 360 - 全身旋转照片",
+      "description": "创建 360 度角色旋转照片。从各个角度展示全身。"
     },
     "page": {
-      "title": "角色360生成器",
+      "title": "角色 360 生成器",
       "sections": {
         "hero": {
           "id": "hero",
-          "title": "360°角色展示",
-          "description": "使用AI创建专业的360度角色旋转照片。",
+          "title": "360° 角色展示",
+          "description": "使用 AI 创建专业的 360 度角色旋转照片。",
           "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
           "buttons": [
-            { "title": "试用角色360", "url": "/ai-image-generator", "icon": "Zap" }
+            { "title": "试用角色 360", "url": "/ai-image-generator", "icon": "Zap" }
           ]
         },
         "features": {
@@ -111,26 +192,37 @@
           "items": [
             {
               "title": "完整视角",
-              "description": "通过专业的360度旋转从各个角度展示角色。",
+              "description": "通过专业的 360 度旋转从各个角度展示角色。",
               "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "360 角色视图",
+          "description": "从各个角度查看您的角色。",
+          "images": [{ "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "适用于动漫吗？", "answer": "是的，它支持动漫风格。" }]
         }
       }
     }
   },
   "russian-girlfriend": {
     "metadata": {
-      "title": "俄罗斯女友AI - 浪漫约会照片",
-      "description": "使用俄罗斯女友AI创建浪漫照片。生成美丽的情侣瞬间。"
+      "title": "俄罗斯女友 AI - 浪漫约会照片",
+      "description": "使用俄罗斯女友 AI 创建浪漫照片。生成美丽的情侣瞬间。"
     },
     "page": {
-      "title": "俄罗斯女友AI生成器",
+      "title": "俄罗斯女友 AI 生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "创建俄罗斯女友照片",
-          "description": "使用美丽的俄罗斯女友AI生成浪漫情侣照片。",
+          "description": "使用美丽的俄罗斯女友 AI 生成浪漫情侣照片。",
           "background_image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" },
           "buttons": [
             { "title": "试用俄罗斯女友", "url": "/ai-image-generator", "icon": "Zap" }
@@ -145,6 +237,17 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 俄罗斯女友",
+          "description": "生成与虚拟俄罗斯女友的浪漫照片。",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "可以自定义吗？", "answer": "是的，您可以调整外观设置。" }]
         }
       }
     }
@@ -152,7 +255,7 @@
   "princess-hug": {
     "metadata": {
       "title": "公主抱生成器 - 浪漫抱抱照片",
-      "description": "使用AI创建公主抱照片。生成浪漫的抱抱瞬间。"
+      "description": "使用 AI 创建公主抱照片。生成浪漫的抱抱瞬间。"
     },
     "page": {
       "title": "公主抱生成器",
@@ -160,7 +263,7 @@
         "hero": {
           "id": "hero",
           "title": "创建公主抱照片",
-          "description": "使用AI技术生成浪漫的公主抱瞬间。",
+          "description": "使用 AI 技术生成浪漫的公主抱瞬间。",
           "background_image": { "src": "/imgs/cms/Hug_公主抱_1.png" },
           "buttons": [
             { "title": "试用公主抱", "url": "/ai-image-generator", "icon": "Zap" }
@@ -175,14 +278,25 @@
               "image": { "src": "/imgs/cms/Hug_公主抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "公主抱照片",
+          "description": "由 AI 生成的浪漫公主抱照片。",
+          "images": [{ "src": "/imgs/cms/Hug_公主抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "可以上传我自己的照片吗？", "answer": "是的，上传照片即可开始。" }]
         }
       }
     }
   },
   "celebrity-selfie": {
     "metadata": {
-      "title": "名人自拍AI - 与名人合影",
-      "description": "使用AI创建与名人的自拍。生成与名人的逼真照片。"
+      "title": "名人自拍 AI - 与名人合影",
+      "description": "使用 AI 创建与名人的自拍。生成与名人的逼真照片。"
     },
     "page": {
       "title": "名人自拍生成器",
@@ -190,7 +304,7 @@
         "hero": {
           "id": "hero",
           "title": "与名人自拍",
-          "description": "使用AI与您最喜欢的名人创建逼真的自拍。",
+          "description": "使用 AI 与您最喜欢的名人创建逼真的自拍。",
           "background_image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" },
           "buttons": [
             { "title": "试用名人自拍", "url": "/ai-image-generator", "icon": "Zap" }
@@ -201,10 +315,61 @@
           "items": [
             {
               "title": "逼真融合",
-              "description": "创建与名人有趣姿势的自然自拍。",
+              "description": "创建与名人的自然自拍。",
               "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "名人自拍",
+          "description": "使用 AI 即时与任何名人自拍。",
+          "images": [{ "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "支持哪些名人？", "answer": "我们支持多种名人合影效果。" }]
+        }
+      }
+    }
+  },
+  "art-style": {
+    "metadata": {
+      "title": "AI 艺术风格 - 创意艺术效果",
+      "description": "使用 AI 技术为照片添加艺术风格效果,包括冰雕、局部留色、御龙飞行等创意效果。"
+    },
+    "page": {
+      "title": "AI 艺术风格",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI 艺术风格",
+          "description": "为您的照片添加独特的艺术风格效果。",
+          "background_image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+          "buttons": [
+            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 艺术风格生成器"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 艺术风格",
+          "description": "为照片添加各种艺术风格效果,包括冰雕、AI 局部留色、AI 御龙飞行等创意艺术效果。",
+          "images": [
+            { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+            { "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png" },
+            { "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png" }
+          ]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [{ "question": "支持哪些艺术风格？", "answer": "我们支持冰雕、局部留色、御龙飞行等多种艺术风格效果。" }]
         }
       }
     }
@@ -212,7 +377,7 @@
   "side-hug": {
     "metadata": {
       "title": "侧身拥抱生成器 - 休闲拥抱照片",
-      "description": "使用AI创建侧身拥抱照片。生成休闲友好的拥抱瞬间。"
+      "description": "使用 AI 创建侧身拥抱照片。生成休闲友好的拥抱瞬间。"
     },
     "page": {
       "title": "侧身拥抱照片生成器",
@@ -220,7 +385,7 @@
         "hero": {
           "id": "hero",
           "title": "创建侧身拥抱照片",
-          "description": "使用AI技术生成友好的侧身拥抱瞬间。",
+          "description": "使用 AI 技术生成友好的侧身拥抱瞬间。",
           "background_image": { "src": "/imgs/cms/Hug_侧身依抱_1.png" },
           "buttons": [
             { "title": "试用侧身拥抱", "url": "/ai-image-generator", "icon": "Zap" }
@@ -235,22 +400,33 @@
               "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "侧身拥抱照片",
+          "description": "生成友好的侧身拥抱照片。",
+          "images": [{ "src": "/imgs/cms/Hug_侧身依抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "速度快吗？", "answer": "是的，生成只需几秒钟。" }]
         }
       }
     }
   },
   "chinese-girlfriend": {
     "metadata": {
-      "title": "中国女友AI - 浪漫约会照片",
-      "description": "使用中国女友AI创建浪漫照片。生成美丽的情侣瞬间。"
+      "title": "中国女友 AI - 浪漫约会照片",
+      "description": "使用中国女友 AI 创建浪漫照片。生成美丽的情侣瞬间。"
     },
     "page": {
-      "title": "中国女友AI生成器",
+      "title": "中国女友 AI 生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "创建中国女友照片",
-          "description": "使用美丽的中国女友AI生成浪漫情侣照片。",
+          "description": "使用美丽的中国女友 AI 生成浪漫情侣照片。",
           "background_image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" },
           "buttons": [
             { "title": "试用中国女友", "url": "/ai-image-generator", "icon": "Zap" }
@@ -265,22 +441,33 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 中国女友",
+          "description": "与虚拟中国女友的浪漫照片。",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "高质量吗？", "answer": "是的，我们输出高清图像。" }]
         }
       }
     }
   },
   "french-girlfriend": {
     "metadata": {
-      "title": "法国女友AI - 浪漫巴黎照片",
-      "description": "使用法国女友AI创建浪漫照片。生成美丽的巴黎情侣瞬间。"
+      "title": "法国女友 AI - 浪漫巴黎照片",
+      "description": "使用法国女友 AI 创建浪漫照片。生成美丽的巴黎情侣瞬间。"
     },
     "page": {
-      "title": "法国女友AI生成器",
+      "title": "法国女友 AI 生成器",
       "sections": {
         "hero": {
           "id": "hero",
           "title": "创建法国女友照片",
-          "description": "使用美丽的法国女友AI生成浪漫情侣照片。",
+          "description": "使用美丽的法国女友 AI 生成浪漫情侣照片。",
           "background_image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" },
           "buttons": [
             { "title": "试用法国女友", "url": "/ai-image-generator", "icon": "Zap" }
@@ -295,6 +482,17 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 法国女友",
+          "description": "在巴黎与虚拟法国女友的浪漫照片。",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "常见问题",
+            "items": [{ "question": "可以更改背景吗？", "answer": "是的，在提示词中指定即可。" }]
         }
       }
     }

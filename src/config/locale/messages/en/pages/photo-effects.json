@@ -17,7 +17,7 @@
         "description": "Bring your photos to life with professional AI photo effects. From AI hugs to celebrity selfies, create stunning visual content in seconds.",
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
-          "alt": "photo effects background"
+          "alt": "照片特效背景"
         }
       },
       "effects": {
@@ -28,95 +28,755 @@
         "items_label": "Natural Mess",
         "tabs": [
           {
-            "id": "photo",
-            "label": "All Photos",
+            "id": "健身",
+            "label": "Fitness",
             "items": [
               {
-                "id": "ai-fake-date",
-                "title": "AI Fake Date",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "Before AI Fake Date" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png", "alt": "AI Fake Date" },
-                "badge": "NEW",
+                "id": "ai-360-rotation-肌肉展示",
+                "title": "Muscle Showcase",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
+                  "alt": "Before Muscle Showcase"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png",
+                  "alt": "Muscle Showcase"
+                },
+                "badge": null,
                 "count": "50K",
-                "url": "/photo-effects/ai-fake-date"
+                "url": "/photo-effects/ai-360-rotation-肌肉展示"
               },
               {
-                "id": "hug-generator",
-                "title": "Hug Generator",
-                "beforeImage": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "Before Hug Generator" },
-                "image": { "src": "/imgs/cms/Hug_拥抱_2.png", "alt": "Hug Generator" },
+                "id": "muscle-肌肉展示",
+                "title": "Muscle Showcase",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Muscle_肌肉展示_1.png",
+                  "alt": "Before Muscle Showcase"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Muscle_肌肉展示_2.png",
+                  "alt": "Muscle Showcase"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/muscle-肌肉展示"
+              }
+            ]
+          },
+          {
+            "id": "浪漫",
+            "label": "Romance",
+            "items": [
+              {
+                "id": "ai-kissing-咬嘴唇之吻",
+                "title": "Lip Bite Kiss",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png",
+                  "alt": "Before Lip Bite Kiss"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png",
+                  "alt": "Lip Bite Kiss"
+                },
                 "badge": "HOT",
-                "count": "200K",
-                "url": "/photo-effects/hug-generator"
+                "count": "50K",
+                "url": "/photo-effects/ai-kissing-咬嘴唇之吻"
               },
               {
-                "id": "pregnant-ai",
-                "title": "Pregnant AI",
-                "beforeImage": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "Before Pregnant AI" },
-                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png", "alt": "Pregnant AI" },
+                "id": "ai-kissing-正常接吻",
+                "title": "Normal Kiss",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+                  "alt": "Before Normal Kiss"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_2.png",
+                  "alt": "Normal Kiss"
+                },
                 "badge": "HOT",
-                "count": "90K",
-                "url": "/photo-effects/pregnant-ai"
+                "count": "50K",
+                "url": "/photo-effects/ai-kissing-正常接吻"
               },
               {
-                "id": "character-360",
-                "title": "Character 360",
-                "beforeImage": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "Before Character 360" },
-                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "Character 360" },
-                "badge": "NEW",
-                "count": "15K",
-                "url": "/photo-effects/character-360"
-              },
-              {
-                "id": "russian-girlfriend",
-                "title": "Russian Girlfriend",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Before Russian Girlfriend" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png", "alt": "Russian Girlfriend" },
+                "id": "ai-kissing-法式接吻",
+                "title": "French Kiss",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+                  "alt": "Before French Kiss"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_2.png",
+                  "alt": "French Kiss"
+                },
                 "badge": "HOT",
-                "count": "180K",
-                "url": "/photo-effects/russian-girlfriend"
+                "count": "50K",
+                "url": "/photo-effects/ai-kissing-法式接吻"
               },
               {
-                "id": "princess-hug",
-                "title": "Princess Hug",
-                "beforeImage": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "Before Princess Hug" },
-                "image": { "src": "/imgs/cms/Hug_公主抱_2.png", "alt": "Princess Hug" },
-                "count": "75K",
-                "url": "/photo-effects/princess-hug"
-              },
-              {
-                "id": "celebrity-selfie",
-                "title": "Celebrity Selfie",
-                "beforeImage": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "Before Celebrity Selfie" },
-                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", "alt": "Celebrity Selfie" },
+                "id": "ai-kissing-脸颊之吻",
+                "title": "Cheek Kiss",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
+                  "alt": "Before Cheek Kiss"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png",
+                  "alt": "Cheek Kiss"
+                },
                 "badge": "HOT",
-                "count": "2.1M",
-                "url": "/photo-effects/celebrity-selfie"
+                "count": "50K",
+                "url": "/photo-effects/ai-kissing-脸颊之吻"
               },
               {
-                "id": "side-hug",
+                "id": "ai-kissing-额头之吻",
+                "title": "Forehead Kiss",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_额头之吻_1.png",
+                  "alt": "Before Forehead Kiss"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_额头之吻_2.png",
+                  "alt": "Forehead Kiss"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-kissing-额头之吻"
+              },
+              {
+                "id": "hug-侧身依抱",
                 "title": "Side Hug",
-                "beforeImage": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "Before Side Hug" },
-                "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png", "alt": "Side Hug" },
-                "count": "95K",
-                "url": "/photo-effects/side-hug"
+                "beforeImage": {
+                  "src": "/img_video/imgs/Hug_侧身依抱_1.png",
+                  "alt": "Before Side Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Hug_侧身依抱_2.png",
+                  "alt": "Side Hug"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/hug-侧身依抱"
               },
               {
-                "id": "chinese-girlfriend",
+                "id": "hug-公主抱",
+                "title": "Princess Hug",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Hug_公主抱_1.png",
+                  "alt": "Before Princess Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Hug_公主抱_2.png",
+                  "alt": "Princess Hug"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/hug-公主抱"
+              },
+              {
+                "id": "hug-托举式抱",
+                "title": "Lift Hug",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Hug_托举式抱_1.png",
+                  "alt": "Before Lift Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Hug_托举式抱_2.png",
+                  "alt": "Lift Hug"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/hug-托举式抱"
+              },
+              {
+                "id": "hug-拥抱",
+                "title": "Hug",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Hug_拥抱_1.png",
+                  "alt": "Before Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Hug_拥抱_2.png",
+                  "alt": "Hug"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/hug-拥抱"
+              },
+              {
+                "id": "hug-背后环抱",
+                "title": "Back Hug",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Hug_背后环抱_1.png",
+                  "alt": "Before Back Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Hug_背后环抱_2.png",
+                  "alt": "Back Hug"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/hug-背后环抱"
+              }
+            ]
+          },
+          {
+            "id": "社交",
+            "label": "Social",
+            "items": [
+              {
+                "id": "ai-fake-date-中国女友",
                 "title": "Chinese Girlfriend",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "Before Chinese Girlfriend" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png", "alt": "Chinese Girlfriend" },
-                "badge": "NEW",
-                "count": "40K",
-                "url": "/photo-effects/chinese-girlfriend"
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
+                  "alt": "Before Chinese Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_2.png",
+                  "alt": "Chinese Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-中国女友"
               },
               {
-                "id": "french-girlfriend",
+                "id": "ai-fake-date-俄罗斯女友",
+                "title": "Russian Girlfriend",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png",
+                  "alt": "Before Russian Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_2.png",
+                  "alt": "Russian Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-俄罗斯女友"
+              },
+              {
+                "id": "ai-fake-date-印度女友",
+                "title": "Indian Girlfriend",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_1.png",
+                  "alt": "Before Indian Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_2.png",
+                  "alt": "Indian Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-印度女友"
+              },
+              {
+                "id": "ai-fake-date-女友约会",
+                "title": "Girlfriend Date",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_1.png",
+                  "alt": "Before Girlfriend Date"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_2.png",
+                  "alt": "Girlfriend Date"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-女友约会"
+              },
+              {
+                "id": "ai-fake-date-日本女友",
+                "title": "Japanese Girlfriend",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
+                  "alt": "Before Japanese Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_2.png",
+                  "alt": "Japanese Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-日本女友"
+              },
+              {
+                "id": "ai-fake-date-法国女友",
                 "title": "French Girlfriend",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "Before French Girlfriend" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png", "alt": "French Girlfriend" },
-                "count": "35K",
-                "url": "/photo-effects/french-girlfriend"
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_1.png",
+                  "alt": "Before French Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_2.png",
+                  "alt": "French Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-法国女友"
+              },
+              {
+                "id": "ai-fake-date-美国女友",
+                "title": "American Girlfriend",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_1.png",
+                  "alt": "Before American Girlfriend"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_2.png",
+                  "alt": "American Girlfriend"
+                },
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date-美国女友"
+              },
+              {
+                "id": "ai-selfie-with-celebrities-名人合拍",
+                "title": "Celebrity Selfie",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
+                  "alt": "Before Celebrity Selfie"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_2.png",
+                  "alt": "Celebrity Selfie"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/ai-selfie-with-celebrities-名人合拍"
+              }
+            ]
+          },
+          {
+            "id": "舞蹈",
+            "label": "Dancing",
+            "items": [
+              {
+                "id": "ai-dance-generator-肚皮舞",
+                "title": "Belly Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
+                  "alt": "Before Belly Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png",
+                  "alt": "Belly Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/ai-dance-generator-肚皮舞"
+              },
+              {
+                "id": "模仿-ai站立一字马",
+                "title": "AI Standing Split",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_AI站立一字马_1.png",
+                  "alt": "Before AI Standing Split"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_AI站立一字马_2.png",
+                  "alt": "AI Standing Split"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-ai站立一字马"
+              },
+              {
+                "id": "模仿-reze舞",
+                "title": "Reze Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_Reze舞_1.png",
+                  "alt": "Before Reze Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_Reze舞_2.png",
+                  "alt": "Reze Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-reze舞"
+              },
+              {
+                "id": "模仿-叉腰扭臂",
+                "title": "Waist Twist",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_叉腰扭臂_1.png",
+                  "alt": "Before Waist Twist"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_叉腰扭臂_2.png",
+                  "alt": "Waist Twist"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-叉腰扭臂"
+              },
+              {
+                "id": "模仿-扭臀舞",
+                "title": "Twerk Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_扭臀舞_1.png",
+                  "alt": "Before Twerk Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_扭臀舞_2.png",
+                  "alt": "Twerk Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-扭臀舞"
+              },
+              {
+                "id": "模仿-热辣钢管舞",
+                "title": "Pole Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_热辣钢管舞_1.png",
+                  "alt": "Before Pole Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_热辣钢管舞_2.png",
+                  "alt": "Pole Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-热辣钢管舞"
+              },
+              {
+                "id": "模仿-电摇舞",
+                "title": "Electric Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_电摇舞_1.png",
+                  "alt": "Before Electric Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_电摇舞_2.png",
+                  "alt": "Electric Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-电摇舞"
+              },
+              {
+                "id": "模仿-香奈儿舞",
+                "title": "Chanel Dance",
+                "beforeImage": {
+                  "src": "/img_video/imgs/模仿_香奈儿舞_1.png",
+                  "alt": "Before Chanel Dance"
+                },
+                "image": {
+                  "src": "/img_video/imgs/模仿_香奈儿舞_2.png",
+                  "alt": "Chanel Dance"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/模仿-香奈儿舞"
+              }
+            ]
+          },
+          {
+            "id": "艺术",
+            "label": "Art",
+            "items": [
+              {
+                "id": "艺术-ai局部留色视频特效",
+                "title": "AI Color Splash",
+                "beforeImage": {
+                  "src": "/img_video/imgs/艺术_AI局部留色视频特效_1.png",
+                  "alt": "Before AI Color Splash"
+                },
+                "image": {
+                  "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png",
+                  "alt": "AI Color Splash"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/艺术-ai局部留色视频特效"
+              },
+              {
+                "id": "艺术-ai御龙飞行视频",
+                "title": "AI Dragon Flight",
+                "beforeImage": {
+                  "src": "/img_video/imgs/艺术_AI御龙飞行视频_1.png",
+                  "alt": "Before AI Dragon Flight"
+                },
+                "image": {
+                  "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png",
+                  "alt": "AI Dragon Flight"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/艺术-ai御龙飞行视频"
+              },
+              {
+                "id": "艺术-冰雕",
+                "title": "Ice Sculpture",
+                "beforeImage": {
+                  "src": "/img_video/imgs/艺术_冰雕_1.png",
+                  "alt": "Before Ice Sculpture"
+                },
+                "image": {
+                  "src": "/img_video/imgs/艺术_冰雕_2.png",
+                  "alt": "Ice Sculpture"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/艺术-冰雕"
+              }
+            ]
+          },
+          {
+            "id": "视觉效果",
+            "label": "Visual Effects",
+            "items": [
+              {
+                "id": "视觉效果-ai爆炸效果",
+                "title": "AI Explosion",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png",
+                  "alt": "Before AI Explosion"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png",
+                  "alt": "AI Explosion"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-ai爆炸效果"
+              },
+              {
+                "id": "视觉效果-史诗级爆炸漫步",
+                "title": "Epic Explosion Walk",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_1.png",
+                  "alt": "Before Epic Explosion Walk"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png",
+                  "alt": "Epic Explosion Walk"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-史诗级爆炸漫步"
+              },
+              {
+                "id": "视觉效果-改变直升机机库",
+                "title": "Helicopter Hangar",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_改变直升机机库_1.png",
+                  "alt": "Before Helicopter Hangar"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_改变直升机机库_2.png",
+                  "alt": "Helicopter Hangar"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-改变直升机机库"
+              },
+              {
+                "id": "视觉效果-海洋连衣裙",
+                "title": "Ocean Dress",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_海洋连衣裙_1.png",
+                  "alt": "Before Ocean Dress"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png",
+                  "alt": "Ocean Dress"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-海洋连衣裙"
+              },
+              {
+                "id": "视觉效果-穿越维度",
+                "title": "Dimension Travel",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_穿越维度_1.png",
+                  "alt": "Before Dimension Travel"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_穿越维度_2.png",
+                  "alt": "Dimension Travel"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-穿越维度"
+              },
+              {
+                "id": "视觉效果-进入嘴巴",
+                "title": "Into Mouth",
+                "beforeImage": {
+                  "src": "/img_video/imgs/视觉效果_进入嘴巴_1.png",
+                  "alt": "Before Into Mouth"
+                },
+                "image": {
+                  "src": "/img_video/imgs/视觉效果_进入嘴巴_2.png",
+                  "alt": "Into Mouth"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/视觉效果-进入嘴巴"
+              }
+            ]
+          },
+          {
+            "id": "角色扮演",
+            "label": "Role Play",
+            "items": [
+              {
+                "id": "角色切换-ai老虎拥抱",
+                "title": "AI Tiger Hug",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
+                  "alt": "Before AI Tiger Hug"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png",
+                  "alt": "AI Tiger Hug"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-ai老虎拥抱"
+              },
+              {
+                "id": "角色切换-坐上豪车",
+                "title": "Luxury Car",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_坐上豪车_1.png",
+                  "alt": "Before Luxury Car"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_坐上豪车_2.png",
+                  "alt": "Luxury Car"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-坐上豪车"
+              },
+              {
+                "id": "角色切换-审讯室",
+                "title": "Interrogation Room",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_审讯室_1.png",
+                  "alt": "Before Interrogation Room"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_审讯室_2.png",
+                  "alt": "Interrogation Room"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-审讯室"
+              },
+              {
+                "id": "角色切换-尖叫",
+                "title": "Scream",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_尖叫_1.png",
+                  "alt": "Before Scream"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_尖叫_2.png",
+                  "alt": "Scream"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-尖叫"
+              },
+              {
+                "id": "角色切换-遇见未来的小孩",
+                "title": "Meet Future Kid",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_遇见未来的小孩_1.png",
+                  "alt": "Before Meet Future Kid"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png",
+                  "alt": "Meet Future Kid"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-遇见未来的小孩"
+              },
+              {
+                "id": "角色切换-遇见老年的我",
+                "title": "Meet Old Me",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_遇见老年的我_1.png",
+                  "alt": "Before Meet Old Me"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_遇见老年的我_2.png",
+                  "alt": "Meet Old Me"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-遇见老年的我"
+              },
+              {
+                "id": "角色切换-雨中漫步",
+                "title": "Rain Walk",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_雨中漫步_1.png",
+                  "alt": "Before Rain Walk"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_雨中漫步_2.png",
+                  "alt": "Rain Walk"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-雨中漫步"
+              },
+              {
+                "id": "角色切换-雨夜",
+                "title": "Rainy Night",
+                "beforeImage": {
+                  "src": "/img_video/imgs/角色切换_雨夜_1.png",
+                  "alt": "Before Rainy Night"
+                },
+                "image": {
+                  "src": "/img_video/imgs/角色切换_雨夜_2.png",
+                  "alt": "Rainy Night"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/角色切换-雨夜"
+              }
+            ]
+          },
+          {
+            "id": "趣味",
+            "label": "Fun",
+            "items": [
+              {
+                "id": "jiggle-抖动身体",
+                "title": "Body Jiggle",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Jiggle_抖动身体_1.png",
+                  "alt": "Before Body Jiggle"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Jiggle_抖动身体_2.png",
+                  "alt": "Body Jiggle"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/jiggle-抖动身体"
+              },
+              {
+                "id": "pregnant-ai-怀孕",
+                "title": "Pregnant",
+                "beforeImage": {
+                  "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
+                  "alt": "Before Pregnant"
+                },
+                "image": {
+                  "src": "/img_video/imgs/Pregnant-AI_怀孕_2.png",
+                  "alt": "Pregnant"
+                },
+                "badge": null,
+                "count": "50K",
+                "url": "/photo-effects/pregnant-ai-怀孕"
               }
             ]
           }

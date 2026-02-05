@@ -456,5 +456,45 @@
         }
       }
     }
+  },
+  "art-style": {
+    "metadata": {
+      "title": "AI Art Style - Creative Artistic Effects",
+      "description": "Use AI technology to add artistic style effects to photos, including ice sculpture, selective color, dragon riding and more creative effects."
+    },
+    "page": {
+      "title": "AI Art Style",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI Art Style",
+          "description": "Add unique artistic style effects to your photos.",
+          "background_image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Art Style Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Art Style",
+          "description": "Add various artistic style effects to photos, including ice sculpture, AI selective color, AI dragon riding and other creative artistic effects.",
+          "images": [
+            { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+            { "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png" },
+            { "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png" }
+          ]
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What art styles are supported?", "answer": "We support ice sculpture, selective color, dragon riding and many other artistic style effects." }]
+        }
+      }
+    }
   }
 }

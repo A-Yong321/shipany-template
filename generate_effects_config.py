@@ -1,0 +1,212 @@
+"""
+根据resource_mapping.json生成photo-effects和video-effects的JSON配置
+"""
+import json
+from pathlib import Path
+
+# 读取资源映射
+with open("resource_mapping.json", "r", encoding="utf-8") as f:
+    mapping = json.load(f)
+
+# 定义分类映射（中文）
+CATEGORY_MAP_ZH = {
+    # Photo effects
+    "AI-Kissing": {"category": "浪漫", "category_en": "Romance"},
+    "AI-Fake-Date": {"category": "社交", "category_en": "Social"},
+    "Hug": {"category": "浪漫", "category_en": "Romance"},
+    "AI-Selfie-with-Celebrities": {"category": "社交", "category_en": "Social"},
+    "Muscle": {"category": "健身", "category_en": "Fitness"},
+    "AI-360-Rotation": {"category": "健身", "category_en": "Fitness"},
+    "Jiggle": {"category": "趣味", "category_en": "Fun"},
+    "Pregnant-AI": {"category": "趣味", "category_en": "Fun"},
+    "AI-Dance-Generator": {"category": "舞蹈", "category_en": "Dancing"},
+    "模仿": {"category": "舞蹈", "category_en": "Dancing"},
+    "艺术": {"category": "艺术", "category_en": "Art"},
+    "视觉效果": {"category": "视觉效果", "category_en": "Visual Effects"},
+    "角色切换": {"category": "角色扮演", "category_en": "Role Play"},
+}
+
+def generate_photo_effects_zh():
+    """生成照片特效JSON（中文）"""
+    
+    # 按分类组织
+    categories = {}
+    for effect_type, items in mapping["photo_effects"].items():
+        cat_info = CATEGORY_MAP_ZH.get(effect_type, {"category": "其他", "category_en": "Other"})
+        category = cat_info["category"]
+        
+        if category not in categories:
+            categories[category] = []
+        
+        for item in items:
+            # 生成ID和URL
+            effect_id = item["base_name"].lower().replace("_", "-").replace(" ", "-")
+            
+            categories[category].append({
+                "id": effect_id,
+                "title": item["scene"],
+                "beforeImage": {"src": item["original"], "alt": f"{item['scene']}原图"},
+                "image": {"src": item["effect"], "alt": item["scene"]},
+                "badge": "HOT" if effect_type in ["AI-Kissing", "AI-Fake-Date", "Hug"] else None,
+                "count": "50K",  # 默认值，可以后续调整
+                "url": f"/photo-effects/{effect_id}"
+            })
+    
+    # 生成tabs
+    tabs = []
+    for category, items in sorted(categories.items()):
+        tabs.append({
+            "id": category.lower().replace(" ", "-"),
+            "label": category,
+            "items": items
+        })
+    
+    # 生成完整配置
+    config = {
+        "metadata": {
+            "title": "热门 AI 照片特效 - AI 拥抱、怀孕、名人合照等",
+            "description": "发现电影般的 AI 照片特效。立即创建 AI 拥抱、AI 怀孕照片、与名人自拍以及角色旋转展示。"
+        },
+        "page": {
+            "title": "热门 AI 照片特效",
+            "show_sections": ["hero", "effects", "cta"],
+            "sections": {
+                "hero": {
+                    "id": "hero",
+                    "title": "热门 AI 照片特效",
+                    "description": "通过专业的 AI 照片特效让您的照片栩栩如生。从 AI 拥抱到名人自拍，几秒钟内即可创建令人惊叹的视觉内容。",
+                    "background_image": {
+                        "src": "/imgs/bg/tree.jpg",
+                        "alt": "照片特效背景"
+                    }
+                },
+                "effects": {
+                    "block": "effects-section",
+                    "id": "photo-effects-list",
+                    "title": "探索所有照片特效",
+                    "description": "从我们广泛的专业 AI 照片特效中进行选择。",
+                    "items_label": "自然风格",
+                    "tabs": tabs
+                },
+                "cta": {
+                    "id": "cta",
+                    "title": "准备好转换您的照片了吗？",
+                    "description": "选择一个特效，立即看到奇迹发生。",
+                    "buttons": [
+                        {
+                            "title": "尝试所有特效",
+                            "url": "/#effects",
+                            "target": "_self",
+                            "icon": "Zap"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    
+    return config
+
+def generate_video_effects_zh():
+    """生成视频特效JSON（中文）- 只包含有原图的视频"""
+    
+    # 筛选有原图的视频
+    categories = {}
+    for effect_type, items in mapping["video_effects"].items():
+        for item in items:
+            if item["matched_photo"]:  # 只包含有原图的
+                # 确定分类
+                cat_info = CATEGORY_MAP_ZH.get(effect_type, {"category": "其他", "category_en": "Other"})
+                category = cat_info["category"]
+                
+                if category not in categories:
+                    categories[category] = []
+                
+                # 生成ID和URL
+                effect_id = item["base_name"].lower().replace("_", "-").replace(" ", "-")
+                
+                categories[category].append({
+                    "id": effect_id,
+                    "title": item["base_name"].split("_")[-1] if "_" in item["base_name"] else item["base_name"],
+                    "beforeImage": {"src": item["matched_photo"]["original"], "alt": f"{item['base_name']}原图"},
+                    "image": {"src": item["matched_photo"]["effect"], "alt": item["base_name"]},
+                    "video": item["video"],
+                    "badge": "HOT" if "Kissing" in item["base_name"] or "肌肉" in item["base_name"] else None,
+                    "count": "100K",  # 默认值
+                    "url": f"/video-effects/{effect_id}"
+                })
+    
+    # 生成tabs
+    tabs = []
+    for category, items in sorted(categories.items()):
+        tabs.append({
+            "id": category.lower().replace(" ", "-"),
+            "label": category,
+            "items": items
+        })
+    
+    # 生成完整配置
+    config = {
+        "metadata": {
+            "title": "热门 AI 视频特效 - AI 接吻、肌肉、拥抱等",
+            "description": "探索 100 多种热门 AI 视频特效。将您的照片转换为 AI 接吻视频，添加 AI 肌肉，生成 AI 拥抱以及更多流行视觉效果。"
+        },
+        "page": {
+            "title": "热门 AI 视频特效",
+            "show_sections": ["hero", "effects", "cta"],
+            "sections": {
+                "hero": {
+                    "id": "hero",
+                    "title": "热门 AI 视频特效",
+                    "description": "通过 AI 接吻、AI 肌肉、AI 拥抱等流行 AI 视频特效转换您的照片。",
+                    "background_image": {
+                        "src": "/imgs/bg/tree.jpg",
+                        "alt": "视频特效背景"
+                    }
+                },
+                "effects": {
+                    "block": "effects-section",
+                    "id": "video-effects-list",
+                    "title": "探索所有视频特效",
+                    "description": "从我们广泛的热门 AI 视频特效中选择，让您的照片变得生动起来。",
+                    "items_label": "自然风格",
+                    "tabs": tabs
+                },
+                "cta": {
+                    "id": "cta",
+                    "title": "释放您的创造力",
+                    "description": "只需点击一下即可将任何照片转换为热门杰作。",
+                    "buttons": [
+                        {
+                            "title": "立即开始创作",
+                            "url": "/#effects",
+                            "target": "_self",
+                            "icon": "Zap"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    
+    return config
+
+# 生成并保存
+print("生成照片特效配置...")
+photo_config = generate_photo_effects_zh()
+with open("src/config/locale/messages/zh/pages/photo-effects.json", "w", encoding="utf-8") as f:
+    json.dump(photo_config, f, ensure_ascii=False, indent=2)
+print(f"✓ 已保存 photo-effects.json (中文) - {len(photo_config['page']['sections']['effects']['tabs'])} 个分类")
+
+print("\n生成视频特效配置...")
+video_config = generate_video_effects_zh()
+with open("src/config/locale/messages/zh/pages/video-effects.json", "w", encoding="utf-8") as f:
+    json.dump(video_config, f, ensure_ascii=False, indent=2)
+print(f"✓ 已保存 video-effects.json (中文) - {len(video_config['page']['sections']['effects']['tabs'])} 个分类")
+
+# 统计
+total_photo_effects = sum(len(tab["items"]) for tab in photo_config["page"]["sections"]["effects"]["tabs"])
+total_video_effects = sum(len(tab["items"]) for tab in video_config["page"]["sections"]["effects"]["tabs"])
+print(f"\n总计:")
+print(f"  照片特效: {total_photo_effects} 个")
+print(f"  视频特效: {total_video_effects} 个")

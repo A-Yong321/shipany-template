@@ -57,14 +57,15 @@ export interface MoreToolItem {
 
 export interface MoreToolsSectionProps {
   title: string;
-  items: MoreToolItem[];
+  items?: MoreToolItem[];  // 可选,如果不提供则自动从 tools.ts 加载
   toolType?: 'video' | 'image';  // 工具类型
+  currentSlug?: string;  // 当前工具的 slug,用于排除自己
 }
 
 // Components
 
 /**
- * 顶部介绍区：深色背景，居中标题，图片展示
+ * 顶部介绍区:深色背景,居中标题,图片展示
  */
 export function ToolIntro({ title, description, images }: ToolIntroProps) {
   return (
@@ -95,7 +96,7 @@ export function ToolIntro({ title, description, images }: ToolIntroProps) {
 }
 
 /**
- * 特性介绍区：左文右图/右文左图交替
+ * 特性介绍区:左文右图/右文左图交替
  */
 export function ToolFeatures({ items }: ToolFeaturesProps) {
   return (
@@ -207,38 +208,34 @@ export function HowToSection({ title, description, video, steps, button }: HowTo
   );
 }
 
-// 默认视频工具
-const DEFAULT_VIDEO_TOOLS: MoreToolItem[] = [
-  { title: 'AI Kissing', image: { src: '/imgs/cms/AI-Kissing_正常接吻_1.png' }, url: '/en/video-effects/ai-kissing' },
-  { title: 'AI Hug', image: { src: '/imgs/cms/Hug_拥抱_1.png' }, url: '/en/video-effects/ai-hug' },
-  { title: 'AI Twerk', image: { src: '/imgs/cms/Twerk_扭臀舞_1.png' }, url: '/en/video-effects/ai-twerk' },
-  { title: 'AI Muscle', image: { src: '/imgs/cms/Muscle_肌肉展示_1.png' }, url: '/en/video-effects/ai-muscle' },
-  { title: 'AI Jiggle', image: { src: '/imgs/cms/Jiggle_抖动身体_1.png' }, url: '/en/video-effects/ai-jiggle' },
-  { title: 'AI Bikini', image: { src: '/imgs/cms/AI-Bikini-Generator_比基尼_1.png' }, url: '/en/video-effects/ai-bikini' },
-  { title: 'AI Dance', image: { src: '/imgs/cms/AI-Dance-Generator_肚皮舞_1.png' }, url: '/en/video-effects/ai-dance' },
-  { title: 'AI Sing', image: { src: '/imgs/cms/AI-Kissing_脸颊之吻_1.png' }, url: '/en/video-effects/ai-sing' },
-];
-
-// 默认图片工具
-const DEFAULT_IMAGE_TOOLS: MoreToolItem[] = [
-  { title: 'AI Fake Date', image: { src: '/imgs/cms/AI-Fake-Date_美国女友_1.png' }, url: '/en/photo-effects/ai-fake-date' },
-  { title: 'Hug Generator', image: { src: '/imgs/cms/Hug_侧身依抱_1.png' }, url: '/en/photo-effects/hug-generator' },
-  { title: 'Pregnant AI', image: { src: '/imgs/cms/Pregnant-AI_怀孕_1.png' }, url: '/en/photo-effects/pregnant-ai' },
-  { title: 'Celebrity Selfie', image: { src: '/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png' }, url: '/en/photo-effects/ai-selfie-with-celebrities' },
-  { title: 'Couple Goals', image: { src: '/imgs/cms/Hug_公主抱_1.png' }, url: '/en/photo-effects/couple-goals' },
-  { title: 'Vacation Photo', image: { src: '/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png' }, url: '/en/photo-effects/vacation-photo' },
-  { title: 'Family Photo', image: { src: '/imgs/cms/AI-Fake-Date_中国女友_1.png' }, url: '/en/photo-effects/family-photo' },
-  { title: 'Party Photo', image: { src: '/imgs/cms/Hug_飞扑拥抱_1.png' }, url: '/en/photo-effects/party-photo' },
-];
-
 /**
- * 更多工具推荐 (网格) - 显示至少两排
+ * 更多工具推荐 (网格) - 从 tools.ts 动态加载同类型的其他工具
  */
-export function MoreToolsSection({ title, items, toolType = 'video' }: MoreToolsSectionProps) {
-  // 根据工具类型选择默认工具
-  const defaultTools = toolType === 'video' ? DEFAULT_VIDEO_TOOLS : DEFAULT_IMAGE_TOOLS;
-  // 如果传入items不足8个，用默认工具补齐
-  const displayItems = items.length >= 8 ? items : [...items, ...defaultTools].slice(0, 8);
+export function MoreToolsSection({ title, items, toolType = 'video', currentSlug }: MoreToolsSectionProps) {
+  'use client';
+  
+  const { tools } = require('@/data/tools');
+  
+  // 如果没有提供 items,从 tools.ts 加载同类型的其他工具
+  let displayItems: MoreToolItem[] = items || [];
+  
+  if (!items || items.length === 0) {
+    // 根据工具类型筛选,并排除当前工具
+    const filteredTools = tools
+      .filter((tool: any) => {
+        const matchesType = toolType === 'video' ? tool.type === 'video' : tool.type === 'photo';
+        const isNotCurrent = tool.slug !== currentSlug;
+        return matchesType && isNotCurrent;
+      })
+      .slice(0, 8); // 最多显示 8 个
+    
+    // 转换为 MoreToolItem 格式
+    displayItems = filteredTools.map((tool: any) => ({
+      title: tool.title,
+      image: { src: tool.items[0]?.effectSrc || tool.items[0]?.originalSrc },
+      url: toolType === 'video' ? `/video-effects/${tool.slug}` : `/photo-effects/${tool.slug}`,
+    }));
+  }
 
   return (
     <section className="bg-black py-20 text-white">

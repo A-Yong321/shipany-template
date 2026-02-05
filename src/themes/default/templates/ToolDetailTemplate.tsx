@@ -6,11 +6,12 @@ import { ToolDetailLayout } from '@/themes/default/blocks/tool-detail-layout';
 import { ToolContent } from '@/themes/default/blocks/tool-content';
 import { Inspirations } from '@/themes/default/blocks/inspirations';
 import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection } from '@/themes/default/blocks/tool-bottom-sections';
+import { getToolConfig } from '@/data/tools';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
   namespace: string;
-  /** URL查询参数，用于传递特效类型 */
+  /** URL查询参数,用于传递特效类型 */
   searchParams?: Promise<{ type?: string }>;
 }
 
@@ -18,6 +19,7 @@ interface ToolDetailTemplateProps {
  * 工具详情页模板
  * 根据namespace区分视频工具和图片工具
  * 支持通过 searchParams 传入初始选中的特效类型
+ * 从 tools.ts 加载工具的所有 effects
  */
 export async function ToolDetailTemplate({ params, namespace, searchParams }: ToolDetailTemplateProps) {
   const { locale, slug } = await params;
@@ -35,10 +37,17 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
 
   const effectData = t.raw(slug);
   const sections = effectData.page.sections;
-  const toolData = sections.tool?.data;
   
-  // 提取示例
-  const examples = toolData?.examples || [];
+  // 从 tools.ts 获取工具配置
+  const toolConfig = getToolConfig(slug);
+  
+  // 将 toolConfig.items 转换为 examples 格式
+  const examples = toolConfig?.items.map((item, index) => ({
+    category: item.title,
+    prompt: `Generate ${item.title} effect`,
+    image: item.effectSrc,
+    video: item.videoSrc,
+  })) || [];
   
   // 根据namespace判断工具类型
   const toolType = namespace.includes('video') ? 'video' : 'image';
@@ -52,7 +61,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
       {sections.intro && <ToolIntro {...sections.intro} />}
       {sections.features && <ToolFeatures items={sections.features.items} />}
       {sections.how_to && <HowToSection {...sections.how_to} />}
-      {sections.more_tools && <MoreToolsSection {...sections.more_tools} toolType={toolType} />}
+      {sections.more_tools && <MoreToolsSection {...sections.more_tools} toolType={toolType} currentSlug={slug} />}
       {sections.faq && <FAQSection {...sections.faq} />}
     </>
   );

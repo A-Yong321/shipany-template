@@ -53,6 +53,13 @@
             }
           },
           {
+            "title": "React",
+            "image": {
+              "src": "/imgs/logos/react.svg",
+              "alt": "React"
+            }
+          },
+          {
             "title": "TailwindCSS",
             "image": {
               "src": "/imgs/logos/tailwindcss.svg",
@@ -96,7 +103,7 @@
             "title": "AI 图像生成器",
             "description": "1PhotoAI 图像生成器采用了我们最先进的 Image 2.0 模型，以及当今其他领先的图像模型，包括：",
             "icon": "RiImageLine",
-             "tags": [
+            "tags": [
                "Nano Banana", "Midjourney", "Flux AI", "Stable Diffusion", "Dall-E"
             ],
             "button": {
@@ -106,89 +113,6 @@
             "logos": [
                 "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
             ]
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "为何选择 ShipAny",
-        "label": "产品优势",
-        "description": "你获得一切 AI 创业所需——从开箱即用的模板到专业技术支持。",
-        "items": [
-          {
-            "title": "全栈解决方案",
-            "description": "基于 Next.js，集成认证、支付、AI，一站式开箱即用。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "丰富模板库",
-            "description": "多样的 AI SaaS 模板，点击即用，涵盖聊天、图像生成等多场景。",
-            "icon": "RiClapperboardAiLine",
-            "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "专属技术指导",
-            "description": "享受专属技术支持与开发者社区，为你的成功保驾护航。",
-            "icon": "RiCodeFill",
-            "image": {
-              "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
-            }
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "三步使用 ShipAny 极速上线",
-        "description": "只需三步，快速开启你的 AI SaaS 创业之路：",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "usage"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "获取 ShipAny",
-            "description": "一次性购买 ShipAny，查收邮件获取代码与文档。",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "启动你的项目",
-            "description": "阅读说明文档，克隆 ShipAny 代码，开始开发你的 AI SaaS 项目。",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "个性化定制",
-            "description": "根据需求修改模板内容和数据，配置专属 AI 能力。",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "部署上线",
-            "description": "简单几步将你的项目推向生产环境，立刻为客户提供服务。",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "usage"
-            }
           }
         ],
         "className": "bg-muted"
@@ -241,7 +165,7 @@
       "effects": {
         "block": "effects-section",
         "id": "effects",
-        "title": "热门 AI 视频与照片特效",
+        "title": "的热门 AI 视频与照片特效",
         "description": "想为爱人添加甜蜜的吻，还是用 AI 肌肉壮大身材？想将照片变成吉卜力风格艺术，还是与名人自拍？没问题！拥有超过 150 种视频和照片特效，让你的视觉创意成真！",
         "items_label": "自然风格",
         "tabs": [
@@ -511,118 +435,10 @@
         ],
         "className": "bg-black"
       },
-      "stats": {
-        "id": "stats",
-        "title": "用户喜爱 ShipAny",
-        "description": "因其易用且上线飞快。",
-        "items": [
-          {
-            "title": "999+",
-            "description": "位用户"
-          },
-          {
-            "title": "200+",
-            "description": "组件块"
-          },
-          {
-            "title": "50+",
-            "description": "专业模板"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "用户对 ShipAny 的评价",
-        "description": "听听开发者与创始人用 ShipAny 快速上线 AI 创业项目的故事。",
-        "items": [
-          {
-            "name": "David Chen",
-            "role": "AIWallpaper.shop 创始人",
-            "quote": "ShipAny 为我们节省了数月开发时间。2 天上线 AI 壁纸业务，一周内就收到了第一笔付费订单！",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "david"
-            }
-          },
-          {
-            "name": "Rachel Kim",
-            "role": "HeyBeauty.ai CTO",
-            "quote": "内置 AI 基础设施颠覆了开发体验，无需担心架构，只需专注核心功能，极快落地。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
-            }
-          },
-          {
-            "name": "Marcus Thompson",
-            "role": "独立开发者",
-            "quote": "作为独立开发者，ShipAny 满足了全部需求——认证、支付、AI 集成、美观界面，一个周末上线 SaaS！",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
-            }
-          },
-          {
-            "name": "Sofia Garcia",
-            "role": "Melodisco CEO",
-            "quote": "模板高度可定制且生产级。我们几小时内搭建出了 AI 音乐平台，上市周期大大缩短！",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
-            }
-          },
-          {
-            "name": "James Wilson",
-            "role": "GPTs.works 技术负责人",
-            "quote": "ShipAny 基础设施极其稳定。我们从 0 到 1 万用户，无需关心后端维护，是最棒的 AI 创业投资。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "james"
-            }
-          },
-          {
-            "name": "Anna Zhang",
-            "role": "创业者",
-            "quote": "从想法到上线，仅用 3 天！ShipAny 模板和部署工具让我们极快验证 AI 商业创意。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "anna"
-            }
-          }
-        ]
-      },
-      "faq": {
-        "id": "faq",
-        "title": "常见问题",
-        "description": "有疑问？我们为您解答。",
-        "items": [
-          {
-            "question": "什么是 1photoai?",
-            "answer": "1photoai 是一个集图像创作和电影感视频生成于一体的全能平台。通过 1photoai，您可以获得专业的视觉创作工具，包括视频生成、图像增强和各种创意滤镜。"
-          },
-          {
-            "question": "如何开始使用 1photoai?",
-            "answer": "只需注册一个免费账户，从我们的创意功能库中选择您需要的工具，即可开始创作。无需任何技术背景——通过我们直观的界面，每个人都能轻松使用 1photoai。"
-          },
-          {
-            "question": "我可以用 1photoai 创作哪些内容?",
-            "answer": "通过 1photoai，您可以生成视频、将图像增强至 4K 画质、应用创意滤镜、根据文本生成视觉内容、进行视频换脸、制作舞蹈视频等。"
-          },
-          {
-            "question": "你们提供免费试用吗?",
-            "answer": "是的！您可以试用 1photoai 的免费版本来探索平台并测试各种功能。通过免费计划，您可以在升级前体验创作质量。"
-          },
-          {
-            "question": "我可以随时取消订阅吗?",
-            "answer": "是的，您可以随时在账户设置中取消订阅。取消后，您仍可继续使用高级功能直至当前计费周期结束。"
-          }
-        ]
-      },
       "cta": {
         "id": "cta",
         "title": "准备好开始创作了吗?",
-        "description": "立即加入 1photoai，释放您的创造力。",
+        "description": "立即加入 1PhotoAI，释放您的创造力。",
         "buttons": [
           {
             "title": "免费开始使用",
@@ -633,20 +449,32 @@
         ],
         "className": "bg-muted"
       },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "订阅我们的邮件通知",
-        "description": "获取 ShipAny 最新资讯与产品动态。",
-        "submit": {
-          "input": {
-            "placeholder": "输入邮箱"
+      "faq": {
+        "id": "faq",
+        "title": "常见问题",
+        "description": "有疑问？我们为您解答。",
+        "items": [
+          {
+            "question": "什么是 1PhotoAI?",
+            "answer": "1PhotoAI 是一个集图像创作和电影感视频生成于一体的全能平台。通过 1PhotoAI，您可以获得专业的视觉创作工具，包括视频生成、图像增强和各种创意滤镜。"
           },
-          "button": {
-            "title": "订阅"
+          {
+            "question": "如何开始使用 1PhotoAI?",
+            "answer": "只需注册一个免费账户，从我们的创意功能库中选择您需要的工具，即可开始创作。无需任何技术背景——通过我们直观的界面，每个人都能轻松使用 1PhotoAI。"
           },
-          "action": "/api/subscribe"
-        },
-        "className": "bg-muted"
+          {
+            "question": "我可以用 1PhotoAI 创作哪些内容?",
+            "answer": "通过 1PhotoAI，您可以生成视频、将图像增强至 4K 画质、应用创意滤镜、根据文本生成视觉内容、进行视频换脸、制作舞蹈视频等。"
+          },
+          {
+            "question": "你们提供免费试用吗?",
+            "answer": "是的！您可以试用 1PhotoAI 的免费版本来探索平台并测试各种功能。通过免费计划，您可以在升级前体验创作质量。"
+          },
+          {
+            "question": "我可以随时取消订阅吗?",
+            "answer": "是的，您可以随时在账户设置中取消订阅。取消后，您仍可继续使用高级功能直至当前计费周期结束。"
+          }
+        ]
       }
     }
   }

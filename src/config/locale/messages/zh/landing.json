@@ -55,7 +55,7 @@
                 {
                   "title": "查看更多",
                   "description": "探索所有视频特效",
-                  "url": "/video-effects",
+                  "url": "/tools?type=video",
                   "icon": "ArrowRight"
                 }
               ]
@@ -98,7 +98,7 @@
                 {
                   "title": "查看更多",
                   "description": "探索所有照片特效",
-                  "url": "/photo-effects",
+                  "url": "/tools?type=photo",
                   "icon": "ArrowRight"
                 }
               ]
