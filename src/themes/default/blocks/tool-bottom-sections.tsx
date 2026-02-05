@@ -58,6 +58,7 @@ export interface MoreToolItem {
 export interface MoreToolsSectionProps {
   title: string;
   items: MoreToolItem[];
+  toolType?: 'video' | 'image';  // 工具类型
 }
 
 // Components
@@ -194,7 +195,7 @@ export function HowToSection({ title, description, video, steps, button }: HowTo
         {/* Bottom CTA */}
         {button && (
           <div className="mt-16 text-center">
-             <Button size="lg" className="h-14 rounded-full border border-gray-700 bg-black px-10 text-lg hover:bg-gray-900 shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 border-b-2 border-b-emerald-500" asChild>
+             <Button size="lg" className="h-14 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 px-12 text-lg font-semibold text-black hover:from-emerald-400 hover:to-cyan-400 shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all duration-300" asChild>
                <Link href={button.url}>
                  {button.title}
                </Link>
@@ -206,18 +207,47 @@ export function HowToSection({ title, description, video, steps, button }: HowTo
   );
 }
 
+// 默认视频工具
+const DEFAULT_VIDEO_TOOLS: MoreToolItem[] = [
+  { title: 'AI Kissing', image: { src: '/imgs/cms/AI-Kissing_正常接吻_1.png' }, url: '/en/video-effects/ai-kissing' },
+  { title: 'AI Hug', image: { src: '/imgs/cms/Hug_拥抱_1.png' }, url: '/en/video-effects/ai-hug' },
+  { title: 'AI Twerk', image: { src: '/imgs/cms/Twerk_扭臀舞_1.png' }, url: '/en/video-effects/ai-twerk' },
+  { title: 'AI Muscle', image: { src: '/imgs/cms/Muscle_肌肉展示_1.png' }, url: '/en/video-effects/ai-muscle' },
+  { title: 'AI Jiggle', image: { src: '/imgs/cms/Jiggle_抖动身体_1.png' }, url: '/en/video-effects/ai-jiggle' },
+  { title: 'AI Bikini', image: { src: '/imgs/cms/AI-Bikini-Generator_比基尼_1.png' }, url: '/en/video-effects/ai-bikini' },
+  { title: 'AI Dance', image: { src: '/imgs/cms/AI-Dance-Generator_肚皮舞_1.png' }, url: '/en/video-effects/ai-dance' },
+  { title: 'AI Sing', image: { src: '/imgs/cms/AI-Kissing_脸颊之吻_1.png' }, url: '/en/video-effects/ai-sing' },
+];
+
+// 默认图片工具
+const DEFAULT_IMAGE_TOOLS: MoreToolItem[] = [
+  { title: 'AI Fake Date', image: { src: '/imgs/cms/AI-Fake-Date_美国女友_1.png' }, url: '/en/photo-effects/ai-fake-date' },
+  { title: 'Hug Generator', image: { src: '/imgs/cms/Hug_侧身依抱_1.png' }, url: '/en/photo-effects/hug-generator' },
+  { title: 'Pregnant AI', image: { src: '/imgs/cms/Pregnant-AI_怀孕_1.png' }, url: '/en/photo-effects/pregnant-ai' },
+  { title: 'Celebrity Selfie', image: { src: '/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png' }, url: '/en/photo-effects/ai-selfie-with-celebrities' },
+  { title: 'Couple Goals', image: { src: '/imgs/cms/Hug_公主抱_1.png' }, url: '/en/photo-effects/couple-goals' },
+  { title: 'Vacation Photo', image: { src: '/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png' }, url: '/en/photo-effects/vacation-photo' },
+  { title: 'Family Photo', image: { src: '/imgs/cms/AI-Fake-Date_中国女友_1.png' }, url: '/en/photo-effects/family-photo' },
+  { title: 'Party Photo', image: { src: '/imgs/cms/Hug_飞扑拥抱_1.png' }, url: '/en/photo-effects/party-photo' },
+];
+
 /**
- * 更多工具推荐 (网格)
+ * 更多工具推荐 (网格) - 显示至少两排
  */
-export function MoreToolsSection({ title, items }: MoreToolsSectionProps) {
+export function MoreToolsSection({ title, items, toolType = 'video' }: MoreToolsSectionProps) {
+  // 根据工具类型选择默认工具
+  const defaultTools = toolType === 'video' ? DEFAULT_VIDEO_TOOLS : DEFAULT_IMAGE_TOOLS;
+  // 如果传入items不足8个，用默认工具补齐
+  const displayItems = items.length >= 8 ? items : [...items, ...defaultTools].slice(0, 8);
+
   return (
     <section className="bg-black py-20 text-white">
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">{title}</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((item, idx) => (
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {displayItems.map((item, idx) => (
             <Link key={idx} href={item.url} className="group block overflow-hidden rounded-xl border border-gray-800 bg-gray-900/50 hover:border-gray-700 transition-colors">
-              <div className="relative aspect-video overflow-hidden border-b border-gray-800">
+              <div className="relative aspect-[4/5] overflow-hidden border-b border-gray-800">
                 <Image 
                   src={item.image.src} 
                   alt={item.title} 
@@ -225,7 +255,7 @@ export function MoreToolsSection({ title, items }: MoreToolsSectionProps) {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-3">
                  <div className="text-sm font-medium text-gray-400 group-hover:text-emerald-400 transition-colors">
                    {item.title}
                  </div>

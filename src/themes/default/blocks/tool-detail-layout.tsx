@@ -26,8 +26,8 @@ export function ToolDetailLayout({
         </aside>
 
         {/* Middle Content - Compact Tool Interface */}
-        <main className="shrink-0 w-full max-w-[560px] border-r border-border/50 bg-background">
-          <div className="p-6 xl:p-8">
+        <main className="shrink-0 w-full max-w-[400px] border-r border-border/50 bg-background">
+          <div className="p-4 xl:p-5">
             {children}
           </div>
         </main>
