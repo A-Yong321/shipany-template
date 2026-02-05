@@ -10,7 +10,7 @@ import {
   getCookieFromCtx,
   getHeaderValue,
   guessLocaleFromAcceptLanguage,
-} from '@/shared/lib/cookie';
+} from '@/shared/lib/cookies';
 import { getUuid } from '@/shared/lib/hash';
 import { getClientIp } from '@/shared/lib/ip';
 import { grantCreditsForNewUser } from '@/shared/models/credit';

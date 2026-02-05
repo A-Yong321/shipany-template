@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-import { getCookie, setCookie } from '@/shared/lib/cookie';
+import { getCookie, setCookie } from '@/shared/lib/cookies';
 
 const COOKIE_NAME = 'utm_source';
 const COOKIE_DAYS = 30;

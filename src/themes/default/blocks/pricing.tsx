@@ -25,7 +25,7 @@ import {
 } from '@/shared/components/ui/select';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { useAppContext } from '@/shared/contexts/app';
-import { getCookie } from '@/shared/lib/cookie';
+import { getCookie } from '@/shared/lib/cookies';
 import { cn } from '@/shared/lib/utils';
 import { Subscription } from '@/shared/models/subscription';
 import {
