@@ -115,23 +115,60 @@ export function Header({ header }: { header: HeaderType }) {
                   )}
                   {item.title}
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="min-w-2xs origin-top p-0.5">
+                <NavigationMenuContent className="min-w-md origin-top p-0.5">
                   <div className="border-foreground/5 bg-card ring-foreground/5 rounded-[calc(var(--radius)-2px)] border border-transparent p-2 shadow ring-1">
-                    <ul className="mt-1 space-y-2">
-                      {item.children?.map((subItem: NavItem, index: number) => (
-                        <ListItem
-                          key={index}
-                          href={subItem.url || ''}
-                          target={subItem.target || '_self'}
-                          title={subItem.title || ''}
-                          description={subItem.description || ''}
-                        >
-                          {subItem.icon && (
-                            <SmartIcon name={subItem.icon as string} />
-                          )}
-                        </ListItem>
-                      ))}
-                    </ul>
+                    <div className="grid grid-cols-2 gap-4 p-2">
+                      {item.children?.map((subItem: NavItem, index: number) => {
+                        // 如果subItem有children,显示为分组
+                        if (subItem.children && subItem.children.length > 0) {
+                          return (
+                            <div key={index} className="space-y-2">
+                              <div className="flex items-center gap-2 px-2 py-1">
+                                {subItem.icon && (
+                                  <SmartIcon name={subItem.icon as string} className="h-4 w-4" />
+                                )}
+                                <div>
+                                  <div className="text-sm font-medium">{subItem.title}</div>
+                                  {subItem.description && (
+                                    <div className="text-xs text-muted-foreground">{subItem.description}</div>
+                                  )}
+                                </div>
+                              </div>
+                              <ul className="space-y-1">
+                                {subItem.children.map((childItem: NavItem, childIndex: number) => (
+                                  <ListItem
+                                    key={childIndex}
+                                    href={childItem.url || ''}
+                                    target={childItem.target || '_self'}
+                                    title={childItem.title || ''}
+                                    description={childItem.description || ''}
+                                  >
+                                    {childItem.icon && (
+                                      <SmartIcon name={childItem.icon as string} />
+                                    )}
+                                  </ListItem>
+                                ))}
+                              </ul>
+                            </div>
+                          );
+                        }
+                        
+                        // 否则显示为普通菜单项
+                        return (
+                          <ListItem
+                            key={index}
+                            href={subItem.url || ''}
+                            target={subItem.target || '_self'}
+                            title={subItem.title || ''}
+                            description={subItem.description || ''}
+                          >
+                            {subItem.icon && (
+                              <SmartIcon name={subItem.icon as string} />
+                            )}
+                          </ListItem>
+                        );
+                      })}
+                    </div>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -168,25 +205,65 @@ export function Header({ header }: { header: HeaderType }) {
                     </AccordionTrigger>
                     <AccordionContent className="pb-5">
                       <ul>
-                        {item.children?.map((subItem: NavItem, iidx) => (
-                          <li key={iidx}>
-                            <Link
-                              href={subItem.url || ''}
-                              onClick={closeMenu}
-                              className="grid grid-cols-[auto_1fr] items-center gap-2.5 px-4 py-2"
-                            >
-                              <div
-                                aria-hidden
-                                className="flex items-center justify-center *:size-4"
+                        {item.children?.map((subItem: NavItem, iidx) => {
+                          // 如果subItem有children,显示为分组
+                          if (subItem.children && subItem.children.length > 0) {
+                            return (
+                              <li key={iidx} className="mb-3">
+                                <div className="px-4 py-2">
+                                  <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                                    {subItem.icon && (
+                                      <SmartIcon name={subItem.icon as string} className="size-4" />
+                                    )}
+                                    {subItem.title}
+                                  </div>
+                                </div>
+                                <ul className="mt-1">
+                                  {subItem.children.map((childItem: NavItem, childIdx) => (
+                                    <li key={childIdx}>
+                                      <Link
+                                        href={childItem.url || ''}
+                                        onClick={closeMenu}
+                                        className="grid grid-cols-[auto_1fr] items-center gap-2.5 px-8 py-2 hover:bg-muted/50"
+                                      >
+                                        <div
+                                          aria-hidden
+                                          className="flex items-center justify-center *:size-4"
+                                        >
+                                          {childItem.icon && (
+                                            <SmartIcon name={childItem.icon as string} />
+                                          )}
+                                        </div>
+                                        <div className="text-sm">{childItem.title}</div>
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            );
+                          }
+                          
+                          // 否则显示为普通菜单项
+                          return (
+                            <li key={iidx}>
+                              <Link
+                                href={subItem.url || ''}
+                                onClick={closeMenu}
+                                className="grid grid-cols-[auto_1fr] items-center gap-2.5 px-4 py-2"
                               >
-                                {subItem.icon && (
-                                  <SmartIcon name={subItem.icon as string} />
-                                )}
-                              </div>
-                              <div className="text-base">{subItem.title}</div>
-                            </Link>
-                          </li>
-                        ))}
+                                <div
+                                  aria-hidden
+                                  className="flex items-center justify-center *:size-4"
+                                >
+                                  {subItem.icon && (
+                                    <SmartIcon name={subItem.icon as string} />
+                                  )}
+                                </div>
+                                <div className="text-base">{subItem.title}</div>
+                              </Link>
+                            </li>
+                          );
+                        })}
                       </ul>
                     </AccordionContent>
                   </>

@@ -1,96 +1,170 @@
 {
-  "background-remover": {
+  "text-to-image": {
     "metadata": {
-      "title": "AI Background Remover - Remove Image Backgrounds Instantly",
-      "description": "Remove backgrounds from images with AI precision. Perfect for product photos, portraits, and professional editing."
+      "title": "Text to Image Generator - Create AI Art",
+      "description": "Turn text into amazing images with AI."
     },
     "page": {
-      "title": "AI Background Remover",
+      "title": "Text to Image Generator",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "Remove Backgrounds Instantly",
-          "description": "Professional AI-powered background removal. Get pixel-perfect results in seconds.",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Background Remover" },
-          "buttons": [
-            { "title": "Start Removing", "url": "/ai-image-generator", "icon": "RiEraserLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "Portrait", "prompt": "A beautiful portrait of a woman, cyberpunk style, neon lights", "image": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              { "category": "Landscape", "prompt": "Futuristic city landscape, sunset, flying cars", "image": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              { "category": "Anime", "prompt": "Anime style character in a magical forest", "image": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" },
+              { "category": "Sci-Fi", "prompt": "Sci-fi spaceship landing on alien planet", "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
-          "items": [
-            {
-              "title": "Pixel-Perfect Precision",
-              "description": "Our AI accurately detects edges and preserves fine details like hair and fur.",
-              "image": { "src": "/imgs/features/landing-page.png", "alt": "Precision" }
-            },
-            {
-              "title": "Batch Processing",
-              "description": "Remove backgrounds from multiple images at once to save time.",
-              "image": { "src": "/imgs/features/admin-settings.png", "alt": "Batch" },
-              "reverse": true
-            }
-          ]
+        "intro": {
+          "title": "Turn Words into Art",
+          "description": "Create stunning images from simple text descriptions using our advanced AI models.",
+          "images": [{ "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Create AI Art?",
+          "description": "Generate amazing images in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Enter a text description." },
+            { "title": "Step 2", "description": "Select style and aspect ratio." },
+            { "title": "Step 3", "description": "Click Generate." }
+          ],
+          "button": { "title": "Create Image Now", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Commercial use?", "answer": "Yes, you own the images." }]
         }
       }
     }
   },
-  "object-remover": {
+  "image-to-image": {
     "metadata": {
-      "title": "AI Object Remover - Erase Unwanted Objects from Photos",
-      "description": "Remove unwanted objects, people, text, and watermarks from your photos seamlessly with AI."
+      "title": "Image to Image Generator - Transform Photos",
+      "description": "Transform existing photos into new styles with AI."
     },
     "page": {
-      "title": "AI Object Remover",
+      "title": "Image to Image Generator",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "Erase Anything from Your Photos",
-          "description": "Remove unwanted objects, people, text, and watermarks with AI magic.",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Object Remover" },
-          "buttons": [
-            { "title": "Start Erasing", "url": "/ai-image-generator", "icon": "RiMagicLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "Cyber", "prompt": "Transform into cyberpunk style", "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+              { "category": "Oil", "prompt": "Oil painting style transformation", "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" },
+              { "category": "Anime", "prompt": "Convert photo to anime style", "image": "/imgs/cms/Twerk_扭臀舞_1.png" },
+              { "category": "Sketch", "prompt": "Pencil sketch drawing style", "image": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
-          "items": [
-            {
-              "title": "Smart Content Fill",
-              "description": "AI intelligently fills the removed area to match the surrounding environment.",
-              "image": { "src": "/imgs/features/admin-settings.png", "alt": "Smart Fill" }
-            }
-          ]
+        "intro": {
+          "title": "Restyle Your Photos",
+          "description": "Give your photos a new look with our Image to Image transformation tool.",
+          "images": [{ "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Restyle Photos?",
+          "description": "Transform styles easily.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Upload an image." },
+            { "title": "Step 2", "description": "Describe the new style." },
+            { "title": "Step 3", "description": "Generate." }
+          ],
+          "button": { "title": "Restyle Now", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Does it keep the shape?", "answer": "Yes, it preserves the structure." }]
         }
       }
     }
   },
-  "image-expander": {
+  "text-to-video": {
     "metadata": {
-      "title": "AI Image Expander - Extend Image Boundaries Intelligently",
-      "description": "Expand your image boundaries with AI. Intelligently generate content to fill extended areas."
+      "title": "Text to Video Generator - Create AI Videos",
+      "description": "Turn text descriptions into video clips."
     },
     "page": {
-      "title": "AI Image Expander",
+      "title": "Text to Video Generator",
       "sections": {
-        "hero": {
-          "id": "hero",
-          "title": "Expand Your Images Intelligently",
-          "description": "Extend image boundaries and let AI fill in the rest naturally.",
-          "background_image": { "src": "/imgs/bg/tree.jpg", "alt": "Image Expander" },
-          "buttons": [
-            { "title": "Start Expanding", "url": "/ai-image-generator", "icon": "RiAspectRatioLine" }
-          ]
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "Cinematic", "prompt": "Cinematic drone shot of mountains", "image": "/imgs/cms/Jiggle_抖动身体_1.png" },
+              { "category": "Cartoon", "prompt": "Cute cartoon character dancing", "image": "/imgs/cms/Jiggle_抖动身体_2.png" },
+              { "category": "Nature", "prompt": "Time lapse of flowers blooming", "image": "/imgs/cms/Muscle_肌肉展示_2.png" }
+            ]
+          }
         },
-        "features": {
-          "block": "feature-split",
-          "items": [
-            {
-              "title": "Natural Extension",
-              "description": "AI analyzes your image and generates seamless extensions that blend perfectly.",
-              "image": { "src": "/imgs/features/user-billing.png", "alt": "Natural" }
-            }
-          ]
+        "intro": {
+          "title": "Text to Video Magic",
+          "description": "Briefly describe your scene and watch AI turn it into a video.",
+          "images": [{ "src": "/imgs/cms/Jiggle_抖动身体_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Create AI Videos?",
+          "description": "Turn text into video clips.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Write a prompt." },
+            { "title": "Step 2", "description": "Click Generate." },
+            { "title": "Step 3", "description": "Download your video." }
+          ],
+          "button": { "title": "Create Video", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Video length?", "answer": "Typically 2-4 seconds." }]
+        }
+      }
+    }
+  },
+  "image-to-video": {
+    "metadata": {
+      "title": "Image to Video Generator - Animate Photos",
+      "description": "Bring static photos to life with AI video generation."
+    },
+    "page": {
+      "title": "Image to Video Generator",
+      "sections": {
+        "tool": {
+          "data": {
+            "examples": [
+              { "category": "Motion", "prompt": "Add subtle motion to this scene", "image": "/imgs/cms/Hug_拥抱_1.png" },
+              { "category": "Transform", "prompt": "Morph subject into something else", "image": "/imgs/cms/Hug_拥抱_2.png" },
+              { "category": "Zoom", "prompt": "Slow zoom in effect", "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }
+            ]
+          }
+        },
+        "intro": {
+          "title": "Animate Your Photos",
+          "description": "Turn any static image into a dynamic video clip.",
+          "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Animate Photos?",
+          "description": "Bring images to life.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Upload a photo." },
+            { "title": "Step 2", "description": "Describe motion (optional)." },
+            { "title": "Step 3", "description": "Generate animation." }
+          ],
+          "button": { "title": "Animate Now", "url": "#tool" }
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Is it realistic?", "answer": "Yes, smooth motion." }]
         }
       }
     }

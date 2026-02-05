@@ -13,8 +13,32 @@
           "description": "Generate realistic fake date scenes with AI in beautiful cafe settings.",
           "background_image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
           "buttons": [
-            { "title": "Try Fake Date", "url": "/ai-image-generator", "icon": "Zap" }
+            { "title": "Try Fake Date", "url": "#tool", "icon": "Zap" }
           ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Fake Date Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Cafe", 
+                "prompt": "Romantic date in a cozy cafe, latte art on table, soft lighting",
+                "image": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
+              },
+              { 
+                "category": "Dinner", 
+                "prompt": "Candlelight dinner date, fine dining atmosphere, elegant dress",
+                "image": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
+              },
+              { 
+                "category": "Park", 
+                "prompt": "Walking in the park date, holding hands, autumn leaves",
+                "image": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
+              }
+            ]
+          }
         },
         "features": {
           "block": "feature-split",
@@ -24,6 +48,41 @@
               "description": "Create beautiful couple moments with realistic cafe and date settings.",
               "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
             }
+          ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Create Romantic Date Photos",
+          "description": "Generate realistic fake date scenes with AI. Perfect for social media or just for fun.",
+          "images": [
+            { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+            { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Fake Date?",
+          "description": "Create date photos in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose a date scenario." },
+            { "title": "Step 2", "description": "Upload your photo." },
+            { "title": "Step 3", "description": "Generate your date photo." }
+          ],
+          "button": { "title": "Create Date Photo", "url": "#tool" }
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            { "question": "Is it realistic?", "answer": "Yes, our AI creates photorealistic blends." }
+          ]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Effects",
+          "items": [
+            { "title": "AI Hug", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/video-effects/ai-hug" }
           ]
         }
       }
@@ -55,6 +114,17 @@
               "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Warm Hug Photos",
+          "description": "Generate touching hug photos with AI.",
+          "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Is it free?", "answer": "Yes, try it for free." }]
         }
       }
     }
@@ -85,6 +155,17 @@
               "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png" }
             }
           ]
+        },
+         "intro": {
+          "block": "tool-intro",
+          "title": "Maternity AI Photos",
+          "description": "Visualize pregnancy with beautiful AI photos.",
+          "images": [{ "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Is it realistic?", "answer": "Yes, highly realistic results." }]
         }
       }
     }
@@ -115,6 +196,17 @@
               "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "360 Character View",
+          "description": "See your character from every angle.",
+          "images": [{ "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Does it work for anime?", "answer": "Yes, it supports anime styles." }]
         }
       }
     }
@@ -145,6 +237,17 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Russian Girlfriend",
+          "description": "Generate romantic photos with a virtual Russian girlfriend.",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Is it customizable?", "answer": "Yes, you can adjust appearance settings." }]
         }
       }
     }
@@ -175,6 +278,17 @@
               "image": { "src": "/imgs/cms/Hug_公主抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Princess Carry Photos",
+          "description": "Romantic princess hug photos generated by AI.",
+          "images": [{ "src": "/imgs/cms/Hug_公主抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Can I upload my own photo?", "answer": "Yes, upload your photo to start." }]
         }
       }
     }
@@ -205,6 +319,17 @@
               "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Celebrity Selfies",
+          "description": "Take a selfie with any celebrity instantly using AI.",
+          "images": [{ "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Which celebrities?", "answer": "We support thousands of famous figures." }]
         }
       }
     }
@@ -235,6 +360,17 @@
               "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Side Hug Photos",
+          "description": "Generate friendly side hug photos.",
+          "images": [{ "src": "/imgs/cms/Hug_侧身依抱_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Is it fast?", "answer": "Yes, generation takes seconds." }]
         }
       }
     }
@@ -265,6 +401,17 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Chinese Girlfriend",
+          "description": "Romantic photos with a virtual Chinese girlfriend.",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "High quality?", "answer": "Yes, we output HD images." }]
         }
       }
     }
@@ -295,6 +442,17 @@
               "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png" }
             }
           ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI French Girlfriend",
+          "description": "Romantic photos with a virtual French girlfriend in Paris.",
+          "images": [{ "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" }]
+        },
+        "faq": {
+            "block": "faq",
+            "title": "FAQs",
+            "items": [{ "question": "Can I change background?", "answer": "Yes, specify in the prompt." }]
         }
       }
     }

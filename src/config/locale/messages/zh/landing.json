@@ -17,30 +17,92 @@
           "title": "工具",
           "icon": "RiAppsLine",
           "children": [
-             {
-              "title": "背景移除",
-              "description": "移除图片背景",
-              "url": "/tools/background-remover",
-              "icon": "RiEraserLine"
-             },
-             {
-              "title": "物体移除",
-              "description": "移除不想要的物体",
-              "url": "/tools/object-remover",
-              "icon": "RiMagicLine"
-             },
-             {
-              "title": "图片扩图",
-              "description": "扩展图片边界",
-              "url": "/tools/image-expander",
-              "icon": "RiAspectRatioLine"
-             },
-             {
-              "title": "所有工具",
-              "description": "查看所有 14+ 工具",
-              "url": "/tools",
-              "icon": "RiApps2Line"
-             }
+            {
+              "title": "视频工具",
+              "description": "AI驱动的视频特效",
+              "icon": "Video",
+              "children": [
+                {
+                  "title": "AI接吻",
+                  "description": "创建接吻视频",
+                  "url": "/video-effects/ai-kissing",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI肌肉",
+                  "description": "为照片添加肌肉",
+                  "url": "/video-effects/ai-muscle",
+                  "icon": "Dumbbell"
+                },
+                {
+                  "title": "AI拥抱",
+                  "description": "创建温暖拥抱视频",
+                  "url": "/video-effects/ai-hug",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI扭臀舞",
+                  "description": "流行扭臀舞蹈",
+                  "url": "/video-effects/ai-twerk",
+                  "icon": "Music"
+                },
+                {
+                  "title": "AI抖动",
+                  "description": "有趣的身体动作",
+                  "url": "/video-effects/ai-jiggle",
+                  "icon": "Zap"
+                },
+                {
+                  "title": "查看更多",
+                  "description": "探索所有视频特效",
+                  "url": "/video-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            },
+            {
+              "title": "照片工具",
+              "description": "AI驱动的照片特效",
+              "icon": "Image",
+              "children": [
+                {
+                  "title": "AI虚拟约会",
+                  "description": "浪漫约会照片",
+                  "url": "/photo-effects/ai-fake-date",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "拥抱生成器",
+                  "description": "温暖拥抱照片",
+                  "url": "/photo-effects/hug-generator",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "名人自拍",
+                  "description": "与名人自拍",
+                  "url": "/photo-effects/celebrity-selfie",
+                  "icon": "Camera"
+                },
+                {
+                  "title": "AI怀孕",
+                  "description": "美丽的孕照",
+                  "url": "/photo-effects/pregnant-ai",
+                  "icon": "Baby"
+                },
+                {
+                  "title": "角色360",
+                  "description": "360°角色旋转",
+                  "url": "/photo-effects/character-360",
+                  "icon": "RotateCw"
+                },
+                {
+                  "title": "查看更多",
+                  "description": "探索所有照片特效",
+                  "url": "/photo-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            }
           ]
         },
         {

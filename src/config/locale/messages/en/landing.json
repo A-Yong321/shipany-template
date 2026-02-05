@@ -17,30 +17,92 @@
           "title": "Tools",
           "icon": "RiAppsLine",
           "children": [
-             {
-              "title": "Background Remover",
-              "description": "Remove image background",
-              "url": "/tools/background-remover",
-              "icon": "RiEraserLine"
-             },
-             {
-              "title": "Object Remover",
-              "description": "Remove unwanted objects",
-              "url": "/tools/object-remover",
-              "icon": "RiMagicLine"
-             },
-             {
-              "title": "Image Expander",
-              "description": "Expand image boundaries",
-              "url": "/tools/image-expander",
-              "icon": "RiAspectRatioLine"
-             },
-             {
-              "title": "All Tools",
-              "description": "View all 14+ tools",
-              "url": "/tools",
-              "icon": "RiApps2Line"
-             }
+            {
+              "title": "Video Tools",
+              "description": "AI-powered video effects",
+              "icon": "Video",
+              "children": [
+                {
+                  "title": "AI Kissing",
+                  "description": "Create kissing videos",
+                  "url": "/video-effects/ai-kissing",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI Muscle",
+                  "description": "Add muscles to photos",
+                  "url": "/video-effects/ai-muscle",
+                  "icon": "Dumbbell"
+                },
+                {
+                  "title": "AI Hug",
+                  "description": "Create warm hug videos",
+                  "url": "/video-effects/ai-hug",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI Twerk",
+                  "description": "Trending twerk dance",
+                  "url": "/video-effects/ai-twerk",
+                  "icon": "Music"
+                },
+                {
+                  "title": "AI Jiggle",
+                  "description": "Fun body movements",
+                  "url": "/video-effects/ai-jiggle",
+                  "icon": "Zap"
+                },
+                {
+                  "title": "View More",
+                  "description": "Explore all video effects",
+                  "url": "/video-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            },
+            {
+              "title": "Photo Tools",
+              "description": "AI-powered photo effects",
+              "icon": "Image",
+              "children": [
+                {
+                  "title": "AI Fake Date",
+                  "description": "Romantic date photos",
+                  "url": "/photo-effects/ai-fake-date",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "Hug Generator",
+                  "description": "Warm embrace photos",
+                  "url": "/photo-effects/hug-generator",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "Celebrity Selfie",
+                  "description": "Selfies with celebrities",
+                  "url": "/photo-effects/celebrity-selfie",
+                  "icon": "Camera"
+                },
+                {
+                  "title": "Pregnant AI",
+                  "description": "Beautiful maternity photos",
+                  "url": "/photo-effects/pregnant-ai",
+                  "icon": "Baby"
+                },
+                {
+                  "title": "Character 360",
+                  "description": "360° character rotation",
+                  "url": "/photo-effects/character-360",
+                  "icon": "RotateCw"
+                },
+                {
+                  "title": "View More",
+                  "description": "Explore all photo effects",
+                  "url": "/photo-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            }
           ]
         },
         {
