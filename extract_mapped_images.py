@@ -3,8 +3,8 @@ import os
 from PIL import Image as PILImage
 import io
 
-source_file = r'd:\1PhotoAI\资源.xlsx'
-target_dir = r'd:\1PhotoAI\1photo-web\public\images\cms'
+source_file = r'd:\shipany-template\图像资源.xlsx'
+target_dir = r'd:\shipany-template\public\img_video\imgs'
 
 # Ensure output directory exists
 if not os.path.exists(target_dir):
@@ -26,8 +26,8 @@ try:
     
     print("Building metadata map...")
     for r in range(1, max_row + 1):
-        b_val = ws.cell(row=r, column=2).value # Type
-        c_val = ws.cell(row=r, column=3).value # Scene
+        b_val = ws.cell(row=r, column=2).value # Column B
+        c_val = ws.cell(row=r, column=3).value # Column C
         
         if b_val:
             current_b = b_val
@@ -47,25 +47,18 @@ try:
         row = img.anchor._from.row + 1
         col = img.anchor._from.col + 1
         
-        # Debug location
-        print(f"Img {i}: Row={row}, Col={col}")
-        
-        # We want Col D (4) -> _1 and Col E (5) -> _2 (Verified from debug)
-        if col not in [4, 5]:
+        # We want Col D (4) -> _1 and Col F (6) -> _2
+        # Debug: check rows/cols
+        # print(f"Img {i} at {row},{col}")
+
+        if col not in [4, 6]:
             continue
             
         # Lookup metadata
         b_val, c_val = row_map.get(row, (None, None))
         
-        if not b_val:
-             # Check if merged? Openpyxl should handle if using specific merged cell logic, but simplified:
-             # Use previous row's value if current is empty (common in Excel visual grouping)
-             pass 
-
         if not b_val or not c_val:
-            # Try row - 1 or row + 1 just in case of slight misalignment?
-            # Let's stick to strict row first.
-            print(f"Skipping image at Row {row}, Col {col}: Metadata missing despite fill-down. (Type={b_val}, Scene={c_val})")
+            print(f"Skipping image at Row {row}, Col {col}: Metadata missing. (Type={b_val}, Scene={c_val})")
             continue
             
         # Clean filenames
@@ -76,17 +69,18 @@ try:
         c_clean = clean_name(c_val)
         
         suffix = None
-        if col == 4:
+        if col == 4: # Column D
             suffix = "1"
-        elif col == 5:
+        elif col == 6: # Column F
             suffix = "2"
         
         filename = f"{b_clean}_{c_clean}_{suffix}.png"
         save_path = os.path.join(target_dir, filename)
         
-        # Save logic (same as before)
+        # Save logic
         try:
             saved = False
+            # Method 1: img.ref (path)
             if hasattr(img, 'ref'):
                  try:
                      pil_img = PILImage.open(img.ref)
@@ -95,8 +89,8 @@ try:
                  except:
                      pass
             
+            # Method 2: img.image (embedded)
             if not saved and hasattr(img, 'image'):
-                 # Try digging into image wrapper
                  try:
                      image_bytes = img.image._data()
                      pil_img = PILImage.open(io.BytesIO(image_bytes))
@@ -104,9 +98,9 @@ try:
                      saved = True
                  except:
                      pass
-                     
+
+            # Method 3: img._data (direct)
             if not saved:
-                # One last try - direct _data on img if it IS the Image object
                 try:
                     image_bytes = img._data()
                     pil_img = PILImage.open(io.BytesIO(image_bytes))
@@ -119,7 +113,7 @@ try:
                 print(f"Saved {filename}")
                 count += 1
             else:
-                print(f"Failed to extract date for {filename}")
+                print(f"Failed to extract content for {filename}")
 
         except Exception as save_err:
             print(f"Error saving {filename}: {save_err}")

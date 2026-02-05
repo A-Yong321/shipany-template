@@ -12,8 +12,18 @@ import { cn } from '@/shared/lib/utils';
 export function ToolSidebar() {
   const pathname = usePathname();
 
+  // 定义导航项类型
+  type NavItem = {
+    title: string;
+    href: string;
+    icon?: any;
+    description?: string;
+    badge?: number | string;
+    isActive?: (path: string) => boolean;
+  };
+
   // 导航项配置
-  const navItems = [
+  const navItems: NavItem[] = [
     {
       title: '首页',
       icon: Home,
@@ -29,7 +39,7 @@ export function ToolSidebar() {
   ];
 
   // AI IMAGE分类
-  const aiImageItems = [
+  const aiImageItems: NavItem[] = [
     {
       title: 'AI 风格',
       href: '/text-to-image', // Redirect 'AI Style' to text-to-image for now, or create the page
@@ -48,7 +58,7 @@ export function ToolSidebar() {
   ];
 
   // AI VIDEO分类
-  const aiVideoItems = [
+  const aiVideoItems: NavItem[] = [
     {
       title: '文生视频',
       href: '/text-to-video',
