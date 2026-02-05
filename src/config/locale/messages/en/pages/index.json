@@ -92,7 +92,7 @@
             ],
             "button": {
                 "title": "AI Video Generator",
-                "url": "/video-effects"
+                "url": "/text-to-video"
             },
             "logos": [
                 "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg", "/imgs/logos/runway.svg"
@@ -108,7 +108,7 @@
             ],
             "button": {
                 "title": "AI Image Generator",
-                "url": "/photo-effects"
+                "url": "/text-to-image"
             },
             "logos": [
                 "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
@@ -132,7 +132,7 @@
             ],
             "button": {
               "title": "Try AI Image Generator",
-              "url": "/photo-effects"
+              "url": "/text-to-image"
             },
             "image": {
               "src": "/imgs/image.png",
@@ -150,7 +150,7 @@
             ],
             "button": {
               "title": "Try AI Video Generator",
-              "url": "/video-effects"
+              "url": "/text-to-video"
             },
             "image": {
               "src": "/videos/AI_Kissing.mp4",

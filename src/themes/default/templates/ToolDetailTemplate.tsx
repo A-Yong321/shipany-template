@@ -43,6 +43,9 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   // 根据namespace判断工具类型
   const toolType = namespace.includes('video') ? 'video' : 'image';
   
+  // 判断输入类型: text-to-image 和 text-to-video 使用文本输入
+  const inputType = ['text-to-image', 'text-to-video'].includes(slug) ? 'text' : 'image';
+  
   // 构建底部内容
   const bottomContent = (
     <>
@@ -67,6 +70,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
         defaultPrompt={examples[0]?.prompt || ''}
         toolType={toolType}
         initialType={initialType}
+        inputType={inputType}
       />
     </ToolDetailLayout>
   );

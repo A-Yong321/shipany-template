@@ -38,6 +38,15 @@
             "block": "faq",
             "title": "FAQs",
             "items": [{ "question": "Commercial use?", "answer": "Yes, you own the images." }]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Effects",
+          "items": [
+            { "title": "Image to Image", "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }, "url": "/image-to-image" },
+            { "title": "Text to Video", "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }, "url": "/text-to-video" },
+            { "title": "Image to Video", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/image-to-video" }
+          ]
         }
       }
     }
@@ -123,6 +132,15 @@
             "block": "faq",
             "title": "FAQs",
             "items": [{ "question": "Video length?", "answer": "Typically 2-4 seconds." }]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Effects",
+          "items": [
+            { "title": "Text to Image", "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }, "url": "/text-to-image" },
+            { "title": "Image to Image", "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }, "url": "/image-to-image" },
+            { "title": "Image to Video", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/image-to-video" }
+          ]
         }
       }
     }

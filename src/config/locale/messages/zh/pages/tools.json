@@ -81,5 +81,18 @@
         ]
       }
     }
+  },
+  "sidebar": {
+    "home": "首页",
+    "discover": "发现",
+    "discover_desc": "浏览所有特效",
+    "ai_image": "AI IMAGE",
+    "ai_style": "AI 风格",
+    "text_to_image": "文生图",
+    "image_to_image": "图生图",
+    "ai_video": "AI VIDEO",
+    "text_to_video": "文生视频",
+    "image_to_video": "图生视频",
+    "gallery": "画廊"
   }
 }

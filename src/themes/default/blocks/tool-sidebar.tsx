@@ -1,8 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Home, Compass, Image, Video, Sparkles } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Home, Compass, Sparkles, Image } from 'lucide-react';
+
+import { Link, usePathname } from '@/core/i18n/navigation';
 import { cn } from '@/shared/lib/utils';
 
 /**
@@ -10,6 +11,7 @@ import { cn } from '@/shared/lib/utils';
  * 用于工具详情页的左侧导航
  */
 export function ToolSidebar() {
+  const t = useTranslations('pages.tools.sidebar');
   const pathname = usePathname();
 
   // 定义导航项类型
@@ -25,34 +27,34 @@ export function ToolSidebar() {
   // 导航项配置
   const navItems: NavItem[] = [
     {
-      title: '首页',
+      title: t('home'),
       icon: Home,
       href: '/',
-      description: '返回首页',
+      description: t('home'),
     },
     {
-      title: '发现',
+      title: t('discover'),
       icon: Compass,
       href: '/#effects', // Modified: link to effects section
-      description: '浏览所有特效',
+      description: t('discover_desc'),
     },
   ];
 
   // AI IMAGE分类
   const aiImageItems: NavItem[] = [
     {
-      title: 'AI 风格',
+      title: t('ai_style'),
       href: '/text-to-image', // Redirect 'AI Style' to text-to-image for now, or create the page
       icon: Sparkles,
       badge: 437,
       isActive: (path: string) => path === '/ai-style' || path === '/text-to-image' || path.includes('/video-effects') || path.includes('/photo-effects'),
     },
     {
-      title: '文生图',
+      title: t('text_to_image'),
       href: '/text-to-image',
     },
     {
-      title: '图生图',
+      title: t('image_to_image'),
       href: '/image-to-image',
     },
   ];
@@ -60,11 +62,11 @@ export function ToolSidebar() {
   // AI VIDEO分类
   const aiVideoItems: NavItem[] = [
     {
-      title: '文生视频',
+      title: t('text_to_video'),
       href: '/text-to-video',
     },
     {
-      title: '图生视频',
+      title: t('image_to_video'),
       href: '/image-to-video',
     },
   ];
@@ -129,7 +131,7 @@ export function ToolSidebar() {
         {/* AI IMAGE分类 */}
         <div className="space-y-3">
           <div className="flex items-center gap-2 px-4">
-             <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">AI IMAGE</span>
+            <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">{t('ai_image')}</span>
           </div>
           <div className="space-y-1">
             {aiImageItems.map((item) => {
@@ -165,7 +167,7 @@ export function ToolSidebar() {
         {/* AI VIDEO分类 */}
         <div className="space-y-3">
           <div className="flex items-center gap-2 px-4">
-            <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">AI VIDEO</span>
+            <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">{t('ai_video')}</span>
           </div>
           <div className="space-y-1">
             {aiVideoItems.map((item) => {
@@ -204,7 +206,7 @@ export function ToolSidebar() {
           )}
         >
           <Image className="h-5 w-5" />
-          <span>画廊</span>
+          <span>{t('gallery')}</span>
         </Link>
       </div>
     </nav>
