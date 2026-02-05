@@ -15,34 +15,34 @@ export function ToolSidebar() {
   // 导航项配置
   const navItems = [
     {
-      title: 'Home',
+      title: '首页',
       icon: Home,
       href: '/',
-      description: 'Back to homepage',
+      description: '返回首页',
     },
     {
-      title: 'Explore',
+      title: '发现',
       icon: Compass,
       href: '/#effects', // Modified: link to effects section
-      description: 'Browse all effects',
+      description: '浏览所有特效',
     },
   ];
 
   // AI IMAGE分类
   const aiImageItems = [
     {
-      title: 'AI Style',
+      title: 'AI 风格',
       href: '/text-to-image', // Redirect 'AI Style' to text-to-image for now, or create the page
       icon: Sparkles,
       badge: 437,
       isActive: (path: string) => path === '/ai-style' || path === '/text-to-image' || path.includes('/video-effects') || path.includes('/photo-effects'),
     },
     {
-      title: 'Text to Image',
+      title: '文生图',
       href: '/text-to-image',
     },
     {
-      title: 'Image to Image',
+      title: '图生图',
       href: '/image-to-image',
     },
   ];
@@ -50,11 +50,11 @@ export function ToolSidebar() {
   // AI VIDEO分类
   const aiVideoItems = [
     {
-      title: 'Text to Video',
+      title: '文生视频',
       href: '/text-to-video',
     },
     {
-      title: 'Image to Video',
+      title: '图生视频',
       href: '/image-to-video',
     },
   ];
@@ -89,11 +89,11 @@ export function ToolSidebar() {
   };
 
   return (
-    <nav className="flex h-full flex-col px-4 py-6">
+    <nav className="flex h-full flex-col px-4 py-8">
       {/* 顶部导航区 */}
-      <div className="space-y-6">
+      <div className="space-y-8">
         {/* 主导航项 */}
-        <div className="space-y-1">
+        <div className="space-y-2">
           {navItems.map((item) => {
              const isActive = pathname === item.href;
              const Icon = item.icon;
@@ -102,14 +102,14 @@ export function ToolSidebar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
-                  'hover:bg-muted hover:text-foreground',
+                  'flex items-center gap-4 rounded-xl px-4 py-3.5 text-base font-medium transition-all duration-200',
+                  'hover:bg-muted hover:text-foreground hover:scale-105',
                   isActive
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground'
+                    ? 'bg-primary text-primary-foreground shadow-md'
+                    : 'text-muted-foreground/80'
                 )}
               >
-                <Icon className="h-4 w-4" />
+                <Icon className="h-5 w-5" />
                 <span>{item.title}</span>
               </Link>
              );
@@ -117,37 +117,84 @@ export function ToolSidebar() {
         </div>
 
         {/* AI IMAGE分类 */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-2 px-3">
-             <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">AI IMAGE</span>
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 px-4">
+             <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">AI IMAGE</span>
           </div>
-          <div className="space-y-0.5">
-            {aiImageItems.map(renderNavItem)}
+          <div className="space-y-1">
+            {aiImageItems.map((item) => {
+              const isActive = item.isActive ? item.isActive(pathname) : pathname === item.href;
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    'flex items-center justify-between rounded-xl px-4 py-3 text-base transition-all duration-200',
+                    'hover:bg-muted hover:text-foreground hover:pl-5',
+                    isActive
+                      ? 'bg-muted text-foreground font-semibold shadow-sm'
+                      : 'text-muted-foreground/80'
+                  )}
+                >
+                  <div className="flex items-center gap-3">
+                    {Icon && <Icon className="h-5 w-5" />}
+                    <span className={cn(!Icon && "pl-8")}>{item.title}</span>
+                  </div>
+                  {item.badge && (
+                    <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                      {item.badge}
+                    </span>
+                  )}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
         {/* AI VIDEO分类 */}
-        <div className="space-y-2">
-          <div className="flex items-center gap-2 px-3">
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">AI VIDEO</span>
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 px-4">
+            <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">AI VIDEO</span>
           </div>
-          <div className="space-y-0.5">
-            {aiVideoItems.map(renderNavItem)}
+          <div className="space-y-1">
+            {aiVideoItems.map((item) => {
+              const isActive = item.isActive ? item.isActive(pathname) : pathname === item.href;
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    'flex items-center justify-between rounded-xl px-4 py-3 text-base transition-all duration-200',
+                    'hover:bg-muted hover:text-foreground hover:pl-5',
+                    isActive
+                      ? 'bg-muted text-foreground font-semibold shadow-sm'
+                      : 'text-muted-foreground/80'
+                  )}
+                >
+                  <div className="flex items-center gap-3">
+                    {Icon && <Icon className="h-5 w-5" />}
+                    <span className={cn(!Icon && "pl-8")}>{item.title}</span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
 
       {/* 底部区域 - 占满剩余空间 */}
-      <div className="mt-auto pt-6 border-t border-border/50">
+      <div className="mt-auto pt-8 border-t border-border/40">
         <Link
           href="/gallery"
           className={cn(
-            'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
-            'hover:bg-muted hover:text-foreground text-muted-foreground'
+            'flex items-center gap-4 rounded-xl px-4 py-3.5 text-base font-medium transition-all duration-200',
+            'hover:bg-muted hover:text-foreground hover:scale-105 text-muted-foreground/80'
           )}
         >
-          <Image className="h-4 w-4" />
-          <span>Gallery</span>
+          <Image className="h-5 w-5" />
+          <span>画廊</span>
         </Link>
       </div>
     </nav>

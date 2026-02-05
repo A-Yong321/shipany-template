@@ -92,7 +92,7 @@
             ],
             "button": {
                 "title": "AI Video Generator",
-                "url": "/ai-video-generator"
+                "url": "/video-effects"
             },
             "logos": [
                 "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg", "/imgs/logos/runway.svg"
@@ -108,7 +108,7 @@
             ],
             "button": {
                 "title": "AI Image Generator",
-                "url": "/ai-image-generator"
+                "url": "/photo-effects"
             },
             "logos": [
                 "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
@@ -132,7 +132,7 @@
             ],
             "button": {
               "title": "Try AI Image Generator",
-              "url": "/ai-image-generator"
+              "url": "/photo-effects"
             },
             "image": {
               "src": "/imgs/image.png",
@@ -150,7 +150,7 @@
             ],
             "button": {
               "title": "Try AI Video Generator",
-              "url": "/ai-video-generator"
+              "url": "/video-effects"
             },
             "image": {
               "src": "/videos/AI_Kissing.mp4",
@@ -178,97 +178,112 @@
                 "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "AI Kissing" },
                 "video": "/videos/AI_Kissing.mp4",
                 "badge": "HOT",
-                "count": "3M"
+                "count": "3M",
+                "url": "/video-effects/ai-kissing?type=Romantic"
               },
               {
                 "title": "AI Muscle Generator",
                 "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "AI Muscle" },
                 "video": "/videos/肌肉展示.mp4",
                 "badge": "HOT",
-                "count": "149.4K"
+                "count": "149.4K",
+                "url": "/video-effects/ai-muscle?type=Bodybuilder"
               },
               {
                 "title": "AI Belly Dance",
                 "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI Dance" },
                 "video": "/videos/肚皮舞.mp4",
                 "badge": "HOT",
-                "count": "127.1K"
+                "count": "127.1K",
+                "url": "/video-effects/ai-dance-pop"
               },
               {
                 "title": "AI Body Jiggle",
                 "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "AI Jiggle" },
                 "video": "/videos/抖动身体.mp4",
                 "badge": "HOT",
-                "count": "73.9K"
+                "count": "73.9K",
+                "url": "/video-effects/ai-jiggle?type=Fun"
               },
               {
                 "title": "AI Twerk Dance",
                 "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "AI Twerk" },
                 "video": "/videos/扭臀舞.mp4",
                 "badge": "NEW",
-                "count": "50K"
+                "count": "50K",
+                "url": "/video-effects/ai-twerk?type=Energetic"
               },
               {
                 "title": "AI Electric Shake",
                 "image": { "src": "/imgs/cms/Twerk_电摇舞_1.png", "alt": "AI Electric Shake" },
                 "video": "/videos/电摇舞.mp4",
-                "count": "45K"
+                "count": "45K",
+                "url": "/video-effects/ai-twerk?type=Energetic"
               },
               {
                 "title": "AI normal Kiss",
                 "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI Kiss" },
                 "video": "/videos/正常接吻.mp4",
-                "count": "40K"
+                "count": "40K",
+                "url": "/video-effects/ai-kissing?type=Romantic"
               },
               {
                 "title": "India AI Kissing",
                 "image": { "src": "/imgs/cms/AI-Fake-Date_印度女友_1.png", "alt": "India Kiss" },
                 "video": "/videos/AI_Kissing_印度女友.mp4",
-                "count": "35K"
+                "count": "35K",
+                "url": "/video-effects/ai-kissing?type=Romantic"
               },
               {
                 "title": "Russian AI Kissing",
                 "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Russian Kiss" },
                 "video": "/videos/俄罗斯女友.mp4",
                 "badge": "HOT",
-                "count": "1.2M"
+                "count": "1.2M",
+                "url": "/video-effects/ai-kissing?type=Romantic"
               },
               {
                 "title": "Street Dance",
                 "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png", "alt": "Street Dance" },
                 "video": "/videos/街舞.mp4",
-                "count": "25K"
+                "count": "25K",
+                "url": "/video-effects/ai-dance-pop"
               },
               {
                 "title": "Jurassic Adventure",
                 "image": { "src": "/imgs/cms/AI-Fake-Date_女友约会_1.png", "alt": "Jurassic" },
                 "video": "/videos/侏罗纪奇遇.mp4",
-                "count": "15K"
+                "count": "15K",
+                "url": "/video-effects/ai-fake-date"
               },
               {
                 "title": "Moon Walk",
                 "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "Moon Walk" },
                 "video": "/videos/登月漫步.mp4",
-                "count": "90K"
+                "count": "90K",
+                "url": "/video-effects/ai-dance-pop"
               },
               {
                 "title": "New Year Scene",
                 "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "New Year" },
                 "video": "/videos/过年场景.mp4",
-                "count": "66K"
+                "count": "66K",
+                "url": "/video-effects/ai-fake-date"
               },
               {
                 "title": "Enter Mouth",
                 "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "Enter Mouth" },
                 "video": "/videos/进入嘴巴.mp4",
                 "badge": "HOT",
-                "count": "110K"
+                "count": "110K",
+                "url": "/video-effects/ai-jiggle"
               },
               {
                 "title": "360 Rotation",
                 "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "360 Rotation" },
                 "video": "/videos/AI_360_Rotation.mp4",
-                "count": "33K"
+                "count": "33K",
+                "url": "/video-effects/ai-muscle?type=360 View"
               }
             ]
           },
@@ -281,95 +296,110 @@
                 "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "Before AI Fake Date" },
                 "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png", "alt": "AI Fake Date" },
                 "badge": "NEW",
-                "count": "50K"
+                "count": "50K",
+                "url": "/photo-effects/ai-fake-date?type=Cafe"
               },
               {
                 "title": "AI Hug",
                 "beforeImage": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "Before Hug" },
                 "image": { "src": "/imgs/cms/Hug_拥抱_2.png", "alt": "Hug" },
                 "badge": "HOT",
-                "count": "200K"
+                "count": "200K",
+                "url": "/video-effects/ai-hug?type=Warm"
               },
               {
                 "title": "Pregnant AI",
                 "beforeImage": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "Before Pregnant" },
                 "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png", "alt": "Pregnant AI" },
                 "badge": "HOT",
-                "count": "90K"
+                "count": "90K",
+                "url": "/photo-effects/pregnant-ai"
               },
               {
                 "title": "French Kiss",
                 "beforeImage": { "src": "/imgs/cms/AI-Kissing_法式接吻_1.png", "alt": "Before French Kiss" },
                 "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png", "alt": "French Kiss" },
                 "badge": "HOT",
-                "count": "1.5M"
+                "count": "1.5M",
+                "url": "/video-effects/ai-kissing?type=French%20Kiss"
               },
               {
                 "title": "Forehead Kiss",
                 "beforeImage": { "src": "/imgs/cms/AI-Kissing_额头之吻_1.png", "alt": "Before Forehead Kiss" },
                 "image": { "src": "/imgs/cms/AI-Kissing_额头之吻_2.png", "alt": "Forehead Kiss" },
-                "count": "45K"
+                "count": "45K",
+                "url": "/video-effects/ai-kissing-cheek"
               },
               {
                 "title": "Lip Biting Kiss",
                 "beforeImage": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_1.png", "alt": "Before Lip Biting" },
                 "image": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_2.png", "alt": "Lip Biting" },
-                "count": "120K"
+                "count": "120K",
+                "url": "/video-effects/ai-kissing?type=French Kiss"
               },
               {
                 "title": "Celebrity Selfie",
                 "beforeImage": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "Before Selfie" },
                 "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", "alt": "Selfie" },
                 "badge": "HOT",
-                "count": "2.1M"
+                "count": "2.1M",
+                "url": "/photo-effects/celebrity-selfie"
               },
               {
                 "title": "Princess Hug",
                 "beforeImage": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "Before Princess Hug" },
                 "image": { "src": "/imgs/cms/Hug_公主抱_2.png", "alt": "Princess Hug" },
-                "count": "75K"
+                "count": "75K",
+                "url": "/photo-effects/princess-hug"
               },
               {
                 "title": "Back Hug",
                 "beforeImage": { "src": "/imgs/cms/Hug_背后环抱_1.png", "alt": "Before Back Hug" },
                 "image": { "src": "/imgs/cms/Hug_背后环抱_2.png", "alt": "Back Hug" },
-                "count": "88K"
+                "count": "88K",
+                "url": "/video-effects/ai-hug?type=Reunion"
               },
               {
                 "title": "Lift Hug",
                 "beforeImage": { "src": "/imgs/cms/Hug_托举式抱_1.png", "alt": "Before Lift Hug" },
                 "image": { "src": "/imgs/cms/Hug_托举式抱_2.png", "alt": "Lift Hug" },
-                "count": "54K"
+                "count": "54K",
+                "url": "/video-effects/ai-hug?type=Warm"
               },
               {
                 "title": "Japanese Girlfriend",
                 "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_日本女友_1.png", "alt": "Before Japanese GF" },
                 "image": { "src": "/imgs/cms/AI-Fake-Date_日本女友_2.png", "alt": "Japanese GF" },
-                "count": "130K"
+                "count": "130K",
+                "url": "/photo-effects/ai-fake-date"
               },
               {
                 "title": "French Girlfriend",
                 "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "Before French GF" },
                 "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png", "alt": "French GF" },
-                "count": "95K"
+                "count": "95K",
+                "url": "/photo-effects/french-girlfriend"
               },
               {
                 "title": "Chinese Girlfriend",
                 "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "Before Chinese GF" },
                 "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png", "alt": "Chinese GF" },
-                "count": "210K"
+                "count": "210K",
+                "url": "/photo-effects/chinese-girlfriend"
               },
               {
                 "title": "360 Muscle",
                 "beforeImage": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "Before 360 Muscle" },
                 "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "360 Muscle" },
-                "count": "15K"
+                "count": "15K",
+                "url": "/video-effects/ai-muscle?type=360 View"
               },
               {
                 "title": "Cheek Kiss",
                 "beforeImage": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "Before Cheek Kiss" },
                 "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png", "alt": "Cheek Kiss" },
-                "count": "42K"
+                "count": "42K",
+                "url": "/video-effects/ai-kissing-cheek"
               }
             ]
           }

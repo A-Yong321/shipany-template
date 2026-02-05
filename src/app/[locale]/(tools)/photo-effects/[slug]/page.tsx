@@ -27,10 +27,23 @@ export async function generateMetadata({
   }
 }
 
+/**
+ * 图片特效详情页
+ * 接收 searchParams 实现从首页点击特效卡片后预选对应类型
+ */
 export default function PhotoEffectDetailPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string; slug: string }>;
+  searchParams: Promise<{ type?: string }>;
 }) {
-  return <ToolDetailTemplate params={params} namespace="pages.photo-effect-details" />;
+  return (
+    <ToolDetailTemplate 
+      params={params} 
+      namespace="pages.photo-effect-details"
+      searchParams={searchParams}
+    />
+  );
 }
+

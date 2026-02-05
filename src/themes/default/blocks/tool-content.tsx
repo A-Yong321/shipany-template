@@ -23,15 +23,26 @@ interface ToolContentProps {
   defaultPrompt?: string;
   /** 工具类型: video 或 image */
   toolType?: 'video' | 'image';
+  /** 初始选中的特效类型（从URL参数传入） */
+  initialType?: string;
 }
 
 /**
  * 工具内容区组件
  * 包含效果预览、示例选择、图片上传和生成按钮
  */
-export function ToolContent({ toolName, examples, defaultPrompt = '', toolType = 'video' }: ToolContentProps) {
-  const [prompt, setPrompt] = useState(defaultPrompt);
-  const [selectedExample, setSelectedExample] = useState<Example | null>(examples[0] || null);
+export function ToolContent({ toolName, examples, defaultPrompt = '', toolType = 'video', initialType }: ToolContentProps) {
+  // 根据 initialType 查找匹配的示例，用于从首页点击特效卡片后预选
+  const initialExample = useMemo(() => {
+    if (initialType) {
+      const found = examples.find(e => e.category.toLowerCase() === initialType.toLowerCase());
+      return found || examples[0];
+    }
+    return examples[0];
+  }, [examples, initialType]);
+
+  const [prompt, setPrompt] = useState(initialExample?.prompt || defaultPrompt);
+  const [selectedExample, setSelectedExample] = useState<Example | null>(initialExample || null);
   const [uploadedImage, setUploadedImage] = useState<File | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
 
