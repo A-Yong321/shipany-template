@@ -7,7 +7,7 @@ import { ToolContent } from '@/themes/default/blocks/tool-content';
 import { Inspirations } from '@/themes/default/blocks/inspirations';
 import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection, EffectsGridSection, type EffectsGridSectionProps } from '@/themes/default/blocks/tool-bottom-sections';
 import { type EffectItem } from '@/themes/default/blocks/effect-card';
-import { getToolConfig, tools } from '@/data/tools';
+import { getToolConfig, tools } from '@/data/tools-data';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -43,12 +43,12 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   const toolConfig = getToolConfig(slug);
   
   // 将 toolConfig.items 转换为 examples 格式, 如果不存在则使用 JSON 中的示例
-  let examples = toolConfig?.items.map((item, index) => ({
+  let examples = effectData.page.sections.tool?.data?.examples || toolConfig?.items.map((item, index) => ({
     category: item.title,
     prompt: `Generate ${item.title} effect`,
     image: item.effectSrc,
     video: item.videoSrc,
-  })) || effectData.page.sections.tool?.data?.examples || [];
+  })) || [];
 
   // 对于通用的 image-to-image/video 页面，清空示例以隐藏 Type 选择器
   if (['image-to-image', 'image-to-video'].includes(slug)) {

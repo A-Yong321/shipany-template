@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { Link } from '@/core/i18n/navigation';
 import { cn } from '@/shared/lib/utils';
-import { tools, ToolType } from '@/data/tools';
+import { tools, ToolType } from '@/data/tools-data';
 
 export function ToolsPage({
   locale,
