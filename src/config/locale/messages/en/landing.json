@@ -43,13 +43,13 @@
                 {
                   "title": "Mimic",
                   "description": "Mimic dance moves",
-                  "url": "/video-effects/mimic",
+                  "url": "/video-effects/ai-mimic",
                   "icon": "Activity"
                 },
                 {
                   "title": "Role Swap",
                   "description": "Swap roles in videos",
-                  "url": "/video-effects/role-swap",
+                  "url": "/video-effects/ai-role-swap",
                   "icon": "Users"
                 },
                 {
@@ -68,19 +68,19 @@
                 {
                   "title": "AI Fake Date",
                   "description": "Romantic date photos",
-                  "url": "/photo-effects/ai-fake-date",
+                  "url": "/photo-effects/ai-fake-date-photo",
                   "icon": "Coffee"
                 },
                 {
                   "title": "Pregnant AI",
                   "description": "Beautiful maternity photos",
-                  "url": "/photo-effects/pregnant-ai",
+                  "url": "/photo-effects/ai-pregnant-photo",
                   "icon": "Baby"
                 },
                 {
                   "title": "Celebrity Selfie",
                   "description": "Selfies with celebrities",
-                  "url": "/photo-effects/celebrity-selfie",
+                  "url": "/photo-effects/ai-celebrity-selfie",
                   "icon": "Camera"
                 },
                 {
@@ -92,7 +92,7 @@
                 {
                   "title": "Visual Effects",
                   "description": "Creative photo effects",
-                  "url": "/photo-effects/visual-effects-photo",
+                  "url": "/photo-effects/ai-visual-effects-photo",
                   "icon": "Zap"
                 },
                 {

@@ -43,13 +43,13 @@
                 {
                   "title": "AI模仿",
                   "description": "模仿舞蹈动作",
-                  "url": "/video-effects/mimic",
+                  "url": "/video-effects/ai-mimic",
                   "icon": "Activity"
                 },
                 {
                   "title": "角色切换",
                   "description": "视频角色与场景切换",
-                  "url": "/video-effects/role-swap",
+                  "url": "/video-effects/ai-role-swap",
                   "icon": "Users"
                 },
                 {
@@ -74,13 +74,13 @@
                 {
                   "title": "AI怀孕",
                   "description": "美丽的孕照",
-                  "url": "/photo-effects/pregnant-ai",
+                  "url": "/photo-effects/ai-pregnant-photo",
                   "icon": "Baby"
                 },
                 {
                   "title": "名人自拍",
                   "description": "与名人自拍",
-                  "url": "/photo-effects/celebrity-selfie",
+                  "url": "/photo-effects/ai-celebrity-selfie",
                   "icon": "Camera"
                 },
                 {
@@ -92,7 +92,7 @@
                 {
                   "title": "视觉特效",
                   "description": "创意照片特效",
-                  "url": "/photo-effects/visual-effects-photo",
+                  "url": "/photo-effects/ai-visual-effects-photo",
                   "icon": "Zap"
                 },
                 {

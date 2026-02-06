@@ -1,5 +1,5 @@
 {
-  "ai-fake-date": {
+  "ai-fake-date-photo": {
     "metadata": {
       "title": "AI 假约会生成器 - 浪漫约会照片",
       "description": "使用 AI 创建浪漫的假约会照片。在咖啡厅场景中生成情侣瞬间。"
@@ -145,7 +145,7 @@
       }
     }
   },
-  "pregnant-ai": {
+  "ai-pregnant-photo": {
     "metadata": {
       "title": "孕妇 AI 生成器 - 孕妇照片",
       "description": "使用 AI 创建美丽的孕妇照片。生成逼真的孕妇形象。"
@@ -309,7 +309,7 @@
       }
     }
   },
-  "celebrity-selfie": {
+  "ai-celebrity-selfie": {
     "metadata": {
       "title": "名人自拍 AI - 与名人合影",
       "description": "使用 AI 创建与名人的自拍。生成与名人的逼真照片。"
@@ -673,7 +673,7 @@
       }
     }
   },
-  "visual-effects-photo": {
+  "ai-visual-effects-photo": {
     "metadata": {
       "title": "AI 视觉特效照片 - 创意特效生成器",
       "description": "为照片添加震撼的视觉特效，如爆炸、海洋连衣裙等。"
@@ -740,7 +740,7 @@
       }
     }
   },
-  "role-swap-photo": {
+  "ai-role-swap-photo": {
     "metadata": {
       "title": "AI 角色切换照片 - 场景替换生成器",
       "description": "将人物融入各种创意场景，实现完美的角色切换。"

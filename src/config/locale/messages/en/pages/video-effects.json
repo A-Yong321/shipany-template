@@ -40,7 +40,7 @@
                 "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aidancegenerator-肚皮舞"
+                "url": "/video-effects/ai-dance?type=肚皮舞"
               },
               {
                 "id": "aifakedate-中国女友",
@@ -52,7 +52,7 @@
                 "video": "/img_video/videos/AIFakeDate_中国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-中国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=中国女友"
               },
               {
                 "id": "aifakedate-俄罗斯女友",
@@ -64,7 +64,7 @@
                 "video": "/img_video/videos/AIFakeDate_俄罗斯女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-俄罗斯女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=俄罗斯女友"
               },
               {
                 "id": "aifakedate-印度女友",
@@ -76,7 +76,7 @@
                 "video": "/img_video/videos/AIFakeDate_印度女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-印度女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=印度女友"
               },
               {
                 "id": "aifakedate-女友约会",
@@ -88,7 +88,7 @@
                 "video": "/img_video/videos/AIFakeDate_女友约会.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-女友约会"
+                "url": "/photo-effects/ai-fake-date-photo?type=女友约会"
               },
               {
                 "id": "aifakedate-日本女友",
@@ -100,7 +100,7 @@
                 "video": "/img_video/videos/AIFakeDate_日本女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-日本女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=日本女友"
               },
               {
                 "id": "aifakedate-法国女友",
@@ -112,7 +112,7 @@
                 "video": "/img_video/videos/AIFakeDate_法国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-法国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=法国女友"
               },
               {
                 "id": "aifakedate-美国女友",
@@ -124,7 +124,7 @@
                 "video": "/img_video/videos/AIFakeDate_美国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-美国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=美国女友"
               },
               {
                 "id": "aikissing法式接吻",
@@ -136,7 +136,7 @@
                 "video": "/img_video/videos/AIKissing法式接吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/aikissing法式接吻"
+                "url": "/video-effects/ai-kissing?type=法式接吻"
               },
               {
                 "id": "aiselfiewithcelebrities-名人合拍",
@@ -148,7 +148,7 @@
                 "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aiselfiewithcelebrities-名人合拍"
+                "url": "/photo-effects/ai-celebrity-selfie?type=名人合拍"
               },
               {
                 "id": "aikissing-正常接吻",
@@ -160,7 +160,7 @@
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/aikissing-正常接吻"
+                "url": "/video-effects/ai-kissing?type=正常接吻"
               },
               {
                 "id": "pregnantai-怀孕",
@@ -172,7 +172,7 @@
                 "video": "/img_video/videos/PregnantAI_怀孕.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/pregnantai-怀孕"
+                "url": "/photo-effects/ai-pregnant-photo?type=怀孕"
               },
               {
                 "id": "hug-侧身依抱",
@@ -184,7 +184,7 @@
                 "video": "/img_video/videos/hug_侧身依抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-侧身依抱"
+                "url": "/video-effects/ai-hug?type=侧身依抱"
               },
               {
                 "id": "hug-公主抱",
@@ -196,7 +196,7 @@
                 "video": "/img_video/videos/hug_公主抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-公主抱"
+                "url": "/video-effects/ai-hug?type=公主抱"
               },
               {
                 "id": "hug-托举式抱",
@@ -208,7 +208,7 @@
                 "video": "/img_video/videos/hug_托举式抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-托举式抱"
+                "url": "/video-effects/ai-hug?type=托举式抱"
               },
               {
                 "id": "hug-拥抱",
@@ -220,7 +220,7 @@
                 "video": "/img_video/videos/hug_拥抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-拥抱"
+                "url": "/video-effects/ai-hug?type=拥抱"
               },
               {
                 "id": "hug-背后环抱",
@@ -232,7 +232,7 @@
                 "video": "/img_video/videos/hug_背后环抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-背后环抱"
+                "url": "/video-effects/ai-hug?type=背后环抱"
               },
               {
                 "id": "jiggle-抖动身体",
@@ -244,7 +244,7 @@
                 "video": "/img_video/videos/jiggle_抖动身体.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/jiggle-抖动身体"
+                "url": "/video-effects/ai-jiggle?type=抖动身体"
               },
               {
                 "id": "模仿-ai站立一字马",
@@ -256,7 +256,7 @@
                 "video": "/img_video/videos/模仿_AI站立一字马.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-ai站立一字马"
+                "url": "/video-effects/ai-mimic?type=AI站立一字马"
               },
               {
                 "id": "模仿-reze舞",
@@ -268,7 +268,7 @@
                 "video": "/img_video/videos/模仿_Reze舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-reze舞"
+                "url": "/video-effects/ai-mimic?type=Reze舞"
               },
               {
                 "id": "模仿-叉腰扭臂",
@@ -280,7 +280,7 @@
                 "video": "/img_video/videos/模仿_叉腰扭臂.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-叉腰扭臂"
+                "url": "/video-effects/ai-mimic?type=叉腰扭臂"
               },
               {
                 "id": "模仿-扭臀舞",
@@ -292,7 +292,7 @@
                 "video": "/img_video/videos/模仿_扭臀舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-扭臀舞"
+                "url": "/video-effects/ai-mimic?type=扭臀舞"
               },
               {
                 "id": "模仿-热辣钢管舞",
@@ -304,7 +304,7 @@
                 "video": "/img_video/videos/模仿_热辣钢管舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-热辣钢管舞"
+                "url": "/video-effects/ai-mimic?type=热辣钢管舞"
               },
               {
                 "id": "模仿-电摇舞",
@@ -316,7 +316,7 @@
                 "video": "/img_video/videos/模仿_电摇舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-电摇舞"
+                "url": "/video-effects/ai-mimic?type=电摇舞"
               },
               {
                 "id": "模仿-香奈儿舞",
@@ -328,7 +328,7 @@
                 "video": "/img_video/videos/模仿_香奈儿舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-香奈儿舞"
+                "url": "/video-effects/ai-mimic?type=香奈儿舞"
               },
               {
                 "id": "脸颊之吻",
@@ -340,7 +340,7 @@
                 "video": "/img_video/videos/脸颊之吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/脸颊之吻"
+                "url": "/video-effects/ai-kissing?type=脸颊之吻"
               },
               {
                 "id": "视觉效果-ai爆炸效果",
@@ -352,7 +352,7 @@
                 "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-ai爆炸效果"
+                "url": "/video-effects/ai-visual-effects?type=AI爆炸效果"
               },
               {
                 "id": "视觉效果-史诗级爆炸漫步",
@@ -364,7 +364,7 @@
                 "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-史诗级爆炸漫步"
+                "url": "/video-effects/ai-visual-effects?type=史诗级爆炸漫步"
               },
               {
                 "id": "视觉效果-海洋连衣裙",
@@ -376,7 +376,7 @@
                 "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-海洋连衣裙"
+                "url": "/video-effects/ai-visual-effects?type=海洋连衣裙"
               },
               {
                 "id": "视觉效果-穿越维度",
@@ -388,7 +388,7 @@
                 "video": "/img_video/videos/视觉效果_穿越维度.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-穿越维度"
+                "url": "/video-effects/ai-visual-effects?type=穿越维度"
               },
               {
                 "id": "视觉效果-进入嘴巴",
@@ -400,7 +400,7 @@
                 "video": "/img_video/videos/视觉效果_进入嘴巴.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-进入嘴巴"
+                "url": "/video-effects/ai-visual-effects?type=进入嘴巴"
               },
               {
                 "id": "角色切换-ai老虎拥抱",
@@ -412,7 +412,7 @@
                 "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-ai老虎拥抱"
+                "url": "/video-effects/ai-role-swap?type=AI老虎拥抱"
               },
               {
                 "id": "角色切换-坐上豪车",
@@ -424,7 +424,7 @@
                 "video": "/img_video/videos/角色切换_坐上豪车.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-坐上豪车"
+                "url": "/video-effects/ai-role-swap?type=坐上豪车"
               },
               {
                 "id": "角色切换-审讯室",
@@ -436,7 +436,7 @@
                 "video": "/img_video/videos/角色切换_审讯室.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-审讯室"
+                "url": "/video-effects/ai-role-swap?type=审讯室"
               },
               {
                 "id": "角色切换-尖叫",
@@ -448,7 +448,7 @@
                 "video": "/img_video/videos/角色切换_尖叫.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-尖叫"
+                "url": "/video-effects/ai-role-swap?type=尖叫"
               },
               {
                 "id": "角色切换-雨中漫步",
@@ -460,7 +460,7 @@
                 "video": "/img_video/videos/角色切换_雨中漫步.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-雨中漫步"
+                "url": "/video-effects/ai-role-swap?type=雨中漫步"
               },
               {
                 "id": "角色切换-雨夜",
@@ -472,7 +472,7 @@
                 "video": "/img_video/videos/角色切换_雨夜.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-雨夜"
+                "url": "/video-effects/ai-role-swap?type=雨夜"
               },
               {
                 "id": "muscle-肌肉展示",
@@ -484,7 +484,7 @@
                 "video": "/img_video/videos/Muscle_肌肉展示.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/muscle-肌肉展示"
+                "url": "/video-effects/ai-muscle?type=肌肉展示"
               }
             ]
           },
@@ -502,7 +502,7 @@
                 "video": "/img_video/videos/AIKissing法式接吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/aikissing法式接吻"
+                "url": "/video-effects/ai-kissing?type=法式接吻"
               },
               {
                 "id": "aikissing-正常接吻",
@@ -514,7 +514,7 @@
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/aikissing-正常接吻"
+                "url": "/video-effects/ai-kissing?type=正常接吻"
               },
               {
                 "id": "脸颊之吻",
@@ -526,7 +526,7 @@
                 "video": "/img_video/videos/脸颊之吻.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/脸颊之吻"
+                "url": "/video-effects/ai-kissing?type=脸颊之吻"
               }
             ]
           },
@@ -544,7 +544,7 @@
                 "video": "/img_video/videos/AIFakeDate_中国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-中国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=中国女友"
               },
               {
                 "id": "aifakedate-俄罗斯女友",
@@ -556,7 +556,7 @@
                 "video": "/img_video/videos/AIFakeDate_俄罗斯女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-俄罗斯女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=俄罗斯女友"
               },
               {
                 "id": "aifakedate-印度女友",
@@ -568,7 +568,7 @@
                 "video": "/img_video/videos/AIFakeDate_印度女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-印度女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=印度女友"
               },
               {
                 "id": "aifakedate-女友约会",
@@ -580,7 +580,7 @@
                 "video": "/img_video/videos/AIFakeDate_女友约会.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-女友约会"
+                "url": "/photo-effects/ai-fake-date-photo?type=女友约会"
               },
               {
                 "id": "aifakedate-日本女友",
@@ -592,7 +592,7 @@
                 "video": "/img_video/videos/AIFakeDate_日本女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-日本女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=日本女友"
               },
               {
                 "id": "aifakedate-法国女友",
@@ -604,7 +604,7 @@
                 "video": "/img_video/videos/AIFakeDate_法国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-法国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=法国女友"
               },
               {
                 "id": "aifakedate-美国女友",
@@ -616,7 +616,7 @@
                 "video": "/img_video/videos/AIFakeDate_美国女友.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aifakedate-美国女友"
+                "url": "/photo-effects/ai-fake-date-photo?type=美国女友"
               }
             ]
           },
@@ -634,7 +634,7 @@
                 "video": "/img_video/videos/hug_侧身依抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-侧身依抱"
+                "url": "/video-effects/ai-hug?type=侧身依抱"
               },
               {
                 "id": "hug-公主抱",
@@ -646,7 +646,7 @@
                 "video": "/img_video/videos/hug_公主抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-公主抱"
+                "url": "/video-effects/ai-hug?type=公主抱"
               },
               {
                 "id": "hug-托举式抱",
@@ -658,7 +658,7 @@
                 "video": "/img_video/videos/hug_托举式抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-托举式抱"
+                "url": "/video-effects/ai-hug?type=托举式抱"
               },
               {
                 "id": "hug-拥抱",
@@ -670,7 +670,7 @@
                 "video": "/img_video/videos/hug_拥抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-拥抱"
+                "url": "/video-effects/ai-hug?type=拥抱"
               },
               {
                 "id": "hug-背后环抱",
@@ -682,7 +682,7 @@
                 "video": "/img_video/videos/hug_背后环抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/hug-背后环抱"
+                "url": "/video-effects/ai-hug?type=背后环抱"
               }
             ]
           },
@@ -700,7 +700,7 @@
                 "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aiselfiewithcelebrities-名人合拍"
+                "url": "/photo-effects/ai-celebrity-selfie?type=名人合拍"
               }
             ]
           },
@@ -718,7 +718,7 @@
                 "video": "/img_video/videos/Muscle_肌肉展示.mp4",
                 "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/muscle-肌肉展示"
+                "url": "/video-effects/ai-muscle?type=肌肉展示"
               }
             ]
           },
@@ -736,7 +736,7 @@
                 "video": "/img_video/videos/jiggle_抖动身体.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/jiggle-抖动身体"
+                "url": "/video-effects/ai-jiggle?type=抖动身体"
               }
             ]
           },
@@ -754,7 +754,7 @@
                 "video": "/img_video/videos/PregnantAI_怀孕.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/pregnantai-怀孕"
+                "url": "/photo-effects/ai-pregnant-photo?type=怀孕"
               }
             ]
           },
@@ -772,7 +772,7 @@
                 "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/aidancegenerator-肚皮舞"
+                "url": "/video-effects/ai-dance?type=肚皮舞"
               }
             ]
           },
@@ -790,7 +790,7 @@
                 "video": "/img_video/videos/模仿_AI站立一字马.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-ai站立一字马"
+                "url": "/video-effects/ai-mimic?type=AI站立一字马"
               },
               {
                 "id": "模仿-reze舞",
@@ -802,7 +802,7 @@
                 "video": "/img_video/videos/模仿_Reze舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-reze舞"
+                "url": "/video-effects/ai-mimic?type=Reze舞"
               },
               {
                 "id": "模仿-叉腰扭臂",
@@ -814,7 +814,7 @@
                 "video": "/img_video/videos/模仿_叉腰扭臂.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-叉腰扭臂"
+                "url": "/video-effects/ai-mimic?type=叉腰扭臂"
               },
               {
                 "id": "模仿-扭臀舞",
@@ -826,7 +826,7 @@
                 "video": "/img_video/videos/模仿_扭臀舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-扭臀舞"
+                "url": "/video-effects/ai-mimic?type=扭臀舞"
               },
               {
                 "id": "模仿-热辣钢管舞",
@@ -838,7 +838,7 @@
                 "video": "/img_video/videos/模仿_热辣钢管舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-热辣钢管舞"
+                "url": "/video-effects/ai-mimic?type=热辣钢管舞"
               },
               {
                 "id": "模仿-电摇舞",
@@ -850,7 +850,7 @@
                 "video": "/img_video/videos/模仿_电摇舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-电摇舞"
+                "url": "/video-effects/ai-mimic?type=电摇舞"
               },
               {
                 "id": "模仿-香奈儿舞",
@@ -862,7 +862,7 @@
                 "video": "/img_video/videos/模仿_香奈儿舞.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/模仿-香奈儿舞"
+                "url": "/video-effects/ai-mimic?type=香奈儿舞"
               }
             ]
           },
@@ -880,7 +880,7 @@
                 "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-ai爆炸效果"
+                "url": "/video-effects/ai-visual-effects?type=AI爆炸效果"
               },
               {
                 "id": "视觉效果-史诗级爆炸漫步",
@@ -892,7 +892,7 @@
                 "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-史诗级爆炸漫步"
+                "url": "/video-effects/ai-visual-effects?type=史诗级爆炸漫步"
               },
               {
                 "id": "视觉效果-海洋连衣裙",
@@ -904,7 +904,7 @@
                 "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-海洋连衣裙"
+                "url": "/video-effects/ai-visual-effects?type=海洋连衣裙"
               },
               {
                 "id": "视觉效果-穿越维度",
@@ -916,7 +916,7 @@
                 "video": "/img_video/videos/视觉效果_穿越维度.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-穿越维度"
+                "url": "/video-effects/ai-visual-effects?type=穿越维度"
               },
               {
                 "id": "视觉效果-进入嘴巴",
@@ -928,7 +928,7 @@
                 "video": "/img_video/videos/视觉效果_进入嘴巴.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/视觉效果-进入嘴巴"
+                "url": "/video-effects/ai-visual-effects?type=进入嘴巴"
               }
             ]
           },
@@ -946,7 +946,7 @@
                 "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-ai老虎拥抱"
+                "url": "/video-effects/ai-role-swap?type=AI老虎拥抱"
               },
               {
                 "id": "角色切换-坐上豪车",
@@ -958,7 +958,7 @@
                 "video": "/img_video/videos/角色切换_坐上豪车.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-坐上豪车"
+                "url": "/video-effects/ai-role-swap?type=坐上豪车"
               },
               {
                 "id": "角色切换-审讯室",
@@ -970,7 +970,7 @@
                 "video": "/img_video/videos/角色切换_审讯室.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-审讯室"
+                "url": "/video-effects/ai-role-swap?type=审讯室"
               },
               {
                 "id": "角色切换-尖叫",
@@ -982,7 +982,7 @@
                 "video": "/img_video/videos/角色切换_尖叫.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-尖叫"
+                "url": "/video-effects/ai-role-swap?type=尖叫"
               },
               {
                 "id": "角色切换-雨中漫步",
@@ -994,7 +994,7 @@
                 "video": "/img_video/videos/角色切换_雨中漫步.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-雨中漫步"
+                "url": "/video-effects/ai-role-swap?type=雨中漫步"
               },
               {
                 "id": "角色切换-雨夜",
@@ -1006,7 +1006,7 @@
                 "video": "/img_video/videos/角色切换_雨夜.mp4",
                 "badge": null,
                 "count": "50K",
-                "url": "/video-effects/角色切换-雨夜"
+                "url": "/video-effects/ai-role-swap?type=雨夜"
               }
             ]
           }

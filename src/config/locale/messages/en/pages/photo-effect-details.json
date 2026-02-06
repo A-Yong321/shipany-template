@@ -1,5 +1,5 @@
 {
-  "ai-fake-date": {
+  "ai-fake-date-photo": {
     "metadata": {
       "title": "AI Fake Date Generator - Romantic Date Photos",
       "description": "Create romantic fake date photos with AI. Generate couple moments in cafe settings."
@@ -145,7 +145,7 @@
       }
     }
   },
-  "pregnant-ai": {
+  "ai-pregnant-photo": {
     "metadata": {
       "title": "Pregnant AI Generator - Maternity Photos",
       "description": "Create beautiful pregnancy photos with AI. Generate realistic maternity images."
@@ -309,7 +309,7 @@
       }
     }
   },
-  "celebrity-selfie": {
+  "ai-celebrity-selfie": {
     "metadata": {
       "title": "Celebrity Selfie AI - Photos with Famous People",
       "description": "Create selfies with celebrities using AI. Generate realistic photos with famous people."
@@ -536,6 +536,73 @@
           "block": "faq",
           "title": "FAQs",
           "items": [{ "question": "What art styles are supported?", "answer": "We support ice sculpture, selective color, dragon riding and many other artistic style effects." }]
+        }
+      }
+    }
+  },
+  "ai-role-swap-photo": {
+    "metadata": {
+      "title": "AI Role Swap Photo - Creative Scene Transformation",
+      "description": "Use AI technology to achieve creative scene swapping in photos, including AI tiger hug, rainy walk, meeting future child and more scenes."
+    },
+    "page": {
+      "title": "AI Role Swap Photo Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI Role Swap Photo",
+          "description": "Achieve creative role swapping and scene transformation in your photos.",
+          "background_image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Role Swap Photo Generator"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI Role Swap Photos",
+          "description": "Achieve various creative role swap scenes for your photos.",
+          "images": [
+            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+            { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
+            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Creative Scene Swap",
+              "description": "Support AI tiger hug, rainy walk, meeting future child and other creative scenes.",
+              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Role Swap?",
+          "description": "Achieve creative scene swaps in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired scene type." },
+            { "title": "Step 2", "description": "Upload a clear photo." },
+            { "title": "Step 3", "description": "Click generate to see the effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Photo Effects"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "What scenes are supported?", "answer": "We support many creative scenes." }]
         }
       }
     }
