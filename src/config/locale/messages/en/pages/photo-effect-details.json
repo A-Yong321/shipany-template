@@ -606,5 +606,86 @@
         }
       }
     }
+  },
+  "ai-visual-effects-photo": {
+    "metadata": {
+      "title": "AI Visual Effects Photo - Creative Photo Magic",
+      "description": "Add stunning visual effects to your photos with AI. Explosion, dimension travel, and more."
+    },
+    "page": {
+      "title": "AI Visual Effects Photo Generator",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "Add Visual Effects to Photos",
+          "description": "Transform your photos with cinematic visual effects using AI.",
+          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "buttons": [
+            { "title": "Try Visual Effects", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Visual Effects Photo Generator",
+          "data": {
+            "examples": [
+              { 
+                "category": "Explosion", 
+                "prompt": "Cinematic explosion background, action movie style photo",
+                "image": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+              },
+              { 
+                "category": "Fantasy", 
+                "prompt": "Fantasy sea dress, magical ocean waves dress effect",
+                "image": "/img_video/imgs/视觉效果_海洋连衣裙_2.png"
+              }
+            ]
+          }
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Creative AI Photo Effects",
+          "description": "From Hollywood-style explosions to magical fanstasies, transform your photos instantly.",
+          "images": [
+            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" },
+            { "src": "/img_video/imgs/视觉效果_穿越维度_2.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Cinematic Quality",
+              "description": "Get professional visual effects in your photos without editing skills.",
+              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Visual Effects?",
+          "description": "Add effects in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Select the effect you want." },
+            { "title": "Step 2", "description": "Upload your photo." },
+            { "title": "Step 3", "description": "Generate your masterpiece." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Photo Effects"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "Is it free?", "answer": "Yes, try it for free." }]
+        }
+      }
+    }
   }
 }
