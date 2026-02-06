@@ -22,20 +22,37 @@
           "title": "AI Kissing Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Romantic", 
-                "prompt": "A couple kissing romantically in sunset, cinematic style, 4k detail",
-                "image": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              {
+                "category": "Normal Kiss",
+                "prompt": "Generate Normal Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_正常接吻_2.png",
+                "video": "/img_video/videos/AiKissing_正常接吻.mp4",
+                "badge": "HOT"
               },
-              { 
-                "category": "French Kiss", 
-                "prompt": "French kiss between two people, passionate and close-up, high quality, photorealistic",
-                 "image": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              {
+                "category": "French Kiss",
+                "prompt": "Generate French Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_法式接吻_2.png",
+                "video": "/img_video/videos/AIKissing法式接吻.mp4",
+                "badge": "HOT"
               },
-              { 
-                "category": "Cute", 
-                "prompt": "Gentle cheek kiss, cute and affectionate moment, soft lighting",
-                 "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              {
+                "category": "Cheek Kiss",
+                "prompt": "Generate Cheek Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png",
+                "video": "/img_video/videos/脸颊之吻.mp4"
+              },
+              {
+                "category": "Lip Bite Kiss",
+                "prompt": "Generate Lip Bite Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png",
+                "video": "/img_video/videos/AiKissing_咬嘴接吻.mp4"
+              },
+              {
+                "category": "Forehead Kiss",
+                "prompt": "Generate Forehead Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_额头之吻_2.png",
+                "video": "/img_video/videos/额头之吻.mp4"
               }
             ]
           }
@@ -198,15 +215,18 @@
           "title": "AI Muscle Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Bodybuilder", 
-                "prompt": "Man showing off huge muscles, flexing powerfully, professional bodybuilder physique",
-                "image": "/imgs/cms/Muscle_肌肉展示_2.png"
+              {
+                "category": "Muscle Showcase",
+                "prompt": "Generate Muscle Showcase effect",
+                "image": "/img_video/imgs/Muscle_肌肉展示_2.png",
+                "video": "/img_video/videos/Muscle_肌肉展示.mp4",
+                "badge": "HOT"
               },
-              { 
-                "category": "360 View", 
-                "prompt": "Muscular physique 360 rotation, detailed muscle definition",
-                "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              {
+                "category": "360 Muscle Showcase",
+                "prompt": "Generate 360 Muscle Showcase effect",
+                "image": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png",
+                "video": "/img_video/videos/AI 360 Rotation.mp4"
               }
             ]
           }
@@ -390,15 +410,11 @@
           "title": "AI Jiggle Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Fun", 
-                "prompt": "Body jiggle effect on dancing person, fun and bouncy movement",
-                "image": "/imgs/cms/Jiggle_抖动身体_1.png"
-              },
-              { 
-                "category": "Dynamic", 
-                "prompt": "Dynamic body jiggle with natural physics, entertaining effect",
-                "image": "/imgs/cms/Jiggle_抖动身体_2.png"
+              {
+                "category": "Body Jiggle",
+                "prompt": "Generate Body Jiggle effect",
+                "image": "/img_video/imgs/Jiggle_抖动身体_2.png",
+                "video": "/img_video/videos/jiggle_抖动身体.mp4"
               }
             ]
           }
@@ -738,15 +754,36 @@
           "title": "AI Hug Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Warm", 
-                "prompt": "Warm hug between friends or couple, emotional embrace, heartwarming moment",
-                "image": "/imgs/cms/Hug_拥抱_1.png"
+              {
+                "category": "Hug",
+                "prompt": "Generate Hug effect",
+                "image": "/img_video/imgs/Hug_拥抱_2.png",
+                "video": "/img_video/videos/hug_拥抱.mp4",
+                "badge": "HOT"
               },
-              { 
-                "category": "Reunion", 
-                "prompt": "Emotional reunion hug, tears of joy, cinematic lighting",
-                "image": "/imgs/cms/Hug_拥抱_2.png"
+              {
+                "category": "Side Hug",
+                "prompt": "Generate Side Hug effect",
+                "image": "/img_video/imgs/Hug_侧身依抱_2.png",
+                "video": "/img_video/videos/hug_侧身依抱.mp4"
+              },
+              {
+                "category": "Princess Hug",
+                "prompt": "Generate Princess Hug effect",
+                "image": "/img_video/imgs/Hug_公主抱_2.png",
+                "video": "/img_video/videos/hug_公主抱.mp4"
+              },
+              {
+                "category": "Lift Hug",
+                "prompt": "Generate Lift Hug effect",
+                "image": "/img_video/imgs/Hug_托举式抱_2.png",
+                "video": "/img_video/videos/hug_托举式抱.mp4"
+              },
+              {
+                "category": "Back Hug",
+                "prompt": "Generate Back Hug effect",
+                "image": "/img_video/imgs/Hug_背后环抱_2.png",
+                "video": "/img_video/videos/hug_背后环抱.mp4"
               }
             ]
           }
@@ -997,6 +1034,16 @@
             { "title": "Step 2", "description": "Upload a clear photo of a person." },
             { "title": "Step 3", "description": "Click generate to see the dancing effect." }
           ],
+          "data": {
+            "examples": [
+              {
+                "category": "Belly Dance",
+                "prompt": "Generate Belly Dance effect",
+                "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png",
+                "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4"
+              }
+            ]
+          },
           "button": { "title": "Try Now", "url": "#tool" }
         },
         "more_tools": {
@@ -1066,6 +1113,53 @@
           ],
           "button": { "title": "Try Now", "url": "#tool" }
         },
+        "data": {
+          "examples": [
+            {
+              "category": "Hot Pole Dance",
+              "prompt": "Generate Hot Pole Dance effect",
+              "image": "/img_video/imgs/模仿_热辣钢管舞_2.png",
+              "video": "/img_video/videos/模仿_热辣钢管舞.mp4",
+              "badge": "NEW"
+            },
+            {
+              "category": "Twerk Dance",
+              "prompt": "Generate Twerk Dance effect",
+              "image": "/img_video/imgs/模仿_扭臀舞_2.png",
+              "video": "/img_video/videos/模仿_扭臀舞.mp4"
+            },
+            {
+              "category": "Electric Dance",
+              "prompt": "Generate Electric Dance effect",
+              "image": "/img_video/imgs/模仿_电摇舞_2.png",
+              "video": "/img_video/videos/模仿_电摇舞.mp4"
+            },
+            {
+              "category": "Chanel Dance",
+              "prompt": "Generate Chanel Dance effect",
+              "image": "/img_video/imgs/模仿_香奈儿舞_2.png",
+              "video": "/img_video/videos/模仿_香奈儿舞.mp4"
+            },
+            {
+              "category": "AI Standing Split",
+              "prompt": "Generate AI Standing Split effect",
+              "image": "/img_video/imgs/模仿_AI站立一字马_2.png",
+              "video": "/img_video/videos/模仿_AI站立一字马.mp4"
+            },
+            {
+              "category": "Reze Dance",
+              "prompt": "Generate Reze Dance effect",
+              "image": "/img_video/imgs/模仿_Reze舞_2.png",
+              "video": "/img_video/videos/模仿_Reze舞.mp4"
+            },
+            {
+              "category": "Waist Twist",
+              "prompt": "Generate Waist Twist effect",
+              "image": "/img_video/imgs/模仿_叉腰扭臂_2.png",
+              "video": "/img_video/videos/模仿_叉腰扭臂.mp4"
+            }
+          ]
+        },
         "more_tools": {
           "block": "more-tools",
           "title": "Try Other Popular Video Effects"
@@ -1098,7 +1192,41 @@
         "tool": {
           "block": "video-tool",
           "id": "tool",
-          "title": "AI Visual Effects Generator"
+          "title": "AI Visual Effects Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "AI Explosion",
+                "prompt": "Generate AI Explosion effect",
+                "image": "/img_video/imgs/视觉效果_AI爆炸效果_2.png",
+                "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4"
+              },
+              {
+                "category": "Epic Explosion Walk",
+                "prompt": "Generate Epic Explosion Walk effect",
+                "image": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png",
+                "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4"
+              },
+              {
+                "category": "Ocean Dress",
+                "prompt": "Generate Ocean Dress effect",
+                "image": "/img_video/imgs/视觉效果_海洋连衣裙_2.png",
+                "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4"
+              },
+              {
+                "category": "Dimension Travel",
+                "prompt": "Generate Dimension Travel effect",
+                "image": "/img_video/imgs/视觉效果_穿越维度_2.png",
+                "video": "/img_video/videos/视觉效果_穿越维度.mp4"
+              },
+              {
+                "category": "Into Mouth",
+                "prompt": "Generate Into Mouth effect",
+                "image": "/img_video/imgs/视觉效果_进入嘴巴_2.png",
+                "video": "/img_video/videos/视觉效果_进入嘴巴.mp4"
+              }
+            ]
+          }
         },
         "intro": {
           "block": "tool-intro",
@@ -1199,6 +1327,58 @@
             { "title": "Step 3", "description": "Click generate to see the scene swap effect." }
           ],
           "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "data": {
+          "examples": [
+            {
+              "category": "AI Tiger Hug",
+              "prompt": "Generate AI Tiger Hug effect",
+              "image": "/img_video/imgs/角色切换_AI老虎拥抱_2.png",
+              "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4"
+            },
+            {
+              "category": "Rain Walk",
+              "prompt": "Generate Rain Walk effect",
+              "image": "/img_video/imgs/角色切换_雨中漫步_2.png",
+              "video": "/img_video/videos/角色切换_雨中漫步.mp4"
+            },
+            {
+              "category": "Future Child",
+              "prompt": "Generate Future Child effect",
+              "image": "/img_video/imgs/角色切换_遇见未来的小孩_2.png",
+              "video": "/img_video/videos/角色切换_遇到未来小孩.mp4"
+            },
+            {
+              "category": "Meet Old Self",
+              "prompt": "Generate Meet Old Self effect",
+              "image": "/img_video/imgs/角色切换_遇见老年的我_2.png",
+              "video": "/img_video/videos/角色切换_遇到老年的我.mp4"
+            },
+            {
+              "category": "Luxury Car",
+              "prompt": "Generate Luxury Car effect",
+              "image": "/img_video/imgs/角色切换_坐上豪车_2.png",
+              "video": "/img_video/videos/角色切换_坐上豪车.mp4"
+            },
+            {
+              "category": "Interrogation Room",
+              "prompt": "Generate Interrogation Room effect",
+              "image": "/img_video/imgs/角色切换_审讯室_2.png",
+              "video": "/img_video/videos/角色切换_审讯室.mp4"
+            },
+            {
+              "category": "Scream",
+              "prompt": "Generate Scream effect",
+              "image": "/img_video/imgs/角色切换_尖叫_2.png",
+              "video": "/img_video/videos/角色切换_尖叫.mp4"
+            },
+            {
+              "category": "Rainy Night",
+              "prompt": "Generate Rainy Night effect",
+              "image": "/img_video/imgs/角色切换_雨夜_2.png",
+              "video": "/img_video/videos/角色切换_雨夜.mp4"
+            }
+          ]
         },
         "more_tools": {
           "block": "more-tools",

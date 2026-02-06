@@ -7,7 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
 import { EffectCard, EffectItem } from './effect-card';
-import { tools } from '@/data/tools-data';
+import { tools } from '../../../data/tools-data';
 
 // Types
 export interface ToolIntroProps {

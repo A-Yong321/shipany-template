@@ -22,6 +22,48 @@
           "title": "AI Fake Date Generator",
           "data": {
             "examples": [
+              {
+                "category": "Chinese Girlfriend",
+                "prompt": "Generate Chinese Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_中国女友.mp4"
+              },
+              {
+                "category": "Russian Girlfriend",
+                "prompt": "Generate Russian Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_俄罗斯女友.mp4"
+              },
+              {
+                "category": "Indian Girlfriend",
+                "prompt": "Generate Indian Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_印度女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_印度女友.mp4"
+              },
+              {
+                "category": "Girlfriend Date",
+                "prompt": "Generate Girlfriend Date effect",
+                "image": "/img_video/imgs/AI-Fake-Date_女友约会_1.png",
+                "video": "/img_video/videos/AIFakeDate_女友约会.mp4"
+              },
+              {
+                "category": "Japanese Girlfriend",
+                "prompt": "Generate Japanese Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_日本女友.mp4"
+              },
+              {
+                "category": "French Girlfriend",
+                "prompt": "Generate French Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_法国女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_法国女友.mp4"
+              },
+              {
+                "category": "American Girlfriend",
+                "prompt": "Generate American Girlfriend effect",
+                "image": "/img_video/imgs/AI-Fake-Date_美国女友_1.png",
+                "video": "/img_video/videos/AIFakeDate_美国女友.mp4"
+              },
               { 
                 "category": "Cafe", 
                 "prompt": "Romantic date in a cozy cafe, latte art on table, soft lighting",
@@ -153,6 +195,21 @@
     "page": {
       "title": "Pregnant AI Photo Generator",
       "sections": {
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "Pregnant AI Photo Generator",
+          "data": {
+             "examples": [
+              {
+                "category": "Pregnant",
+                "prompt": "Generate Pregnant effect",
+                "image": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
+                "video": "/img_video/videos/PregnantAI_怀孕.mp4"
+              }
+            ]
+          }
+        },
         "hero": {
           "id": "hero",
           "title": "Create Beautiful Maternity Photos",
@@ -317,6 +374,21 @@
     "page": {
       "title": "Celebrity Selfie Generator",
       "sections": {
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "Celebrity Selfie Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "Celebrity Selfie",
+                "prompt": "Generate Celebrity Selfie effect",
+                "image": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
+                "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4"
+              }
+            ]
+          }
+        },
         "hero": {
           "id": "hero",
           "title": "Take Selfies with Celebrities",
@@ -493,7 +565,29 @@
         "tool": {
           "block": "video-tool",
           "id": "tool",
-          "title": "AI Art Style Generator"
+          "title": "AI Art Style Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "AI Color Splash",
+                "prompt": "Generate AI Color Splash effect",
+                "image": "/img_video/imgs/艺术_AI局部留色视频特效_1.png",
+                "video": "/img_video/videos/艺术_AI局部留色视频特效.mp4"
+              },
+              {
+                "category": "AI Dragon Flight",
+                "prompt": "Generate AI Dragon Flight effect",
+                "image": "/img_video/imgs/艺术_AI御龙飞行视频_1.png",
+                "video": "/img_video/videos/艺术_AI御龙飞行视频.mp4"
+              },
+              {
+                "category": "Ice Sculpture",
+                "prompt": "Generate Ice Sculpture effect",
+                "image": "/img_video/imgs/艺术_冰雕_1.png",
+                "video": "/img_video/videos/艺术_冰雕.mp4"
+              }
+            ]
+          }
         },
         "intro": {
           "block": "tool-intro",
@@ -560,7 +654,59 @@
         "tool": {
           "block": "video-tool",
           "id": "tool",
-          "title": "AI Role Swap Photo Generator"
+          "title": "AI Role Swap Photo Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "AI Tiger Hug",
+                "prompt": "Generate AI Tiger Hug effect",
+                "image": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
+                "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4"
+              },
+              {
+                "category": "Luxury Car",
+                "prompt": "Generate Luxury Car effect",
+                "image": "/img_video/imgs/角色切换_坐上豪车_1.png",
+                "video": "/img_video/videos/角色切换_坐上豪车.mp4"
+              },
+              {
+                "category": "Interrogation Room",
+                "prompt": "Generate Interrogation Room effect",
+                "image": "/img_video/imgs/角色切换_审讯室_1.png",
+                "video": "/img_video/videos/角色切换_审讯室.mp4"
+              },
+              {
+                "category": "Scream",
+                "prompt": "Generate Scream effect",
+                "image": "/img_video/imgs/角色切换_尖叫_1.png",
+                "video": "/img_video/videos/角色切换_尖叫.mp4"
+              },
+              {
+                "category": "Meet Future Kid",
+                "prompt": "Generate Meet Future Kid effect",
+                "image": "/img_video/imgs/角色切换_遇见未来的小孩_1.png",
+                "video": "/img_video/videos/角色切换_遇见未来的小孩.mp4"
+              },
+              {
+                "category": "Meet Older Me",
+                "prompt": "Generate Meet Older Me effect",
+                "image": "/img_video/imgs/角色切换_遇见老年的我_1.png",
+                "video": "/img_video/videos/角色切换_遇见老年的我.mp4"
+              },
+              {
+                "category": "Rain Walk",
+                "prompt": "Generate Rain Walk effect",
+                "image": "/img_video/imgs/角色切换_雨中漫步_1.png",
+                "video": "/img_video/videos/角色切换_雨中漫步.mp4"
+              },
+              {
+                "category": "Rainy Night",
+                "prompt": "Generate Rainy Night effect",
+                "image": "/img_video/imgs/角色切换_雨夜_1.png",
+                "video": "/img_video/videos/角色切换_雨夜.mp4"
+              }
+            ]
+          }
         },
         "intro": {
           "block": "tool-intro",
@@ -630,6 +776,42 @@
           "title": "AI Visual Effects Photo Generator",
           "data": {
             "examples": [
+              {
+                "category": "AI Explosion",
+                "prompt": "Generate AI Explosion effect",
+                "image": "/img_video/imgs/视觉效果_AI爆炸效果_1.png",
+                "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4"
+              },
+              {
+                "category": "Epic Explosion Walk",
+                "prompt": "Generate Epic Explosion Walk effect",
+                "image": "/img_video/imgs/视觉效果_史诗级爆炸漫步_1.png",
+                "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4"
+              },
+              {
+                "category": "Change Helicopter Hangar",
+                "prompt": "Generate Change Helicopter Hangar effect",
+                "image": "/img_video/imgs/视觉效果_改变直升机机库_1.png",
+                "video": "/img_video/videos/视觉效果_改变直升机机库.mp4"
+              },
+              {
+                "category": "Ocean Dress",
+                "prompt": "Generate Ocean Dress effect",
+                "image": "/img_video/imgs/视觉效果_海洋连衣裙_1.png",
+                "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4"
+              },
+              {
+                "category": "Dimension Travel",
+                "prompt": "Generate Dimension Travel effect",
+                "image": "/img_video/imgs/视觉效果_穿越维度_1.png",
+                "video": "/img_video/videos/视觉效果_穿越维度.mp4"
+              },
+              {
+                "category": "Into Mouth",
+                "prompt": "Generate Into Mouth effect",
+                "image": "/img_video/imgs/视觉效果_进入嘴巴_1.png",
+                "video": "/img_video/videos/视觉效果_进入嘴巴.mp4"
+              },
               { 
                 "category": "Explosion", 
                 "prompt": "Cinematic explosion background, action movie style photo",
@@ -684,6 +866,71 @@
           "block": "faq",
           "title": "FAQs",
           "items": [{ "question": "Is it free?", "answer": "Yes, try it for free." }]
+        }
+      }
+    }
+  },
+  "ai-kissing-photo": {
+    "metadata": {
+      "title": "AI Kissing Photo Generator",
+      "description": "Create romantic kissing photos with AI."
+    },
+    "page": {
+      "title": "AI Kissing Photo Generator",
+      "sections": {
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Kissing Photo Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "Biting Lip Kiss",
+                "prompt": "Generate Biting Lip Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png",
+                "video": "/img_video/videos/AIKissing_咬嘴唇之吻.mp4"
+              },
+              {
+                "category": "Normal Kiss",
+                "prompt": "Generate Normal Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+                "video": "/img_video/videos/AiKissing_正常接吻.mp4"
+              },
+              {
+                "category": "French Kiss",
+                "prompt": "Generate French Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+                "video": "/img_video/videos/AIKissing法式接吻.mp4"
+              },
+              {
+                "category": "Cheek Kiss",
+                "prompt": "Generate Cheek Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
+                "video": "/img_video/videos/脸颊之吻.mp4"
+              },
+              {
+                "category": "Forehead Kiss",
+                "prompt": "Generate Forehead Kiss effect",
+                "image": "/img_video/imgs/AI-Kissing_额头之吻_1.png",
+                "video": "/img_video/videos/AIKissing_额头之吻.mp4"
+              }
+            ]
+          }
+        },
+        "hero": {
+          "id": "hero",
+          "title": "Create Romantic Kissing Photos",
+          "description": "Generate realistic kissing photos using AI.",
+          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Kissing Photos",
+          "description": "Romantic kissing moments captured with AI.",
+          "images": [{ "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }]
         }
       }
     }
