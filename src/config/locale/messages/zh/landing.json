@@ -23,34 +23,34 @@
               "icon": "Video",
               "children": [
                 {
-                  "title": "AI接吻",
-                  "description": "创建接吻视频",
-                  "url": "/video-effects/ai-kissing",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "AI肌肉",
-                  "description": "为照片添加肌肉",
-                  "url": "/video-effects/ai-muscle",
-                  "icon": "Dumbbell"
-                },
-                {
                   "title": "AI拥抱",
                   "description": "创建温暖拥抱视频",
                   "url": "/video-effects/ai-hug",
                   "icon": "Heart"
                 },
                 {
-                  "title": "AI扭臀舞",
-                  "description": "流行扭臀舞蹈",
-                  "url": "/video-effects/ai-twerk",
+                  "title": "AI接吻",
+                  "description": "创建接吻视频",
+                  "url": "/video-effects/ai-kissing",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI跳舞",
+                  "description": "让照片跳舞",
+                  "url": "/video-effects/ai-dance",
                   "icon": "Music"
                 },
                 {
-                  "title": "AI抖动",
-                  "description": "有趣的身体动作",
-                  "url": "/video-effects/ai-jiggle",
-                  "icon": "Zap"
+                  "title": "AI模仿",
+                  "description": "模仿舞蹈动作",
+                  "url": "/video-effects/mimic",
+                  "icon": "Activity"
+                },
+                {
+                  "title": "角色切换",
+                  "description": "视频角色与场景切换",
+                  "url": "/video-effects/role-swap",
+                  "icon": "Users"
                 },
                 {
                   "title": "查看更多",
@@ -69,19 +69,7 @@
                   "title": "AI虚拟约会",
                   "description": "浪漫约会照片",
                   "url": "/photo-effects/ai-fake-date",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "拥抱生成器",
-                  "description": "温暖拥抱照片",
-                  "url": "/photo-effects/hug-generator",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "名人自拍",
-                  "description": "与名人自拍",
-                  "url": "/photo-effects/celebrity-selfie",
-                  "icon": "Camera"
+                  "icon": "Coffee"
                 },
                 {
                   "title": "AI怀孕",
@@ -90,10 +78,22 @@
                   "icon": "Baby"
                 },
                 {
-                  "title": "角色360",
-                  "description": "360°角色旋转",
-                  "url": "/photo-effects/character-360",
-                  "icon": "RotateCw"
+                  "title": "名人自拍",
+                  "description": "与名人自拍",
+                  "url": "/photo-effects/celebrity-selfie",
+                  "icon": "Camera"
+                },
+                {
+                  "title": "艺术风格",
+                  "description": "创意艺术特效",
+                  "url": "/photo-effects/art-style",
+                  "icon": "Palette"
+                },
+                {
+                  "title": "视觉特效",
+                  "description": "创意照片特效",
+                  "url": "/photo-effects/visual-effects-photo",
+                  "icon": "Zap"
                 },
                 {
                   "title": "查看更多",

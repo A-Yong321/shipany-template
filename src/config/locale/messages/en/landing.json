@@ -23,34 +23,34 @@
               "icon": "Video",
               "children": [
                 {
-                  "title": "AI Kissing",
-                  "description": "Create kissing videos",
-                  "url": "/video-effects/ai-kissing",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "AI Muscle",
-                  "description": "Add muscles to photos",
-                  "url": "/video-effects/ai-muscle",
-                  "icon": "Dumbbell"
-                },
-                {
                   "title": "AI Hug",
                   "description": "Create warm hug videos",
                   "url": "/video-effects/ai-hug",
                   "icon": "Heart"
                 },
                 {
-                  "title": "AI Twerk",
-                  "description": "Trending twerk dance",
-                  "url": "/video-effects/ai-twerk",
+                  "title": "AI Kissing",
+                  "description": "Create kissing videos",
+                  "url": "/video-effects/ai-kissing",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI Dance",
+                  "description": "Make photos dance",
+                  "url": "/video-effects/ai-dance",
                   "icon": "Music"
                 },
                 {
-                  "title": "AI Jiggle",
-                  "description": "Fun body movements",
-                  "url": "/video-effects/ai-jiggle",
-                  "icon": "Zap"
+                  "title": "Mimic",
+                  "description": "Mimic dance moves",
+                  "url": "/video-effects/mimic",
+                  "icon": "Activity"
+                },
+                {
+                  "title": "Role Swap",
+                  "description": "Swap roles in videos",
+                  "url": "/video-effects/role-swap",
+                  "icon": "Users"
                 },
                 {
                   "title": "View More",
@@ -69,19 +69,7 @@
                   "title": "AI Fake Date",
                   "description": "Romantic date photos",
                   "url": "/photo-effects/ai-fake-date",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "Hug Generator",
-                  "description": "Warm embrace photos",
-                  "url": "/photo-effects/hug-generator",
-                  "icon": "Heart"
-                },
-                {
-                  "title": "Celebrity Selfie",
-                  "description": "Selfies with celebrities",
-                  "url": "/photo-effects/celebrity-selfie",
-                  "icon": "Camera"
+                  "icon": "Coffee"
                 },
                 {
                   "title": "Pregnant AI",
@@ -90,10 +78,22 @@
                   "icon": "Baby"
                 },
                 {
-                  "title": "Character 360",
-                  "description": "360° character rotation",
-                  "url": "/photo-effects/character-360",
-                  "icon": "RotateCw"
+                  "title": "Celebrity Selfie",
+                  "description": "Selfies with celebrities",
+                  "url": "/photo-effects/celebrity-selfie",
+                  "icon": "Camera"
+                },
+                {
+                  "title": "Art Style",
+                  "description": "Creative artistic effects",
+                  "url": "/photo-effects/art-style",
+                  "icon": "Palette"
+                },
+                {
+                  "title": "Visual Effects",
+                  "description": "Creative photo effects",
+                  "url": "/photo-effects/visual-effects-photo",
+                  "icon": "Zap"
                 },
                 {
                   "title": "View More",

@@ -13,6 +13,22 @@ with open("src/config/locale/messages/zh/pages/video-effects.json", "r", encodin
 # 翻译映射
 TRANSLATIONS = {
     # 分类标签
+    "全部": "All",
+    "AI 接吻": "AI Kissing",
+    "AI 虚拟约会": "AI Fake Date",
+    "拥抱": "Hug",
+    "名人合拍": "Celebrity Selfie",
+    "肌肉": "Muscle",
+    "360度旋转": "360 Rotation",
+    "抖动特效": "Jiggle",
+    "AI 怀孕": "AI Pregnant",
+    "舞蹈生成": "AI Dance",
+    "动作模仿": "Imitate",
+    "艺术风格": "Art Style",
+    "视觉特效": "Visual Effects",
+    "角色扮演": "Role Play",
+    "其他": "Other",
+    
     "健身": "Fitness",
     "浪漫": "Romance",
     "社交": "Social",
@@ -103,6 +119,7 @@ def translate_config(zh_config, is_video=False):
         en_config["page"]["sections"]["effects"]["title"] = "Explore All Video Effects"
         en_config["page"]["sections"]["effects"]["description"] = "Choose from our wide range of viral AI video effects to bring your photos to life."
         en_config["page"]["sections"]["effects"]["items_label"] = "Natural Mess"
+        en_config["page"]["sections"]["effects"]["button_text"] = "Use This Effect"
         en_config["page"]["sections"]["cta"]["title"] = "Unleash Your Creativity"
         en_config["page"]["sections"]["cta"]["description"] = "Transform any photo into a viral masterpiece with just one click."
         en_config["page"]["sections"]["cta"]["buttons"][0]["title"] = "Start Creating Now"
@@ -115,6 +132,7 @@ def translate_config(zh_config, is_video=False):
         en_config["page"]["sections"]["effects"]["title"] = "Explore All Photo Effects"
         en_config["page"]["sections"]["effects"]["description"] = "Choose from our wide range of professional AI photo effects."
         en_config["page"]["sections"]["effects"]["items_label"] = "Natural Mess"
+        en_config["page"]["sections"]["effects"]["button_text"] = "Use This Effect"
         en_config["page"]["sections"]["cta"]["title"] = "Ready to Transform Your Photos?"
         en_config["page"]["sections"]["cta"]["description"] = "Choose an effect and see the magic happen instantly."
         en_config["page"]["sections"]["cta"]["buttons"][0]["title"] = "Try All Effects"

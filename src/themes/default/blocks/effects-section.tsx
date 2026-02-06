@@ -89,7 +89,12 @@ export function EffectsSection({
           {section.tabs
             ?.find((t: TabData) => t.id === activeTab)
             ?.items.map((item: EffectItem, index: number) => (
-              <EffectCard key={index} item={item} itemsLabel={section.items_label} />
+              <EffectCard 
+                key={index} 
+                item={item} 
+                itemsLabel={section.items_label} 
+                buttonText={section.button_text}
+              />
             ))}
         </div>
       </div>
@@ -97,7 +102,15 @@ export function EffectsSection({
   );
 }
 
-function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: string }) {
+function EffectCard({ 
+  item, 
+  itemsLabel, 
+  buttonText 
+}: { 
+  item: EffectItem; 
+  itemsLabel?: string; 
+  buttonText?: string; 
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   // 兼容新旧数据结构
@@ -171,7 +184,7 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/60 to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 p-6 flex flex-col justify-end">
+      <div className="absolute inset-0 p-4 flex flex-col justify-end">
         {/* Top Badges */}
         <div className="absolute top-4 left-4 flex gap-2">
           {item.badge && (
@@ -192,12 +205,26 @@ function EffectCard({ item, itemsLabel }: { item: EffectItem; itemsLabel?: strin
           )}
         </div>
 
-        {/* Bottom Text */}
-        <div className="transform transition-transform duration-300 group-hover:-translate-y-2 relative z-10">
-          <h3 className="text-xl font-bold text-white leading-tight">{item.title}</h3>
-          <p className="text-xs text-white/60 font-medium uppercase tracking-wider mt-2 border-l-2 border-white/30 pl-2">
-            {itemsLabel || 'Natural mess'}
-          </p>
+        {/* Bottom Text & Button */}
+        <div className="relative z-10 flex flex-col gap-2">
+          {/* Text Container - Moves up/fades on hover to make room/focus button? Or just stack? */}
+          <div className="transform transition-all duration-300 group-hover:-translate-y-1">
+            <h3 className="text-lg md:text-xl font-bold text-white leading-tight line-clamp-2">{item.title}</h3>
+            {!buttonText && (
+              <p className="text-xs text-white/60 font-medium uppercase tracking-wider mt-1 border-l-2 border-white/30 pl-2">
+                {itemsLabel || 'Natural mess'}
+              </p>
+            )}
+          </div>
+          
+          {/* Button - Slides up and fades in on hover */}
+          {buttonText && (
+             <div className="overflow-hidden max-h-0 opacity-0 group-hover:max-h-12 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                <div className="bg-white text-black text-sm font-bold py-2 px-4 rounded-full text-center hover:bg-gray-100 transition-colors w-full">
+                  {buttonText}
+                </div>
+             </div>
+          )}
         </div>
       </div>
     </Link>

@@ -973,8 +973,35 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI Dance Generator",
-          "description": "Bring static photos to life with various dance styles.",
+          "description": "Bring static photos to life with various dance styles. Using our AI technology, you can make any photo perform professional dance moves, including belly dance and other popular styles.",
           "images": [{ "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" }]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Multiple Dance Styles",
+              "description": "Support belly dance and other popular dance styles, making your photos perform professional dance moves.",
+              "image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Dance Generator?",
+          "description": "Make photos dance in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired dance style." },
+            { "title": "Step 2", "description": "Upload a clear photo of a person." },
+            { "title": "Step 3", "description": "Click generate to see the dancing effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Video Effects"
         },
         "faq": {
           "block": "faq",
@@ -1009,12 +1036,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI Mimic Effect",
-          "description": "Make photos mimic various movements including hot pole dance, twerk, electro dance, Chanel dance, AI standing split, Reze dance, and waist twist.",
+          "description": "Make photos mimic various movements including hot pole dance, twerk, electro dance, Chanel dance, AI standing split, Reze dance, and waist twist. Using our AI technology, make your photos perform dynamic dances and actions.",
           "images": [
             { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
             { "src": "/img_video/imgs/模仿_扭臀舞_2.png" },
             { "src": "/img_video/imgs/模仿_电摇舞_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Rich Action Library",
+              "description": "Support hot pole dance, twerk, electric dance and other popular actions, making your photos full of vitality.",
+              "image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Mimic Effects?",
+          "description": "Make photos mimic actions in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose the action type you want to mimic." },
+            { "title": "Step 2", "description": "Upload a clear photo of a person." },
+            { "title": "Step 3", "description": "Click generate to see the mimic effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Video Effects"
         },
         "faq": {
           "block": "faq",
@@ -1049,12 +1103,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI Visual Effects",
-          "description": "Add various creative visual effects to photos, including AI explosion effect, epic explosion walk, ocean dress, dimension crossing, entering mouth, and helicopter hangar transformation.",
+          "description": "Add various creative visual effects to photos, including AI explosion effect, epic explosion walk, ocean dress, dimension crossing, entering mouth, and helicopter hangar transformation. Using our AI technology, create stunning visual effects.",
           "images": [
             { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
             { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png" },
             { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Stunning Visual Effects",
+              "description": "Support explosion effects, ocean dress, dimension crossing and other creative visual effects, making your photos full of imagination.",
+              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Visual Effects?",
+          "description": "Add stunning effects to photos in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired visual effect type." },
+            { "title": "Step 2", "description": "Upload a clear photo." },
+            { "title": "Step 3", "description": "Click generate to see the visual effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Video Effects"
         },
         "faq": {
           "block": "faq",
@@ -1089,12 +1170,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI Role Swap",
-          "description": "Achieve various creative role swap scenes, including AI tiger hug, rainy walk, meeting future child, meeting old me, luxury car ride, interrogation room, scream, and rainy night.",
+          "description": "Achieve various creative role swap scenes, including AI tiger hug, rainy walk, meeting future child, meeting old me, luxury car ride, interrogation room, scream, and rainy night. Using our AI technology, create unique scene transformations.",
           "images": [
             { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
             { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
             { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Creative Scene Swap",
+              "description": "Support AI tiger hug, rainy walk, meeting future child and other creative scenes, making your photos full of stories.",
+              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Role Swap?",
+          "description": "Achieve creative scene swaps in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired scene type." },
+            { "title": "Step 2", "description": "Upload a clear photo of a person." },
+            { "title": "Step 3", "description": "Click generate to see the scene swap effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Video Effects"
         },
         "faq": {
           "block": "faq",

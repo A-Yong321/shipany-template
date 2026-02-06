@@ -23,14 +23,35 @@
         "tip": "",
         "input_placeholder": "输入您的想法进行生成",
         "tools": [
-          { "id": "video", "icon": "RiVideoLine", "label": "AI 视频" },
-          { "id": "text-to-video", "icon": "RiFileTextLine", "label": "文字/图片转视频" },
-          { "id": "pollo-2", "icon": "RiFlashlightLine", "label": "Pollo 2.5" }
+          {
+            "id": "video",
+            "icon": "RiVideoLine",
+            "label": "AI 视频"
+          },
+          {
+            "id": "text-to-video",
+            "icon": "RiFileTextLine",
+            "label": "文字/图片转视频"
+          },
+          {
+            "id": "pollo-2",
+            "icon": "RiFlashlightLine",
+            "label": "Pollo 2.5"
+          }
         ],
         "examples": [
-           { "emoji": "👑", "text": "加冕" },
-           { "emoji": "🌬️", "text": "随风而逝" },
-           { "emoji": "🧱", "text": "游戏屋建造者" }
+          {
+            "emoji": "👑",
+            "text": "加冕"
+          },
+          {
+            "emoji": "🌬️",
+            "text": "随风而逝"
+          },
+          {
+            "emoji": "🧱",
+            "text": "游戏屋建造者"
+          }
         ],
         "show_avatars": false,
         "show_award": false,
@@ -88,14 +109,23 @@
             "description": "通过 1PhotoAI 视频生成器，您可以体验我们的旗舰 Pollo 2.5 视频模型以及行业内所有顶尖视频模型，包括：",
             "icon": "RiVideoLine",
             "tags": [
-               "Pollo 2.5", "可灵 AI", "Veo 3", "Sora 2", "Runway", "Vidu AI"
+              "Pollo 2.5",
+              "可灵 AI",
+              "Veo 3",
+              "Sora 2",
+              "Runway",
+              "Vidu AI"
             ],
             "button": {
-                "title": "AI 视频生成器",
-                "url": "/text-to-video"
+              "title": "AI 视频生成器",
+              "url": "/text-to-video"
             },
             "logos": [
-                "/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg", "/imgs/logos/runway.svg"
+              "/imgs/logos/pollo.svg",
+              "/imgs/logos/kling.svg",
+              "/imgs/logos/veo.svg",
+              "/imgs/logos/sora.svg",
+              "/imgs/logos/runway.svg"
             ]
           },
           {
@@ -104,14 +134,21 @@
             "description": "1PhotoAI 图像生成器采用了我们最先进的 Image 2.0 模型，以及当今其他领先的图像模型，包括：",
             "icon": "RiImageLine",
             "tags": [
-               "Nano Banana", "Midjourney", "Flux AI", "Stable Diffusion", "Dall-E"
+              "Nano Banana",
+              "Midjourney",
+              "Flux AI",
+              "Stable Diffusion",
+              "Dall-E"
             ],
             "button": {
-                "title": "AI 图像生成器",
-                "url": "/text-to-image"
+              "title": "AI 图像生成器",
+              "url": "/text-to-image"
             },
             "logos": [
-                "/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg", "/imgs/logos/imagen.svg"
+              "/imgs/logos/midjourney.svg",
+              "/imgs/logos/flux.svg",
+              "/imgs/logos/gpt4.svg",
+              "/imgs/logos/imagen.svg"
             ]
           }
         ],
@@ -126,9 +163,18 @@
             "title": "图像创作与艺术生成",
             "description": "立即将文本转化为令人惊叹的高质量艺术作品。从文本转图像到照片转卡通，我们为您的所有创作需求提供专业工具。",
             "sub_items": [
-              { "title": "人像卡通化", "description": "一键将您的自拍照变成惊人的卡通作品。" },
-              { "title": "角色一致性", "description": "在不同的场景和姿势中保持角色的一致性。" },
-              { "title": "即时风格转换", "description": "立即为您的照片应用任何艺术风格。" }
+              {
+                "title": "人像卡通化",
+                "description": "一键将您的自拍照变成惊人的卡通作品。"
+              },
+              {
+                "title": "角色一致性",
+                "description": "在不同的场景和姿势中保持角色的一致性。"
+              },
+              {
+                "title": "即时风格转换",
+                "description": "立即为您的照片应用任何艺术风格。"
+              }
             ],
             "button": {
               "title": "尝试 AI 图像生成器",
@@ -144,9 +190,18 @@
             "title": "视频创作 - 将文本/图片转为视频",
             "description": "将您的脚本或图像转换为电影感视频。我们的先进 AI 模型能够理解物理属性和运动，创作出逼真的效果。",
             "sub_items": [
-              { "title": "文本转视频", "description": "直接根据文本描述生成视频。" },
-              { "title": "图片转视频", "description": "让您的静态图像焕发活力。" },
-              { "title": "视频风格转换", "description": "转换现有视频的风格。" }
+              {
+                "title": "文本转视频",
+                "description": "直接根据文本描述生成视频。"
+              },
+              {
+                "title": "图片转视频",
+                "description": "让您的静态图像焕发活力。"
+              },
+              {
+                "title": "视频风格转换",
+                "description": "转换现有视频的风格。"
+              }
             ],
             "button": {
               "title": "尝试 AI 视频生成器",
@@ -174,116 +229,136 @@
             "label": "视频特效",
             "items": [
               {
-                "title": "AI 接吻视频",
-                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "AI 接吻" },
-                "video": "/videos/AI_Kissing.mp4",
+                "title": "AIKissing法式接吻",
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+                  "alt": "AIKissing法式接吻"
+                },
+                "video": "/img_video/videos/AIKissing法式接吻.mp4",
                 "badge": "HOT",
-                "count": "3M",
-                "url": "/video-effects/ai-kissing?type=Romantic"
+                "count": "1M+",
+                "url": "/video-effects/aikissing法式接吻"
               },
               {
-                "title": "AI 肌肉生成器",
-                "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "AI 肌肉" },
-                "video": "/videos/肌肉展示.mp4",
+                "title": "正常接吻",
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+                  "alt": "AiKissing_正常接吻"
+                },
+                "video": "/img_video/videos/AiKissing_正常接吻.mp4",
                 "badge": "HOT",
-                "count": "149.4K",
-                "url": "/video-effects/ai-muscle?type=Bodybuilder"
+                "count": "1M+",
+                "url": "/video-effects/aikissing-正常接吻"
               },
               {
-                "title": "AI 肚皮舞",
-                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png", "alt": "AI 肚皮舞" },
-                "video": "/videos/肚皮舞.mp4",
+                "title": "肌肉展示",
+                "image": {
+                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
+                  "alt": "Muscle_肌肉展示"
+                },
+                "video": "/img_video/videos/Muscle_肌肉展示.mp4",
                 "badge": "HOT",
-                "count": "127.1K",
-                "url": "/video-effects/ai-dance-pop"
+                "count": "1M+",
+                "url": "/video-effects/muscle-肌肉展示"
               },
               {
-                "title": "AI 身体抖动特效",
-                "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "AI 抖动" },
-                "video": "/videos/抖动身体.mp4",
-                "badge": "HOT",
-                "count": "73.9K",
-                "url": "/video-effects/ai-jiggle?type=Fun"
-              },
-              {
-                "title": "AI 电臀舞",
-                "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "AI 电臀舞" },
-                "video": "/videos/扭臀舞.mp4",
+                "title": "肚皮舞",
+                "image": {
+                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
+                  "alt": "AIDanceGenerator_肚皮舞"
+                },
+                "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
                 "badge": "NEW",
                 "count": "50K",
-                "url": "/video-effects/ai-twerk?type=Energetic"
+                "url": "/video-effects/aidancegenerator-肚皮舞"
               },
               {
-                "title": "AI 电摇舞",
-                "image": { "src": "/imgs/cms/Twerk_电摇舞_1.png", "alt": "AI 电摇舞" },
-                "video": "/videos/电摇舞.mp4",
-                "count": "45K",
-                "url": "/video-effects/ai-twerk?type=Energetic"
+                "title": "侧身依抱",
+                "image": {
+                  "src": "/img_video/imgs/Hug_侧身依抱_1.png",
+                  "alt": "hug_侧身依抱"
+                },
+                "video": "/img_video/videos/hug_侧身依抱.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/hug-侧身依抱"
               },
               {
-                "title": "AI 正常接吻",
-                "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png", "alt": "AI 接吻" },
-                "video": "/videos/正常接吻.mp4",
-                "count": "40K",
-                "url": "/video-effects/ai-kissing?type=Romantic"
+                "title": "公主抱",
+                "image": {
+                  "src": "/img_video/imgs/Hug_公主抱_1.png",
+                  "alt": "hug_公主抱"
+                },
+                "video": "/img_video/videos/hug_公主抱.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/hug-公主抱"
               },
               {
-                "title": "印度女友接吻",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_印度女友_1.png", "alt": "印度女友" },
-                "video": "/videos/AI_Kissing_印度女友.mp4",
-                "count": "35K",
-                "url": "/video-effects/ai-kissing?type=Romantic"
+                "title": "托举式抱",
+                "image": {
+                  "src": "/img_video/imgs/Hug_托举式抱_1.png",
+                  "alt": "hug_托举式抱"
+                },
+                "video": "/img_video/videos/hug_托举式抱.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/hug-托举式抱"
               },
               {
-                "title": "俄罗斯女友接吻",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "俄罗斯女友" },
-                "video": "/videos/俄罗斯女友.mp4",
-                "badge": "HOT",
-                "count": "1.2M",
-                "url": "/video-effects/ai-kissing?type=Romantic"
+                "title": "拥抱",
+                "image": {
+                  "src": "/img_video/imgs/Hug_拥抱_1.png",
+                  "alt": "hug_拥抱"
+                },
+                "video": "/img_video/videos/hug_拥抱.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/hug-拥抱"
               },
               {
-                "title": "街舞展示",
-                "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png", "alt": "街舞" },
-                "video": "/videos/街舞.mp4",
-                "count": "25K",
-                "url": "/video-effects/ai-dance-pop"
+                "title": "背后环抱",
+                "image": {
+                  "src": "/img_video/imgs/Hug_背后环抱_1.png",
+                  "alt": "hug_背后环抱"
+                },
+                "video": "/img_video/videos/hug_背后环抱.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/hug-背后环抱"
               },
               {
-                "title": "侏罗纪奇遇",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_女友约会_1.png", "alt": "侏罗纪" },
-                "video": "/videos/侏罗纪奇遇.mp4",
-                "count": "15K",
-                "url": "/video-effects/ai-fake-date"
+                "title": "怀孕",
+                "image": {
+                  "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
+                  "alt": "PregnantAI_怀孕"
+                },
+                "video": "/img_video/videos/PregnantAI_怀孕.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/pregnantai-怀孕"
               },
               {
-                "title": "登月漫步",
-                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "登月漫步" },
-                "video": "/videos/登月漫步.mp4",
-                "count": "90K",
-                "url": "/video-effects/ai-dance-pop"
+                "title": "抖动身体",
+                "image": {
+                  "src": "/img_video/imgs/Jiggle_抖动身体_1.png",
+                  "alt": "jiggle_抖动身体"
+                },
+                "video": "/img_video/videos/jiggle_抖动身体.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/jiggle-抖动身体"
               },
               {
-                "title": "过年场景",
-                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "过年" },
-                "video": "/videos/过年场景.mp4",
-                "count": "66K",
-                "url": "/video-effects/ai-fake-date"
-              },
-              {
-                "title": "进入嘴巴特效",
-                "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "进入嘴巴" },
-                "video": "/videos/进入嘴巴.mp4",
-                "badge": "HOT",
-                "count": "110K",
-                "url": "/video-effects/ai-jiggle"
-              },
-              {
-                "title": "360度旋转展示",
-                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "360旋转" },
-                "video": "/videos/AI_360_Rotation.mp4",
-                "count": "33K",
-                "url": "/video-effects/ai-muscle?type=360 View"
+                "title": "中国女友",
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
+                  "alt": "AIFakeDate_中国女友"
+                },
+                "video": "/img_video/videos/AIFakeDate_中国女友.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/aifakedate-中国女友"
               }
             ]
           },
@@ -292,146 +367,301 @@
             "label": "照片特效",
             "items": [
               {
-                "title": "AI 虚拟约会",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png", "alt": "虚拟约会原图" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png", "alt": "AI 虚拟约会" },
-                "badge": "NEW",
-                "count": "50K",
-                "url": "/photo-effects/ai-fake-date?type=Cafe"
+                "title": "咬嘴唇之吻",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png",
+                  "alt": "咬嘴唇之吻 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png",
+                  "alt": "咬嘴唇之吻"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-kissing-咬嘴唇之吻"
               },
               {
-                "title": "拥抱生成器",
-                "beforeImage": { "src": "/imgs/cms/Hug_拥抱_1.png", "alt": "拥抱原图" },
-                "image": { "src": "/imgs/cms/Hug_拥抱_2.png", "alt": "拥抱" },
+                "title": "正常接吻",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+                  "alt": "正常接吻 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_2.png",
+                  "alt": "正常接吻"
+                },
                 "badge": "HOT",
-                "count": "200K",
-                "url": "/video-effects/ai-hug?type=Warm"
-              },
-              {
-                "title": "AI 怀孕特效",
-                "beforeImage": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png", "alt": "怀孕原图" },
-                "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png", "alt": "AI 怀孕" },
-                "badge": "HOT",
-                "count": "90K",
-                "url": "/photo-effects/pregnant-ai"
+                "count": "500K+",
+                "url": "/photo-effects/ai-kissing-正常接吻"
               },
               {
                 "title": "法式接吻",
-                "beforeImage": { "src": "/imgs/cms/AI-Kissing_法式接吻_1.png", "alt": "法式接吻原图" },
-                "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png", "alt": "法式接吻" },
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+                  "alt": "法式接吻 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_2.png",
+                  "alt": "法式接吻"
+                },
                 "badge": "HOT",
-                "count": "1.5M",
-                "url": "/video-effects/ai-kissing?type=French%20Kiss"
-              },
-              {
-                "title": "额头之吻",
-                "beforeImage": { "src": "/imgs/cms/AI-Kissing_额头之吻_1.png", "alt": "额头之吻原图" },
-                "image": { "src": "/imgs/cms/AI-Kissing_额头之吻_2.png", "alt": "额头之吻" },
-                "count": "45K",
-                "url": "/video-effects/ai-kissing-cheek"
-              },
-              {
-                "title": "咬嘴唇之吻",
-                "beforeImage": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_1.png", "alt": "咬嘴唇原图" },
-                "image": { "src": "/imgs/cms/AI-Kissing_咬嘴唇之吻_2.png", "alt": "咬嘴唇" },
-                "count": "120K",
-                "url": "/video-effects/ai-kissing?type=French Kiss"
-              },
-              {
-                "title": "名人合拍",
-                "beforeImage": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "名人合拍原图" },
-                "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png", "alt": "名人合拍" },
-                "badge": "HOT",
-                "count": "2.1M",
-                "url": "/photo-effects/celebrity-selfie"
-              },
-              {
-                "title": "公主抱",
-                "beforeImage": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "公主抱原图" },
-                "image": { "src": "/imgs/cms/Hug_公主抱_2.png", "alt": "公主抱" },
-                "count": "75K",
-                "url": "/photo-effects/princess-hug"
-              },
-              {
-                "title": "背后环抱",
-                "beforeImage": { "src": "/imgs/cms/Hug_背后环抱_1.png", "alt": "背后环抱原图" },
-                "image": { "src": "/imgs/cms/Hug_背后环抱_2.png", "alt": "背后环抱" },
-                "count": "88K",
-                "url": "/video-effects/ai-hug?type=Reunion"
-              },
-              {
-                "title": "托举式抱",
-                "beforeImage": { "src": "/imgs/cms/Hug_托举式抱_1.png", "alt": "托举式抱原图" },
-                "image": { "src": "/imgs/cms/Hug_托举式抱_2.png", "alt": "托举式抱" },
-                "count": "54K",
-                "url": "/video-effects/ai-hug?type=Warm"
-              },
-              {
-                "title": "日本女友",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_日本女友_1.png", "alt": "日本女友原图" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_日本女友_2.png", "alt": "日本女友" },
-                "count": "130K",
-                "url": "/photo-effects/ai-fake-date"
-              },
-              {
-                "title": "法国女友",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "法国女友原图" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png", "alt": "法国女友" },
-                "count": "95K",
-                "url": "/photo-effects/french-girlfriend"
-              },
-              {
-                "title": "中国女友",
-                "beforeImage": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "中国女友原图" },
-                "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png", "alt": "中国女友" },
-                "count": "210K",
-                "url": "/photo-effects/chinese-girlfriend"
-              },
-              {
-                "title": "360度肌肉展示",
-                "beforeImage": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png", "alt": "360肌肉原图" },
-                "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png", "alt": "360肌肉" },
-                "count": "15K",
-                "url": "/video-effects/ai-muscle?type=360 View"
+                "count": "500K+",
+                "url": "/photo-effects/ai-kissing-法式接吻"
               },
               {
                 "title": "脸颊之吻",
-                "beforeImage": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "脸颊之吻原图" },
-                "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png", "alt": "脸颊之吻" },
-                "count": "42K",
-                "url": "/video-effects/ai-kissing-cheek"
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
+                  "alt": "脸颊之吻 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png",
+                  "alt": "脸颊之吻"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-kissing-脸颊之吻"
+              },
+              {
+                "title": "额头之吻",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Kissing_额头之吻_1.png",
+                  "alt": "额头之吻 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_额头之吻_2.png",
+                  "alt": "额头之吻"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-kissing-额头之吻"
+              },
+              {
+                "title": "中国女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
+                  "alt": "中国女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_2.png",
+                  "alt": "中国女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-中国女友"
+              },
+              {
+                "title": "俄罗斯女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png",
+                  "alt": "俄罗斯女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_2.png",
+                  "alt": "俄罗斯女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-俄罗斯女友"
+              },
+              {
+                "title": "印度女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_1.png",
+                  "alt": "印度女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_2.png",
+                  "alt": "印度女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-印度女友"
+              },
+              {
+                "title": "女友约会",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_1.png",
+                  "alt": "女友约会 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_2.png",
+                  "alt": "女友约会"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-女友约会"
+              },
+              {
+                "title": "日本女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
+                  "alt": "日本女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_2.png",
+                  "alt": "日本女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-日本女友"
+              },
+              {
+                "title": "法国女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_1.png",
+                  "alt": "法国女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_2.png",
+                  "alt": "法国女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-法国女友"
+              },
+              {
+                "title": "美国女友",
+                "beforeImage": {
+                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_1.png",
+                  "alt": "美国女友 原图"
+                },
+                "image": {
+                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_2.png",
+                  "alt": "美国女友"
+                },
+                "badge": "HOT",
+                "count": "500K+",
+                "url": "/photo-effects/ai-fake-date-美国女友"
               }
             ]
           }
         ],
-        "className": "bg-black"
+        "className": "bg-black",
+        "button_text": "立即使用"
       },
       "creations": {
         "block": "creations-section",
         "id": "creations",
         "title": "探索 1PhotoAI 用户作品",
         "tabs": [
-            { "id": "all", "label": "全部" },
-            { "id": "videos", "label": "视频" },
-            { "id": "effects", "label": "AI 特效" },
-            { "id": "avatars", "label": "头像" },
-            { "id": "images", "label": "图片" },
-            { "id": "loras", "label": "LoRAs" },
-            { "id": "shorts", "label": "短视频" }
+          {
+            "id": "all",
+            "label": "全部"
+          },
+          {
+            "id": "videos",
+            "label": "视频"
+          },
+          {
+            "id": "effects",
+            "label": "AI 特效"
+          },
+          {
+            "id": "avatars",
+            "label": "头像"
+          },
+          {
+            "id": "images",
+            "label": "图片"
+          },
+          {
+            "id": "loras",
+            "label": "LoRAs"
+          },
+          {
+            "id": "shorts",
+            "label": "短视频"
+          }
         ],
         "items": [
-          { "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png", "alt": "作品 1" }, "user": "用户 1" },
-          { "image": { "src": "/imgs/cms/Hug_公主抱_1.png", "alt": "作品 2" }, "user": "用户 2" },
-          { "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png", "alt": "作品 3" }, "user": "用户 3" },
-          { "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png", "alt": "作品 4" }, "type": "video", "user": "用户 4" },
-          { "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png", "alt": "作品 5" }, "type": "video", "user": "用户 5" },
-          { "image": { "src": "/imgs/cms/Muscle_肌肉展示_1.png", "alt": "作品 6" }, "user": "用户 6" },
-          { "image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png", "alt": "作品 7" }, "type": "video", "user": "用户 7" },
-          { "image": { "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png", "alt": "作品 8" }, "user": "用户 8" },
-          { "image": { "src": "/imgs/cms/Hug_侧身依抱_1.png", "alt": "作品 9" }, "user": "用户 9" },
-          { "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png", "alt": "作品 10" }, "user": "用户 10" },
-          { "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png", "alt": "作品 11" }, "user": "用户 11" },
-           { "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png", "alt": "作品 12" }, "user": "用户 12" }
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png",
+              "alt": "作品 1"
+            },
+            "user": "用户 1"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Hug_公主抱_1.png",
+              "alt": "作品 2"
+            },
+            "user": "用户 2"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png",
+              "alt": "作品 3"
+            },
+            "user": "用户 3"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Kissing_正常接吻_1.png",
+              "alt": "作品 4"
+            },
+            "type": "video",
+            "user": "用户 4"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Jiggle_抖动身体_1.png",
+              "alt": "作品 5"
+            },
+            "type": "video",
+            "user": "用户 5"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Muscle_肌肉展示_1.png",
+              "alt": "作品 6"
+            },
+            "user": "用户 6"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Twerk_扭臀舞_1.png",
+              "alt": "作品 7"
+            },
+            "type": "video",
+            "user": "用户 7"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png",
+              "alt": "作品 8"
+            },
+            "user": "用户 8"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/Hug_侧身依抱_1.png",
+              "alt": "作品 9"
+            },
+            "user": "用户 9"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png",
+              "alt": "作品 10"
+            },
+            "user": "用户 10"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png",
+              "alt": "作品 11"
+            },
+            "user": "用户 11"
+          },
+          {
+            "image": {
+              "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png",
+              "alt": "作品 12"
+            },
+            "user": "用户 12"
+          }
         ],
         "className": "bg-black"
       },

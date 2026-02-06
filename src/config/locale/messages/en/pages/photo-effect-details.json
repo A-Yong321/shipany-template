@@ -32,8 +32,8 @@
                 "prompt": "Candlelight dinner date, fine dining atmosphere, elegant dress",
                 "image": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
               },
-              { 
-                "category": "Park", 
+              {
+                "category": "Park",
                 "prompt": "Walking in the park date, holding hands, autumn leaves",
                 "image": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
               }
@@ -118,8 +118,24 @@
         "intro": {
           "block": "tool-intro",
           "title": "Warm Hug Photos",
-          "description": "Generate touching hug photos with AI.",
+          "description": "Generate touching hug photos with AI. Whether it's a friendly side hug or a romantic princess carry, create perfect moments.",
           "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Hug Generator?",
+          "description": "Create hug photos in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired hug type." },
+            { "title": "Step 2", "description": "Upload a photo." },
+            { "title": "Step 3", "description": "Click generate to see the warm moment." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Photo Effects"
         },
         "faq": {
             "block": "faq",
@@ -482,12 +498,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI Art Style",
-          "description": "Add various artistic style effects to photos, including ice sculpture, AI selective color, AI dragon riding and other creative artistic effects.",
+          "description": "Add various artistic style effects to photos, including ice sculpture, AI selective color, AI dragon riding and other creative artistic effects. Using our AI technology, make your photos show unique artistic charm.",
           "images": [
             { "src": "/img_video/imgs/艺术_冰雕_2.png" },
             { "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png" },
             { "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "Unique Art Styles",
+              "description": "Support ice sculpture, selective color, dragon riding and other creative art styles, making your photos full of artistic sense.",
+              "image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Art Style?",
+          "description": "Add artistic effects to photos in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/艺术_冰雕_2.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Choose your desired art style type." },
+            { "title": "Step 2", "description": "Upload a clear photo." },
+            { "title": "Step 3", "description": "Click generate to see the artistic effect." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Photo Effects"
         },
         "faq": {
           "block": "faq",

@@ -118,8 +118,24 @@
         "intro": {
           "block": "tool-intro",
           "title": "温暖拥抱照片",
-          "description": "使用 AI 生成感人的拥抱照片。",
+          "description": "使用 AI 生成感人的拥抱照片。无论是友好的侧身拥抱，还是浪漫的公主抱，都能完美呈现。",
           "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 拥抱生成器?",
+          "description": "几秒钟内创建拥抱照片。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要的拥抱类型。" },
+            { "title": "步骤 2", "description": "上传照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看温馨瞬间。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
         },
         "faq": {
             "block": "faq",
@@ -359,12 +375,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI 艺术风格",
-          "description": "为照片添加各种艺术风格效果,包括冰雕、AI 局部留色、AI 御龙飞行等创意艺术效果。",
+          "description": "为照片添加各种艺术风格效果,包括冰雕、AI 局部留色、AI 御龙飞行等创意艺术效果。使用我们的 AI 技术,让您的照片展现出独特的艺术魅力。",
           "images": [
             { "src": "/img_video/imgs/艺术_冰雕_2.png" },
             { "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png" },
             { "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "多样艺术风格",
+              "description": "支持冰雕、局部留色、御龙飞行等多种创意艺术风格,让您的照片充满艺术感。",
+              "image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 艺术风格?",
+          "description": "几秒钟内为照片添加艺术效果。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/艺术_冰雕_2.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要的艺术风格类型。" },
+            { "title": "步骤 2", "description": "上传一张清晰的照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看艺术效果。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
         },
         "faq": {
           "block": "faq",
@@ -493,6 +536,273 @@
             "block": "faq",
             "title": "常见问题",
             "items": [{ "question": "可以更改背景吗？", "answer": "是的，在提示词中指定即可。" }]
+        }
+      }
+    }
+  },
+  "ai-kissing-photo": {
+    "metadata": {
+      "title": "AI 接吻照片 - 浪漫接吻生成器",
+      "description": "使用 AI 创建逼真的接吻照片。支持多种接吻风格,如法式接吻、额头之吻等。"
+    },
+    "page": {
+      "title": "AI 接吻照片生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "创建浪漫接吻照片",
+          "description": "使用 AI 技术生成逼真的情侣接吻照片。",
+          "background_image": { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png" },
+          "buttons": [
+            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 接吻照片生成器"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 接吻照片",
+          "description": "生成各种风格的浪漫接吻照片,包括正常接吻、法式接吻、脸颊之吻、咬嘴唇之吻和额头之吻。",
+          "images": [
+            { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png" },
+            { "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png" },
+            { "src": "/img_video/imgs/AI-Kissing_额头之吻_1.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "多种接吻风格",
+              "description": "支持法式、脸颊、额头等多种接吻风格,满足不同浪漫场景需求。",
+              "image": { "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 接吻照片生成器?",
+          "description": "几秒钟内生成浪漫接吻照片。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Kissing_正常接吻_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择接吻风格。" },
+            { "title": "步骤 2", "description": "上传两人的照片。" },
+            { "title": "步骤 3", "description": "生成接吻照片。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [{ "question": "效果逼真吗？", "answer": "是的，我们的 AI 能够生成高度逼真的接吻场景。" }]
+        }
+      }
+    }
+  },
+  "ai-muscle-photo": {
+    "metadata": {
+      "title": "AI 肌肉照片 - 肌肉增强生成器",
+      "description": "使用 AI 为照片人物添加肌肉效果。瞬间拥有完美身材。"
+    },
+    "page": {
+      "title": "AI 肌肉照片生成器",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI 肌肉增强",
+          "description": "一键为照片添加强壮肌肉。",
+          "background_image": { "src": "/img_video/imgs/Muscle_肌肉展示_1.png" },
+          "buttons": [
+            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 肌肉照片生成器"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "AI 肌肉展示",
+          "description": "为您的照片添加肌肉效果，展示强壮体魄。",
+          "images": [
+            { "src": "/img_video/imgs/Muscle_肌肉展示_1.png" },
+            { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "完美身材",
+              "description": "无需锻炼，AI 帮您瞬间获得理想肌肉线条。",
+              "image": { "src": "/img_video/imgs/Muscle_肌肉展示_1.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 肌肉生成器?",
+          "description": "快速增强肌肉效果。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/Muscle_肌肉展示_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择肌肉效果。" },
+            { "title": "步骤 2", "description": "上传您的照片。" },
+            { "title": "步骤 3", "description": "生成肌肉照片。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [{ "question": "看起来自然吗？", "answer": "是的，AI 会根据原图光影生成自然肌肉。" }]
+        }
+      }
+    }
+  },
+  "visual-effects-photo": {
+    "metadata": {
+      "title": "AI 视觉特效照片 - 创意特效生成器",
+      "description": "为照片添加震撼的视觉特效，如爆炸、海洋连衣裙等。"
+    },
+    "page": {
+      "title": "AI 视觉特效照片",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI 视觉特效",
+          "description": "为平淡的照片添加电影级的视觉特效。",
+          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "buttons": [
+            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 视觉特效生成器"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "震撼视觉冲击",
+          "description": "支持爆炸效果、史诗漫步、海洋连衣裙、穿越维度等多种创意视觉特效。",
+          "images": [
+            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_1.png" },
+            { "src": "/img_video/imgs/视觉效果_穿越维度_2.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "电影级特效",
+              "description": "一键生成好莱坞大片级别的视觉特效照片。",
+              "image": { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_1.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何生成视觉特效照片?",
+          "description": "简单几步制作大片。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择特效类型。" },
+            { "title": "步骤 2", "description": "上传照片。" },
+            { "title": "步骤 3", "description": "生成特效照片。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [{ "question": "需要专业技能吗？", "answer": "不需要，AI 自动完成所有后期处理。" }]
+        }
+      }
+    }
+  },
+  "role-swap-photo": {
+    "metadata": {
+      "title": "AI 角色切换照片 - 场景替换生成器",
+      "description": "将人物融入各种创意场景，实现完美的角色切换。"
+    },
+    "page": {
+      "title": "AI 角色切换照片",
+      "sections": {
+        "hero": {
+          "id": "hero",
+          "title": "AI 角色与场景切换",
+          "description": "想去哪里？想变成谁？AI 帮您实现。",
+          "background_image": { "src": "/img_video/imgs/角色切换_坐上豪车_1.png" },
+          "buttons": [
+            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI 角色切换生成器"
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "无限场景可能",
+          "description": "体验老虎拥抱、雨中漫步、豪车体验、遇见未来的自己等多种奇妙场景。",
+          "images": [
+            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_1.png" },
+            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_1.png" },
+            { "src": "/img_video/imgs/角色切换_坐上豪车_1.png" }
+          ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "创意场景",
+              "description": "打破现实限制，让您置身于想象不到的精彩场景中。",
+              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_1.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用角色切换?",
+          "description": "变换场景，变换人生。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_坐上豪车_1.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择目标场景。" },
+            { "title": "步骤 2", "description": "上传人物照片。" },
+            { "title": "步骤 3", "description": "生成场景融合照片。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门图片效果"
+        },
+        "faq": {
+          "block": "faq",
+          "title": "常见问题",
+          "items": [{ "question": "融合自然吗？", "answer": "是的，AI 会自动调整光影和透视使其完美融合。" }]
         }
       }
     }

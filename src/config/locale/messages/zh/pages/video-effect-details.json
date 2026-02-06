@@ -972,8 +972,35 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI 舞蹈生成器",
-          "description": "让静态照片动起来,展现各种舞蹈风格。",
+          "description": "让静态照片动起来,展现各种舞蹈风格。使用我们的 AI 技术,您可以让任何照片展现出专业的舞蹈动作,包括肚皮舞等多种热门舞蹈风格。",
           "images": [{ "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" }]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "多种舞蹈风格",
+              "description": "支持肚皮舞等多种舞蹈风格,让您的照片展现出专业的舞蹈动作。",
+              "image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 舞蹈生成器？",
+          "description": "几秒钟内让照片跳起舞来。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要的舞蹈风格。" },
+            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看照片跳舞效果。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门视频效果"
         },
         "faq": {
           "block": "faq",
@@ -1008,12 +1035,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI 模仿特效",
-          "description": "让照片模仿各种动作,包括热辣钢管舞、扭臀舞、电摇舞、香奈儿舞、AI 站立一字马、Reze 舞、叉腰扭臂等。",
+          "description": "让照片模仿各种动作,包括热辣钢管舞、扭臀舞、电摇舞、香奈儿舞、AI 站立一字马、Reze 舞、叉腰扭臂。使用我们的 AI 技术,让您的照片展现出各种动感十足的舞蹈和动作。",
           "images": [
             { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
             { "src": "/img_video/imgs/模仿_扭臀舞_2.png" },
             { "src": "/img_video/imgs/模仿_电摇舞_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "丰富的动作库",
+              "description": "支持热辣钢管舞、扭臀舞、电摇舞等多种热门动作,让您的照片充满活力。",
+              "image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 模仿特效?",
+          "description": "几秒钟内让照片模仿各种动作。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要模仿的动作类型。" },
+            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看模仿效果。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门视频效果"
         },
         "faq": {
           "block": "faq",
@@ -1048,12 +1102,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI 视觉效果",
-          "description": "为照片添加各种创意视觉效果,包括 AI 爆炸效果、史诗级爆炸漫步、海洋连衣裙、穿越维度、进入嘴巴、改变直升机机库等。",
+          "description": "为照片添加各种创意视觉效果,包括 AI 爆炸效果、史诗级爆炸漫步、海洋连衣裙、穿越维度、进入嘴巴、改变直升机机库。使用我们的 AI 技术,创造令人惊叹的视觉特效。",
           "images": [
             { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
             { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png" },
             { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "震撼视觉特效",
+              "description": "支持爆炸效果、海洋连衣裙、穿越维度等多种创意视觉效果,让您的照片充满想象力。",
+              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 视觉效果?",
+          "description": "几秒钟内为照片添加震撼特效。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要的视觉效果类型。" },
+            { "title": "步骤 2", "description": "上传一张清晰的照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看视觉效果。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门视频效果"
         },
         "faq": {
           "block": "faq",
@@ -1088,12 +1169,39 @@
         "intro": {
           "block": "tool-intro",
           "title": "AI 角色切换",
-          "description": "实现各种创意角色切换场景,包括 AI 老虎拥抱、雨中漫步、遇见未来的小孩、遇见老年的我、坐上豪车、审讯室、尖叫、雨夜等。",
+          "description": "实现各种创意角色切换场景,包括 AI 老虎拥抱、雨中漫步、遇见未来的小孩、遇见老年的我、坐上豪车、审讯室、尖叫、雨夜。使用我们的 AI 技术,创造独特的场景转换效果。",
           "images": [
             { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
             { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
             { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
           ]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "创意场景切换",
+              "description": "支持 AI 老虎拥抱、雨中漫步、遇见未来的小孩等多种创意场景,让您的照片充满故事性。",
+              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+              "button": { "title": "立即尝试", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "如何使用 AI 角色切换?",
+          "description": "几秒钟内实现创意场景切换。",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "steps": [
+            { "title": "步骤 1", "description": "选择您想要的场景类型。" },
+            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
+            { "title": "步骤 3", "description": "点击生成,查看场景切换效果。" }
+          ],
+          "button": { "title": "立即尝试", "url": "#tool" }
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "尝试其他热门视频效果"
         },
         "faq": {
           "block": "faq",

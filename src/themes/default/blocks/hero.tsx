@@ -74,7 +74,8 @@ export function Hero({
             {section.title || "Your One-Stop AI Creation Platform"}
         </h1>
 
-        {/* Input Interface Container */}
+        {/* Input Interface Container - Only show if enabled */}
+        {section.show_input !== false && (
         <div className="bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-3xl p-2 md:p-3 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 mx-auto max-w-4xl text-left">
             
             {/* Tool Tabs */}
@@ -151,6 +152,7 @@ export function Hero({
                 </div>
             </div>
         </div>
+        )}
 
         {/* Examples / Prompts */}
          {section.examples && (
