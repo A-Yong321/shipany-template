@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
 import { EffectCard, EffectItem } from './effect-card';
+import { tools, MoreToolItem } from '@/data/tools';
 
 // Types
 export interface ToolIntroProps {
@@ -213,9 +214,7 @@ export function HowToSection({ title, description, video, steps, button }: HowTo
  * 更多工具推荐 (网格) - 从 tools.ts 动态加载同类型的其他工具
  */
 export function MoreToolsSection({ title, items, toolType = 'video', currentSlug }: MoreToolsSectionProps) {
-  'use client';
-  
-  const { tools } = require('@/data/tools');
+// Removed dynamic require, added import at top level instead
   
   // 如果没有提供 items,从 tools.ts 加载同类型的其他工具
   let displayItems: MoreToolItem[] = items || [];
