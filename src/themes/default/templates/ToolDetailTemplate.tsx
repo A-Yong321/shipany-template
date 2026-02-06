@@ -5,8 +5,9 @@ import { getMetadata } from '@/shared/lib/seo';
 import { ToolDetailLayout } from '@/themes/default/blocks/tool-detail-layout';
 import { ToolContent } from '@/themes/default/blocks/tool-content';
 import { Inspirations } from '@/themes/default/blocks/inspirations';
-import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection } from '@/themes/default/blocks/tool-bottom-sections';
-import { getToolConfig } from '@/data/tools';
+import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection, EffectsGridSection, type EffectsGridSectionProps } from '@/themes/default/blocks/tool-bottom-sections';
+import { type EffectItem } from '@/themes/default/blocks/effect-card';
+import { getToolConfig, tools } from '@/data/tools';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -41,19 +42,52 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   // 从 tools.ts 获取工具配置
   const toolConfig = getToolConfig(slug);
   
-  // 将 toolConfig.items 转换为 examples 格式
-  const examples = toolConfig?.items.map((item, index) => ({
+  // 将 toolConfig.items 转换为 examples 格式, 如果不存在则使用 JSON 中的示例
+  let examples = toolConfig?.items.map((item, index) => ({
     category: item.title,
     prompt: `Generate ${item.title} effect`,
     image: item.effectSrc,
     video: item.videoSrc,
-  })) || [];
+  })) || effectData.page.sections.tool?.data?.examples || [];
+
+  // 对于通用的 image-to-image/video 页面，清空示例以隐藏 Type 选择器
+  if (['image-to-image', 'image-to-video'].includes(slug)) {
+    examples = [];
+  }
   
-  // 根据namespace判断工具类型
-  const toolType = namespace.includes('video') ? 'video' : 'image';
-  
-  // 判断输入类型: text-to-image 和 text-to-video 使用文本输入
-  const inputType = ['text-to-image', 'text-to-video'].includes(slug) ? 'text' : 'image';
+  // 根据namespace或slug判断工具类型
+  const toolType = (namespace.includes('video') || slug.includes('video')) ? 'video' : 'image';
+
+  // 判断输入类型
+  let inputType: 'text' | 'image' | 'image-text' = 'image';
+  if (['text-to-image', 'text-to-video'].includes(slug)) {
+    inputType = 'text';
+  } else if (['image-to-image', 'image-to-video'].includes(slug)) {
+    inputType = 'image-text';
+  }
+
+  // 构建底部特效网格数据 (适用于所有页面)
+  const relatedTools = tools.filter(t => {
+    // 匹配当前工具类型
+    const matchesType = toolType === 'video' ? t.type === 'video' : t.type === 'photo';
+    // 排除当前正在浏览的工具
+    return matchesType && t.slug !== slug;
+  });
+
+  const effectsGridProps: EffectsGridSectionProps = {
+    // 使用 JSON 中的标题或者默认标题
+    title: sections.more_tools?.title || (toolType === 'video' ? "More Video Effects" : "More Photo Effects"),
+    items: relatedTools.map(t => ({
+      title: t.title,
+      originalSrc: t.items[0]?.originalSrc,
+      effectSrc: t.items[0]?.effectSrc,
+      videoSrc: t.items[0]?.videoSrc,
+      url: toolType === 'video' ? `/video-effects/${t.slug}` : `/photo-effects/${t.slug}`,
+      badge: t.items[0]?.badge as any
+    })),
+    viewMoreUrl: toolType === 'video' ? '/video-effects' : '/photo-effects',
+    viewMoreText: "View More"
+  };
   
   // 构建底部内容
   const bottomContent = (
@@ -61,7 +95,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
       {sections.intro && <ToolIntro {...sections.intro} />}
       {sections.features && <ToolFeatures items={sections.features.items} />}
       {sections.how_to && <HowToSection {...sections.how_to} />}
-      {sections.more_tools && <MoreToolsSection {...sections.more_tools} toolType={toolType} currentSlug={slug} />}
+      <EffectsGridSection {...effectsGridProps} />
       {sections.faq && <FAQSection {...sections.faq} />}
     </>
   );

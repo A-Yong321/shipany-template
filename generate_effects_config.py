@@ -276,6 +276,7 @@ def generate_config():
                 "badge": badge,
                 "count": "50K", # Using generic count as requested/simulated 
                 "url": f"/photo-effects/{effect_id}"
+
             }
             category_items.append(effect_item)
             all_photo_items.append(effect_item)
@@ -360,40 +361,88 @@ def generate_config():
 
     # --- Generate Video Effects ---
     print("\n生成视频特效配置...")
-    all_video_items = []
-    video_tabs = []
     
-    for category_key, items_list in mapping["video_effects"].items():
-        label = ZH_CATEGORY_MAP.get(category_key, category_key.replace("-", " ").replace("_", " ").title())
+    # Init video categorization
+    video_categories = {k: [] for k in ZH_CATEGORY_MAP.keys()}
+    video_categories["Other"] = [] # Backup for unmapped
+    all_video_items = []
+    
+    # Flatten all video items
+    flat_video_items = []
+    if "video_effects" in mapping:
+        for cat_list in mapping["video_effects"].values():
+            flat_video_items.extend(cat_list)
+    
+    # Deduplicate by ID/BaseName if necessary? Assuming unique base_name within categories.
+    
+    for item in flat_video_items:
+        if not item.get("matched_photo"): continue
         
-        category_items = []
-        for item in items_list:
-            if not item.get("matched_photo"): continue
+        # Use matched_photo base_name to determine category (matches Photo Effects logic)
+        mp_base = item["matched_photo"]["base_name"]
+        
+        # Determine Category
+        found_cat = "Other"
+        # Try to match prefix with ZH_CATEGORY_MAP keys (Longer matches first?)
+        # Keys: 'AI-Kissing', 'AI', etc.
+        # But split by '_' first
+        prefix = mp_base.split("_")[0]
+        
+        # Check direct match
+        if prefix in ZH_CATEGORY_MAP:
+            found_cat = prefix
+        else:
+            # Check partial match?
+            # e.g. 'AIFakeDate' vs 'AI-Fake-Date'. 
+            # If filenames are consistent, direct match should work.
+            # If not found, put in Other.
+            pass
             
-            scene_name = item["base_name"].split("_")[-1]
-            effect_id = item["base_name"].lower().replace("_", "-").replace(" ", "-")
-            
-            badge = "HOT" if "Kiss" in category_key or "Muscle" in category_key else None
-            
-            effect_item = {
-                "id": effect_id,
-                "title": scene_name,
-                "image": {"src": item["matched_photo"]["original"], "alt": f"{scene_name} 原图"},
-                "video": item["video"],
-                "badge": badge,
-                "count": "50K",
-                "url": f"/video-effects/{effect_id}"
-            }
-            category_items.append(effect_item)
-            all_video_items.append(effect_item)
-            
-        if category_items:
-            video_tabs.append({
-                "id": category_key.lower(),
-                "label": label,
-                "items": category_items
-            })
+        scene_name = item["matched_photo"]["scene"]
+        effect_id = item["base_name"].lower().replace("_", "-").replace(" ", "-")
+        
+        # Badges
+        badge = None
+        if "Kissing" in prefix or "Muscle" in prefix:
+            badge = "HOT"
+        elif "New" in prefix:
+            badge = "NEW"
+        
+        effect_item = {
+            "id": effect_id,
+            "title": scene_name,
+            "image": {"src": item["matched_photo"]["original"], "alt": f"{scene_name} 原图"},
+            "video": item["video"],
+            "badge": badge,
+            "count": "50K",
+            "url": f"/video-effects/{effect_id}"
 
+        }
+        
+        if found_cat in video_categories:
+            video_categories[found_cat].append(effect_item)
+        else:
+             # Should not happen if initialized, but safe fallback
+             if found_cat not in video_categories: video_categories[found_cat] = []
+             video_categories[found_cat].append(effect_item)
+             
+        all_video_items.append(effect_item)
+
+    # Build Tabs
+    video_tabs = []
+    # Filter empty categories
+    for cat_key, items in video_categories.items():
+        if not items: continue
+        
+        label = ZH_CATEGORY_MAP.get(cat_key, cat_key)
+        
+        video_tabs.append({
+            "id": cat_key.lower().replace(" ", "-"),
+            "label": label,
+            "items": items
+        })
+        
+    # Prepend "All" Tab
     video_tabs.insert(0, {
         "id": "all",
         "label": "全部",
@@ -407,7 +456,7 @@ def generate_config():
         },
         "page": {
             "title": "Viral AI Video Effects",
-            "show_sections": ["effects", "cta", "faq"], # Removed "hero"
+            "show_sections": ["effects", "cta", "faq"],
             "sections": {
                 "hero": { "id":"hero", "show_input": False, "title": "Ignored", "background_image":{} },
                 "effects": {
@@ -426,10 +475,11 @@ def generate_config():
                     "buttons": [
                         {
                             "title": "立即开始创作",
-                            "url": "https://shipany.com",
-                            "target": "_blank",
+                            "url": "/video-effects",
+                            "target": "_self",
                             "icon": "Zap"
                         }
+
                     ],
                     "className": "bg-muted"
                 },
@@ -440,7 +490,11 @@ def generate_config():
                         {
                             "question": "可以从静态图片生成视频吗？",
                             "answer": "是的，我们的 Image-to-Video 技术专为让静态照片栩栩如生而设计。"
-                        }
+                        },
+                        {
+                           "question": "生成视频需要多长时间？",
+                           "answer": "通常在 1-2 分钟内完成。"
+                       }
                     ]
                 }
             }

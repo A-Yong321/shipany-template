@@ -227,6 +227,7 @@
           {
             "id": "video",
             "label": "Video Effects",
+            "viewMoreUrl": "/video-effects",
             "items": [
               {
                 "title": "French Kiss",
@@ -365,6 +366,7 @@
           {
             "id": "photo",
             "label": "Photo Effects",
+            "viewMoreUrl": "/photo-effects",
             "items": [
               {
                 "title": "Lip Bite Kiss",
@@ -538,7 +540,8 @@
           }
         ],
         "className": "bg-black",
-        "button_text": "Use This Effect"
+        "button_text": "Use This Effect",
+        "view_more": "View More"
       },
       "creations": {
         "block": "creations-section",

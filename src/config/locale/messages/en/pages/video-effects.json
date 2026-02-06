@@ -128,13 +128,13 @@
               },
               {
                 "id": "aikissing法式接吻",
-                "title": "AIKissing法式接吻",
+                "title": "French Kiss",
                 "image": {
                   "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
-                  "alt": "AIKissing法式接吻"
+                  "alt": "French Kiss"
                 },
                 "video": "/img_video/videos/AIKissing法式接吻.mp4",
-                "badge": null,
+                "badge": "HOT",
                 "count": "50K",
                 "url": "/video-effects/aikissing法式接吻"
               },
@@ -158,7 +158,7 @@
                   "alt": "Normal Kiss"
                 },
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4",
-                "badge": null,
+                "badge": "HOT",
                 "count": "50K",
                 "url": "/video-effects/aikissing-正常接吻"
               },
@@ -338,7 +338,7 @@
                   "alt": "Cheek Kiss"
                 },
                 "video": "/img_video/videos/脸颊之吻.mp4",
-                "badge": null,
+                "badge": "HOT",
                 "count": "50K",
                 "url": "/video-effects/脸颊之吻"
               },
@@ -406,7 +406,7 @@
                 "id": "角色切换-ai老虎拥抱",
                 "title": "AI Tiger Hug",
                 "image": {
-                  "src": "/img_video/imgs/Hug_拥抱_1.png",
+                  "src": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
                   "alt": "AI Tiger Hug"
                 },
                 "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4",
@@ -478,7 +478,7 @@
                 "id": "muscle-肌肉展示",
                 "title": "Muscle Showcase",
                 "image": {
-                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
+                  "src": "/img_video/imgs/Muscle_肌肉展示_1.png",
                   "alt": "Muscle Showcase"
                 },
                 "video": "/img_video/videos/Muscle_肌肉展示.mp4",
@@ -489,21 +489,51 @@
             ]
           },
           {
-            "id": "dancing",
-            "label": "Dancing",
+            "id": "ai-kissing",
+            "label": "AI Kissing",
             "items": [
               {
-                "id": "aidancegenerator-肚皮舞",
-                "title": "Belly Dance",
+                "id": "aikissing法式接吻",
+                "title": "French Kiss",
                 "image": {
-                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
-                  "alt": "Belly Dance"
+                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+                  "alt": "French Kiss"
                 },
-                "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
-                "badge": null,
+                "video": "/img_video/videos/AIKissing法式接吻.mp4",
+                "badge": "HOT",
                 "count": "50K",
-                "url": "/video-effects/aidancegenerator-肚皮舞"
+                "url": "/video-effects/aikissing法式接吻"
               },
+              {
+                "id": "aikissing-正常接吻",
+                "title": "Normal Kiss",
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+                  "alt": "Normal Kiss"
+                },
+                "video": "/img_video/videos/AiKissing_正常接吻.mp4",
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/video-effects/aikissing-正常接吻"
+              },
+              {
+                "id": "脸颊之吻",
+                "title": "Cheek Kiss",
+                "image": {
+                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
+                  "alt": "Cheek Kiss"
+                },
+                "video": "/img_video/videos/脸颊之吻.mp4",
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/video-effects/脸颊之吻"
+              }
+            ]
+          },
+          {
+            "id": "ai-fake-date",
+            "label": "AI Fake Date",
+            "items": [
               {
                 "id": "aifakedate-中国女友",
                 "title": "Chinese Girlfriend",
@@ -587,55 +617,13 @@
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/aifakedate-美国女友"
-              },
-              {
-                "id": "aikissing法式接吻",
-                "title": "AIKissing法式接吻",
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
-                  "alt": "AIKissing法式接吻"
-                },
-                "video": "/img_video/videos/AIKissing法式接吻.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/aikissing法式接吻"
-              },
-              {
-                "id": "aiselfiewithcelebrities-名人合拍",
-                "title": "Celebrity Selfie",
-                "image": {
-                  "src": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
-                  "alt": "Celebrity Selfie"
-                },
-                "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/aiselfiewithcelebrities-名人合拍"
-              },
-              {
-                "id": "aikissing-正常接吻",
-                "title": "Normal Kiss",
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
-                  "alt": "Normal Kiss"
-                },
-                "video": "/img_video/videos/AiKissing_正常接吻.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/aikissing-正常接吻"
-              },
-              {
-                "id": "pregnantai-怀孕",
-                "title": "Pregnant",
-                "image": {
-                  "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
-                  "alt": "Pregnant"
-                },
-                "video": "/img_video/videos/PregnantAI_怀孕.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/pregnantai-怀孕"
-              },
+              }
+            ]
+          },
+          {
+            "id": "hug",
+            "label": "Hug",
+            "items": [
               {
                 "id": "hug-侧身依抱",
                 "title": "Side Hug",
@@ -695,7 +683,49 @@
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/hug-背后环抱"
-              },
+              }
+            ]
+          },
+          {
+            "id": "ai-selfie-with-celebrities",
+            "label": "Celebrity Selfie",
+            "items": [
+              {
+                "id": "aiselfiewithcelebrities-名人合拍",
+                "title": "Celebrity Selfie",
+                "image": {
+                  "src": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
+                  "alt": "Celebrity Selfie"
+                },
+                "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/aiselfiewithcelebrities-名人合拍"
+              }
+            ]
+          },
+          {
+            "id": "muscle",
+            "label": "Muscle",
+            "items": [
+              {
+                "id": "muscle-肌肉展示",
+                "title": "Muscle Showcase",
+                "image": {
+                  "src": "/img_video/imgs/Muscle_肌肉展示_1.png",
+                  "alt": "Muscle Showcase"
+                },
+                "video": "/img_video/videos/Muscle_肌肉展示.mp4",
+                "badge": "HOT",
+                "count": "50K",
+                "url": "/video-effects/muscle-肌肉展示"
+              }
+            ]
+          },
+          {
+            "id": "jiggle",
+            "label": "Jiggle",
+            "items": [
               {
                 "id": "jiggle-抖动身体",
                 "title": "Body Jiggle",
@@ -707,7 +737,49 @@
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/jiggle-抖动身体"
-              },
+              }
+            ]
+          },
+          {
+            "id": "pregnant-ai",
+            "label": "AI Pregnant",
+            "items": [
+              {
+                "id": "pregnantai-怀孕",
+                "title": "Pregnant",
+                "image": {
+                  "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
+                  "alt": "Pregnant"
+                },
+                "video": "/img_video/videos/PregnantAI_怀孕.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/pregnantai-怀孕"
+              }
+            ]
+          },
+          {
+            "id": "ai-dance-generator",
+            "label": "AI Dance",
+            "items": [
+              {
+                "id": "aidancegenerator-肚皮舞",
+                "title": "Belly Dance",
+                "image": {
+                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
+                  "alt": "Belly Dance"
+                },
+                "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
+                "badge": null,
+                "count": "50K",
+                "url": "/video-effects/aidancegenerator-肚皮舞"
+              }
+            ]
+          },
+          {
+            "id": "模仿",
+            "label": "Imitate",
+            "items": [
               {
                 "id": "模仿-ai站立一字马",
                 "title": "AI Standing Split",
@@ -791,19 +863,13 @@
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/模仿-香奈儿舞"
-              },
-              {
-                "id": "脸颊之吻",
-                "title": "Cheek Kiss",
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
-                  "alt": "Cheek Kiss"
-                },
-                "video": "/img_video/videos/脸颊之吻.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/脸颊之吻"
-              },
+              }
+            ]
+          },
+          {
+            "id": "视觉效果",
+            "label": "Visual Effects",
+            "items": [
               {
                 "id": "视觉效果-ai爆炸效果",
                 "title": "AI Explosion",
@@ -863,12 +929,18 @@
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/视觉效果-进入嘴巴"
-              },
+              }
+            ]
+          },
+          {
+            "id": "角色切换",
+            "label": "Role Play",
+            "items": [
               {
                 "id": "角色切换-ai老虎拥抱",
                 "title": "AI Tiger Hug",
                 "image": {
-                  "src": "/img_video/imgs/Hug_拥抱_1.png",
+                  "src": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
                   "alt": "AI Tiger Hug"
                 },
                 "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4",
@@ -937,24 +1009,6 @@
                 "url": "/video-effects/角色切换-雨夜"
               }
             ]
-          },
-          {
-            "id": "muscle",
-            "label": "Muscle",
-            "items": [
-              {
-                "id": "muscle-肌肉展示",
-                "title": "Muscle Showcase",
-                "image": {
-                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
-                  "alt": "Muscle Showcase"
-                },
-                "video": "/img_video/videos/Muscle_肌肉展示.mp4",
-                "badge": "HOT",
-                "count": "50K",
-                "url": "/video-effects/muscle-肌肉展示"
-              }
-            ]
           }
         ]
       },
@@ -965,8 +1019,8 @@
         "buttons": [
           {
             "title": "Start Creating Now",
-            "url": "https://shipany.com",
-            "target": "_blank",
+            "url": "/video-effects",
+            "target": "_self",
             "icon": "Zap"
           }
         ],
@@ -974,11 +1028,15 @@
       },
       "faq": {
         "id": "faq",
-        "title": "常见问题",
+        "title": "FAQ",
         "items": [
           {
-            "question": "可以从静态图片生成视频吗？",
-            "answer": "是的，我们的 Image-to-Video 技术专为让静态照片栩栩如生而设计。"
+            "question": "Can I generate videos from static images?",
+            "answer": "Yes, our Image-to-Video technology is specifically designed to bring static photos to life."
+          },
+          {
+            "question": "How long does it take to generate a video?",
+            "answer": "It typically takes 1-2 minutes."
           }
         ]
       }

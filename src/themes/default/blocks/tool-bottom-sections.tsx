@@ -6,6 +6,7 @@ import { Play, ChevronRight, ChevronDown, Plus, Minus } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/shared/components/ui/accordion';
 import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
+import { EffectCard, EffectItem } from './effect-card';
 
 // Types
 export interface ToolIntroProps {
@@ -288,6 +289,43 @@ export function FAQSection({ title, items }: FAQSectionProps) {
             </AccordionItem>
           ))}
         </Accordion>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Effects Grid Section - Rich display with hover preview (Replaces MoreTools for generic pages)
+ */
+export interface EffectsGridSectionProps {
+  title: string;
+  items: EffectItem[];
+  viewMoreUrl: string;
+  viewMoreText?: string;
+}
+
+export function EffectsGridSection({ title, items, viewMoreUrl, viewMoreText = "View More" }: EffectsGridSectionProps) {
+  // Limit to 15 items (approx 3 rows on 5-col grid)
+  const displayItems = items.slice(0, 15);
+
+  return (
+    <section className="bg-black py-20 text-white border-t border-white/5">
+      <div className="container mx-auto px-4">
+        <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">{title}</h2>
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {displayItems.map((item, idx) => (
+                <EffectCard key={idx} item={item} />
+            ))}
+        </div>
+
+        <div className="mt-12 text-center">
+             <Button size="lg" variant="outline" className="rounded-full px-8 border-white/20 hover:bg-white/10 text-white" asChild>
+               <Link href={viewMoreUrl}>
+                 {viewMoreText}
+               </Link>
+             </Button>
+        </div>
       </div>
     </section>
   );

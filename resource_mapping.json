@@ -640,10 +640,10 @@
         "base_name": "角色切换_AI老虎拥抱",
         "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4",
         "matched_photo": {
-          "base_name": "Hug_拥抱",
-          "scene": "拥抱",
-          "original": "/img_video/imgs/Hug_拥抱_1.png",
-          "effect": "/img_video/imgs/Hug_拥抱_2.png"
+          "base_name": "角色切换_AI老虎拥抱",
+          "scene": "AI老虎拥抱",
+          "original": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
+          "effect": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
         }
       },
       {
@@ -712,10 +712,10 @@
         "base_name": "Muscle_肌肉展示",
         "video": "/img_video/videos/Muscle_肌肉展示.mp4",
         "matched_photo": {
-          "base_name": "AI-360-Rotation_肌肉展示",
+          "base_name": "Muscle_肌肉展示",
           "scene": "肌肉展示",
-          "original": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
-          "effect": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png"
+          "original": "/img_video/imgs/Muscle_肌肉展示_1.png",
+          "effect": "/img_video/imgs/Muscle_肌肉展示_2.png"
         }
       }
     ]

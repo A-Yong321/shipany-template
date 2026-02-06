@@ -1538,15 +1538,15 @@
       },
       "faq": {
         "id": "faq",
-        "title": "常见问题",
+        "title": "FAQ",
         "items": [
           {
-            "question": "生成的效果自然吗？",
-            "answer": "是的，我们使用最先进的 AI 模型，确保生成的效果既逼真又自然，保留原始照片的特征。"
+            "question": "Are the generated effects natural?",
+            "answer": "Yes, we use state-of-the-art AI models to ensure realistic and natural results that preserve original features."
           },
           {
-            "question": "处理需要多长时间？",
-            "answer": "大多数效果在 10-30 秒内生成完毕。"
+            "question": "How long does the processing take?",
+            "answer": "Most effects are generated within 10-30 seconds."
           }
         ]
       }

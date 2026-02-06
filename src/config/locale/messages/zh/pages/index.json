@@ -227,6 +227,7 @@
           {
             "id": "video",
             "label": "视频特效",
+            "viewMoreUrl": "/video-effects",
             "items": [
               {
                 "title": "AIKissing法式接吻",
@@ -365,6 +366,7 @@
           {
             "id": "photo",
             "label": "照片特效",
+            "viewMoreUrl": "/photo-effects",
             "items": [
               {
                 "title": "咬嘴唇之吻",
@@ -538,7 +540,8 @@
           }
         ],
         "className": "bg-black",
-        "button_text": "立即使用"
+        "button_text": "立即使用",
+        "view_more": "查看更多"
       },
       "creations": {
         "block": "creations-section",

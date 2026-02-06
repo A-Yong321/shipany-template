@@ -31,7 +31,7 @@ interface ToolContentProps {
  * 工具内容区组件
  * 包含效果预览、示例选择、图片上传和生成按钮
  */
-export function ToolContent({ toolName, examples, defaultPrompt = '', toolType = 'video', initialType, inputType = 'image' }: ToolContentProps & { inputType?: 'text' | 'image' }) {
+export function ToolContent({ toolName, examples, defaultPrompt = '', toolType = 'video', initialType, inputType = 'image' }: ToolContentProps & { inputType?: 'text' | 'image' | 'image-text' }) {
   // 根据 initialType 查找匹配的示例，用于从首页点击特效卡片后预选
   const initialExample = useMemo(() => {
     if (initialType) {
@@ -124,54 +124,56 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
         </div>
       )}
 
-      {/* Type选择器 - 参考图2的Type区域 */}
-      <div className="space-y-1.5">
-        <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Type</h2>
-        
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-muted-foreground/20">
-          {examples.map((example, index) => {
-             const isSelected = selectedExample === example;
-             return (
-              <button
-                key={index}
-                onClick={() => handleExampleClick(example)}
-                className={cn(
-                  "group relative shrink-0 flex flex-col items-center gap-1.5 rounded-lg p-1.5 transition-all",
-                  isSelected ? "bg-muted" : "hover:bg-muted/50"
-                )}
-              >
-                {/* Hot标签 */}
-                {index === 0 && (
-                  <div className="absolute -top-1 -left-1 z-10">
-                    <span className="px-1.5 py-0.5 text-[10px] font-bold text-white bg-red-500 rounded">Hot</span>
+      {/* Type选择器 - 仅当有示例时显示 */}
+      {examples.length > 0 && (
+        <div className="space-y-1.5">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Type</h2>
+          
+          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-muted-foreground/20">
+            {examples.map((example, index) => {
+               const isSelected = selectedExample === example;
+               return (
+                <button
+                  key={index}
+                  onClick={() => handleExampleClick(example)}
+                  className={cn(
+                    "group relative shrink-0 flex flex-col items-center gap-1.5 rounded-lg p-1.5 transition-all",
+                    isSelected ? "bg-muted" : "hover:bg-muted/50"
+                  )}
+                >
+                  {/* Hot标签 */}
+                  {index === 0 && (
+                    <div className="absolute -top-1 -left-1 z-10">
+                      <span className="px-1.5 py-0.5 text-[10px] font-bold text-white bg-red-500 rounded">Hot</span>
+                    </div>
+                  )}
+                  
+                  <div className={cn(
+                    "relative h-12 w-12 overflow-hidden rounded-md border-2 transition-all",
+                    isSelected ? "border-primary ring-2 ring-primary/20" : "border-transparent group-hover:border-primary/50"
+                  )}>
+                    <Image
+                      src={example.image}
+                      alt={example.category}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                )}
-                
-                <div className={cn(
-                  "relative h-12 w-12 overflow-hidden rounded-md border-2 transition-all",
-                  isSelected ? "border-primary ring-2 ring-primary/20" : "border-transparent group-hover:border-primary/50"
-                )}>
-                  <Image
-                    src={example.image}
-                    alt={example.category}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <span className={cn(
-                   "text-[10px] font-medium truncate max-w-[60px]",
-                   isSelected ? "text-foreground" : "text-muted-foreground"
-                )}>
-                  {example.category}
-                </span>
-              </button>
-             );
-          })}
+                  <span className={cn(
+                     "text-[10px] font-medium truncate max-w-[60px]",
+                     isSelected ? "text-foreground" : "text-muted-foreground"
+                  )}>
+                    {example.category}
+                  </span>
+                </button>
+               );
+            })}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* 根据 inputType 渲染不同的输入区域 */}
-      {inputType === 'text' ? (
+      {['text', 'image-text'].includes(inputType || 'image') && (
         <div className="space-y-1.5">
           <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Prompt</h2>
           <div className="relative">
@@ -186,8 +188,9 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
             </div>
           </div>
         </div>
-      ) : (
-        /* Image Upload Area */
+      )}
+
+      {['image', 'image-text'].includes(inputType || 'image') && (
         <div className="space-y-1.5">
           <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Image</h2>
           

@@ -85,6 +85,17 @@ TRANSLATIONS = {
     "遇见老年的我": "Meet Old Me",
     "雨中漫步": "Rain Walk",
     "雨夜": "Rainy Night",
+    
+    # FAQ Translation
+    "常见问题": "FAQ",
+    "可以从静态图片生成视频吗？": "Can I generate videos from static images?",
+    "是的，我们的 Image-to-Video 技术专为让静态照片栩栩如生而设计。": "Yes, our Image-to-Video technology is specifically designed to bring static photos to life.",
+    "生成视频需要多长时间？": "How long does it take to generate a video?",
+    "通常在 1-2 分钟内完成。": "It typically takes 1-2 minutes.",
+    "生成的效果自然吗？": "Are the generated effects natural?",
+    "是的，我们使用最先进的 AI 模型，确保生成的效果既逼真又自然，保留原始照片的特征。": "Yes, we use state-of-the-art AI models to ensure realistic and natural results that preserve original features.",
+    "处理需要多长时间？": "How long does the processing take?",
+    "大多数效果在 10-30 秒内生成完毕。": "Most effects are generated within 10-30 seconds."
 }
 
 def translate_text(text):
@@ -109,6 +120,13 @@ def translate_config(zh_config, is_video=False):
             if "image" in item:
                 item["image"]["alt"] = item["title"]
     
+    # 翻译FAQ
+    if "faq" in en_config["page"]["sections"]:
+        en_config["page"]["sections"]["faq"]["title"] = translate_text(en_config["page"]["sections"]["faq"]["title"])
+        for item in en_config["page"]["sections"]["faq"]["items"]:
+            item["question"] = translate_text(item["question"])
+            item["answer"] = translate_text(item["answer"])
+
     # 更新元数据和描述（保持英文）
     if is_video:
         en_config["metadata"]["title"] = "Viral AI Video Effects - AI Kissing, Muscle, Hug & More"
