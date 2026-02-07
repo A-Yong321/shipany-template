@@ -24,8 +24,8 @@ export function HeroShowcase({ showcase }: { showcase: { items: ShowcaseItem[] }
   if (!showcase?.items?.length) return null;
 
   // Duplicate items to ensure smooth infinite scroll even on wide screens
-  // create enough duplicates to fill reasonably large screens
-  const items = [...showcase.items, ...showcase.items, ...showcase.items];
+  // Increased duplication to 4x to ensure there's always enough content for the loop
+  const items = [...showcase.items, ...showcase.items, ...showcase.items, ...showcase.items];
 
   return (
     <div className="w-full mt-4 md:mt-8 fade-in-up group/showcase relative overflow-hidden">
@@ -37,21 +37,26 @@ export function HeroShowcase({ showcase }: { showcase: { items: ShowcaseItem[] }
         spaceBetween={12}
         slidesPerView={'auto'}
         loop={true}
-        // Continuous linear scrolling settings
-        speed={5000} 
+        speed={6000} // Slower speed for smoother observation
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        allowTouchMove={true}
+        allowTouchMove={true} // Allow interaction
+        loopAdditionalSlides={10}
+        watchSlidesProgress={true}
         modules={[Autoplay]}
         className={cn(
           "w-full",
-          // Force linear timing for continuous scroll
-          "[&_.swiper-wrapper]:!ease-linear",
+          "hero-marquee" // Add a specific class for targeting
         )}
       >
+        <style jsx global>{`
+          .hero-marquee .swiper-wrapper {
+            transition-timing-function: linear !important;
+          }
+        `}</style>
          {items.map((item, idx) => (
            // Using index in key because we have duplicates
            <SwiperSlide key={`${idx}-${item.alt}`} className="!w-[140px] !h-[210px] md:!w-[200px] md:!h-[300px]">
