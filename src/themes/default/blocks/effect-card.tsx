@@ -65,6 +65,7 @@ export function EffectCard({
   return (
     <Link
       href={item.url || '#'}
+      prefetch={false}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="group relative aspect-[4/5] rounded-3xl overflow-hidden cursor-pointer block"
@@ -102,6 +103,7 @@ export function EffectCard({
           className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           muted
           loop
+          preload="none"
           playsInline
         />
       )}

@@ -51,6 +51,7 @@ export function ExploreMasonry({ items, searchPlaceholder = "Search..." }: Explo
           <Link
             key={`${index}-${item.title}`}
             href={item.url}
+            prefetch={false}
             className="block mb-4 break-inside-avoid"
           >
             <div className="relative group overflow-hidden rounded-lg bg-muted/20 border border-border hover:border-primary/50 transition-all">

@@ -1,4 +1,5 @@
 import { getRequestConfig } from 'next-intl/server';
+import { headers } from 'next/headers';
 
 import {
   defaultLocale,
@@ -43,15 +44,91 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   try {
+    // Determine which files to load based on the current pathname
+    const headersList = await headers();
+    const pathname = headersList.get('x-pathname') || '';
+
+    // Always load these core files
+    const pathsToLoad = [
+      'common',
+      'landing', // Contains footer/nav often used globally
+    ];
+
+    // Helper to check path inclusion
+    const isPath = (p: string) => pathname.includes(p);
+
+    if (isPath('/admin')) {
+      pathsToLoad.push(
+        'admin/sidebar',
+        'admin/users',
+        'admin/roles',
+        'admin/permissions',
+        'admin/categories',
+        'admin/posts',
+        'admin/payments',
+        'admin/subscriptions',
+        'admin/credits',
+        'admin/settings',
+        'admin/apikeys',
+        'admin/ai-tasks',
+        'admin/chats'
+      );
+    } else if (isPath('/settings')) {
+      pathsToLoad.push(
+        'settings/sidebar',
+        'settings/profile',
+        'settings/security',
+        'settings/billing',
+        'settings/payments',
+        'settings/credits',
+        'settings/apikeys'
+      );
+    } else {
+      // Functional pages & Tools
+      if (isPath('/ai/')) {
+         pathsToLoad.push('ai/music', 'ai/chat', 'ai/image', 'ai/video');
+      }
+      if (isPath('/activity')) {
+         pathsToLoad.push('activity/sidebar', 'activity/ai-tasks', 'activity/chats');
+      }
+      
+      // Page specific contents - loaded more aggressively to ensure content availability
+      pathsToLoad.push(
+        'pages/index',
+        'pages/pricing',
+        'pages/showcases',
+        'pages/blog',
+        'pages/updates',
+        'pages/tools',
+        'pages/tool-details',
+        'pages/ai-style',
+        'pages/video-effects',
+        'pages/video-effect-details',
+        'pages/photo-effects',
+        'pages/photo-effect-details',
+        'pages/explore',
+        'pages/gallery',
+        'pages/api-platform'
+      );
+    }
+
+    // Filter the full list based on our selection
+    // We only load paths that are in our 'pathsToLoad' list
+    // OR if we are in development, we might want to be safer, but for performance we stick to this.
+    // However, the original code had a fixed list 'localeMessagesPaths'. 
+    // We should intersect with that to ensure valid paths.
+    
+    const targetPaths = localeMessagesPaths.filter(p => pathsToLoad.includes(p));
+
     // load all local messages
     const allMessages = await Promise.all(
-      localeMessagesPaths.map((path) => loadMessages(path, locale))
+      targetPaths.map((path) => loadMessages(path, locale))
     );
 
     // merge all local messages
     const messages: any = {};
 
-    localeMessagesPaths.forEach((path, index) => {
+    targetPaths.forEach((path, index) => {
       const localMessages = allMessages[index];
 
       const keys = path.split('/');
