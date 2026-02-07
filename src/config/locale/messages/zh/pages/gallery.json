@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "title": "我的画廊 - AI创作集",
+    "description": "查看和管理您的AI创作"
+  },
+  "title": "我的画廊",
+  "select_multiple": "选择多个",
+  "tabs": {
+    "all_creations": "所有创作",
+    "images": "图片",
+    "videos": "视频",
+    "favorites": "收藏"
+  }
+}

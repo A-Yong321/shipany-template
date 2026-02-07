@@ -114,6 +114,19 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
         toolType={toolType}
         initialType={initialType}
         inputType={inputType}
+        showRatioSelector={slug === 'image-to-image'}
+        showQuantitySelector={slug === 'image-to-image'}
+        showDurationSelector={slug === 'image-to-video'}
+        showResolutionSelector={slug === 'image-to-video'}
+        backHref="/ai-style"
+        promptPlaceholder={
+          slug === 'image-to-video' 
+            ? "Describe the motion or video content..." 
+            : "Describe what you want to change..."
+        }
+        promptMaxLength={slug === 'image-to-video' ? 400 : 1200}
+        generateButtonText={slug === 'image-to-video' ? "Generate Video" : "Generate"}
+        creditsRequired={slug === 'image-to-video' ? 10 : 4}
       />
     </ToolDetailLayout>
   );

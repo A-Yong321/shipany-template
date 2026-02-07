@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "AI Style - Explore Photo & Video Effects",
+    "description": "Browse our complete collection of AI photo and video effects. From AI kissing to muscle showcase, discover the perfect effect."
+  },
+  "page": {
+    "title": "AI Style",
+    "show_sections": [
+      "effects"
+    ],
+    "sections": {
+      "effects": {
+        "block": "ai-style-effects",
+        "id": "ai-style-effects-list",
+        "title": "Explore All AI Effects",
+        "description": "Choose from our extensive collection of viral AI photo and video effects.",
+        "photo_effects_key": "pages.photo-effects",
+        "video_effects_key": "pages.video-effects"
+      }
+    }
+  },
+  "ui": {
+    "searchPlaceholder": "Search effects...",
+    "effectsCount": "{count} effects",
+    "noEffects": "No effects available",
+    "noResultsFound": "No effects found for \"{query}\""
+  }
+}

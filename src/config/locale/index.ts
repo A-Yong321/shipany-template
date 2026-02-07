@@ -56,10 +56,13 @@ export const localeMessagesPaths = [
   'pages/updates',
   'pages/tools',
   'pages/tool-details',
+  'pages/ai-style',
   'pages/video-effects',
   'pages/video-effect-details',
   'pages/photo-effects',
   'pages/photo-effect-details',
+  'pages/explore',
+  'pages/gallery',
   'pages/api-platform',
 ];
 

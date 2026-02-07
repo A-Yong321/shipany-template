@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Home, Compass, Sparkles, Image } from 'lucide-react';
+import { Home, Compass, Sparkles, Image, Crown } from 'lucide-react';
 
 import { Link, usePathname } from '@/core/i18n/navigation';
 import { cn } from '@/shared/lib/utils';
@@ -33,10 +33,10 @@ export function ToolSidebar() {
       description: t('home'),
     },
     {
-      title: t('discover'),
+      title: t('explore'),
       icon: Compass,
-      href: '/#effects', // Modified: link to effects section
-      description: t('discover_desc'),
+      href: '/explore', // 修改为独立页面
+      description: t('explore_desc'),
     },
   ];
 
@@ -44,10 +44,10 @@ export function ToolSidebar() {
   const aiImageItems: NavItem[] = [
     {
       title: t('ai_style'),
-      href: '/text-to-image', // Redirect 'AI Style' to text-to-image for now, or create the page
+      href: '/ai-style', // 指向AI Style页面
       icon: Sparkles,
       badge: 437,
-      isActive: (path: string) => path === '/ai-style' || path === '/text-to-image' || path.includes('/video-effects') || path.includes('/photo-effects'),
+      isActive: (path: string) => path === '/ai-style' || path.includes('/video-effects') || path.includes('/photo-effects'),
     },
     {
       title: t('text_to_image'),
@@ -104,6 +104,15 @@ export function ToolSidebar() {
     <nav className="flex h-full flex-col px-4 py-8">
       {/* 顶部导航区 */}
       <div className="space-y-8">
+        {/* Upgrade Now 按钮 */}
+        <Link
+          href="/pricing"
+          className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-3 text-white font-semibold hover:shadow-lg transition-all hover:scale-105"
+        >
+          <Crown className="h-4 w-4" />
+          <span>{t('upgrade_now')}</span>
+        </Link>
+
         {/* 主导航项 */}
         <div className="space-y-2">
           {navItems.map((item) => {

@@ -84,8 +84,9 @@
   },
   "sidebar": {
     "home": "Home",
-    "discover": "Discover",
-    "discover_desc": "Browse all effects",
+    "explore": "Explore",
+    "explore_desc": "Browse all effects",
+    "upgrade_now": "Upgrade Now",
     "ai_image": "AI IMAGE",
     "ai_style": "AI Style",
     "text_to_image": "Text to Image",

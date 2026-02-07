@@ -84,8 +84,9 @@
   },
   "sidebar": {
     "home": "首页",
-    "discover": "发现",
-    "discover_desc": "浏览所有特效",
+    "explore": "探索",
+    "explore_desc": "浏览所有特效",
+    "upgrade_now": "立即升级",
     "ai_image": "AI IMAGE",
     "ai_style": "AI 风格",
     "text_to_image": "文生图",

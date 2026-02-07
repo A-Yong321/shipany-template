@@ -4,8 +4,9 @@ import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { Button } from '@/shared/components/ui/button';
 import { Textarea } from '@/shared/components/ui/textarea';
-import { Upload, Sparkles, Play, ChevronRight, ZoomIn } from 'lucide-react';
+import { Upload, Sparkles, Play, ChevronRight, ZoomIn, Settings, ChevronLeft } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
+import { Link } from '@/core/i18n/navigation';
 
 interface Example {
   category: string;
@@ -25,13 +26,49 @@ interface ToolContentProps {
   toolType?: 'video' | 'image';
   /** 初始选中的特效类型（从URL参数传入） */
   initialType?: string;
+  /** 输入类型: text, image, 或 image-text */
+  inputType?: 'text' | 'image' | 'image-text';
+  /** 是否显示Ratio选择器 */
+  showRatioSelector?: boolean;
+  /** 是否显示Quantity选择器 */
+  showQuantitySelector?: boolean;
+  /** 返回按钮的链接地址 */
+  backHref?: string;
+  /** 是否显示Duration滑块 */
+  showDurationSelector?: boolean;
+  /** 是否显示Resolution选择器 */
+  showResolutionSelector?: boolean;
+  /** Prompt输入框占位符 */
+  promptPlaceholder?: string;
+  /** Prompt最大字符数 */
+  promptMaxLength?: number;
+  /** Generate按钮文字 */
+  generateButtonText?: string;
+  /** 所需Credits数量 */
+  creditsRequired?: number;
 }
 
 /**
  * 工具内容区组件
  * 包含效果预览、示例选择、图片上传和生成按钮
  */
-export function ToolContent({ toolName, examples, defaultPrompt = '', toolType = 'video', initialType, inputType = 'image' }: ToolContentProps & { inputType?: 'text' | 'image' | 'image-text' }) {
+export function ToolContent({ 
+  toolName, 
+  examples, 
+  defaultPrompt = '', 
+  toolType = 'video', 
+  initialType, 
+  inputType = 'image',
+  showRatioSelector = false,
+  showQuantitySelector = false,
+  showDurationSelector = false,
+  showResolutionSelector = false,
+  backHref = '/ai-style',
+  promptPlaceholder = 'Describe what you want to change...',
+  promptMaxLength = 1200,
+  generateButtonText = 'Generate',
+  creditsRequired = 4
+}: ToolContentProps) {
   // 根据 initialType 查找匹配的示例，用于从首页点击特效卡片后预选
   const initialExample = useMemo(() => {
     if (initialType) {
@@ -45,6 +82,10 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
   const [selectedExample, setSelectedExample] = useState<Example | null>(initialExample || null);
   const [uploadedImage, setUploadedImage] = useState<File | null>(null);
   const [uploadedImageUrl, setUploadedImageUrl] = useState<string | null>(null);
+  const [ratio, setRatio] = useState<string>('1:1');
+  const [quantity, setQuantity] = useState<number>(1);
+  const [duration, setDuration] = useState<number>(5);
+  const [resolution, setResolution] = useState<string>('1080p');
 
   // 选择示例时自动填入prompt
   const handleExampleClick = (example: Example) => {
@@ -74,8 +115,16 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
 
   return (
     <div className="space-y-3">
-      {/* 选中Type的效果预览区 - 参考图2的顶部预览 */}
-      {selectedExample && (
+      {/* 页面标题和返回按钮 */}
+      <div className="flex items-center gap-2 -mx-1 mb-2">
+        <Link href={backHref} className="p-1 hover:bg-muted rounded-md transition-colors">
+          <ChevronLeft className="h-5 w-5" />
+        </Link>
+        <h1 className="text-lg font-semibold">{toolName}</h1>
+      </div>
+
+      {/* 选中Type的效果预览区 - 仅当有示例时显示 */}
+      {selectedExample && examples.length > 0 && (
         <div className="relative rounded-xl overflow-hidden bg-gradient-to-br from-muted/50 to-muted/30 border border-border">
           {/* Hot标签 */}
           <div className="absolute top-3 left-3 z-10">
@@ -175,16 +224,23 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
       {/* 根据 inputType 渲染不同的输入区域 */}
       {['text', 'image-text'].includes(inputType || 'image') && (
         <div className="space-y-1.5">
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Prompt</h2>
+          <div className="flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Prompt</h2>
+            <button className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors">
+              <Settings className="h-3 w-3" />
+              {showDurationSelector ? 'Enhance' : 'Optimize'}
+            </button>
+          </div>
           <div className="relative">
             <Textarea
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              placeholder="Describe what you want to generate..."
+              placeholder={promptPlaceholder}
               className="min-h-[100px] resize-none bg-muted/20 border-border focus:border-primary/50"
+              maxLength={promptMaxLength}
             />
             <div className="absolute bottom-2 right-2 text-[10px] text-muted-foreground">
-              {prompt.length} chars
+              {prompt.length}/{promptMaxLength}
             </div>
           </div>
         </div>
@@ -192,95 +248,142 @@ export function ToolContent({ toolName, examples, defaultPrompt = '', toolType =
 
       {['image', 'image-text'].includes(inputType || 'image') && (
         <div className="space-y-1.5">
-          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Image</h2>
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Upload Image</h2>
           
-          <div className="grid grid-cols-2 gap-2">
-            {/* 左侧: 上传图片 */}
-            <div className="relative aspect-[16/9] rounded-lg border-2 border-dashed border-border bg-muted/20 overflow-hidden group">
-              <input
-                id="image-upload-1"
-                type="file"
-                accept="image/*"
-                onChange={handleImageUpload}
-                className="absolute inset-0 cursor-pointer opacity-0 z-10"
-              />
-              
-              {uploadedImageUrl ? (
-                <div className="relative w-full h-full">
-                  <Image
-                    src={uploadedImageUrl}
-                    alt="Uploaded"
-                    fill
-                    className="object-cover"
-                  />
-                  <button 
-                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); clearUploadedImage(); }} 
-                    className="absolute top-2 right-2 p-1 bg-background/80 rounded-full hover:bg-destructive hover:text-white transition-colors z-20"
-                  >
-                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-                  </button>
-                </div>
-              ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-                  <div className="rounded-full bg-muted p-3 group-hover:bg-primary/10 group-hover:text-primary transition-colors">
-                    <Upload className="h-5 w-5" />
-                  </div>
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    Click to upload an image
-                  </p>
-                </div>
-              )}
-            </div>
-
-            {/* 右侧: 可选的第二张图片 */}
-            <div className="relative aspect-[16/9] rounded-lg border-2 border-dashed border-border bg-muted/10 overflow-hidden group">
-              <input
-                id="image-upload-2"
-                type="file"
-                accept="image/*"
-                className="absolute inset-0 cursor-pointer opacity-0 z-10"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-muted text-muted-foreground">
-                  <Upload className="h-4 w-4" />
-                </div>
-                <p className="mt-2 text-xs text-muted-foreground">
-                  Click to upload an image
-                </p>
-                <span className="mt-0.5 text-[10px] text-muted-foreground/70">(Optional)</span>
+          {/* 单个上传图片区域 */}
+          <div className="relative aspect-[16/9] rounded-lg border-2 border-dashed border-border bg-muted/20 overflow-hidden group">
+            <input
+              id="image-upload"
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="absolute inset-0 cursor-pointer opacity-0 z-10"
+            />
+            
+            {uploadedImageUrl ? (
+              <div className="relative w-full h-full">
+                <Image
+                  src={uploadedImageUrl}
+                  alt="Uploaded"
+                  fill
+                  className="object-cover"
+                />
+                <button 
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); clearUploadedImage(); }} 
+                  className="absolute top-2 right-2 p-1 bg-background/80 rounded-full hover:bg-destructive hover:text-white transition-colors z-20"
+                >
+                  <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
               </div>
-            </div>
+            ) : (
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                <div className="rounded-full bg-muted p-3 group-hover:bg-primary/10 group-hover:text-primary transition-colors">
+                  <Upload className="h-5 w-5" />
+                </div>
+                <p className="mt-2 text-sm font-medium text-foreground">
+                  Click or drag image here
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Supports JPG, PNG, WEBP
+                </p>
+              </div>
+            )}
           </div>
-
-          <p className="text-[10px] text-muted-foreground leading-relaxed">
-            Please upload two images share the same aspect ratio and feature only one person in each image. Or upload one image that contains two people.
-          </p>
         </div>
       )}
 
-      {/* Background Music Toggle */}
-      <div className="flex items-center justify-between rounded-lg border border-border bg-card/50 px-3 py-1.5">
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-medium">Background Music</span>
-          <span className="text-[10px] text-muted-foreground">(1)</span>
+      {/* Duration滑块选择器 */}
+      {showDurationSelector && (
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Duration</h2>
+            <span className="text-sm font-medium">{duration}s</span>
+          </div>
+          <input
+            type="range"
+            min="5"
+            max="10"
+            step="1"
+            value={duration}
+            onChange={(e) => setDuration(Number(e.target.value))}
+            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-gradient-to-r [&::-webkit-slider-thumb]:from-blue-500 [&::-webkit-slider-thumb]:to-purple-600 [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-gradient-to-r [&::-moz-range-thumb]:from-blue-500 [&::-moz-range-thumb]:to-purple-600 [&::-moz-range-thumb]:border-0"
+          />
         </div>
-        <div className="h-5 w-9 rounded-full bg-muted relative cursor-pointer">
-          <div className="absolute top-0.5 left-0.5 w-4 h-4 rounded-full bg-background shadow-sm transition-all" />
-        </div>
-      </div>
+      )}
 
-      {/* Credits and Create Button */}
-      <div className="flex justify-between items-center pt-1">
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-muted-foreground">Credits required:</span>
-          <span className="text-[10px] text-muted-foreground">(1)</span>
+      {/* Resolution选择器 */}
+      {showResolutionSelector && (
+        <div className="space-y-1.5">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Resolution</h2>
+          <div className="grid grid-cols-2 gap-2">
+            {['720p', '1080p'].map((r) => (
+              <button
+                key={r}
+                onClick={() => setResolution(r)}
+                className={cn(
+                  "px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                  resolution === r
+                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {r}
+              </button>
+            ))}
+          </div>
         </div>
-        <span className="text-sm font-medium">10 Credits</span>
-      </div>
+      )}
 
-      <Button className="w-full gap-2 rounded-lg py-4">
-        <Sparkles className="h-4 w-4" />
-        Create
+      {/* Ratio选择器 */}
+      {showRatioSelector && (
+        <div className="space-y-1.5">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Ratio</h2>
+          <div className="grid grid-cols-4 gap-2">
+            {['1:1', '3:4', '4:3', '16:9'].map((r) => (
+              <button
+                key={r}
+                onClick={() => setRatio(r)}
+                className={cn(
+                  "px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                  ratio === r
+                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {r}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Quantity选择器 */}
+      {showQuantitySelector && (
+        <div className="space-y-1.5">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Quantity</h2>
+          <div className="grid grid-cols-4 gap-2">
+            {[1, 2, 3, 4].map((q) => (
+              <button
+                key={q}
+                onClick={() => setQuantity(q)}
+                className={cn(
+                  "px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                  quantity === q
+                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Generate按钮 */}
+      <Button className="w-full gap-2 rounded-lg py-6 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700">
+        {generateButtonText}
+        <span className="ml-auto text-sm">-{creditsRequired} Credits</span>
       </Button>
     </div>
   );

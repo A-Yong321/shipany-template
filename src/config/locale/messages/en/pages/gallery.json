@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "title": "My Gallery - AI Creations",
+    "description": "View and manage your AI creations"
+  },
+  "title": "My Gallery",
+  "select_multiple": "Select Multiple",
+  "tabs": {
+    "all_creations": "All Creations",
+    "images": "Images",
+    "videos": "Videos",
+    "favorites": "Favorites"
+  }
+}
