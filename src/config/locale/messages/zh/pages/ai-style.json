@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "AI 风格 - 探索照片和视频特效",
-    "description": "浏览我们完整的 AI 照片和视频特效集合。从 AI 接吻到肌肉展示,发现完美的特效。"
+    "title": "AI Style - Explore Photo & Video Effects",
+    "description": "Browse our complete collection of AI photo and video effects. From AI kissing to muscle showcase, discover the perfect effect."
   },
   "page": {
-    "title": "AI 风格",
+    "title": "AI Style",
     "show_sections": [
       "effects"
     ],
@@ -12,18 +12,57 @@
       "effects": {
         "block": "ai-style-effects",
         "id": "ai-style-effects-list",
-        "title": "探索所有 AI 特效",
-        "description": "从我们广泛的热门 AI 照片和视频特效中选择。",
+        "title": "Explore All AI Effects",
+        "description": "Choose from our extensive collection of viral AI photo and video effects.",
         "photo_effects_key": "pages.photo-effects",
         "video_effects_key": "pages.video-effects"
+      },
+      "how_to": {
+        "title": "如何使用 AI Style 特效",
+        "description": "只需 3 个简单步骤，即可制作令人惊叹的 AI 照片和视频。",
+        "steps": [
+          {
+            "title": "选择特效",
+            "description": "浏览我们丰富的热门 AI 照片和视频特效库。选择最符合您创意愿景的一款。"
+          },
+          {
+            "title": "上传您的照片或视频",
+            "description": "上传清晰的照片或视频。为了获得最佳效果，请确保拍摄主体光线充足且清晰可见。"
+          },
+          {
+            "title": "生成并分享",
+            "description": "点击生成，见证 AI 魔法发生。下载您的作品并与分享给朋友或发布到社交媒体！"
+          }
+        ]
+      },
+      "faq": {
+        "title": "常见问题解答",
+        "items": [
+          {
+            "question": "可以免费使用吗？",
+            "answer": "我们要新用户提供免费试用，体验我们的 AI 特效。如需无限访问权限和更快的生成速度，您可以升级到我们的高级计划。"
+          },
+          {
+            "question": "生成需要多长时间？",
+            "answer": "照片特效通常需要 10-20 秒。视频特效可能稍长一些，通常取决于视频长度和复杂程度，约为 1-2 分钟。"
+          },
+          {
+            "question": "我可以将生成的图像/视频用于商业用途吗？",
+            "answer": "是的，只要您是订阅会员，您就拥有使用我们平台生成的内容的完全商业权利。"
+          },
+          {
+            "question": "支持哪些文件格式？",
+            "answer": "我们支持常见的图像格式（如 JPG、PNG）和视频格式（如 MP4、MOV）。图像最大文件大小为 20MB，视频为 100MB。"
+          }
+        ]
       }
     }
   },
   "ui": {
-    "searchPlaceholder": "搜索特效...",
-    "effectsCount": "{count} 个特效",
-    "noEffects": "暂无特效",
-    "noResultsFound": "未找到包含 \"{query}\" 的特效",
-    "usageCount": "{count} 使用"
+    "searchPlaceholder": "Search effects...",
+    "effectsCount": "{count} effects",
+    "noEffects": "No effects available",
+    "noResultsFound": "No effects found for \"{query}\"",
+    "usageCount": "{count} uses"
   }
 }

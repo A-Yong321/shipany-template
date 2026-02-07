@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { ToolDetailLayout } from './tool-detail-layout';
 import Link from 'next/link';
+import { HowToSection, FAQSection } from './tool-bottom-sections';
 
 interface Effect {
   id: string;
@@ -20,16 +21,6 @@ interface Tab {
   id: string;
   label: string;
   items: Effect[];
-}
-
-interface EffectsData {
-  page: {
-    sections: {
-      effects: {
-        tabs: Tab[];
-      };
-    };
-  };
 }
 
 interface AIStyleEffectsProps {
@@ -55,6 +46,10 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
   const currentEffectsT = activeMainTab === 'photo' ? photoEffectsT : videoEffectsT;
   const tabs: Tab[] = currentEffectsT.raw('page.sections.effects.tabs') || [];
 
+  // 获取 How To 和 FAQ 数据
+  const howToData = t.raw('page.sections.how_to');
+  const faqData = t.raw('page.sections.faq');
+
   // 获取当前分类的effects并应用搜索过滤
   const allCategoryEffects = tabs.find(tab => tab.id === activeCategory)?.items || [];
   const currentEffects = searchQuery
@@ -74,6 +69,25 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
   const handleCategoryChange = (categoryId: string) => {
     setActiveCategory(categoryId);
     setSearchQuery(''); // 清空搜索
+  };
+
+  // 辅助函数：处理 URL 编码
+  const getEncodedUrl = (url: string) => {
+    try {
+      const [path, query] = url.split('?');
+      if (!query) return url;
+      
+      const params = new URLSearchParams(query);
+      const type = params.get('type');
+      if (type) {
+        // 重新编码 type 参数
+        params.set('type', type); // URLSearchParams 会自动编码
+        return `${path}?${params.toString()}`;
+      }
+      return url;
+    } catch (e) {
+      return url;
+    }
   };
 
   // 主内容区域 - 显示搜索框、大标签和分类标签
@@ -188,7 +202,7 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
         {currentEffects.map((effect) => (
           <Link
             key={effect.id}
-            href={effect.url}
+            href={getEncodedUrl(effect.url)}
             className="group relative bg-card rounded-xl overflow-hidden border border-border/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
           >
             {/* 效果图片或视频 */}
@@ -207,23 +221,49 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
                   }}
                 />
               ) : (
-                <img
-                  src={effect.image.src}
-                  alt={effect.image.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
+                <>
+                  {/* Photo Effects: Hover Comparison */}
+                  {/* Default Image (Result) */}
+                  <img
+                    src={effect.image.src}
+                    alt={effect.image.alt}
+                    className={`w-full h-full object-cover transition-opacity duration-500 ${effect.beforeImage ? 'group-hover:opacity-0' : 'group-hover:scale-110'}`}
+                    loading="lazy"
+                  />
+                  
+                  {/* Before Image (Original) - Shown on Hover */}
+                  {effect.beforeImage && (
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                         <img
+                            src={effect.beforeImage.src}
+                            alt={effect.beforeImage.alt}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                         />
+                         <div className="absolute top-2 left-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
+                            Original
+                         </div>
+                    </div>
+                  )}
+
+                  {/* Result Label - Shown by default */}
+                  {effect.beforeImage && (
+                     <div className="absolute top-2 left-2 bg-blue-600/80 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm group-hover:opacity-0 transition-opacity duration-300">
+                        Result
+                     </div>
+                  )}
+                </>
               )}
               
               {/* HOT标签 - 右上角 */}
               {effect.badge && (
-                <div className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-lg">
+                <div className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-lg z-10">
                   {effect.badge}
                 </div>
               )}
 
-              {/* 播放按钮覆盖层 */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* 播放按钮覆盖层 - 只在视频或非悬停对比图片时显示增强交互感 */}
+              <div className={`absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${effect.beforeImage ? 'hidden' : ''}`}>
                 <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
                   <svg className="w-6 h-6 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
@@ -233,7 +273,7 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
             </div>
 
             {/* 效果信息 */}
-            <div className="p-3 bg-card">
+            <div className="p-3 bg-card relative z-20">
               <h3 className="font-semibold text-sm mb-1 group-hover:text-blue-500 transition-colors line-clamp-1">
                 {effect.title}
               </h3>
@@ -262,9 +302,17 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
     </div>
   );
 
+  const bottomContent = (
+    <>
+        {howToData && <HowToSection {...howToData} />}
+        {faqData && <FAQSection {...faqData} />}
+    </>
+  );
+
   return (
     <ToolDetailLayout
       relatedEffects={effectsGrid}
+      bottomContent={bottomContent}
     >
       {mainContent}
     </ToolDetailLayout>

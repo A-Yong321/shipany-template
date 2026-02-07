@@ -106,19 +106,113 @@
           ]
         },
         {
-          "title": "Video Effects",
-          "url": "/video-effects",
-          "icon": "Video"
+          "title": "Effects",
+          "icon": "Magic",
+          "children": [
+            {
+              "title": "Video Effects",
+              "description": "AI-powered video effects",
+              "icon": "Video",
+              "children": [
+                {
+                  "title": "AI Hug",
+                  "description": "Create warm hug videos",
+                  "url": "/video-effects/ai-hug",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI Kissing",
+                  "description": "Create kissing videos",
+                  "url": "/video-effects/ai-kissing",
+                  "icon": "Heart"
+                },
+                {
+                  "title": "AI Dance",
+                  "description": "Make photos dance",
+                  "url": "/video-effects/ai-dance",
+                  "icon": "Music"
+                },
+                {
+                  "title": "Mimic",
+                  "description": "Mimic dance moves",
+                  "url": "/video-effects/ai-mimic",
+                  "icon": "Activity"
+                },
+                {
+                  "title": "Role Swap",
+                  "description": "Swap roles in videos",
+                  "url": "/video-effects/ai-role-swap",
+                  "icon": "Users"
+                },
+                {
+                  "title": "View More",
+                  "description": "Explore all video effects",
+                  "url": "/video-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            },
+            {
+              "title": "Photo Effects",
+              "description": "AI-powered photo effects",
+              "icon": "Image",
+              "children": [
+                {
+                  "title": "AI Fake Date",
+                  "description": "Romantic date photos",
+                  "url": "/photo-effects/ai-fake-date-photo",
+                  "icon": "Coffee"
+                },
+                {
+                  "title": "Pregnant AI",
+                  "description": "Beautiful maternity photos",
+                  "url": "/photo-effects/ai-pregnant-photo",
+                  "icon": "Baby"
+                },
+                {
+                  "title": "Celebrity Selfie",
+                  "description": "Selfies with celebrities",
+                  "url": "/photo-effects/ai-celebrity-selfie",
+                  "icon": "Camera"
+                },
+                {
+                  "title": "Art Style",
+                  "description": "Creative artistic effects",
+                  "url": "/photo-effects/art-style",
+                  "icon": "Palette"
+                },
+                {
+                  "title": "Visual Effects",
+                  "description": "Creative photo effects",
+                  "url": "/photo-effects/ai-visual-effects-photo",
+                  "icon": "Zap"
+                },
+                {
+                  "title": "View More",
+                  "description": "Explore all photo effects",
+                  "url": "/photo-effects",
+                  "icon": "ArrowRight"
+                }
+              ]
+            }
+          ]
         },
+
         {
-          "title": "Photo Effects",
-          "url": "/photo-effects",
-          "icon": "Image"
-        },
-        {
-          "title": "API",
-          "url": "/api-platform",
-          "icon": "Code"
+          "title": "AI",
+          "icon": "Sparkles",
+          "children": [
+            {
+              "title": "AI IMAGE",
+              "url": "/text-to-image",
+              "icon": "Image"
+            },
+            {
+              "title": "AI VIDEO",
+              "url": "/text-to-video",
+              "icon": "Video"
+            }
+          ]
         },
         {
           "title": "Pricing",

@@ -60,6 +60,22 @@
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
           "alt": "hero 背景"
+        },
+        "showcase": {
+          "items": [
+             { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "video": "/img_video/videos/AiKissing_正常接吻.mp4", "alt": "正常接吻", "url": "/video-effects/ai-kissing?type=正常接吻" },
+             { "src": "/img_video/imgs/Muscle_肌肉展示_1.png", "video": "/img_video/videos/Muscle_肌肉展示.mp4", "alt": "肌肉展示", "url": "/video-effects/ai-muscle?type=肌肉展示" },
+             { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png", "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4", "alt": "肚皮舞", "url": "/video-effects/ai-dance?type=肚皮舞" },
+             { "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png", "video": "/img_video/videos/AIFakeDate_中国女友.mp4", "alt": "中国女友", "url": "/photo-effects/ai-fake-date-photo?type=中国女友" },
+             { "src": "/img_video/imgs/Hug_侧身依抱_1.png", "video": "/img_video/videos/hug_侧身依抱.mp4", "alt": "侧身依抱", "url": "/video-effects/ai-hug?type=侧身依抱" },
+             { "src": "/img_video/imgs/Jiggle_抖动身体_1.png", "video": "/img_video/videos/jiggle_抖动身体.mp4", "alt": "抖动身体", "url": "/video-effects/ai-jiggle?type=抖动身体" },
+             { "src": "/img_video/imgs/Hug_公主抱_1.png", "video": "/img_video/videos/hug_公主抱.mp4", "alt": "公主抱", "url": "/video-effects/ai-hug?type=公主抱" },
+             { "src": "/img_video/imgs/Hug_托举式抱_1.png", "video": "/img_video/videos/hug_托举式抱.mp4", "alt": "托举式抱", "url": "/video-effects/ai-hug?type=托举式抱" },
+             { "src": "/img_video/imgs/Hug_拥抱_1.png", "video": "/img_video/videos/hug_拥抱.mp4", "alt": "拥抱", "url": "/video-effects/ai-hug?type=拥抱" },
+             { "src": "/img_video/imgs/Hug_背后环抱_1.png", "video": "/img_video/videos/hug_背后环抱.mp4", "alt": "背后环抱", "url": "/video-effects/ai-hug?type=背后环抱" },
+             { "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png", "video": "/img_video/videos/PregnantAI_怀孕.mp4", "alt": "怀孕", "url": "/photo-effects/ai-pregnant-photo?type=怀孕" },
+             { "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png", "video": "/img_video/videos/AIKissing法式接吻.mp4", "alt": "法式接吻", "url": "/video-effects/ai-kissing?type=法式接吻" }
+          ]
         }
       },
       "logos": {

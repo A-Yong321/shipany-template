@@ -3,8 +3,14 @@
 import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
 import { cn } from '@/shared/lib/utils';
-import { Play } from 'lucide-react';
 import { Link } from '@/core/i18n/navigation';
+
+// Swiper imports
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+// Swiper styles
+import 'swiper/css';
 
 interface ShowcaseItem {
   src: string;
@@ -17,16 +23,42 @@ interface ShowcaseItem {
 export function HeroShowcase({ showcase }: { showcase: { items: ShowcaseItem[] } }) {
   if (!showcase?.items?.length) return null;
 
-  // Duplicate items to create seamless loop
-  const items = [...showcase.items, ...showcase.items];
+  // Duplicate items to ensure smooth infinite scroll even on wide screens
+  // create enough duplicates to fill reasonably large screens
+  const items = [...showcase.items, ...showcase.items, ...showcase.items];
 
   return (
-    <div className="w-full overflow-hidden mt-12 md:mt-20 fade-in-up group/showcase">
-       <div className="flex gap-4 md:gap-6 w-max animate-scroll hover:[animation-play-state:paused] px-4">
+    <div className="w-full mt-4 md:mt-8 fade-in-up group/showcase relative overflow-hidden">
+       {/* Gradient Masks for Fade/Blur Effect on Edges - Adjusted width for smaller scale */}
+       <div className="absolute left-0 top-0 bottom-0 w-12 md:w-24 z-20 bg-gradient-to-r from-background to-transparent pointer-events-none" />
+       <div className="absolute right-0 top-0 bottom-0 w-12 md:w-24 z-20 bg-gradient-to-l from-background to-transparent pointer-events-none" />
+
+       <Swiper
+        spaceBetween={12}
+        slidesPerView={'auto'}
+        loop={true}
+        // Continuous linear scrolling settings
+        speed={5000} 
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        allowTouchMove={true}
+        modules={[Autoplay]}
+        className={cn(
+          "w-full",
+          // Force linear timing for continuous scroll
+          "[&_.swiper-wrapper]:!ease-linear",
+        )}
+      >
          {items.map((item, idx) => (
-           <ShowcaseCard key={`${idx}-${item.alt}`} item={item} />
+           // Using index in key because we have duplicates
+           <SwiperSlide key={`${idx}-${item.alt}`} className="!w-[140px] !h-[210px] md:!w-[200px] md:!h-[300px]">
+             <ShowcaseCard item={item} />
+           </SwiperSlide>
          ))}
-       </div>
+       </Swiper>
     </div>
   );
 }
@@ -34,80 +66,116 @@ export function HeroShowcase({ showcase }: { showcase: { items: ShowcaseItem[] }
 function ShowcaseCard({ item }: { item: ShowcaseItem }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [showEffect, setShowEffect] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
-  // Auto-cycle effect
+  // Auto-cycle effect: Original -> Effect -> Original ...
   useEffect(() => {
-    const cycle = () => {
-       setShowEffect(true);
-       if (item.video && videoRef.current) {
-           videoRef.current.currentTime = 0;
-           videoRef.current.play().catch(() => {});
-           // Video duration or fixed time?
-           // For simplicity, cycle every 4s: 2s original, 2s effect? 
-           // Better: Effect plays for N seconds then back.
-       }
-       
-       setTimeout(() => {
-           setShowEffect(false);
-           if (item.video && videoRef.current) {
-               videoRef.current.pause();
-           }
-       }, 3000); // Show effect for 3s
+    let interval: NodeJS.Timeout;
+    
+    const startCycle = () => {
+        // Random usage to prevent all cards switching exactly at once
+        const randomDelay = Math.random() * 2000;
+        
+        interval = setInterval(() => {
+            if (!isHovering) {
+                setShowEffect(prev => {
+                    const nextState = !prev;
+                    // Handle video play/pause based on next state
+                    if (item.video && videoRef.current) {
+                        if (nextState) {
+                             videoRef.current.currentTime = 0;
+                             videoRef.current.play().catch(() => {});
+                        } else {
+                            videoRef.current.pause();
+                        }
+                    }
+                    return nextState;
+                });
+            }
+        }, 4000 + randomDelay); // Cycle every ~4-6 seconds
     };
 
-    // Initial delay then loop
-    const interval = setInterval(cycle, 6000 + Math.random() * 2000); // Random offset
-    setTimeout(cycle, 1000 + Math.random() * 2000);
+    startCycle();
 
     return () => clearInterval(interval);
-  }, [item.video]);
+  }, [isHovering, item.video]);
+
+  // Handle hover state
+  useEffect(() => {
+      if (isHovering) {
+          setShowEffect(true);
+          if (item.video && videoRef.current) {
+              videoRef.current.currentTime = 0;
+              videoRef.current.play().catch(() => {});
+          }
+      } else {
+          // When mouse leaves, we don't immediately force state, 
+          // we let the interval loop handle it, or we could reset. 
+          // Let's reset to original for a cleaner look when leaving.
+          setShowEffect(false);
+          if (item.video && videoRef.current) {
+              videoRef.current.pause();
+          }
+      }
+  }, [isHovering, item.video]);
 
 
   return (
     <Link
       href={item.url || '#'}
-      className="relative shrink-0 w-[140px] h-[200px] md:w-[180px] md:h-[260px] rounded-xl md:rounded-2xl overflow-hidden cursor-pointer group shadow-lg transition-transform hover:scale-105 border border-white/10 bg-zinc-900 block"
+      className="relative w-full h-full rounded-xl overflow-hidden cursor-pointer group block bg-gray-900 border border-white/5 shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-primary/20"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
-      {/* Original Image */}
-      <Image
-        src={item.src}
-        alt={item.alt}
-        fill
-        className={cn("object-cover transition-opacity duration-700", showEffect ? "opacity-0" : "opacity-100")}
-        sizes="(max-width: 768px) 140px, 180px"
-      />
-      
-      {/* Effect Video or Image */}
-      {(item.video || item.effectSrc) && (
-         <div className={cn("absolute inset-0 transition-opacity duration-700", showEffect ? "opacity-100" : "opacity-0")}>
-            {item.video ? (
-                <video
-                ref={videoRef}
-                src={item.video}
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
-                />
-            ) : (
-                item.effectSrc && (
-                    <Image 
-                        src={item.effectSrc} 
-                        alt={item.alt + " Effect"} 
-                        fill 
-                        className="object-cover" 
+      {/* Container for images/video */}
+      <div className="absolute inset-0 w-full h-full">
+         {/* Original Image */}
+        <Image
+          src={item.src}
+          alt={item.alt}
+          fill
+          className={cn("object-cover transition-opacity duration-700", showEffect ? "opacity-0" : "opacity-100")}
+          sizes="(max-width: 768px) 140px, 200px"
+        />
+        
+        {/* Video Preview or Effect Image */}
+        {(item.video || item.effectSrc) && (
+             <div className={cn("absolute inset-0 w-full h-full transition-opacity duration-700", showEffect ? "opacity-100" : "opacity-0")}>
+                {item.video ? (
+                    <video
+                    ref={videoRef}
+                    src={item.video}
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
                     />
-                )
-            )}
-         </div>
-      )}
-
-      {/* Play Icon/Overlay - Show on hover */}
-      <div className={cn("absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300")}>
-         <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30">
-            <Play className="w-5 h-5 text-white fill-white ml-0.5" />
-         </div>
+                ) : (
+                    item.effectSrc && (
+                        <Image 
+                            src={item.effectSrc} 
+                            alt={item.alt + " Effect"} 
+                            fill 
+                            className="object-cover" 
+                        />
+                    )
+                )}
+             </div>
+        )}
       </div>
+
+      {/* Dark Gradient Overlay for Text Readability */}
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
+
+      {/* Content */}
+      <div className="absolute bottom-0 left-0 w-full p-3 md:p-4 z-10 flex flex-col justify-end">
+          <h3 className="text-white font-medium text-sm md:text-base tracking-tight leading-snug drop-shadow-md line-clamp-2">
+            {item.alt}
+          </h3>
+      </div>
+
+      {/* Hover State Overlay */}
+      <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 group-hover:ring-white/30 transition-all duration-300 pointer-events-none" />
     </Link>
   );
 }
