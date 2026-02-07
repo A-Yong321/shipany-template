@@ -8,6 +8,10 @@ import { Inspirations } from '@/themes/default/blocks/inspirations';
 import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection, EffectsGridSection, type EffectsGridSectionProps } from '@/themes/default/blocks/tool-bottom-sections';
 import { type EffectItem } from '@/themes/default/blocks/effect-card';
 import { getToolConfig, tools } from '@/data/tools';
+import { TextToImageContent } from '@/themes/default/blocks/text-to-image/content';
+import { TextToImagePreview } from '@/themes/default/blocks/text-to-image/preview';
+import { TextToVideoContent } from '@/themes/default/blocks/text-to-video/content';
+import { TextToVideoPreview } from '@/themes/default/blocks/text-to-video/preview';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -99,6 +103,30 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
       {sections.faq && <FAQSection {...sections.faq} />}
     </>
   );
+
+  // Special layout for 'text-to-image'
+  if (slug === 'text-to-image') {
+    return (
+      <ToolDetailLayout
+        relatedEffects={<TextToImagePreview />}
+        bottomContent={bottomContent}
+      >
+        <TextToImageContent toolName={effectData.page.title} backHref="/ai-style" />
+      </ToolDetailLayout>
+    );
+  }
+
+  // Special layout for 'text-to-video'
+  if (slug === 'text-to-video') {
+    return (
+      <ToolDetailLayout
+        relatedEffects={<TextToVideoPreview />}
+        bottomContent={bottomContent}
+      >
+        <TextToVideoContent toolName={effectData.page.title} backHref="/ai-style" />
+      </ToolDetailLayout>
+    );
+  }
 
   return (
     <ToolDetailLayout

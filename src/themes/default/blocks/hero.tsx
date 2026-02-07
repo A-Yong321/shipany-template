@@ -8,6 +8,7 @@ import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
+import { HeroShowcase } from './hero-showcase';
 
 export function Hero({
   section,
@@ -74,86 +75,9 @@ export function Hero({
             {section.title || "Your One-Stop AI Creation Platform"}
         </h1>
 
-        {/* Input Interface Container - Only show if enabled */}
-        {section.show_input !== false && (
-        <div className="bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-3xl p-2 md:p-3 shadow-2xl ring-1 ring-black/5 dark:ring-white/5 mx-auto max-w-4xl text-left">
-            
-            {/* Tool Tabs */}
-            <div className="flex flex-wrap gap-2 mb-3 px-1">
-                {section.tools?.map((tool: any) => (
-                    <button
-                        key={tool.id}
-                        onClick={() => setActiveTool(tool.id)}
-                        className={cn(
-                            "flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200",
-                            activeTool === tool.id 
-                                ? "bg-white dark:bg-zinc-800 text-foreground shadow-lg ring-1 ring-black/5 dark:ring-white/10" 
-                                : "text-muted-foreground hover:text-foreground hover:bg-black/5 dark:hover:bg-zinc-800/50"
-                        )}
-                    >
-                        <SmartIcon name={tool.icon} size={18} className={activeTool === tool.id ? "text-primary" : ""} />
-                        {tool.label}
-                    </button>
-                ))}
-            </div>
 
-            {/* Input Area */}
-            <div className="bg-black/5 dark:bg-zinc-800/50 rounded-2xl p-4 md:p-5 relative group focus-within:ring-1 focus-within:ring-primary/50 transition-all">
-                
-                {/* Text Area */}
-                <textarea 
-                    placeholder={section.input_placeholder || "Describe your creation..."}
-                    className="w-full bg-transparent border-none outline-none text-lg text-foreground placeholder:text-muted-foreground resize-none min-h-[80px] md:min-h-[100px]"
-                />
 
-                {/* Bottom Controls */}
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-4">
-                    
-                    {/* Left: Upload Button */}
-                    <button className="flex items-center justify-center w-12 h-12 rounded-xl bg-black/5 dark:bg-zinc-700/50 text-muted-foreground hover:bg-black/10 dark:hover:bg-zinc-700 hover:text-foreground transition-colors">
-                        <Plus size={24} />
-                    </button>
-
-                    {/* Right: Settings & Generate */}
-                    <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
-                        
-                        {/* Settings Pills (Mock) */}
-                        <div className="flex items-center gap-2 mr-auto md:mr-0">
-                             <div className="hidden md:flex items-center gap-2">
-                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/5 dark:bg-zinc-900/50 border border-black/5 dark:border-white/5 text-xs text-muted-foreground hover:text-foreground">
-                                    <Clock size={12} /> 5s
-                                </button>
-                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/5 dark:bg-zinc-900/50 border border-black/5 dark:border-white/5 text-xs text-muted-foreground hover:text-foreground">
-                                    <Monitor size={12} /> 480p
-                                </button>
-                                <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/5 dark:bg-zinc-900/50 border border-black/5 dark:border-white/5 text-xs text-muted-foreground hover:text-foreground">
-                                    <Smartphone size={12} /> 16:9
-                                </button>
-                            </div>
-                            <button className="flex items-center justify-center w-8 h-8 rounded-lg bg-black/5 dark:bg-zinc-900/50 border border-black/5 dark:border-white/5 text-muted-foreground hover:text-foreground md:hidden">
-                                <MoreHorizontal size={16} />
-                            </button>
-                             <button className="hidden md:flex items-center justify-center w-8 h-8 rounded-lg bg-black/5 dark:bg-zinc-900/50 border border-black/5 dark:border-white/5 text-muted-foreground hover:text-foreground">
-                                <MoreHorizontal size={16} />
-                            </button>
-                        </div>
-
-                         {/* Divider */}
-                         <div className="h-6 w-px bg-black/10 dark:bg-white/10 hidden md:block" />
-
-                        {/* Generate Button */}
-                        <div className="flex items-center gap-3 ml-auto">
-                             <div className="w-2 h-2 rounded-full border border-muted-foreground hidden md:block" />
-                             <button className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all shadow-lg shadow-primary/25">
-                                <ArrowUp size={24} />
-                             </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        )}
-
+        {/* Examples / Prompts */}
         {/* Examples / Prompts */}
          {section.examples && (
             <div className="flex flex-wrap justify-center gap-3 mt-6">
@@ -170,6 +94,10 @@ export function Hero({
         )}
 
       </div>
+      
+      {/* Hero Showcase */}
+      {section.showcase && <HeroShowcase showcase={section.showcase} />}
+
     </section>
   );
 }

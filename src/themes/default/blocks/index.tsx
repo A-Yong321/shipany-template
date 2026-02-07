@@ -13,6 +13,7 @@ export * from './features-media';
 
 export * from './showcases';
 export * from './showcases-flow';
+export * from './tools-grid';
 
 export * from './logos';
 export * from './stats';

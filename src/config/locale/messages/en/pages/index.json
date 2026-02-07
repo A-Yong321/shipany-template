@@ -2,227 +2,122 @@
   "page": {
     "show_sections": [
       "hero",
+      "showcases",
       "introduce",
       "features",
+      "tools_grid",
       "effects",
-      "creations",
+      "stats",
       "cta",
       "faq"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "One Photo, Infinite Possibilities",
-        "highlight_text": "Infinite Possibilities",
+        "title": "All-in-One AI Image & Video Creation Platform",
+        "highlight_text": "Creation Platform",
         "description": "Unlock your creativity with 1PhotoAI. Tap into our flagship models and all top-tier models in the industry.",
         "announcement": {
           "badge": "New",
           "title": "🎉 Enjoy Limited-Time 50% OFF!",
           "url": "/pricing"
         },
-        "tip": "",
-        "input_placeholder": "Enter your idea to generate",
-        "tools": [
-          {
-            "id": "video",
-            "icon": "RiVideoLine",
-            "label": "AI Video"
-          },
-          {
-            "id": "text-to-video",
-            "icon": "RiFileTextLine",
-            "label": "Text/Image to Video"
-          },
-          {
-            "id": "pollo-2",
-            "icon": "RiFlashlightLine",
-            "label": "Pollo 2.5"
-          }
-        ],
-        "examples": [
-          {
-            "emoji": "👑",
-            "text": "Crowning"
-          },
-          {
-            "emoji": "🌬️",
-            "text": "Spoken to the Wind"
-          },
-          {
-            "emoji": "🧱",
-            "text": "Playhouse Builder"
-          }
-        ],
-        "show_avatars": false,
-        "show_award": false,
-        "image": {},
-        "image_invert": {},
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
           "alt": "hero background"
+        },
+        "showcase": {
+          "items": [
+             { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "video": "/img_video/videos/AiKissing_正常接吻.mp4", "alt": "AI Kissing", "url": "/video-effects/ai-kissing?type=正常接吻" },
+             { "src": "/img_video/imgs/Muscle_肌肉展示_1.png", "video": "/img_video/videos/Muscle_肌肉展示.mp4", "alt": "Muscle Showcase", "url": "/video-effects/ai-muscle?type=肌肉展示" },
+             { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png", "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4", "alt": "Belly Dance", "url": "/video-effects/ai-dance?type=肚皮舞" },
+             { "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png", "video": "/img_video/videos/AIFakeDate_中国女友.mp4", "alt": "Virtual Girlfriend", "url": "/photo-effects/ai-fake-date-photo?type=中国女友" },
+             { "src": "/img_video/imgs/Hug_侧身依抱_1.png", "video": "/img_video/videos/hug_侧身依抱.mp4", "alt": "Hug Effect", "url": "/video-effects/ai-hug?type=侧身依抱" },
+             { "src": "/img_video/imgs/Jiggle_抖动身体_1.png", "video": "/img_video/videos/jiggle_抖动身体.mp4", "alt": "Body Jiggle", "url": "/video-effects/ai-jiggle?type=抖动身体" }
+          ]
         }
-      },
-      "logos": {
-        "id": "logos",
-        "title": "Empowering creators from top companies",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
       },
       "introduce": {
         "block": "models-section",
         "id": "models-showcase",
-        "title": "Generate AI Photos in 10 Seconds",
-        "description": "1PhotoAI is an AI photos generator, delivering professional high-quality headshots in just 10 seconds. From enhancing your professional network profile to generating unique social media avatars or anime images.",
-        "input_placeholder": "Enter your idea to generate",
+        "title": "ALL the Great AI Video & Image Models in ONE Place!",
+        "description": "",
         "items": [
           {
             "id": "video-generators",
             "title": "AI Video Generators",
-            "description": "With 1PhotoAI video generator, you can tap into our flagship Pollo 2.5 video model and all top-tier video models in the industry, including:",
+            "description": "With 1PhotoAI video generator, you can tap into our flagship Pollo 2.5 video model and all top-tier video models in the industry.",
             "icon": "RiVideoLine",
-            "tags": [
-              "Pollo 2.5",
-              "Kling AI",
-              "Veo 3",
-              "Sora 2",
-              "Runway",
-              "Vidu AI"
-            ],
-            "button": {
-              "title": "AI Video Generator",
-              "url": "/text-to-video"
-            },
-            "logos": [
-              "/imgs/logos/pollo.svg",
-              "/imgs/logos/kling.svg",
-              "/imgs/logos/veo.svg",
-              "/imgs/logos/sora.svg",
-              "/imgs/logos/runway.svg"
-            ]
+            "tags": ["Pollo 2.5", "Kling AI", "Veo 3", "Sora 2", "Runway"],
+            "button": { "title": "AI Video Generator", "url": "/text-to-video" },
+            "logos": ["/imgs/logos/pollo.svg", "/imgs/logos/kling.svg", "/imgs/logos/veo.svg", "/imgs/logos/sora.svg"]
           },
           {
             "id": "image-generators",
             "title": "AI Image Generators",
-            "description": "1PhotoAI image generator features our cutting-edge Image 2.0 model, alongside other leading image models available today, including:",
+            "description": "1PhotoAI image generator features our cutting-edge Image 2.0 model, alongside other leading image models available today.",
             "icon": "RiImageLine",
-            "tags": [
-              "Nano Banana",
-              "Midjourney",
-              "Flux AI",
-              "Stable Diffusion",
-              "Dall-E"
-            ],
-            "button": {
-              "title": "AI Image Generator",
-              "url": "/text-to-image"
-            },
-            "logos": [
-              "/imgs/logos/midjourney.svg",
-              "/imgs/logos/flux.svg",
-              "/imgs/logos/gpt4.svg",
-              "/imgs/logos/imagen.svg"
-            ]
+            "tags": ["Nano Banana", "Midjourney", "Flux AI", "Stable Diffusion", "Dall-E"],
+            "button": { "title": "AI Image Generator", "url": "/text-to-image" },
+            "logos": ["/imgs/logos/midjourney.svg", "/imgs/logos/flux.svg", "/imgs/logos/gpt4.svg"]
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
       "features": {
         "block": "feature-split",
         "id": "features",
-        "title": "Why Choose 1PhotoAI",
         "items": [
           {
-            "title": "Image Creation & Art Generation",
+            "title": "Image Creation & Art Generation\nTransform Photos Instantly",
             "description": "Transform text into stunning high-quality art instantly. From text-to-image to photo-to-cartoon, we provide professional tools for all your creative needs.",
             "sub_items": [
-              {
-                "title": "Portrait Cartoon",
-                "description": "Turn your selfies into amazing cartoons with one click."
-              },
-              {
-                "title": "Character Persistence",
-                "description": "Keep character consistency across different scenes and poses."
-              },
-              {
-                "title": "Instant Style Transfer",
-                "description": "Apply any artistic style to your photos instantly."
-              }
+              { "title": "Portrait to Cartoon", "description": "Turn your selfies into amazing cartoons with one click." },
+              { "title": "Character Persistence", "description": "Keep character consistency across different scenes and poses." },
+              { "title": "Instant Style Transfer", "description": "Apply any artistic style to your photos instantly." }
             ],
-            "button": {
-              "title": "Try AI Image Generator",
-              "url": "/text-to-image"
-            },
-            "image": {
-              "src": "/imgs/image.png",
-              "alt": "AI Image Creation"
-            },
+            "button": { "title": "Try AI Image Generator", "url": "/text-to-image" },
+            "image": { "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png", "alt": "AI Image Creation" },
             "reverse": false
           },
           {
-            "title": "Video Creation - Turn Text/Images to Video",
+            "title": "Video Creation\nTransform Text and Images into Videos",
             "description": "Convert your scripts or images into cinematic videos. Our advanced AI models understand physics and motion to create realistic results.",
             "sub_items": [
-              {
-                "title": "Text to Video",
-                "description": "Generate videos directly from text descriptions."
-              },
-              {
-                "title": "Image to Video",
-                "description": "Bring your static images to life with motion."
-              },
-              {
-                "title": "Video Style Transfer",
-                "description": "Transform the style of existing videos."
-              }
+              { "title": "Text to Video", "description": "Generate videos directly from text descriptions." },
+              { "title": "Image to Video", "description": "Bring your static images to life with motion." },
+              { "title": "Video Style Transfer", "description": "Transform the style of existing videos." }
             ],
-            "button": {
-              "title": "Try AI Video Generator",
-              "url": "/text-to-video"
-            },
-            "image": {
-              "src": "/videos/AI_Kissing.mp4",
-              "alt": "AI Video Creation",
-              "type": "video"
-            },
+            "button": { "title": "Try AI Video Generator", "url": "/text-to-video" },
+            "image": { "src": "/img_video/videos/AI 360 Rotation.mp4", "alt": "AI Video Creation", "type": "video" },
             "reverse": true
           }
         ],
         "className": "bg-black"
       },
+      "tools_grid": {
+        "block": "tools-grid",
+        "id": "tools-grid",
+        "title": "14+ Powerful Image Editing Tools with 1Photo AI",
+        "description": "Discover our suite of powerful AI tools designed to enhance your photos and videos.",
+        "items": [
+            { "title": "Remove Background", "icon": "RiEraserLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_额头之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_额头之吻_2.png" },
+            { "title": "AI Image Enhancer", "icon": "RiMagicLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png" },
+            { "title": "Photo to Cartoon", "icon": "RiUserSmileLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png" },
+            { "title": "Face Swap", "icon": "RiUserSharedLine", "url": "/image-to-image", "image": "/img_video/imgs/角色切换_审讯室_1.png", "hover_image": "/img_video/imgs/角色切换_审讯室_2.png" },
+            { "title": "Old Photo Restore", "icon": "RiHistoryLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Fake-Date_美国女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_美国女友_2.png" },
+            { "title": "AI Hairstyle", "icon": "RiScissorsCutLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png" },
+            { "title": "AI Filter", "icon": "RiPaletteLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_正常接吻_2.png" },
+            { "title": "Object Remover", "icon": "RiDeleteBinLine", "url": "/image-to-image", "image": "/img_video/imgs/Hug_拥抱_1.png", "hover_image": "/img_video/imgs/Hug_拥抱_2.png" },
+            { "title": "AI Colorize", "icon": "RiBrushLine", "url": "/image-to-image", "image": "/img_video/imgs/Hug_侧身依抱_1.png", "hover_image": "/img_video/imgs/Hug_侧身依抱_2.png" },
+             { "title": "More Tools", "icon": "RiMoreLine", "url": "/tools", "image": "/img_video/imgs/Hug_公主抱_1.png", "hover_image": "/img_video/imgs/Hug_公主抱_2.png" }
+        ]
+      },
       "effects": {
         "block": "effects-section",
         "id": "effects",
         "title": "Viral AI Videos and Photo Effects",
-        "description": "Want to add a sweet kiss for your loved one or bulk up with AI muscles? Want to turn your photos into Ghibli-style art or snap a selfie with celebrities? No problem! With over 150 video and photo effects, bring your vision to life!",
-        "items_label": "Natural Mess",
+        "description": "Bring your vision to life with our collection of trending effects.",
+        "items_label": "Hot Effects",
         "tabs": [
           {
             "id": "video",
@@ -231,21 +126,15 @@
             "items": [
               {
                 "title": "French Kiss",
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
-                  "alt": "French Kiss"
-                },
+                "image": { "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png", "alt": "French Kiss" },
                 "video": "/img_video/videos/AIKissing法式接吻.mp4",
                 "badge": "HOT",
                 "count": "1M+",
                 "url": "/video-effects/ai-kissing?type=法式接吻"
               },
-              {
+               {
                 "title": "Normal Kiss",
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
-                  "alt": "Normal Kiss"
-                },
+                "image": { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "alt": "Normal Kiss" },
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4",
                 "badge": "HOT",
                 "count": "1M+",
@@ -253,10 +142,7 @@
               },
               {
                 "title": "Muscle Showcase",
-                "image": {
-                  "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
-                  "alt": "Muscle Showcase"
-                },
+                "image": { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png", "alt": "Muscle Showcase" },
                 "video": "/img_video/videos/Muscle_肌肉展示.mp4",
                 "badge": "HOT",
                 "count": "1M+",
@@ -264,10 +150,7 @@
               },
               {
                 "title": "Belly Dance",
-                "image": {
-                  "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
-                  "alt": "Belly Dance"
-                },
+                "image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png", "alt": "Belly Dance" },
                 "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4",
                 "badge": "NEW",
                 "count": "50K",
@@ -275,91 +158,11 @@
               },
               {
                 "title": "Side Hug",
-                "image": {
-                  "src": "/img_video/imgs/Hug_侧身依抱_1.png",
-                  "alt": "Side Hug"
-                },
+                "image": { "src": "/img_video/imgs/Hug_侧身依抱_1.png", "alt": "Side Hug" },
                 "video": "/img_video/videos/hug_侧身依抱.mp4",
                 "badge": null,
                 "count": "50K",
                 "url": "/video-effects/ai-hug?type=侧身依抱"
-              },
-              {
-                "title": "Princess Hug",
-                "image": {
-                  "src": "/img_video/imgs/Hug_公主抱_1.png",
-                  "alt": "Princess Hug"
-                },
-                "video": "/img_video/videos/hug_公主抱.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/ai-hug?type=公主抱"
-              },
-              {
-                "title": "Lift Hug",
-                "image": {
-                  "src": "/img_video/imgs/Hug_托举式抱_1.png",
-                  "alt": "Lift Hug"
-                },
-                "video": "/img_video/videos/hug_托举式抱.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/ai-hug?type=托举式抱"
-              },
-              {
-                "title": "Hug",
-                "image": {
-                  "src": "/img_video/imgs/Hug_拥抱_1.png",
-                  "alt": "Hug"
-                },
-                "video": "/img_video/videos/hug_拥抱.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/ai-hug?type=拥抱"
-              },
-              {
-                "title": "Back Hug",
-                "image": {
-                  "src": "/img_video/imgs/Hug_背后环抱_1.png",
-                  "alt": "Back Hug"
-                },
-                "video": "/img_video/videos/hug_背后环抱.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/ai-hug?type=背后环抱"
-              },
-              {
-                "title": "Pregnant",
-                "image": {
-                  "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
-                  "alt": "Pregnant"
-                },
-                "video": "/img_video/videos/PregnantAI_怀孕.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/photo-effects/ai-pregnant-photo?type=怀孕"
-              },
-              {
-                "title": "Body Jiggle",
-                "image": {
-                  "src": "/img_video/imgs/Jiggle_抖动身体_1.png",
-                  "alt": "Body Jiggle"
-                },
-                "video": "/img_video/videos/jiggle_抖动身体.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/video-effects/ai-jiggle?type=抖动身体"
-              },
-              {
-                "title": "Chinese Girlfriend",
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
-                  "alt": "Chinese Girlfriend"
-                },
-                "video": "/img_video/videos/AIFakeDate_中国女友.mp4",
-                "badge": null,
-                "count": "50K",
-                "url": "/photo-effects/ai-fake-date-photo?type=中国女友"
               }
             ]
           },
@@ -368,337 +171,66 @@
             "label": "Photo Effects",
             "viewMoreUrl": "/photo-effects",
             "items": [
-              {
+               {
                 "title": "Lip Bite Kiss",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png",
-                  "alt": "Before Lip Bite Kiss"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png",
-                  "alt": "Lip Bite Kiss"
-                },
+                "beforeImage": { "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png", "alt": "Before Lip Bite Kiss" },
+                "image": { "src": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png", "alt": "Lip Bite Kiss" },
                 "badge": "HOT",
                 "count": "500K+",
                 "url": "/photo-effects/ai-kissing-photo?type=咬嘴唇之吻"
               },
               {
-                "title": "Normal Kiss",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
-                  "alt": "Before Normal Kiss"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_正常接吻_2.png",
-                  "alt": "Normal Kiss"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-kissing-photo?type=正常接吻"
-              },
-              {
-                "title": "French Kiss",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
-                  "alt": "Before French Kiss"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_法式接吻_2.png",
-                  "alt": "French Kiss"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-kissing-photo?type=法式接吻"
-              },
-              {
-                "title": "Cheek Kiss",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
-                  "alt": "Before Cheek Kiss"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png",
-                  "alt": "Cheek Kiss"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-kissing-photo?type=脸颊之吻"
-              },
-              {
-                "title": "Forehead Kiss",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Kissing_额头之吻_1.png",
-                  "alt": "Before Forehead Kiss"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Kissing_额头之吻_2.png",
-                  "alt": "Forehead Kiss"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-kissing-photo?type=额头之吻"
-              },
-              {
                 "title": "Chinese Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
-                  "alt": "Before Chinese Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_中国女友_2.png",
-                  "alt": "Chinese Girlfriend"
-                },
+                "beforeImage": { "src": "/img_video/imgs/AI-Fake-Date_中国女友_1.png", "alt": "Before Chinese Girlfriend" },
+                "image": { "src": "/img_video/imgs/AI-Fake-Date_中国女友_2.png", "alt": "Chinese Girlfriend" },
                 "badge": "HOT",
                 "count": "500K+",
                 "url": "/photo-effects/ai-fake-date-photo?type=中国女友"
               },
-              {
+               {
                 "title": "Russian Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png",
-                  "alt": "Before Russian Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_2.png",
-                  "alt": "Russian Girlfriend"
-                },
+                "beforeImage": { "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png", "alt": "Before Russian Girlfriend" },
+                "image": { "src": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_2.png", "alt": "Russian Girlfriend" },
                 "badge": "HOT",
                 "count": "500K+",
                 "url": "/photo-effects/ai-fake-date-photo?type=俄罗斯女友"
               },
               {
                 "title": "Indian Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_1.png",
-                  "alt": "Before Indian Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_印度女友_2.png",
-                  "alt": "Indian Girlfriend"
-                },
+                "beforeImage": { "src": "/img_video/imgs/AI-Fake-Date_印度女友_1.png", "alt": "Before Indian Girlfriend" },
+                "image": { "src": "/img_video/imgs/AI-Fake-Date_印度女友_2.png", "alt": "Indian Girlfriend" },
                 "badge": "HOT",
                 "count": "500K+",
                 "url": "/photo-effects/ai-fake-date-photo?type=印度女友"
               },
               {
                 "title": "Girlfriend Date",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_1.png",
-                  "alt": "Before Girlfriend Date"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_女友约会_2.png",
-                  "alt": "Girlfriend Date"
-                },
+                "beforeImage": { "src": "/img_video/imgs/AI-Fake-Date_女友约会_1.png", "alt": "Before Girlfriend Date" },
+                "image": { "src": "/img_video/imgs/AI-Fake-Date_女友约会_2.png", "alt": "Girlfriend Date" },
                 "badge": "HOT",
                 "count": "500K+",
                 "url": "/photo-effects/ai-fake-date-photo?type=女友约会"
-              },
-              {
-                "title": "Japanese Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
-                  "alt": "Before Japanese Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_日本女友_2.png",
-                  "alt": "Japanese Girlfriend"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-fake-date-photo?type=日本女友"
-              },
-              {
-                "title": "French Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_1.png",
-                  "alt": "Before French Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_法国女友_2.png",
-                  "alt": "French Girlfriend"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-fake-date-photo?type=法国女友"
-              },
-              {
-                "title": "American Girlfriend",
-                "beforeImage": {
-                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_1.png",
-                  "alt": "Before American Girlfriend"
-                },
-                "image": {
-                  "src": "/img_video/imgs/AI-Fake-Date_美国女友_2.png",
-                  "alt": "American Girlfriend"
-                },
-                "badge": "HOT",
-                "count": "500K+",
-                "url": "/photo-effects/ai-fake-date-photo?type=美国女友"
               }
             ]
           }
         ],
-        "className": "bg-black",
         "button_text": "Use This Effect",
         "view_more": "View More"
       },
-      "creations": {
-        "block": "creations-section",
-        "id": "creations",
-        "title": "Explore 1PhotoAI's User Creations",
-        "tabs": [
-          {
-            "id": "all",
-            "label": "All"
-          },
-          {
-            "id": "videos",
-            "label": "Videos"
-          },
-          {
-            "id": "effects",
-            "label": "AI Effects"
-          },
-          {
-            "id": "avatars",
-            "label": "Avatars"
-          },
-          {
-            "id": "images",
-            "label": "Images"
-          },
-          {
-            "id": "loras",
-            "label": "LoRAs"
-          },
-          {
-            "id": "shorts",
-            "label": "Shorts"
-          }
-        ],
+      "stats": {
+        "block": "stats",
+        "id": "stats",
+        "title": "Loved by 150,000+ Users",
         "items": [
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png",
-              "alt": "Creation 1"
-            },
-            "user": "User1"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Hug_公主抱_1.png",
-              "alt": "Creation 2"
-            },
-            "user": "User2"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png",
-              "alt": "Creation 3"
-            },
-            "user": "User3"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Kissing_正常接吻_1.png",
-              "alt": "Creation 4"
-            },
-            "type": "video",
-            "user": "User4"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Jiggle_抖动身体_1.png",
-              "alt": "Creation 5"
-            },
-            "type": "video",
-            "user": "User5"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Muscle_肌肉展示_1.png",
-              "alt": "Creation 6"
-            },
-            "user": "User6"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Twerk_扭臀舞_1.png",
-              "alt": "Creation 7"
-            },
-            "type": "video",
-            "user": "User7"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Pregnant-AI_进入嘴巴_1.png",
-              "alt": "Creation 8"
-            },
-            "user": "User8"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/Hug_侧身依抱_1.png",
-              "alt": "Creation 9"
-            },
-            "user": "User9"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png",
-              "alt": "Creation 10"
-            },
-            "user": "User10"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png",
-              "alt": "Creation 11"
-            },
-            "user": "User11"
-          },
-          {
-            "image": {
-              "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png",
-              "alt": "Creation 12"
-            },
-            "user": "User12"
-          }
-        ],
-        "className": "bg-black"
-      },
-      "faq": {
-        "id": "faq",
-        "title": "Frequently Asked Questions",
-        "description": "Got questions? We've got answers.",
-        "items": [
-          {
-            "question": "What is 1photoai?",
-            "answer": "1photoai is an all-in-one platform for creating stunning images and cinematic videos. Using 1photoai, you get professional visual creation tools including video generation, image enhancement, and various creative filters."
-          },
-          {
-            "question": "How do I get started with 1photoai?",
-            "answer": "Simply sign up for a free account, choose your desired tool from our collection of creative features, and start creating. No technical skills required – using 1photoai is easy for everyone with our intuitive interface."
-          },
-          {
-            "question": "What types of content can I create with 1photoai?",
-            "answer": "With 1photoai, you can create videos, enhance images to 4K quality, apply creative filters, generate visuals from text, swap faces in videos, create dance videos, and much more."
-          },
-          {
-            "question": "Do you offer a free trial?",
-            "answer": "Yes! You can try 1photoai with our free tier to explore the platform and test various features. using the free plan, you can experience the quality before upgrading."
-          },
-          {
-            "question": "Can I cancel my subscription anytime?",
-            "answer": "Yes, you can cancel your subscription at any time from your account settings. If you cancel, you'll continue to have access to premium features until the end of your current billing period."
-          }
+          { "quote": "I was skeptical at first, but 1PhotoAI blew me away!", "user": "Sarah J.", "role": "Content Creator" },
+          { "quote": "The best AI video generator I've used. Hands down.", "user": "Mike T.", "role": "Filmmaker" },
+          { "quote": "Absolutely love the photo effects. So realistic!", "user": "Emily R.", "role": "Designer" }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Start Creating?",
-        "description": "Join 1photoai today and unleash your creativity.",
+        "title": "Discover a New You with 1PhotoAI",
+        "description": "Join 1PhotoAI today and unleash your creativity.",
         "buttons": [
           {
             "title": "Get Started for Free",
@@ -708,6 +240,16 @@
           }
         ],
         "className": "bg-muted"
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "description": "Got questions? We've got answers.",
+        "items": [
+          { "question": "What is 1photoai?", "answer": "1photoai is an all-in-one platform for creating stunning images and cinematic videos." },
+          { "question": "How do I get started?", "answer": "Simply sign up for a free account and choose your tool." },
+           { "question": "Do you offer a free trial?", "answer": "Yes! You can try 1photoai with our free tier." }
+        ]
       }
     }
   }

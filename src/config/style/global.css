@@ -101,6 +101,16 @@ pre {
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+
+  --animate-scroll: scroll 40s linear infinite;
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 ::view-transition-old(root),
