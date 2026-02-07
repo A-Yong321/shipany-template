@@ -11,11 +11,11 @@ interface ExploreLayoutProps {
  */
 export function ExploreLayout({ children }: ExploreLayoutProps) {
   return (
-    <div className="min-h-screen bg-background pt-16">
-      <div className="flex min-h-[calc(100vh-64px)]">
+    <div className="min-h-screen bg-background">
+      <div className="flex min-h-screen">
         {/* 左侧导航栏 */}
         <aside className="hidden lg:block w-64 xl:w-72 shrink-0 border-r border-border bg-card/30">
-          <div className="sticky top-16 h-[calc(100vh-64px)] overflow-y-auto py-6">
+          <div className="sticky top-0 h-screen overflow-y-auto py-6">
             <ToolSidebar />
           </div>
         </aside>
