@@ -23,6 +23,7 @@
     "searchPlaceholder": "搜索特效...",
     "effectsCount": "{count} 个特效",
     "noEffects": "暂无特效",
-    "noResultsFound": "未找到包含 \"{query}\" 的特效"
+    "noResultsFound": "未找到包含 \"{query}\" 的特效",
+    "usageCount": "{count} 使用"
   }
 }

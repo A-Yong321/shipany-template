@@ -7,7 +7,7 @@ import { ToolContent } from '@/themes/default/blocks/tool-content';
 import { Inspirations } from '@/themes/default/blocks/inspirations';
 import { ToolIntro, ToolFeatures, HowToSection, FAQSection, MoreToolsSection, EffectsGridSection, type EffectsGridSectionProps } from '@/themes/default/blocks/tool-bottom-sections';
 import { type EffectItem } from '@/themes/default/blocks/effect-card';
-import { getToolConfig, tools } from '../../../data/tools-data';
+import { getToolConfig, tools } from '@/data/tools';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;

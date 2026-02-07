@@ -23,6 +23,7 @@
     "searchPlaceholder": "Search effects...",
     "effectsCount": "{count} effects",
     "noEffects": "No effects available",
-    "noResultsFound": "No effects found for \"{query}\""
+    "noResultsFound": "No effects found for \"{query}\"",
+    "usageCount": "{count} uses"
   }
 }

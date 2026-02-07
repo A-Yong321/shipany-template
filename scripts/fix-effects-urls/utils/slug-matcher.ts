@@ -2,7 +2,7 @@
  * Slug matching utilities for finding correct tool slugs
  */
 
-import { Tool, tools } from '../../../../src/data/tools';
+import { Tool, tools } from '../../../src/data/tools';
 
 export interface SlugMatch {
   slug: string;
