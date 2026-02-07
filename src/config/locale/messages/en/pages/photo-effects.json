@@ -22,6 +22,7 @@
       "how_to": {
         "title": "How to Use AI Photo Effects",
         "description": "Create stunning AI photos in 3 simple steps.",
+        "aspectRatio": "aspect-[3/4]",
         "comparisonImages": { 
           "original": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png", 
           "result": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" 

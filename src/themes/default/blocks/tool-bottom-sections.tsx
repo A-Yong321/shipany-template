@@ -39,6 +39,7 @@ export interface HowToSectionProps {
   description: string;
   video?: { src: string; poster?: string };
   comparisonImages?: { original: string; result: string };
+  aspectRatio?: string;
   steps: StepItem[];
   button?: { title: string; url: string };
 }
@@ -151,7 +152,20 @@ export function ToolFeatures({ items }: ToolFeaturesProps) {
 /**
  * How To 使用教程区
  */
-export function HowToSection({ title, description, video, comparisonImages, steps, button }: HowToSectionProps) {
+export interface HowToSectionProps {
+  title: string;
+  description: string;
+  video?: { src: string; poster?: string };
+  comparisonImages?: { original: string; result: string };
+  aspectRatio?: string;
+  steps: StepItem[];
+  button?: { title: string; url: string };
+}
+
+/**
+ * How To 使用教程区
+ */
+export function HowToSection({ title, description, video, comparisonImages, aspectRatio = "aspect-video", steps, button }: HowToSectionProps) {
   const [showOriginal, setShowOriginal] = useState(true);
 
   useEffect(() => {
@@ -172,7 +186,12 @@ export function HowToSection({ title, description, video, comparisonImages, step
 
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           {/* Video / Visual */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 shadow-2xl group">
+          <div className={cn(
+            "relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 shadow-2xl group w-full",
+            aspectRatio,
+            /* If aspect ratio is vertical (3/4 or similar), limit width to avoid it being too huge */
+            aspectRatio?.includes("aspect-[3/4]") || aspectRatio?.includes("aspect-[9/16]") ? "max-w-sm mx-auto" : ""
+          )}>
              {comparisonImages ? (
                <>
                  <Image 
