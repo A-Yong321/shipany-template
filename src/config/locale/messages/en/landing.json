@@ -276,11 +276,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "1photoai",
-      "description": "Professional platform for creating stunning visual content. Transform text into images, generate videos, create AI art and headshots.",
+      "title": "1photo",
+      "description": "1photo is an advanced AI tool that lets<br />you generate stunning AI photos, avatars,<br />and professional headshots in just<br />10 seconds. Choose from 2000+ styles.",
       "logo": {
         "src": "/logo.png",
-        "alt": "1photoai",
+        "alt": "1photo",
         "width": 1024,
         "height": 1024
       },
@@ -289,7 +289,7 @@
     "nav": {
       "items": [
         {
-          "title": "Product",
+          "title": "About",
           "children": [
             {
               "title": "Features",
@@ -297,13 +297,13 @@
               "target": "_self"
             },
             {
-              "title": "Pricing",
-              "url": "/pricing",
+              "title": "Showcases",
+              "url": "/#models-showcase",
               "target": "_self"
             },
             {
-              "title": "Tools",
-              "url": "/tools",
+              "title": "Pricing",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
@@ -312,7 +312,7 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Documentation",
+              "title": "Documents",
               "url": "/docs",
               "target": "_self"
             },
@@ -322,33 +322,8 @@
               "target": "_self"
             },
              {
-              "title": "Help Center",
-              "url": "/help",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Company",
-          "children": [
-            {
-              "title": "About Us",
-              "url": "/about-us",
-              "target": "_self"
-            },
-            {
-              "title": "API Platform",
-              "url": "/api-platform",
-              "target": "_self"
-            },
-             {
-              "title": "Terms",
-              "url": "/terms-of-service",
-              "target": "_self"
-            },
-            {
-              "title": "Privacy",
-              "url": "/privacy-policy",
+              "title": "Chat",
+              "url": "/chat",
               "target": "_self"
             }
           ]
@@ -361,6 +336,12 @@
           "title": "X",
           "icon": "RiTwitterXFill",
           "url": "https://x.com/1photoai",
+          "target": "_blank"
+        },
+        {
+          "title": "Git",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/1photoai",
           "target": "_blank"
         },
         {
@@ -377,6 +358,7 @@
         }
       ]
     },
+    "copyright": "© 2026 1photo, All rights reserved",
     "agreement": {
       "items": [
         {

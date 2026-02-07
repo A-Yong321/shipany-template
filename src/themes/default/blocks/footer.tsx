@@ -1,8 +1,6 @@
 import { Link } from '@/core/i18n/navigation';
 import {
   BrandLogo,
-  BuiltWith,
-  Copyright,
   LocaleSelector,
   ThemeToggler,
 } from '@/shared/blocks/common';
@@ -14,38 +12,45 @@ export function Footer({ footer }: { footer: FooterType }) {
   return (
     <footer
       id={footer.id}
-      className={`py-8 sm:py-8 ${footer.className || ''} overflow-x-hidden`}
-      // overflow-x-hidden防止-footer-撑出水平滚动条
+      className={`py-12 sm:py-16 ${footer.className || ''} overflow-x-hidden border-t bg-background`}
+      style={{
+        borderTopColor: 'rgba(255,255,255,0.05)',
+      }}
     >
-      <div className="container space-y-8 overflow-x-hidden">
-        <div className="grid min-w-0 gap-12 md:grid-cols-5">
-          <div className="min-w-0 space-y-4 break-words md:col-span-2 md:space-y-6">
-            {footer.brand ? <BrandLogo brand={footer.brand} /> : null}
-
+      <div className="container space-y-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 lg:gap-24">
+          {/* Left Column: Brand & Description */}
+          <div className="md:col-span-5 space-y-6">
+            <div className="flex items-center gap-2">
+              <SmartIcon name="RiCompassesLine" className="w-6 h-6 text-primary" />
+             <span className="font-semibold text-lg">{footer.brand?.title || "1 photo"}</span>
+            </div>
+            
             {footer.brand?.description ? (
               <p
-                className="text-muted-foreground text-sm text-balance break-words"
+                className="text-muted-foreground text-sm leading-relaxed max-w-sm"
                 dangerouslySetInnerHTML={{ __html: footer.brand.description }}
               />
             ) : null}
           </div>
 
-          <div className="col-span-3 grid min-w-0 gap-6 sm:grid-cols-3">
-            {footer.nav?.items.map((item, idx) => (
-              <div key={idx} className="min-w-0 space-y-4 text-sm break-words">
-                <span className="block font-medium break-words">
+          {/* Right Column: Navigation */}
+          <div className="md:col-span-7 flex flex-wrap justify-between md:justify-end gap-16 md:gap-32">
+             {footer.nav?.items.map((item, idx) => (
+              <div key={idx} className="space-y-6">
+                <span className="block font-medium text-foreground">
                   {item.title}
                 </span>
 
-                <div className="flex min-w-0 flex-wrap gap-4 sm:flex-col">
+                <div className="flex flex-col gap-4">
                   {item.children?.map((subItem, iidx) => (
                     <Link
                       key={iidx}
                       href={subItem.url || ''}
                       target={subItem.target || ''}
-                      className="text-muted-foreground hover:text-primary block break-words duration-150"
+                      className="text-muted-foreground hover:text-primary text-sm font-medium transition-colors"
                     >
-                      <span className="break-words">{subItem.title || ''}</span>
+                      {subItem.title || ''}
                     </Link>
                   ))}
                 </div>
@@ -54,63 +59,60 @@ export function Footer({ footer }: { footer: FooterType }) {
           </div>
         </div>
 
-        <div className="flex min-w-0 flex-wrap items-center gap-4 sm:gap-8">
-          {footer.show_built_with !== false ? <BuiltWith /> : null}
-          <div className="min-w-0 flex-1" />
-          {footer.show_theme !== false ? <ThemeToggler type="toggle" /> : null}
-          {footer.show_locale !== false ? (
-            <LocaleSelector type="button" />
-          ) : null}
+        {/* Separator / Bottom Actions */}
+        <div className="flex justify-end gap-4">
+            {footer.show_theme !== false ? <ThemeToggler type="toggle" /> : null}
+            {footer.show_locale !== false ? (
+                <LocaleSelector type="button" />
+            ) : null}
         </div>
 
-        <div
-          aria-hidden
-          className="h-px min-w-0 [background-image:linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] bg-[length:6px_1px] bg-repeat-x opacity-25"
+        {/* Footer Bottom: Copyright, Policies, Social */}
+         <div
+          className="h-px w-full bg-border opacity-25"
         />
-        <div className="flex min-w-0 flex-wrap justify-between gap-8">
-          {footer.copyright ? (
-            <p
-              className="text-muted-foreground text-sm text-balance break-words"
-              dangerouslySetInnerHTML={{ __html: footer.copyright }}
-            />
-          ) : footer.brand ? (
-            <Copyright brand={footer.brand} />
-          ) : null}
 
-          <div className="min-w-0 flex-1"></div>
-
-          {footer.agreement ? (
-            <div className="flex min-w-0 flex-wrap items-center gap-4">
-              {footer.agreement?.items.map((item: NavItem, index: number) => (
-                <Link
-                  key={index}
-                  href={item.url || ''}
-                  target={item.target || ''}
-                  className="text-muted-foreground hover:text-primary block text-xs break-words underline duration-150"
-                >
-                  {item.title || ''}
-                </Link>
-              ))}
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 pt-2">
+            {/* Copyright */}
+            <div className="text-muted-foreground text-xs font-medium">
+               {footer.copyright && <span dangerouslySetInnerHTML={{ __html: footer.copyright }}></span>} 
             </div>
-          ) : null}
 
-          {footer.social ? (
-            <div className="flex min-w-0 flex-wrap items-center gap-2">
-              {footer.social?.items.map((item: NavItem, index) => (
-                <Link
-                  key={index}
-                  href={item.url || ''}
-                  target={item.target || ''}
-                  className="text-muted-foreground hover:text-primary bg-background block cursor-pointer rounded-full p-2 duration-150"
-                  aria-label={item.title || 'Social media link'}
-                >
-                  {item.icon && (
-                    <SmartIcon name={item.icon as string} size={20} />
-                  )}
-                </Link>
-              ))}
+            {/* Right Side: Policies & Social */}
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                {footer.agreement ? (
+                    <div className="flex gap-8">
+                    {footer.agreement?.items.map((item: NavItem, index: number) => (
+                        <Link
+                        key={index}
+                        href={item.url || ''}
+                        target={item.target || ''}
+                        className="text-muted-foreground hover:text-primary text-xs font-medium transition-colors underline decoration-muted-foreground/50 hover:decoration-primary"
+                        >
+                        {item.title || ''}
+                        </Link>
+                    ))}
+                    </div>
+                ) : null}
+
+                {footer.social ? (
+                    <div className="flex items-center gap-6">
+                    {footer.social?.items.map((item: NavItem, index) => (
+                        <Link
+                        key={index}
+                        href={item.url || ''}
+                        target={item.target || ''}
+                        className="text-muted-foreground hover:text-white transition-colors"
+                        aria-label={item.title || 'Social media link'}
+                        >
+                        {item.icon && (
+                            <SmartIcon name={item.icon as string} size={18} />
+                        )}
+                        </Link>
+                    ))}
+                    </div>
+                ) : null}
             </div>
-          ) : null}
         </div>
       </div>
     </footer>

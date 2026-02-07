@@ -8,7 +8,7 @@
       "tools_grid",
       "effects",
       "stats",
-      "faq"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -414,25 +414,13 @@
           }
         ]
       },
-      "faq": {
-        "id": "faq",
-        "title": "Frequently Asked Questions",
-        "description": "Got questions? We've got answers.",
-        "items": [
-          {
-            "question": "What is 1photoai?",
-            "answer": "1photoai is an all-in-one platform for creating stunning images and cinematic videos."
-          },
-          {
-            "question": "How do I get started?",
-            "answer": "Simply sign up for a free account and choose your tool."
-          },
-          {
-            "question": "Do you offer a free trial?",
-            "answer": "Yes! You can try 1photoai with our free tier."
-          }
-        ]
+      "cta": {
+        "block": "cta",
+        "id": "cta",
+        "title": "Discover a New You with 1PhotoAI",
+        "description": "Join 150,000+ users and start creating stunning AI photos today."
       }
     }
+
   }
 }
