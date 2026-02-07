@@ -54,7 +54,7 @@ export function AIStyleEffects({
   const tabs: Tab[] = currentEffectsT.raw('page.sections.effects.tabs') || [];
 
   // 获取 How To 和 FAQ 数据
-  const howToData = t.raw('page.sections.how_to');
+  const howToData = currentEffectsT.raw('page.sections.how_to') || t.raw('page.sections.how_to');
   const faqData = t.raw('page.sections.faq');
 
   // 获取当前分类的effects并应用搜索过滤

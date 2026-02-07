@@ -19,6 +19,28 @@
         "background_image": {},
         "description": "Transform your photos with viral AI video effects like AI kissing, AI muscle, AI hug, and more."
       },
+      "how_to": {
+        "title": "How to Use AI Video Effects",
+        "description": "Create viral AI videos in 3 simple steps.",
+        "video": { 
+          "src": "/img_video/videos/AiKissing_正常接吻.mp4", 
+          "poster": "/img_video/imgs/AI-Kissing_正常接吻_2.png" 
+        },
+        "steps": [
+          {
+            "title": "Step 1: Choose an Effect",
+            "description": "Browse our library of viral AI video effects. Select the one that matches your creative vision."
+          },
+          {
+            "title": "Step 2: Upload Your Photo",
+            "description": "Upload a clear photo. For best results, ensure the subject is well-lit and clearly visible."
+          },
+          {
+            "title": "Step 3: Generate & Share",
+            "description": "Click generate and watch the AI magic happen. Download your video and share it with friends!"
+          }
+        ]
+      },
       "effects": {
         "block": "effects-section",
         "id": "video-effects-list",

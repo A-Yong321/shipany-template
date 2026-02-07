@@ -19,6 +19,28 @@
         "background_image": {},
         "description": "Bring your photos to life with professional AI photo effects. From AI hugs to celebrity selfies, create stunning visual content in seconds."
       },
+      "how_to": {
+        "title": "How to Use AI Photo Effects",
+        "description": "Create stunning AI photos in 3 simple steps.",
+        "comparisonImages": { 
+          "original": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png", 
+          "result": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" 
+        },
+        "steps": [
+          {
+            "title": "Step 1: Choose an Effect",
+            "description": "Browse our library of trending AI photo effects. Select the one that matches your creative vision."
+          },
+          {
+            "title": "Step 2: Upload Your Photo",
+            "description": "Upload a clear photo. For best results, ensure the subject is well-lit and clearly visible."
+          },
+          {
+            "title": "Step 3: Generate & Share",
+            "description": "Click generate and watch the AI magic happen. Download your photo and share it with friends!"
+          }
+        ]
+      },
       "effects": {
         "block": "effects-section",
         "id": "photo-effects-list",

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Play, ChevronRight, ChevronDown, Plus, Minus } from 'lucide-react';
@@ -37,6 +38,7 @@ export interface HowToSectionProps {
   title: string;
   description: string;
   video?: { src: string; poster?: string };
+  comparisonImages?: { original: string; result: string };
   steps: StepItem[];
   button?: { title: string; url: string };
 }
@@ -149,7 +151,17 @@ export function ToolFeatures({ items }: ToolFeaturesProps) {
 /**
  * How To 使用教程区
  */
-export function HowToSection({ title, description, video, steps, button }: HowToSectionProps) {
+export function HowToSection({ title, description, video, comparisonImages, steps, button }: HowToSectionProps) {
+  const [showOriginal, setShowOriginal] = useState(true);
+
+  useEffect(() => {
+    if (!comparisonImages) return;
+    const interval = setInterval(() => {
+      setShowOriginal(prev => !prev);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [comparisonImages]);
+
   return (
     <section className="bg-black py-20 text-white border-t border-white/5">
       <div className="container mx-auto px-4">
@@ -158,23 +170,48 @@ export function HowToSection({ title, description, video, steps, button }: HowTo
           <p className="text-gray-400">{description}</p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-2 items-center">
           {/* Video / Visual */}
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 shadow-2xl group">
-             {video?.poster && (
-               <Image 
-                 src={video.poster} 
-                 alt="How to tutorial" 
-                 fill 
-                 className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+             {comparisonImages ? (
+               <>
+                 <Image 
+                   src={showOriginal ? comparisonImages.original : comparisonImages.result}
+                   alt="How to tutorial"
+                   fill
+                   className="object-cover transition-all duration-700" 
+                 />
+                 <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium border border-white/10 uppercase tracking-wider">
+                   {showOriginal ? 'Original' : 'Effect'}
+                 </div>
+               </>
+             ) : video?.src ? (
+               <video 
+                 src={video.src}
+                 poster={video.poster}
+                 autoPlay
+                 loop
+                 muted
+                 playsInline
+                 className="w-full h-full object-cover"
                />
+             ) : (
+               <>
+                 {video?.poster && (
+                   <Image 
+                     src={video.poster} 
+                     alt="How to tutorial" 
+                     fill 
+                     className="object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                   />
+                 )}
+                 <div className="absolute inset-0 flex items-center justify-center">
+                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-lg text-white">
+                     <Play className="ml-1 fill-white" size={32} />
+                   </div>
+                 </div>
+               </>
              )}
-             <div className="absolute inset-0 flex items-center justify-center">
-               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-lg text-white">
-                 <Play className="ml-1 fill-white" size={32} />
-               </div>
-             </div>
-             {/* Note: Actual video player simplified to visual mock for now */}
           </div>
 
           {/* Steps */}
