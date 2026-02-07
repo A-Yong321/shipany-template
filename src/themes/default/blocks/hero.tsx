@@ -71,9 +71,35 @@ export function Hero({
       <div className="relative mx-auto max-w-5xl px-4 text-center z-20">
         
         {/* Main Title */}
-        <h1 className="text-foreground text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance mb-12 drop-shadow-sm">
+        <h1 className="text-foreground text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance mb-6 drop-shadow-sm">
             {section.title || "Your One-Stop AI Creation Platform"}
         </h1>
+
+        <p className="text-muted-foreground text-lg md:text-xl font-light text-balance mb-8 max-w-3xl mx-auto leading-relaxed">
+            {section.description}
+        </p>
+
+        {section.buttons && section.buttons.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+                {section.buttons.map((button, idx) => (
+                    <Link
+                        key={idx}
+                        href={button.url || '#'}
+                        target={button.target || '_self'}
+                        className={cn(
+                            "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+                            "h-11 px-8 rounded-full",
+                            button.primary 
+                                ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25" 
+                                : "bg-lime-400 text-black hover:bg-lime-500 shadow-lg shadow-lime-400/20"
+                        )}
+                    >
+                        {button.icon && <SmartIcon name={button.icon as string} className="mr-2 h-4 w-4" />}
+                        {button.title}
+                    </Link>
+                ))}
+            </div>
+        )}
 
 
 

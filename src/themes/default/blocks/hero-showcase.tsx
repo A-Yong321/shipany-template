@@ -59,7 +59,7 @@ export function HeroShowcase({ showcase }: { showcase: { items: ShowcaseItem[] }
         `}</style>
          {items.map((item, idx) => (
            // Using index in key because we have duplicates
-           <SwiperSlide key={`${idx}-${item.alt}`} className="!w-[140px] !h-[210px] md:!w-[200px] md:!h-[300px]">
+           <SwiperSlide key={`${idx}-${item.alt}`} className="!w-[100px] !h-[150px] md:!w-[140px] md:!h-[210px]">
              <ShowcaseCard item={item} />
            </SwiperSlide>
          ))}

@@ -249,6 +249,28 @@
     "show_locale": true,
     "topbanner": {
       "text": "🎉 Welcome to 1photoai! Start creating stunning visuals today."
+    },
+    "hero": {
+      "title": "All-in-One AI Image & Video Creation Platform",
+      "description": "Professional platform for creating stunning visual content. Transform text into images, generate videos, create AI art and headshots. Free tools for photo editing, text to image, and image to video conversion.",
+      "buttons": [
+        {
+          "title": "Creative Video",
+          "url": "/text-to-video",
+          "icon": "Video",
+          "primary": false
+        },
+        {
+          "title": "Creative Image",
+          "url": "/text-to-image",
+          "icon": "Image",
+          "primary": false
+        }
+      ],
+      "image": {
+        "src": "/hero.png",
+        "alt": "1photoai"
+      }
     }
   },
   "footer": {

@@ -74,6 +74,7 @@ export interface Search {
 export interface Button extends NavItem {
   size?: 'default' | 'sm' | 'lg' | 'icon';
   variant?: 'default' | 'outline' | 'ghost' | 'link' | 'destructive';
+  primary?: boolean;
   onClick?: () => void;
 }
 
