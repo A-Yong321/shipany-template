@@ -8,7 +8,6 @@
       "tools_grid",
       "effects",
       "stats",
-      "cta",
       "faq"
     ],
     "sections": {
@@ -99,17 +98,20 @@
         "id": "tools-grid",
         "title": "14+ Powerful Image Editing Tools with 1Photo AI",
         "description": "Discover our suite of powerful AI tools designed to enhance your photos and videos.",
-        "items": [
-            { "title": "Remove Background", "icon": "RiEraserLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_额头之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_额头之吻_2.png" },
-            { "title": "AI Image Enhancer", "icon": "RiMagicLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png" },
-            { "title": "Photo to Cartoon", "icon": "RiUserSmileLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png" },
-            { "title": "Face Swap", "icon": "RiUserSharedLine", "url": "/image-to-image", "image": "/img_video/imgs/角色切换_审讯室_1.png", "hover_image": "/img_video/imgs/角色切换_审讯室_2.png" },
-            { "title": "Old Photo Restore", "icon": "RiHistoryLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Fake-Date_美国女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_美国女友_2.png" },
-            { "title": "AI Hairstyle", "icon": "RiScissorsCutLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png" },
-            { "title": "AI Filter", "icon": "RiPaletteLine", "url": "/image-to-image", "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_正常接吻_2.png" },
-            { "title": "Object Remover", "icon": "RiDeleteBinLine", "url": "/image-to-image", "image": "/img_video/imgs/Hug_拥抱_1.png", "hover_image": "/img_video/imgs/Hug_拥抱_2.png" },
-            { "title": "AI Colorize", "icon": "RiBrushLine", "url": "/image-to-image", "image": "/img_video/imgs/Hug_侧身依抱_1.png", "hover_image": "/img_video/imgs/Hug_侧身依抱_2.png" },
-             { "title": "More Tools", "icon": "RiMoreLine", "url": "/tools", "image": "/img_video/imgs/Hug_公主抱_1.png", "hover_image": "/img_video/imgs/Hug_公主抱_2.png" }
+        "view_more_url": "/tools?type=video",
+        "video_items": [
+            { "title": "Text to Video", "url": "/text-to-video", "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_正常接吻_2.png" },
+            { "title": "Image to Video", "url": "/image-to-video", "image": "/img_video/imgs/Muscle_肌肉展示_1.png", "hover_image": "/img_video/imgs/Muscle_肌肉展示_2.png" },
+            { "title": "Video Enhancer", "url": "/video-enhancer", "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png", "hover_image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+            { "title": "AI Hug Video", "url": "/video-effects/ai-hug", "image": "/img_video/imgs/Hug_侧身依抱_1.png", "hover_image": "/img_video/imgs/Hug_侧身依抱_2.png" },
+            { "title": "AI Kiss Video", "url": "/video-effects/ai-kissing", "image": "/img_video/imgs/AI-Kissing_法式接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_法式接吻_2.png" }
+        ],
+         "photo_items": [
+            { "title": "Remove Background", "url": "/remove-background", "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_中国女友_2.png" },
+            { "title": "AI Image Enhancer", "url": "/image-enhancer", "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png" },
+            { "title": "Photo to Cartoon", "url": "/photo-to-cartoon", "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png" },
+            { "title": "Face Swap", "url": "/face-swap", "image": "/img_video/imgs/角色切换_审讯室_1.png", "hover_image": "/img_video/imgs/角色切换_审讯室_2.png" },
+            { "title": "Object Remover", "url": "/object-remover", "image": "/img_video/imgs/Hug_拥抱_1.png", "hover_image": "/img_video/imgs/Hug_拥抱_2.png" }
         ]
       },
       "effects": {
@@ -226,20 +228,6 @@
           { "quote": "The best AI video generator I've used. Hands down.", "user": "Mike T.", "role": "Filmmaker" },
           { "quote": "Absolutely love the photo effects. So realistic!", "user": "Emily R.", "role": "Designer" }
         ]
-      },
-      "cta": {
-        "id": "cta",
-        "title": "Discover a New You with 1PhotoAI",
-        "description": "Join 1PhotoAI today and unleash your creativity.",
-        "buttons": [
-          {
-            "title": "Get Started for Free",
-            "url": "/login",
-            "target": "_self",
-            "icon": "Zap"
-          }
-        ],
-        "className": "bg-muted"
       },
       "faq": {
         "id": "faq",

@@ -29,7 +29,7 @@ export function Hero({
     <section
       id={section.id}
       className={cn(
-        `pt-20 pb-8 md:pt-32 md:pb-12 overflow-visible`, // Reduced top padding to bring content closer to nav
+        `min-h-screen flex flex-col justify-center pt-20 pb-20 md:pt-32 md:pb-32 overflow-visible relative`, 
         section.className,
         className
       )}
