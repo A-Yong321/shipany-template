@@ -13,9 +13,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "一张照片，无限可能",
-        "highlight_text": "无限可能",
-        "description": "使用 1PhotoAI 释放您的创造力。体验我们的旗舰模型及行业所有顶尖模型。",
+        "title": "一体化 AI 图像与视频创作平台",
+        "highlight_text": "创作平台",
+        "description": "专业的视觉内容创作平台。支持文本转图像、视频生成、AI 艺术创作及头像生成。提供免费的照片编辑、文本转图像及图片转视频工具。",
         "announcement": {
           "badge": "全新",
           "title": "🎉 享受限时 50% 优惠！",
@@ -25,6 +25,20 @@
           "src": "/imgs/bg/tree.jpg",
           "alt": "hero 背景"
         },
+        "buttons": [
+          {
+            "title": "创意视频",
+            "url": "/text-to-video",
+            "icon": "RiVideoAddLine",
+            "primary": false
+          },
+          {
+            "title": "创意图像",
+            "url": "/text-to-image",
+            "icon": "RiImageAddLine",
+            "primary": false
+          }
+        ],
         "showcase": {
           "items": [
              { "src": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "video": "/img_video/videos/AiKissing_正常接吻.mp4", "alt": "正常接吻", "url": "/video-effects/ai-kissing?type=正常接吻" },
@@ -39,16 +53,15 @@
              { "src": "/img_video/imgs/Hug_背后环抱_1.png", "video": "/img_video/videos/hug_背后环抱.mp4", "alt": "背后环抱", "url": "/video-effects/ai-hug?type=背后环抱" },
              { "src": "/img_video/imgs/Pregnant-AI_怀孕_1.png", "video": "/img_video/videos/PregnantAI_怀孕.mp4", "alt": "怀孕", "url": "/photo-effects/ai-pregnant-photo?type=怀孕" },
              { "src": "/img_video/imgs/AI-Kissing_法式接吻_1.png", "video": "/img_video/videos/AIKissing法式接吻.mp4", "alt": "法式接吻", "url": "/video-effects/ai-kissing?type=法式接吻" }
+
           ]
         }
       },
-
       "introduce": {
         "block": "models-section",
         "id": "models-showcase",
         "title": "10 秒生成 AI 照片",
         "description": "1PhotoAI 是一款 AI 照片生成器，只需 10 秒即可提供专业的高质量职业照。从增强您的职业社交网络资料，到生成独特的社交媒体头像或动漫图像。",
-
         "items": [
           {
             "id": "video-generators",
@@ -497,18 +510,68 @@
         "description": "探索我们需要增强您的照片和视频的强大 AI 工具套件。",
         "view_more_url": "/tools?type=video",
         "video_items": [
-            { "title": "文字转视频", "url": "/text-to-video", "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_正常接吻_2.png" },
-            { "title": "图片转视频", "url": "/image-to-video", "image": "/img_video/imgs/Muscle_肌肉展示_1.png", "hover_image": "/img_video/imgs/Muscle_肌肉展示_2.png" },
-            { "title": "视频增强", "url": "/video-enhancer", "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png", "hover_image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
-            { "title": "AI 拥抱视频", "url": "/video-effects/ai-hug", "image": "/img_video/imgs/Hug_侧身依抱_1.png", "hover_image": "/img_video/imgs/Hug_侧身依抱_2.png" },
-            { "title": "AI 接吻视频", "url": "/video-effects/ai-kissing", "image": "/img_video/imgs/AI-Kissing_法式接吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_法式接吻_2.png" }
+          {
+            "title": "文字转视频",
+            "url": "/text-to-video",
+            "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
+            "hover_image": "/img_video/imgs/AI-Kissing_正常接吻_2.png"
+          },
+          {
+            "title": "图片转视频",
+            "url": "/image-to-video",
+            "image": "/img_video/imgs/Muscle_肌肉展示_1.png",
+            "hover_image": "/img_video/imgs/Muscle_肌肉展示_2.png"
+          },
+          {
+            "title": "视频增强",
+            "url": "/video-enhancer",
+            "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
+            "hover_image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+          },
+          {
+            "title": "AI 拥抱视频",
+            "url": "/video-effects/ai-hug",
+            "image": "/img_video/imgs/Hug_侧身依抱_1.png",
+            "hover_image": "/img_video/imgs/Hug_侧身依抱_2.png"
+          },
+          {
+            "title": "AI 接吻视频",
+            "url": "/video-effects/ai-kissing",
+            "image": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
+            "hover_image": "/img_video/imgs/AI-Kissing_法式接吻_2.png"
+          }
         ],
-         "photo_items": [
-            { "title": "移除背景", "url": "/remove-background", "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_中国女友_2.png" },
-            { "title": "AI 图像增强", "url": "/image-enhancer", "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png", "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png" },
-            { "title": "照片转卡通", "url": "/photo-to-cartoon", "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png", "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png" },
-            { "title": "换脸", "url": "/face-swap", "image": "/img_video/imgs/角色切换_审讯室_1.png", "hover_image": "/img_video/imgs/角色切换_审讯室_2.png" },
-            { "title": "物体移除", "url": "/object-remover", "image": "/img_video/imgs/Hug_拥抱_1.png", "hover_image": "/img_video/imgs/Hug_拥抱_2.png" }
+        "photo_items": [
+          {
+            "title": "移除背景",
+            "url": "/remove-background",
+            "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
+            "hover_image": "/img_video/imgs/AI-Fake-Date_中国女友_2.png"
+          },
+          {
+            "title": "AI 图像增强",
+            "url": "/image-enhancer",
+            "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
+            "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png"
+          },
+          {
+            "title": "照片转卡通",
+            "url": "/photo-to-cartoon",
+            "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
+            "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png"
+          },
+          {
+            "title": "换脸",
+            "url": "/face-swap",
+            "image": "/img_video/imgs/角色切换_审讯室_1.png",
+            "hover_image": "/img_video/imgs/角色切换_审讯室_2.png"
+          },
+          {
+            "title": "物体移除",
+            "url": "/object-remover",
+            "image": "/img_video/imgs/Hug_拥抱_1.png",
+            "hover_image": "/img_video/imgs/Hug_拥抱_2.png"
+          }
         ]
       },
       "stats": {
@@ -516,9 +579,21 @@
         "id": "stats",
         "title": "受到 150,000+ 用户的喜爱",
         "items": [
-          { "quote": "起初我很怀疑，但 1PhotoAI 彻底震撼了我！", "user": "Sarah J.", "role": "内容创作者" },
-          { "quote": "我用过的最好的 AI 视频生成器。毫无疑问。", "user": "Mike T.", "role": "电影制作人" },
-          { "quote": "绝对喜欢这些照片特效。太逼真了！", "user": "Emily R.", "role": "设计师" }
+          {
+            "quote": "起初我很怀疑，但 1PhotoAI 彻底震撼了我！",
+            "user": "Sarah J.",
+            "role": "内容创作者"
+          },
+          {
+            "quote": "我用过的最好的 AI 视频生成器。毫无疑问。",
+            "user": "Mike T.",
+            "role": "电影制作人"
+          },
+          {
+            "quote": "绝对喜欢这些照片特效。太逼真了！",
+            "user": "Emily R.",
+            "role": "设计师"
+          }
         ]
       },
       "faq": {

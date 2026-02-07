@@ -2,8 +2,9 @@
 
 import { useState, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { ToolDetailLayout } from './tool-detail-layout';
+import { ToolSidebar } from './tool-sidebar';
 import Link from 'next/link';
+import { cn } from '@/shared/lib/utils';
 import { HowToSection, FAQSection } from './tool-bottom-sections';
 
 interface Effect {
@@ -30,10 +31,16 @@ interface AIStyleEffectsProps {
     photo_effects_key?: string;
     video_effects_key?: string;
   };
+  defaultTab?: 'photo' | 'video';
+  layout?: 'sidebar' | 'top-nav';
 }
 
-export function AIStyleEffects({ section }: AIStyleEffectsProps) {
-  const [activeMainTab, setActiveMainTab] = useState<'photo' | 'video'>('photo');
+export function AIStyleEffects({ 
+  section,
+  defaultTab = 'photo',
+  layout = 'sidebar'
+}: AIStyleEffectsProps) {
+  const [activeMainTab, setActiveMainTab] = useState<'photo' | 'video'>(defaultTab);
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -90,231 +97,252 @@ export function AIStyleEffects({ section }: AIStyleEffectsProps) {
     }
   };
 
-  // 主内容区域 - 显示搜索框、大标签和分类标签
-  const mainContent = (
-    <div className="space-y-6">
-      {/* 搜索框 */}
-      <div className="relative">
-        <div className="relative">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder={t('ui.searchPlaceholder')}
-            className="w-full px-4 py-3 pl-11 pr-10 rounded-xl bg-secondary/50 border border-border/50 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all text-foreground placeholder:text-muted-foreground"
-          />
-          {/* 搜索图标 */}
-          <svg
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-          {/* 清空按钮 */}
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-secondary/80 transition-colors"
-            >
-              <svg
-                className="w-4 h-4 text-muted-foreground"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          )}
-        </div>
-      </div>
 
-      {/* 一级标签 - 大按钮样式 */}
-      <div className="flex gap-4">
-        <button
-          onClick={() => handleMainTabChange('photo')}
-          className={`flex-1 py-4 px-6 rounded-xl font-bold text-lg transition-all shadow-sm ${
-            activeMainTab === 'photo'
-              ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-blue-500/50'
-              : 'bg-secondary/50 text-secondary-foreground hover:bg-secondary/70'
-          }`}
-        >
-          Photo
-        </button>
-        <button
-          onClick={() => handleMainTabChange('video')}
-          className={`flex-1 py-4 px-6 rounded-xl font-bold text-lg transition-all shadow-sm ${
-            activeMainTab === 'video'
-              ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-blue-500/50'
-              : 'bg-secondary/50 text-secondary-foreground hover:bg-secondary/70'
-          }`}
-        >
-          Video
-        </button>
-      </div>
 
-      {/* 二级分类标签 - 自动换行 */}
-      <div className="flex flex-wrap gap-2">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => handleCategoryChange(tab.id)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-              activeCategory === tab.id
-                ? 'bg-blue-500 text-white shadow-md'
-                : 'bg-secondary/60 text-secondary-foreground hover:bg-secondary/80'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+  // Main Layout Structure
+  return (
+    <div className="flex min-h-screen bg-background">
+      {/* Left Sidebar - Desktop (Only if layout is 'sidebar') */}
+      {layout === 'sidebar' && (
+        <aside className="hidden lg:block w-64 xl:w-72 shrink-0 border-r border-border bg-card/30">
+          <div className="sticky top-0 h-screen overflow-y-auto py-6">
+            <ToolSidebar />
+          </div>
+        </aside>
+      )}
 
-      {/* 当前分类信息 */}
-      <div className="pt-2">
-        <p className="text-sm text-muted-foreground">
-          {t('ui.effectsCount', { count: currentEffects.length })}
-        </p>
-      </div>
-    </div>
-  );
+      {/* Main Content Area */}
+      <main className="flex-1 min-w-0">
+        <div className={cn(
+          "container mx-auto space-y-8",
+          layout === 'sidebar' ? "p-6 lg:p-10 max-w-[1600px]" : "pt-32 px-6 lg:px-10 max-w-7xl"
+        )}>
+          
+          {/* Header Section */}
+          {layout === 'top-nav' ? (
+            // Top Nav Layout Header
+            <div className="flex flex-col items-center gap-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <div className="text-center space-y-4 max-w-3xl">
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70">
+                  {section.title}
+                </h1>
+                <p className="text-xl text-muted-foreground font-medium">
+                  {section.description}
+                </p>
+              </div>
 
-  // 右侧Effects网格
-  const effectsGrid = (
-    <div className="space-y-4">
-      <h2 className="text-lg font-bold text-foreground">
-        {tabs.find(tab => tab.id === activeCategory)?.label || '全部特效'}
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-4">
-        {currentEffects.map((effect) => (
-          <Link
-            key={effect.id}
-            href={getEncodedUrl(effect.url)}
-            className="group relative bg-card rounded-xl overflow-hidden border border-border/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
-          >
-            {/* 效果图片或视频 */}
-            <div className="aspect-[4/5] relative overflow-hidden bg-gradient-to-br from-muted to-muted/50">
-              {effect.video ? (
-                <video
-                  src={effect.video}
-                  className="w-full h-full object-cover"
-                  muted
-                  loop
-                  playsInline
-                  onMouseEnter={(e) => e.currentTarget.play()}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.pause();
-                    e.currentTarget.currentTime = 0;
-                  }}
-                />
-              ) : (
-                <>
-                  {/* Photo Effects: Hover Comparison */}
-                  {/* Default Image (Result) */}
-                  <img
-                    src={effect.image.src}
-                    alt={effect.image.alt}
-                    className={`w-full h-full object-cover transition-opacity duration-500 ${effect.beforeImage ? 'group-hover:opacity-0' : 'group-hover:scale-110'}`}
-                    loading="lazy"
-                  />
-                  
-                  {/* Before Image (Original) - Shown on Hover */}
-                  {effect.beforeImage && (
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                         <img
-                            src={effect.beforeImage.src}
-                            alt={effect.beforeImage.alt}
-                            className="w-full h-full object-cover"
-                            loading="lazy"
-                         />
-                         <div className="absolute top-2 left-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm">
-                            Original
-                         </div>
-                    </div>
+              {/* Main Tabs (Photo/Video) - Centered */}
+              <div className="flex p-1.5 bg-secondary/50 backdrop-blur-sm rounded-full border border-border/50">
+                <button
+                  onClick={() => handleMainTabChange('video')}
+                  className={cn(
+                    "px-8 py-3 rounded-full font-bold text-lg transition-all duration-300",
+                    activeMainTab === 'video'
+                      ? "bg-background text-foreground shadow-lg scale-105"
+                      : "text-muted-foreground hover:text-foreground"
                   )}
-
-                  {/* Result Label - Shown by default */}
-                  {effect.beforeImage && (
-                     <div className="absolute top-2 left-2 bg-blue-600/80 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm group-hover:opacity-0 transition-opacity duration-300">
-                        Result
-                     </div>
+                >
+                  Video Effects
+                </button>
+                <button
+                  onClick={() => handleMainTabChange('photo')}
+                  className={cn(
+                    "px-8 py-3 rounded-full font-bold text-lg transition-all duration-300",
+                    activeMainTab === 'photo'
+                      ? "bg-background text-foreground shadow-lg scale-105"
+                      : "text-muted-foreground hover:text-foreground"
                   )}
-                </>
-              )}
-              
-              {/* HOT标签 - 右上角 */}
-              {effect.badge && (
-                <div className="absolute top-3 right-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-lg z-10">
-                  {effect.badge}
-                </div>
-              )}
-
-              {/* 播放按钮覆盖层 - 只在视频或非悬停对比图片时显示增强交互感 */}
-              <div className={`absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${effect.beforeImage ? 'hidden' : ''}`}>
-                <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                  <svg className="w-6 h-6 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </div>
+                >
+                  Photo Effects
+                </button>
               </div>
             </div>
-
-            {/* 效果信息 */}
-            <div className="p-3 bg-card relative z-20">
-              <h3 className="font-semibold text-sm mb-1 group-hover:text-blue-500 transition-colors line-clamp-1">
-                {effect.title}
-              </h3>
-              <p className="text-muted-foreground text-xs flex items-center gap-1">
-                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"/>
+          ) : (
+            // Sidebar Layout Header
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-border/40 pb-6">
+              <h1 className="text-3xl font-bold">{section.title}</h1>
+              {/* Search is handled below for top-nav, but sidebar has it here usually. 
+                  Let's unify search placement or keep sidebar's here if preferred. 
+                  For now keeping sidebar search here as per previous code. */}
+               <div className="relative w-full md:w-80">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={t('ui.searchPlaceholder')}
+                  className="w-full px-4 py-2.5 pl-10 pr-10 rounded-xl bg-secondary/50 border border-border/50 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/10 transition-all"
+                />
+                <svg
+                  className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
-                {t('ui.usageCount', { count: effect.count })}
-              </p>
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded-full hover:bg-secondary/80 transition-colors"
+                  >
+                    <svg className="w-4 h-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                )}
+              </div>
             </div>
-          </Link>
-        ))}
-      </div>
+          )}
 
-      {/* 空状态 */}
-      {currentEffects.length === 0 && (
-        <div className="text-center py-16">
-          <div className="text-4xl mb-4">
-            {searchQuery ? '🔍' : '🎨'}
+          {/* Filters & Content Area */}
+          <div className="flex flex-col gap-6">
+            
+            {/* Category Filter Bar */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              {/* Categories - Left Aligned */}
+              <div className="flex flex-wrap gap-2">
+                 {/* Special "All" Tab style if needed, or just map all */}
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleCategoryChange(tab.id)}
+                    className={cn(
+                      "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border",
+                      activeCategory === tab.id
+                        ? "bg-foreground text-background border-foreground shadow-md"
+                        : "bg-background text-muted-foreground border-border hover:border-foreground/50 hover:text-foreground"
+                    )}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+
+               {/* Search for Top-Nav Layout (placed on the right of categories line) */}
+               {layout === 'top-nav' && (
+                  <div className="relative w-full md:w-64 shrink-0">
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder={t('ui.searchPlaceholder')}
+                      className="w-full px-4 py-2 pl-9 rounded-full bg-secondary/30 border border-border/50 focus:border-foreground/30 focus:outline-none focus:ring-1 focus:ring-foreground/20 transition-all text-sm"
+                    />
+                    <svg
+                      className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+               )}
+            </div>
+
+            {/* Results Grid */}
+            <div className="space-y-6">
+               <div className="flex items-center justify-between">
+                 <h2 className="text-lg font-semibold flex items-center gap-2">
+                    {activeCategory === 'all' ? 'All Effects' : tabs.find(t => t.id === activeCategory)?.label}
+                    <span className="text-sm font-normal text-muted-foreground px-2 py-0.5 bg-secondary rounded-full">
+                      {currentEffects.length}
+                    </span>
+                 </h2>
+               </div>
+
+                <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+                  {currentEffects.map((effect) => (
+                    <Link
+                      key={effect.id}
+                      href={getEncodedUrl(effect.url)}
+                      className="group relative bg-card rounded-2xl overflow-hidden border border-border/40 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 block h-full flex flex-col"
+                    >
+                      {/* Image/Video Aspect Ratio Container */}
+                      <div className="aspect-[3/4] relative overflow-hidden bg-muted/30">
+                        {effect.video ? (
+                          <video
+                            src={effect.video}
+                            className="w-full h-full object-cover"
+                            muted
+                            loop
+                            playsInline
+                            onMouseEnter={(e) => e.currentTarget.play()}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.pause();
+                              e.currentTarget.currentTime = 0;
+                            }}
+                          />
+                        ) : (
+                          <>
+                            {/* Default Image */}
+                            <img
+                              src={effect.image.src}
+                              alt={effect.image.alt}
+                              className={`w-full h-full object-cover transition-opacity duration-500 ${effect.beforeImage ? 'group-hover:opacity-0' : 'group-hover:scale-110'}`}
+                              loading="lazy"
+                            />
+                            
+                            {/* Before Image (Hover) */}
+                            {effect.beforeImage && (
+                              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                   <img
+                                      src={effect.beforeImage.src}
+                                      alt={effect.beforeImage.alt}
+                                      className="w-full h-full object-cover"
+                                      loading="lazy"
+                                   />
+                                   <div className="absolute top-2 left-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm pointer-events-none">
+                                      Original
+                                   </div>
+                              </div>
+                            )}
+                          </>
+                        )}
+                        
+                        {/* Badge */}
+                        {effect.badge && (
+                          <div className="absolute top-3 right-3 bg-gradient-to-r from-red-500 to-pink-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg z-10 uppercase tracking-wide">
+                            {effect.badge}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Effect Info */}
+                      <div className="p-4 bg-card border-t border-border/40 flex-1 flex flex-col justify-between">
+                        <h3 className="font-bold text-base mb-2 group-hover:text-blue-500 transition-colors line-clamp-1">
+                          {effect.title}
+                        </h3>
+                        <div className="flex items-center justify-between mt-auto pt-2">
+                          <p className="text-muted-foreground text-xs flex items-center gap-1.5 bg-secondary/50 px-2 py-1 rounded-md">
+                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            {/* Simple format number */}
+                            <span>{effect.count}</span>
+                          </p>
+                          <span className="text-xs font-semibold text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
+                            Try Now →
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+            </div>
+
+            {/* Bottom Sections */}
+            <div className="mt-12 space-y-12">
+               {howToData && <HowToSection {...howToData} />}
+               {faqData && <FAQSection {...faqData} />}
+            </div>
+
           </div>
-          <p className="text-muted-foreground">
-            {searchQuery ? t('ui.noResultsFound', { query: searchQuery }) : t('ui.noEffects')}
-          </p>
         </div>
-      )}
+      </main>
     </div>
   );
-
-  const bottomContent = (
-    <>
-        {howToData && <HowToSection {...howToData} />}
-        {faqData && <FAQSection {...faqData} />}
-    </>
-  );
-
-  return (
-    <ToolDetailLayout
-      relatedEffects={effectsGrid}
-      bottomContent={bottomContent}
-    >
-      {mainContent}
-    </ToolDetailLayout>
-  );
 }
+
+

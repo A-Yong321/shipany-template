@@ -52,5 +52,9 @@
   "locale_detector": {
     "title": "检测到浏览器语言是: {locale}，是否切换？",
     "switch_to": "切换到{locale}"
+  },
+  "tool_preview_placeholder": {
+    "title": "让图片动起来",
+    "description": "运用 AI 动态技术，将您的静态图片转化为震撼的视频。"
   }
 }

@@ -12,6 +12,7 @@ import { TextToImageContent } from '@/themes/default/blocks/text-to-image/conten
 import { TextToImagePreview } from '@/themes/default/blocks/text-to-image/preview';
 import { TextToVideoContent } from '@/themes/default/blocks/text-to-video/content';
 import { TextToVideoPreview } from '@/themes/default/blocks/text-to-video/preview';
+import { ToolPreviewPlaceholder } from '@/themes/default/blocks/tool-preview-placeholder';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -131,7 +132,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   return (
     <ToolDetailLayout
       relatedEffects={
-        <Inspirations toolType={toolType} />
+        <ToolPreviewPlaceholder />
       }
       bottomContent={bottomContent}
     >

@@ -52,5 +52,9 @@
   "locale_detector": {
     "title": "We detected your browser language is {locale}. Switch to it?",
     "switch_to": "Switch to {locale}"
+  },
+  "tool_preview_placeholder": {
+    "title": "Bring Images to Life",
+    "description": "Turn your static images into stunning videos with AI motion technology."
   }
 }

@@ -934,5 +934,78 @@
         }
       }
     }
+  },
+  "ai-muscle-photo": {
+    "metadata": {
+      "title": "AI Muscle Photo Generator - 360 Muscle Showcase",
+      "description": "Create 360-degree muscle showcase photos with AI. Transform your physique instantly."
+    },
+    "page": {
+      "title": "AI Muscle Photo Generator",
+      "sections": {
+        "tool": {
+          "block": "video-tool",
+          "id": "tool",
+          "title": "AI Muscle Photo Generator",
+          "data": {
+            "examples": [
+              {
+                "category": "360 Muscle Showcase",
+                "prompt": "Generate Muscle Showcase effect",
+                "image": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
+                "video": "/img_video/videos/AI-360-Rotation_肌肉展示.mp4"
+              }
+            ]
+          }
+        },
+        "hero": {
+          "id": "hero",
+          "title": "Create Muscle Showcase Photos",
+          "description": "Generate professional 360-degree muscle showcase photos with AI.",
+          "background_image": { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" },
+          "buttons": [
+            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+          ]
+        },
+        "intro": {
+          "block": "tool-intro",
+          "title": "Muscle Showcase",
+          "description": "Show off your muscles with AI-generated 360-degree effects.",
+          "images": [{ "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png" }]
+        },
+        "features": {
+          "block": "feature-split",
+          "items": [
+            {
+              "title": "360° View",
+              "description": "Get a full 360-degree view of your muscle physique.",
+              "image": { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" },
+              "button": { "title": "Try Now", "url": "#tool" }
+            }
+          ]
+        },
+        "how_to": {
+          "block": "how-to",
+          "title": "How to Use AI Muscle Photo?",
+          "description": "Generate muscle photos in seconds.",
+          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png" },
+          "steps": [
+            { "title": "Step 1", "description": "Upload your photo." },
+            { "title": "Step 2", "description": "Select Muscle Showcase effect." },
+            { "title": "Step 3", "description": "Generate and share." }
+          ],
+          "button": { "title": "Try Now", "url": "#tool" }
+        },
+        "faq": {
+          "block": "faq",
+          "title": "FAQs",
+          "items": [{ "question": "Is it realistic?", "answer": "Yes, our AI creates highly realistic muscle effects." }]
+        },
+        "more_tools": {
+          "block": "more-tools",
+          "title": "Try Other Popular Photo Effects"
+        }
+      }
+    }
   }
 }
