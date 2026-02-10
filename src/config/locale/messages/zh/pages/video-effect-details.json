@@ -72,7 +72,7 @@
           "block": "how-to",
           "title": "如何使用 1PhotoAI 接吻视频生成器？",
           "description": "只需点击几下即可创建惊艳的接吻视频。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
           "steps": [
             {
               "title": "步骤 1",
@@ -233,7 +233,7 @@
           "block": "how-to",
           "title": "如何使用 AI 肌肉生成器？",
           "description": "几秒钟内获得梦想身材。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
           "steps": [
             {
               "title": "步骤 1",
@@ -773,7 +773,7 @@
           "block": "how-to",
           "title": "如何使用 AI 拥抱生成器？",
           "description": "只需点击几下即可创建惊艳的拥抱视频。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
           "steps": [
             {
               "title": "步骤 1",
@@ -990,7 +990,7 @@
           "block": "how-to",
           "title": "如何使用 AI 舞蹈生成器？",
           "description": "几秒钟内让照片跳起舞来。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要的舞蹈风格。" },
             { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
@@ -1057,7 +1057,7 @@
           "block": "how-to",
           "title": "如何使用 AI 模仿特效?",
           "description": "几秒钟内让照片模仿各种动作。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要模仿的动作类型。" },
             { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
@@ -1124,7 +1124,7 @@
           "block": "how-to",
           "title": "如何使用 AI 视觉效果?",
           "description": "几秒钟内为照片添加震撼特效。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要的视觉效果类型。" },
             { "title": "步骤 2", "description": "上传一张清晰的照片。" },
@@ -1191,7 +1191,7 @@
           "block": "how-to",
           "title": "如何使用 AI 角色切换?",
           "description": "几秒钟内实现创意场景切换。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要的场景类型。" },
             { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },

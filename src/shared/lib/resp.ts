@@ -11,14 +11,11 @@ export function respErr(message: string) {
 }
 
 export function respJson(code: number, message: string, data?: any) {
-  let json = {
+  const json = {
     code: code,
     message: message,
-    data: data,
+    data: data || null,
   };
-  if (data) {
-    json['data'] = data;
-  }
 
   return Response.json(json);
 }

@@ -291,33 +291,37 @@ export function Header({ header }: { header: HeaderType }) {
     children,
     href,
     target,
-    ...props
-  }: React.ComponentPropsWithoutRef<'li'> & {
+  }: {
     href: string;
     title: string;
     description?: string;
     target?: string;
+    children?: React.ReactNode;
   }) {
     return (
-      <li {...props}>
-        <NavigationMenuLink asChild>
-          <Link
-            href={href}
-            target={target || '_self'}
-            className="grid grid-cols-[auto_1fr] gap-3.5"
-          >
-            <div className="bg-background ring-foreground/10 relative flex size-9 items-center justify-center rounded border border-transparent shadow-sm ring-1">
-              {children}
-            </div>
+      <NavigationMenuLink asChild>
+        <Link
+          href={href}
+          target={target || '_self'}
+          className="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+        >
+          <div className="flex items-center gap-3">
+            {children && (
+              <div className="bg-background ring-foreground/10 relative flex size-9 items-center justify-center rounded border border-transparent shadow-sm ring-1">
+                {children}
+              </div>
+            )}
             <div className="space-y-0.5">
               <div className="text-foreground text-sm font-medium">{title}</div>
-              <p className="text-muted-foreground line-clamp-1 text-xs">
-                {description}
-              </p>
+              {description && (
+                <p className="text-muted-foreground line-clamp-1 text-xs">
+                  {description}
+                </p>
+              )}
             </div>
-          </Link>
-        </NavigationMenuLink>
-      </li>
+          </div>
+        </Link>
+      </NavigationMenuLink>
     );
   }
 

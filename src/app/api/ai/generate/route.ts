@@ -20,6 +20,16 @@ export async function POST(request: Request) {
       throw new Error('prompt or options is required');
     }
 
+    // Strict validation to prevent API waste
+    if (prompt) {
+      if (prompt.trim().length === 0) {
+        throw new Error('prompt cannot be empty');
+      }
+      if (prompt.length > 2000) {
+        throw new Error('prompt too long (max 2000 chars)');
+      }
+    }
+
     const aiService = await getAIService();
 
     // check generate type
@@ -114,7 +124,6 @@ export async function POST(request: Request) {
 
     return respData(newAITask);
   } catch (e: any) {
-    console.log('generate failed', e);
     return respErr(e.message);
   }
 }

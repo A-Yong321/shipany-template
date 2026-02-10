@@ -89,7 +89,7 @@
           "block": "how-to",
           "title": "How to Use 1PhotoAI Kissing Video Generator?",
           "description": "Create amazing kissing videos in just a few clicks.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
           "steps": [
             {
               "title": "Step 1",
@@ -254,7 +254,7 @@
           "block": "how-to",
           "title": "How to Use AI Muscle Generator?",
           "description": "Get your dream physique in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
           "steps": [
             {
               "title": "Step 1",
@@ -811,7 +811,7 @@
           "block": "how-to",
           "title": "How to Use AI Hug Generator?",
           "description": "Create amazing hug videos in just a few clicks.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
           "steps": [
             {
               "title": "Step 1",
@@ -1028,7 +1028,7 @@
           "block": "how-to",
           "title": "How to Use AI Dance Generator?",
           "description": "Make photos dance in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
           "steps": [
             { "title": "Step 1", "description": "Choose your desired dance style." },
             { "title": "Step 2", "description": "Upload a clear photo of a person." },
@@ -1105,7 +1105,7 @@
           "block": "how-to",
           "title": "How to Use AI Mimic Effects?",
           "description": "Make photos mimic actions in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
           "steps": [
             { "title": "Step 1", "description": "Choose the action type you want to mimic." },
             { "title": "Step 2", "description": "Upload a clear photo of a person." },
@@ -1253,7 +1253,7 @@
           "block": "how-to",
           "title": "How to Use AI Visual Effects?",
           "description": "Add stunning effects to photos in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
           "steps": [
             { "title": "Step 1", "description": "Choose your desired visual effect type." },
             { "title": "Step 2", "description": "Upload a clear photo." },
@@ -1320,7 +1320,7 @@
           "block": "how-to",
           "title": "How to Use AI Role Swap?",
           "description": "Achieve creative scene swaps in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
           "steps": [
             { "title": "Step 1", "description": "Choose your desired scene type." },
             { "title": "Step 2", "description": "Upload a clear photo of a person." },

@@ -63,7 +63,7 @@
           "block": "how-to",
           "title": "如何使用 AI 假约会？",
           "description": "几秒钟内创建约会照片。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择约会场景。" },
             { "title": "步骤 2", "description": "上传您的照片。" },
@@ -125,7 +125,7 @@
           "block": "how-to",
           "title": "如何使用 AI 拥抱生成器?",
           "description": "几秒钟内创建拥抱照片。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要的拥抱类型。" },
             { "title": "步骤 2", "description": "上传照片。" },
@@ -397,7 +397,7 @@
           "block": "how-to",
           "title": "如何使用 AI 艺术风格?",
           "description": "几秒钟内为照片添加艺术效果。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/艺术_冰雕_2.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/艺术_冰雕_2.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择您想要的艺术风格类型。" },
             { "title": "步骤 2", "description": "上传一张清晰的照片。" },
@@ -587,7 +587,7 @@
           "block": "how-to",
           "title": "如何使用 AI 接吻照片生成器?",
           "description": "几秒钟内生成浪漫接吻照片。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/AI-Kissing_正常接吻_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-Kissing_正常接吻_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择接吻风格。" },
             { "title": "步骤 2", "description": "上传两人的照片。" },
@@ -653,7 +653,7 @@
           "block": "how-to",
           "title": "如何使用 AI 肌肉生成器?",
           "description": "快速增强肌肉效果。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/Muscle_肌肉展示_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/Muscle_肌肉展示_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择肌肉效果。" },
             { "title": "步骤 2", "description": "上传您的照片。" },
@@ -720,7 +720,7 @@
           "block": "how-to",
           "title": "如何生成视觉特效照片?",
           "description": "简单几步制作大片。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择特效类型。" },
             { "title": "步骤 2", "description": "上传照片。" },
@@ -787,7 +787,7 @@
           "block": "how-to",
           "title": "如何使用角色切换?",
           "description": "变换场景，变换人生。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/img_video/imgs/角色切换_坐上豪车_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_坐上豪车_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "选择目标场景。" },
             { "title": "步骤 2", "description": "上传人物照片。" },

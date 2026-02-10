@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "trace_id": "a8ab969312c565d608f7de2a71c3ec98",
+  "data": [
+    {
+      "usage_today": {
+        "cost_cents": 580,
+        "request_count": 15
+      },
+      "balance_display": "¥995.00",
+      "tier_name": "标准版",
+      "rate_limit": {
+        "per_minute": 20,
+        "remaining_today": 485,
+        "per_day": 500
+      },
+      "tier": "standard",
+      "balance_cents": 99500
+    }
+  ]
+}

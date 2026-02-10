@@ -10,6 +10,7 @@ import { type EffectItem } from '@/themes/default/blocks/effect-card';
 import { getToolConfig, tools } from '@/data/tools';
 import { TextToImageContent } from '@/themes/default/blocks/text-to-image/content';
 import { TextToImagePreview } from '@/themes/default/blocks/text-to-image/preview';
+import { TextToImageProvider } from '@/themes/default/blocks/text-to-image/context';
 import { TextToVideoContent } from '@/themes/default/blocks/text-to-video/content';
 import { TextToVideoPreview } from '@/themes/default/blocks/text-to-video/preview';
 import { ToolPreviewPlaceholder } from '@/themes/default/blocks/tool-preview-placeholder';
@@ -108,12 +109,14 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   // Special layout for 'text-to-image'
   if (slug === 'text-to-image') {
     return (
-      <ToolDetailLayout
-        relatedEffects={<TextToImagePreview />}
-        bottomContent={bottomContent}
-      >
-        <TextToImageContent toolName={effectData.page.title} backHref="/ai-style" />
-      </ToolDetailLayout>
+      <TextToImageProvider>
+        <ToolDetailLayout
+          relatedEffects={<TextToImagePreview />}
+          bottomContent={bottomContent}
+        >
+          <TextToImageContent toolName={effectData.page.title} backHref="/ai-style" />
+        </ToolDetailLayout>
+      </TextToImageProvider>
     );
   }
 

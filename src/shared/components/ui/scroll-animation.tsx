@@ -28,15 +28,9 @@ export function ScrollAnimation({
   // Respect user's reduced motion preference (accessibility)
   const shouldReduceMotion = useReducedMotion();
 
-  // If user prefers reduced motion or JavaScript is disabled, show content directly
-  if (shouldReduceMotion) {
-    return (
-      <div ref={ref} className={className}>
-        {children}
-      </div>
-    );
-  }
-
+  // If user prefers reduced motion, we still render motion.div to keep tree consistent (prevent hydration mismatch),
+  // but we force the "visible" state immediately or use zero-duration transitions.
+  
   const getInitialPosition = () => {
     switch (direction) {
       case "up":
@@ -57,8 +51,8 @@ export function ScrollAnimation({
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: delay,
+        staggerChildren: shouldReduceMotion ? 0 : 0.1,
+        delayChildren: shouldReduceMotion ? 0 : delay,
       },
     },
   };
@@ -66,7 +60,8 @@ export function ScrollAnimation({
   const itemVariants = {
     hidden: {
       opacity: 0,
-      ...getInitialPosition(),
+       // if reduced motion, don't move
+      ...(shouldReduceMotion ? { x: 0, y: 0 } : getInitialPosition()),
       filter: "blur(4px)",
     },
     visible: {
@@ -75,7 +70,7 @@ export function ScrollAnimation({
       y: 0,
       filter: "blur(0px)",
       transition: {
-        duration: 0.6,
+        duration: shouldReduceMotion ? 0 : 0.6,
         ease: [0.22, 1, 0.36, 1] as const,
       },
     },
@@ -87,7 +82,9 @@ export function ScrollAnimation({
         ref={ref}
         variants={containerVariants}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
+        // If reduced motion, we can just default to visible, but framer motion handles "animate" updates well.
+        // To be safe and instant, we can rely on duration: 0.
+        animate={isInView || shouldReduceMotion ? "visible" : "hidden"}
         className={className}
       >
         {React.Children.map(children, (child) => (
@@ -102,11 +99,12 @@ export function ScrollAnimation({
       ref={ref}
       initial={{
         opacity: 0,
-        ...getInitialPosition(),
+        ...(shouldReduceMotion ? { x: 0, y: 0 } : getInitialPosition()),
         filter: "blur(4px)",
       }}
       animate={
-        isInView
+        // Force visible if shouldReduceMotion
+        isInView || shouldReduceMotion
           ? {
               opacity: 1,
               x: 0,
@@ -120,8 +118,8 @@ export function ScrollAnimation({
             }
       }
       transition={{
-        duration: 0.6,
-        delay,
+        duration: shouldReduceMotion ? 0 : 0.6,
+        delay: shouldReduceMotion ? 0 : delay,
         ease: [0.22, 1, 0.36, 1] as const,
       }}
       className={className}

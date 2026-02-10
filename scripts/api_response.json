@@ -1,0 +1,16 @@
+{
+  "id": "019c47af-5ff0-7263-a95e-690444747c74",
+  "trace_id": "5fcdb82bd70c095dec89212ef19c7728",
+  "type": "images",
+  "created_at": 1770729201.648,
+  "request": {
+    "size": "1024x1024",
+    "count": 1,
+    "model": "flux-dev",
+    "prompt": "generate a picture of a handsome boy sitting on the grass"
+  },
+  "response": {
+    "task_id": "019c47af-5ff0-7263-a95e-690444747c74",
+    "trace_id": "ea38eadf9626ebf60d7b253d8fb0560f"
+  }
+}

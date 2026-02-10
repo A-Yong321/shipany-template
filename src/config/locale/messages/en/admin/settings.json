@@ -25,7 +25,8 @@
     "crisp": "Crisp",
     "credit": "Credit",
     "appinfo": "App Info",
-    "user_role": "User Role"
+    "user_role": "User Role",
+    "aistudio": "AI Studio"
   },
   "edit": {
     "title": "Settings",

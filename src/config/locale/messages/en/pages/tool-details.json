@@ -26,7 +26,7 @@
           "block": "how-to",
           "title": "How to Create AI Art?",
           "description": "Generate amazing images in seconds.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
           "steps": [
             { "title": "Step 1", "description": "Enter a text description." },
             { "title": "Step 2", "description": "Select style and aspect ratio." },
@@ -78,7 +78,7 @@
           "block": "how-to",
           "title": "How to Restyle Photos?",
           "description": "Transform styles easily.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
           "steps": [
             { "title": "Step 1", "description": "Upload an image." },
             { "title": "Step 2", "description": "Describe the new style." },
@@ -120,7 +120,7 @@
           "block": "how-to",
           "title": "How to Create AI Videos?",
           "description": "Turn text into video clips.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
           "steps": [
             { "title": "Step 1", "description": "Write a prompt." },
             { "title": "Step 2", "description": "Click Generate." },
@@ -171,7 +171,7 @@
           "block": "how-to",
           "title": "How to Animate Photos?",
           "description": "Bring images to life.",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
           "steps": [
             { "title": "Step 1", "description": "Upload a photo." },
             { "title": "Step 2", "description": "Describe motion (optional)." },

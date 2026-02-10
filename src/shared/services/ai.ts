@@ -48,6 +48,11 @@ export function getAIManagerWithConfigs(configs: Configs) {
     );
   }
 
+  if (configs.aistudio_api_key) {
+    const { AIStudioProvider } = require('@/extensions/ai/aistudio');
+    aiManager.addProvider(new AIStudioProvider(configs));
+  }
+
   return aiManager;
 }
 

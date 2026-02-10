@@ -25,7 +25,8 @@
     "crisp": "Crisp",
     "credit": "积分",
     "appinfo": "应用信息",
-    "user_role": "用户角色"
+    "user_role": "用户角色",
+    "aistudio": "AI Studio"
   },
   "edit": {
     "title": "设置",

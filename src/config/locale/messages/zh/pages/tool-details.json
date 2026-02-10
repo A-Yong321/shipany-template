@@ -26,7 +26,7 @@
           "block": "how-to",
           "title": "如何创作 AI 艺术？",
           "description": "几秒钟内生成惊艳图片。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "输入文字描述。" },
             { "title": "步骤 2", "description": "选择风格和宽高比。" },
@@ -78,7 +78,7 @@
           "block": "how-to",
           "title": "如何重塑照片风格？",
           "description": "轻松转换风格。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "上传图片。" },
             { "title": "步骤 2", "description": "描述新风格。" },
@@ -120,7 +120,7 @@
           "block": "how-to",
           "title": "如何创作 AI 视频？",
           "description": "将文字转化为视频片段。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Jiggle_抖动身体_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "编写提示词。" },
             { "title": "步骤 2", "description": "点击生成。" },
@@ -171,7 +171,7 @@
           "block": "how-to",
           "title": "如何让照片动起来？",
           "description": "赋予图片生命。",
-          "video": { "src": "/videos/demo.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
           "steps": [
             { "title": "步骤 1", "description": "上传照片。" },
             { "title": "步骤 2", "description": "描述运动（可选）。" },

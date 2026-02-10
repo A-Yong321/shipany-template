@@ -1,0 +1,49 @@
+{
+  "video_generation": {
+    "success": true,
+    "task_id": "019c47ba-bbb6-7b30-b81d-26dfaa06fa52",
+    "response": {
+      "success": true,
+      "task_id": "019c47ba-bbb6-7b30-b81d-26dfaa06fa52",
+      "trace_id": "9ec72334df4e835737e3b1b14c985fa6",
+      "data": []
+    }
+  },
+  "account_balance": {
+    "success": true,
+    "response": {
+      "success": true,
+      "trace_id": "a8ab969312c565d608f7de2a71c3ec98",
+      "data": [
+        {
+          "usage_today": {
+            "cost_cents": 580,
+            "request_count": 15
+          },
+          "balance_display": "¥995.00",
+          "tier_name": "标准版",
+          "rate_limit": {
+            "per_minute": 20,
+            "remaining_today": 485,
+            "per_day": 500
+          },
+          "tier": "standard",
+          "balance_cents": 99500
+        }
+      ]
+    }
+  },
+  "file_upload": {
+    "success": true,
+    "response": {
+      "success": true,
+      "trace_id": "6fad92f7b2c4db3498513ec2fc3ca2de",
+      "data": [
+        {
+          "url": "https://yly-1252838868.file.myqcloud.com//openapi/20260210/null/8983fb187d194260a2f368a63d65f361.jpg",
+          "key": "openapi/20260210/null/8983fb187d194260a2f368a63d65f361.jpg"
+        }
+      ]
+    }
+  }
+}
