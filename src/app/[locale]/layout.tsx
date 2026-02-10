@@ -23,7 +23,9 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  // Pick only necessary messages if possible, or keep as is for Next-Intl client provider
   const messages = await getMessages();
+
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>

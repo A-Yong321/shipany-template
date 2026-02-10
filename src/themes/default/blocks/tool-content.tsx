@@ -7,6 +7,8 @@ import { Textarea } from '@/shared/components/ui/textarea';
 import { Upload, Sparkles, Play, ChevronRight, ZoomIn, Settings, ChevronLeft } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
 import { Link } from '@/core/i18n/navigation';
+import { LazyImage, LazyVideo } from '@/shared/blocks/common';
+
 
 interface Example {
   category: string;
@@ -141,23 +143,23 @@ export function ToolContent({
           {/* 预览区 */}
           <div className="relative aspect-[4/3] w-full">
             {toolType === 'video' && selectedExample.video ? (
-              <video
+              <LazyVideo
                 src={selectedExample.video}
                 poster={selectedExample.image}
-                className="w-full h-full object-cover"
-                muted
-                loop
-                autoPlay
-                playsInline
+                className="w-full h-full"
+                autoPlayOnVisible={true}
               />
             ) : (
-              <Image
+              <LazyImage
                 src={selectedExample.image}
                 alt={selectedExample.category}
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 90vw, (max-width: 1440px) 60vw, 800px"
               />
+
             )}
+
             
             {/* 渐变遮罩和标题 */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -201,12 +203,14 @@ export function ToolContent({
                     "relative h-12 w-12 overflow-hidden rounded-md border-2 transition-all",
                     isSelected ? "border-primary ring-2 ring-primary/20" : "border-transparent group-hover:border-primary/50"
                   )}>
-                    <Image
+                    <LazyImage
                       src={example.image}
                       alt={example.category}
                       fill
                       className="object-cover"
+                      sizes="48px"
                     />
+
                   </div>
                   <span className={cn(
                      "text-[10px] font-medium truncate max-w-[60px]",
@@ -262,12 +266,14 @@ export function ToolContent({
             
             {uploadedImageUrl ? (
               <div className="relative w-full h-full">
-                <Image
+                <LazyImage
                   src={uploadedImageUrl}
                   alt="Uploaded"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 600px"
                 />
+
                 <button 
                   onClick={(e) => { e.preventDefault(); e.stopPropagation(); clearUploadedImage(); }} 
                   className="absolute top-2 right-2 p-1 bg-background/80 rounded-full hover:bg-destructive hover:text-white transition-colors z-20"

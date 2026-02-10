@@ -95,7 +95,8 @@ export function ShowcasesFlow({
                 size={button.size || 'sm'}
                 asChild
               >
-                <Link href={button.url || ''} target={button.target || '_self'}>
+                <Link href={button.url || ''} target={button.target || '_self'} prefetch={false}>
+
                   {button.icon && <SmartIcon name={button.icon as string} />}
                   {button.title}
                 </Link>
@@ -206,7 +207,9 @@ export function ShowcasesFlow({
                       <Link
                         href={(item as any).button.url || ''}
                         target={(item as any).button.target || '_self'}
+                        prefetch={false}
                       >
+
                         {(item as any).button.icon && (
                           <SmartIcon
                             name={(item as any).button.icon as string}
@@ -318,7 +321,9 @@ export function ShowcasesFlow({
                               (filteredItems[selectedIndex] as any).button
                                 .target || '_self'
                             }
+                            prefetch={false}
                           >
+
                             {(filteredItems[selectedIndex] as any).button
                               .icon && (
                               <SmartIcon

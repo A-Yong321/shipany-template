@@ -1,8 +1,7 @@
 'use client';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import Image from 'next/image';
+import { cn } from '@/shared/lib/utils';
 
 export function LazyImage({
   src,
@@ -14,7 +13,7 @@ export function LazyImage({
   title,
   fill,
   priority,
-  sizes,
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
 }: {
   src: string;
   alt: string;
@@ -28,14 +27,22 @@ export function LazyImage({
   sizes?: string;
 }) {
   return (
-    <LazyLoadImage
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      effect="blur" // 支持 blur、opacity 等
-      placeholderSrc={placeholderSrc} // 可选
-      className={className}
-    />
+    <div className={cn("relative overflow-hidden", className)} style={{ width: fill ? '100%' : width, height: fill ? '100%' : height }}>
+      <Image
+        src={src}
+        alt={alt}
+        width={!fill ? width : undefined}
+        height={!fill ? height : undefined}
+        fill={fill}
+        title={title}
+        priority={priority}
+        loading={priority ? undefined : 'lazy'}
+        sizes={sizes}
+        className={cn(
+          "object-cover transition-all duration-300",
+          !priority && "animate-in fade-in duration-500"
+        )}
+      />
+    </div>
   );
 }

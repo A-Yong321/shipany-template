@@ -1,11 +1,13 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { ToolSidebar } from './tool-sidebar';
-import Link from 'next/link';
+import { Link } from '@/core/i18n/navigation';
 import { cn } from '@/shared/lib/utils';
+import { LazyImage, LazyVideo } from '@/shared/blocks/common';
 import { HowToSection, FAQSection } from './tool-bottom-sections';
+
 
 interface Effect {
   id: string;
@@ -49,34 +51,44 @@ export function AIStyleEffects({
   const videoEffectsT = useTranslations('pages.video-effects');
   const t = useTranslations('pages.ai-style');
 
+  const [visibleCount, setVisibleCount] = useState(12);
+
   // 获取当前激活的effects数据
   const currentEffectsT = activeMainTab === 'photo' ? photoEffectsT : videoEffectsT;
   const tabs: Tab[] = currentEffectsT.raw('page.sections.effects.tabs') || [];
+
+  // 获取分类的effects并应用搜索过滤
+  const currentEffects = useMemo(() => {
+    const allCategoryEffects = tabs.find(tab => tab.id === activeCategory)?.items || [];
+    return searchQuery
+      ? allCategoryEffects.filter(effect =>
+          effect.title.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+      : allCategoryEffects;
+  }, [tabs, activeCategory, searchQuery]);
+
+  const visibleEffects = currentEffects.slice(0, visibleCount);
 
   // 获取 How To 和 FAQ 数据
   const howToData = currentEffectsT.raw('page.sections.how_to') || t.raw('page.sections.how_to');
   const faqData = t.raw('page.sections.faq');
 
-  // 获取当前分类的effects并应用搜索过滤
-  const allCategoryEffects = tabs.find(tab => tab.id === activeCategory)?.items || [];
-  const currentEffects = searchQuery
-    ? allCategoryEffects.filter(effect =>
-        effect.title.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    : allCategoryEffects;
-
   // 处理主标签切换
+
   const handleMainTabChange = (tab: 'photo' | 'video') => {
     setActiveMainTab(tab);
-    setActiveCategory('all'); // 重置为"全部"
-    setSearchQuery(''); // 清空搜索
+    setActiveCategory('all');
+    setSearchQuery('');
+    setVisibleCount(12); // 重置显示数量
   };
 
   // 处理分类切换
   const handleCategoryChange = (categoryId: string) => {
     setActiveCategory(categoryId);
-    setSearchQuery(''); // 清空搜索
+    setSearchQuery('');
+    setVisibleCount(12); // 重置显示数量
   };
+
 
   // 辅助函数：处理 URL 编码
   const getEncodedUrl = (url: string) => {
@@ -252,7 +264,7 @@ export function AIStyleEffects({
                </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-                  {currentEffects.map((effect) => (
+                  {visibleEffects.map((effect) => (
                     <Link
                       key={effect.id}
                       href={getEncodedUrl(effect.url)}
@@ -261,36 +273,28 @@ export function AIStyleEffects({
                       {/* Image/Video Aspect Ratio Container */}
                       <div className="aspect-[3/4] relative overflow-hidden bg-muted/30">
                         {effect.video ? (
-                          <video
+                          <LazyVideo
                             src={effect.video}
-                            className="w-full h-full object-cover"
-                            muted
-                            loop
-                            playsInline
-                            onMouseEnter={(e) => e.currentTarget.play()}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.pause();
-                              e.currentTarget.currentTime = 0;
-                            }}
+                            className="w-full h-full"
+                            autoPlayOnVisible={false}
                           />
                         ) : (
                           <>
                             {/* Default Image */}
-                            <img
+                            <LazyImage
                               src={effect.image.src}
                               alt={effect.image.alt}
-                              className={`w-full h-full object-cover transition-opacity duration-500 ${effect.beforeImage ? 'group-hover:opacity-0' : 'group-hover:scale-110'}`}
-                              loading="lazy"
+                              fill
+                              className={cn("transition-opacity duration-500", effect.beforeImage ? 'group-hover:opacity-0' : 'group-hover:scale-110')}
                             />
                             
                             {/* Before Image (Hover) */}
                             {effect.beforeImage && (
                               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                   <img
+                                   <LazyImage
                                       src={effect.beforeImage.src}
                                       alt={effect.beforeImage.alt}
-                                      className="w-full h-full object-cover"
-                                      loading="lazy"
+                                      fill
                                    />
                                    <div className="absolute top-2 left-2 bg-black/60 text-white text-[10px] px-2 py-0.5 rounded backdrop-blur-sm pointer-events-none">
                                       Original
@@ -319,7 +323,6 @@ export function AIStyleEffects({
                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
-                            {/* Simple format number */}
                             <span>{effect.count}</span>
                           </p>
                           <span className="text-xs font-semibold text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 group-hover:translate-x-0 duration-300">
@@ -330,7 +333,19 @@ export function AIStyleEffects({
                     </Link>
                   ))}
                 </div>
+
+                  <div className="flex justify-center pt-8">
+                    <button
+                      onClick={() => setVisibleCount(prev => prev + 12)}
+                      className="px-8 py-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground font-medium transition-colors"
+                      id="btn-load-more"
+                    >
+                      {t.has('ui.loadMore') ? t('ui.loadMore') : 'Load More'}
+                    </button>
+                  </div>
+
             </div>
+
 
             {/* Bottom Sections */}
             <div className="mt-12 space-y-12">

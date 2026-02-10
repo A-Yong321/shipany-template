@@ -70,15 +70,21 @@ export default async function RootLayout({
   let customerServiceBodyScripts = null;
 
   if (isProduction || isDebug) {
-    const configs = await getAllConfigs();
+    const [configsData, adsService, analyticsService, affiliateService, customerService] =
+      await (async () => {
+        const configs = await getAllConfigs();
+        return Promise.all([
+          Promise.resolve(configs),
+          getAdsService(configs),
+          getAnalyticsService(configs),
+          getAffiliateService(configs),
+          getCustomerService(configs),
+        ]);
+      })();
+    
+    // Assign from parallel results
+    const configs = configsData;
 
-    const [adsService, analyticsService, affiliateService, customerService] =
-      await Promise.all([
-        getAdsService(configs),
-        getAnalyticsService(configs),
-        getAffiliateService(configs),
-        getCustomerService(configs),
-      ]);
 
     // get ads components
     adsMetaTags = adsService.getMetaTags();

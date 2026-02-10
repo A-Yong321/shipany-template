@@ -18,6 +18,8 @@ export * from './section-header';
 
 export * from './empty';
 export * from './lazy-image';
+export * from './lazy-video';
+
 export * from './image-uploader';
 export * from './markdown-preview';
 export * from './markdown-content';
