@@ -1,10 +1,11 @@
 {
   "metadata": {
-    "title": "Viral AI Video Effects - AI Kissing, Muscle, Hug & More",
-    "description": "Explore 100+ viral AI video effects."
+    "title": "热门 AI 视频特效 - AI 接吻、肌肉、拥抱及更多",
+    "description": "探索 100+ 热门 AI 视频特效。将您的照片转换为 AI 接吻视频，添加 AI 肌肉，生成 AI 拥抱以及更多流行视觉效果。"
   },
   "page": {
-    "title": "Viral AI Video Effects",
+    "title": "热门 AI 视频特效",
+    "description": "探索 100+ 热门 AI 视频特效。将您的照片转换为 AI 接吻视频，添加 AI 肌肉，生成 AI 拥抱以及更多流行视觉效果。",
     "show_sections": [
       "effects",
       "cta",
@@ -14,8 +15,31 @@
       "hero": {
         "id": "hero",
         "show_input": false,
-        "title": "Ignored",
-        "background_image": {}
+        "title": "热门 AI 视频特效",
+        "background_image": {},
+        "description": "使用热门 AI 视频特效（如 AI 接吻、AI 肌肉、AI 拥抱等）让您的照片焕发活力。"
+      },
+      "how_to": {
+        "title": "如何使用 AI 视频特效",
+        "description": "只需 3 个简单步骤即可创建热门 AI 视频。",
+        "video": { 
+          "src": "/img_video/videos/AiKissing_正常接吻.mp4", 
+          "poster": "/img_video/imgs/AI-Kissing_正常接吻_2.png" 
+        },
+        "steps": [
+          {
+            "title": "第一步：选择特效",
+            "description": "浏览我们的热门 AI 视频特效库。选择符合您创意愿景的特效。"
+          },
+          {
+            "title": "第二步：上传照片",
+            "description": "上传一张清晰的照片。为了获得最佳效果，请确保拍摄对象光线充足且清晰可见。"
+          },
+          {
+            "title": "第三步：生成并分享",
+            "description": "点击生成，见证 AI 魔力的发生。下载您的视频并与朋友分享！"
+          }
+        ]
       },
       "effects": {
         "block": "effects-section",
