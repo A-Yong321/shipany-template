@@ -73,8 +73,9 @@ export function TextToImageContent({
       // The id here is our local AI task UUID, used for polling /api/ai/query
       const idToTrack = result.data?.id;
       if (idToTrack) {
-        console.log('Starting task polling for ID:', idToTrack);
-        startTask(idToTrack, prompt);
+        const platform = model.includes('flux') ? 'grok' : model;
+        console.log('Starting task polling for ID:', idToTrack, 'Platform:', platform);
+        startTask(idToTrack, prompt, platform);
       } else {
         console.error('No id found in response data:', result.data);
         setIsGenerating(false);

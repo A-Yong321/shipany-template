@@ -9,7 +9,7 @@ import { getAIService } from '@/shared/services/ai';
 
 export async function POST(req: Request) {
   try {
-    const { taskId } = await req.json();
+    const { taskId, platform } = await req.json();
     if (!taskId) {
       return respErr('invalid params');
     }
@@ -38,6 +38,7 @@ export async function POST(req: Request) {
       taskId: task.taskId,
       mediaType: task.mediaType,
       model: task.model,
+      platform,
     });
 
     if (!result?.taskStatus) {

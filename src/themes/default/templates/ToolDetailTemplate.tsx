@@ -13,7 +13,9 @@ import { TextToImagePreview } from '@/themes/default/blocks/text-to-image/previe
 import { TextToImageProvider } from '@/themes/default/blocks/text-to-image/context';
 import { TextToVideoContent } from '@/themes/default/blocks/text-to-video/content';
 import { TextToVideoPreview } from '@/themes/default/blocks/text-to-video/preview';
+import { TextToVideoProvider } from '@/themes/default/blocks/text-to-video/context';
 import { ToolPreviewPlaceholder } from '@/themes/default/blocks/tool-preview-placeholder';
+import { ToolContentProvider } from '@/themes/default/blocks/tool-content-context';
 
 interface ToolDetailTemplateProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -51,7 +53,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   // 将 toolConfig.items 转换为 examples 格式, 如果不存在则使用 JSON 中的示例
   let examples = effectData.page.sections.tool?.data?.examples || toolConfig?.items.map((item, index) => ({
     category: item.title,
-    prompt: `Generate ${item.title} effect`,
+    prompt: item.prompt || `Generate ${item.title} effect`,
     image: item.effectSrc,
     video: item.videoSrc,
   })) || [];
@@ -123,44 +125,49 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
   // Special layout for 'text-to-video'
   if (slug === 'text-to-video') {
     return (
-      <ToolDetailLayout
-        relatedEffects={<TextToVideoPreview />}
-        bottomContent={bottomContent}
-      >
-        <TextToVideoContent toolName={effectData.page.title} backHref="/ai-style" />
-      </ToolDetailLayout>
+      <TextToVideoProvider>
+        <ToolDetailLayout
+          relatedEffects={<TextToVideoPreview />}
+          bottomContent={bottomContent}
+        >
+          <TextToVideoContent toolName={effectData.page.title} backHref="/ai-style" />
+        </ToolDetailLayout>
+      </TextToVideoProvider>
     );
   }
 
   return (
-    <ToolDetailLayout
-      relatedEffects={
-        <ToolPreviewPlaceholder />
-      }
-      bottomContent={bottomContent}
-    >
-      <ToolContent
-        toolName={effectData.page.title}
-        examples={examples}
-        defaultPrompt={examples[0]?.prompt || ''}
-        toolType={toolType}
-        initialType={initialType}
-        inputType={inputType}
-        showRatioSelector={slug === 'image-to-image'}
-        showQuantitySelector={slug === 'image-to-image'}
-        showDurationSelector={slug === 'image-to-video'}
-        showResolutionSelector={slug === 'image-to-video'}
-        backHref="/ai-style"
-        promptPlaceholder={
-          slug === 'image-to-video' 
-            ? "Describe the motion or video content..." 
-            : "Describe what you want to change..."
+    <ToolContentProvider>
+      <ToolDetailLayout
+        relatedEffects={
+          <ToolPreviewPlaceholder />
         }
-        promptMaxLength={slug === 'image-to-video' ? 400 : 1200}
-        generateButtonText={slug === 'image-to-video' ? "Generate Video" : "Generate"}
-        creditsRequired={slug === 'image-to-video' ? 10 : 4}
-      />
-    </ToolDetailLayout>
+        bottomContent={bottomContent}
+      >
+        <ToolContent
+          toolName={effectData.page.title}
+          examples={examples}
+          defaultPrompt={examples[0]?.prompt || ''}
+          toolType={toolType}
+          initialType={initialType}
+          inputType={inputType}
+          toolSlug={slug}
+          showRatioSelector={slug === 'image-to-image'}
+          showQuantitySelector={slug === 'image-to-image'}
+          showDurationSelector={slug === 'image-to-video'}
+          showResolutionSelector={slug === 'image-to-video'}
+          backHref="/ai-style"
+          promptPlaceholder={
+            slug === 'image-to-video' 
+              ? "Describe the motion or video content..." 
+              : "Describe what you want to change..."
+          }
+          promptMaxLength={slug === 'image-to-video' ? 400 : 1200}
+          generateButtonText={slug === 'image-to-video' ? "Generate Video" : "Generate"}
+          creditsRequired={slug === 'image-to-video' ? 10 : 4}
+        />
+      </ToolDetailLayout>
+    </ToolContentProvider>
   );
 }
 

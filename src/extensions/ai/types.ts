@@ -82,6 +82,7 @@ export interface AITaskInfo {
   errorCode?: string;
   errorMessage?: string;
   createTime?: Date;
+  platform?: string; // which platform used to generate this task
 }
 
 /**
@@ -120,9 +121,11 @@ export interface AIProvider {
     taskId,
     mediaType,
     model,
+    platform,
   }: {
     taskId: string;
     mediaType?: string;
     model?: string;
+    platform?: string;
   }): Promise<AITaskResult>;
 }

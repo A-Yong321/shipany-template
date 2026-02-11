@@ -11,9 +11,15 @@
           "id": "hero",
           "title": "Create Romantic Date Photos",
           "description": "Generate realistic fake date scenes with AI in beautiful cafe settings.",
-          "background_image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
+          },
           "buttons": [
-            { "title": "Try Fake Date", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Fake Date",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -24,59 +30,59 @@
             "examples": [
               {
                 "category": "Chinese Girlfriend",
-                "prompt": "Generate Chinese Girlfriend effect",
+                "prompt": "一位又酷又美的中国女友，黑长直发，穿着改良的新中式旗袍或黑色西装，她眼神坚定（很“帅气”的感觉），霸道地捧着他的脸亲吻",
                 "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_中国女友.mp4"
               },
               {
                 "category": "Russian Girlfriend",
-                "prompt": "Generate Russian Girlfriend effect",
+                "prompt": "一位高挑惊艳的俄罗斯女友，拥有精致的五官和冰蓝色的眼睛，穿着厚实的皮草大衣，她神情专注，给了他一个冰雪中温暖而强烈的吻",
                 "image": "/img_video/imgs/AI-Fake-Date_俄罗斯女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_俄罗斯女友.mp4"
               },
               {
                 "category": "Indian Girlfriend",
-                "prompt": "Generate Indian Girlfriend effect",
+                "prompt": "一位美丽的印度女友，穿着华丽的纱丽，佩戴着传统的金饰，眼神深邃。充满爱意地亲吻他的额头或嘴唇。色彩极其丰富",
                 "image": "/img_video/imgs/AI-Fake-Date_印度女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_印度女友.mp4"
               },
               {
                 "category": "Girlfriend Date",
-                "prompt": "Generate Girlfriend Date effect",
+                "prompt": "A handsome girlfriend walks over to the man and kisses him.",
                 "image": "/img_video/imgs/AI-Fake-Date_女友约会_1.png",
                 "video": "/img_video/videos/AIFakeDate_女友约会.mp4"
               },
               {
                 "category": "Japanese Girlfriend",
-                "prompt": "Generate Japanese Girlfriend effect",
+                "prompt": "一位可爱的日本女友，穿着时尚的高中制服（或日系宽松毛衣），在樱花飘落的街道上走向那个男人。她踮起脚尖，羞涩而温柔地亲吻了他的脸颊。光线柔和，空气感",
                 "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_日本女友.mp4"
               },
               {
                 "category": "French Girlfriend",
-                "prompt": "Generate French Girlfriend effect",
+                "prompt": "一位拥有法式慵懒波浪卷发、涂着红唇的时髦法国女友，穿着米色风衣，深情且浪漫地亲吻了他",
                 "image": "/img_video/imgs/AI-Fake-Date_法国女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_法国女友.mp4"
               },
               {
                 "category": "American Girlfriend",
-                "prompt": "Generate American Girlfriend effect",
+                "prompt": "一位身材健美、皮肤也是小麦色的美国女友，穿着牛仔短裤和白色背心，她带着灿烂的笑容，热情奔放地搂住他的脖子亲吻了他",
                 "image": "/img_video/imgs/AI-Fake-Date_美国女友_1.png",
                 "video": "/img_video/videos/AIFakeDate_美国女友.mp4"
               },
-              { 
-                "category": "Cafe", 
-                "prompt": "Romantic date in a cozy cafe, latte art on table, soft lighting",
+              {
+                "category": "Cafe",
+                "prompt": "一位身材健美、皮肤也是小麦色的美国女友，穿着牛仔短裤和白色背心，她带着灿烂的笑容，热情奔放地搂住他的脖子亲吻了他",
                 "image": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
               },
-              { 
-                "category": "Dinner", 
-                "prompt": "Candlelight dinner date, fine dining atmosphere, elegant dress",
+              {
+                "category": "Dinner",
+                "prompt": "一位身材健美、皮肤也是小麦色的美国女友，穿着牛仔短裤和白色背心，她带着灿烂的笑容，热情奔放地搂住他的脖子亲吻了他",
                 "image": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
               },
               {
                 "category": "Park",
-                "prompt": "Walking in the park date, holding hands, autumn leaves",
+                "prompt": "一位高挑惊艳的俄罗斯女友，拥有精致的五官和冰蓝色的眼睛，穿着厚实的皮草大衣，她神情专注，给了他一个冰雪中温暖而强烈的吻",
                 "image": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
               }
             ]
@@ -88,7 +94,9 @@
             {
               "title": "Romantic Atmosphere",
               "description": "Create beautiful couple moments with realistic cafe and date settings.",
-              "image": { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
+              }
             }
           ]
         },
@@ -97,34 +105,62 @@
           "title": "Create Romantic Date Photos",
           "description": "Generate realistic fake date scenes with AI. Perfect for social media or just for fun.",
           "images": [
-            { "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
-            { "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png" }
+            {
+              "src": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Fake-Date_美国女友_2.png"
+            }
           ]
         },
         "how_to": {
           "block": "how-to",
           "title": "How to Use AI Fake Date?",
           "description": "Create date photos in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/AI-Fake-Date_美国女友_1.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose a date scenario." },
-            { "title": "Step 2", "description": "Upload your photo." },
-            { "title": "Step 3", "description": "Generate your date photo." }
+            {
+              "title": "Step 1",
+              "description": "Choose a date scenario."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload your photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Generate your date photo."
+            }
           ],
-          "button": { "title": "Create Date Photo", "url": "#tool" }
+          "button": {
+            "title": "Create Date Photo",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
           "title": "FAQs",
           "items": [
-            { "question": "Is it realistic?", "answer": "Yes, our AI creates photorealistic blends." }
+            {
+              "question": "Is it realistic?",
+              "answer": "Yes, our AI creates photorealistic blends."
+            }
           ]
         },
         "more_tools": {
           "block": "more-tools",
           "title": "Try Other Popular Effects",
           "items": [
-            { "title": "AI Hug", "image": { "src": "/imgs/cms/Hug_拥抱_1.png" }, "url": "/video-effects/ai-hug" }
+            {
+              "title": "AI Hug",
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_1.png"
+              },
+              "url": "/video-effects/ai-hug"
+            }
           ]
         }
       }
@@ -142,9 +178,15 @@
           "id": "hero",
           "title": "Generate Warm Hug Photos",
           "description": "Create touching hug moments with AI technology.",
-          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "buttons": [
-            { "title": "Try Hug Generator", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Hug Generator",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -153,7 +195,9 @@
             {
               "title": "Emotional Connection",
               "description": "Create heartwarming embrace moments with natural poses and expressions.",
-              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_2.png"
+              }
             }
           ]
         },
@@ -161,28 +205,52 @@
           "block": "tool-intro",
           "title": "Warm Hug Photos",
           "description": "Generate touching hug photos with AI. Whether it's a friendly side hug or a romantic princess carry, create perfect moments.",
-          "images": [{ "src": "/imgs/cms/Hug_拥抱_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/Hug_拥抱_1.png"
+            }
+          ]
         },
         "how_to": {
           "block": "how-to",
           "title": "How to Use AI Hug Generator?",
           "description": "Create hug photos in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired hug type." },
-            { "title": "Step 2", "description": "Upload a photo." },
-            { "title": "Step 3", "description": "Click generate to see the warm moment." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired hug type."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the warm moment."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
           "title": "Try Other Popular Photo Effects"
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Is it free?", "answer": "Yes, try it for free." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Is it free?",
+              "answer": "Yes, try it for free."
+            }
+          ]
         }
       }
     }
@@ -200,10 +268,10 @@
           "id": "tool",
           "title": "Pregnant AI Photo Generator",
           "data": {
-             "examples": [
+            "examples": [
               {
                 "category": "Pregnant",
-                "prompt": "Generate Pregnant effect",
+                "prompt": "Place hand on the belly, the belly gets bigger, becomes pregnant.",
                 "image": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
                 "video": "/img_video/videos/PregnantAI_怀孕.mp4"
               }
@@ -214,9 +282,15 @@
           "id": "hero",
           "title": "Create Beautiful Maternity Photos",
           "description": "Generate realistic pregnancy photos with AI technology.",
-          "background_image": { "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Pregnant-AI_怀孕_1.png"
+          },
           "buttons": [
-            { "title": "Try Pregnant AI", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Pregnant AI",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -225,20 +299,31 @@
             {
               "title": "Natural & Beautiful",
               "description": "Create realistic maternity photos with happy expressions and natural poses.",
-              "image": { "src": "/imgs/cms/Pregnant-AI_怀孕_2.png" }
+              "image": {
+                "src": "/imgs/cms/Pregnant-AI_怀孕_2.png"
+              }
             }
           ]
         },
-         "intro": {
+        "intro": {
           "block": "tool-intro",
           "title": "Maternity AI Photos",
           "description": "Visualize pregnancy with beautiful AI photos.",
-          "images": [{ "src": "/imgs/cms/Pregnant-AI_怀孕_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/Pregnant-AI_怀孕_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Is it realistic?", "answer": "Yes, highly realistic results." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Is it realistic?",
+              "answer": "Yes, highly realistic results."
+            }
+          ]
         }
       }
     }
@@ -255,9 +340,15 @@
           "id": "hero",
           "title": "360° Character Showcase",
           "description": "Create professional 360-degree character rotation photos with AI.",
-          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+          },
           "buttons": [
-            { "title": "Try Character 360", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Character 360",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -266,7 +357,9 @@
             {
               "title": "Complete View",
               "description": "Showcase characters from all angles with professional 360-degree rotation.",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
@@ -274,12 +367,21 @@
           "block": "tool-intro",
           "title": "360 Character View",
           "description": "See your character from every angle.",
-          "images": [{ "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Does it work for anime?", "answer": "Yes, it supports anime styles." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Does it work for anime?",
+              "answer": "Yes, it supports anime styles."
+            }
+          ]
         }
       }
     }
@@ -296,9 +398,15 @@
           "id": "hero",
           "title": "Create Russian Girlfriend Photos",
           "description": "Generate romantic couple photos with beautiful Russian girlfriend AI.",
-          "background_image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
+          },
           "buttons": [
-            { "title": "Try Russian Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Russian Girlfriend",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -307,7 +415,9 @@
             {
               "title": "Romantic Moments",
               "description": "Create beautiful couple photos with realistic Russian girlfriend scenarios.",
-              "image": { "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_2.png"
+              }
             }
           ]
         },
@@ -315,12 +425,21 @@
           "block": "tool-intro",
           "title": "AI Russian Girlfriend",
           "description": "Generate romantic photos with a virtual Russian girlfriend.",
-          "images": [{ "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Fake-Date_俄罗斯女友_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Is it customizable?", "answer": "Yes, you can adjust appearance settings." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Is it customizable?",
+              "answer": "Yes, you can adjust appearance settings."
+            }
+          ]
         }
       }
     }
@@ -337,9 +456,15 @@
           "id": "hero",
           "title": "Create Princess Hug Photos",
           "description": "Generate romantic princess carry moments with AI technology.",
-          "background_image": { "src": "/imgs/cms/Hug_公主抱_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Hug_公主抱_1.png"
+          },
           "buttons": [
-            { "title": "Try Princess Hug", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Princess Hug",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -348,7 +473,9 @@
             {
               "title": "Romantic Gesture",
               "description": "Create beautiful princess carry moments with natural poses and expressions.",
-              "image": { "src": "/imgs/cms/Hug_公主抱_2.png" }
+              "image": {
+                "src": "/imgs/cms/Hug_公主抱_2.png"
+              }
             }
           ]
         },
@@ -356,12 +483,21 @@
           "block": "tool-intro",
           "title": "Princess Carry Photos",
           "description": "Romantic princess hug photos generated by AI.",
-          "images": [{ "src": "/imgs/cms/Hug_公主抱_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/Hug_公主抱_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Can I upload my own photo?", "answer": "Yes, upload your photo to start." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Can I upload my own photo?",
+              "answer": "Yes, upload your photo to start."
+            }
+          ]
         }
       }
     }
@@ -382,7 +518,7 @@
             "examples": [
               {
                 "category": "Celebrity Selfie",
-                "prompt": "Generate Celebrity Selfie effect",
+                "prompt": "Make the person in the image take a selfie with [celebrity name], both smiling and looking directly into the camera. The scene of the photo is in the [place]. POV perspective as if the viewer is holding the phone, but without showing the phone itself. Bright lighting, natural expressions.",
                 "image": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
                 "video": "/img_video/videos/AISelfiewithCelebrities_名人合拍.mp4"
               }
@@ -393,9 +529,15 @@
           "id": "hero",
           "title": "Take Selfies with Celebrities",
           "description": "Create realistic selfies with your favorite celebrities using AI.",
-          "background_image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png"
+          },
           "buttons": [
-            { "title": "Try Celebrity Selfie", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Celebrity Selfie",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -404,7 +546,9 @@
             {
               "title": "Realistic Blend",
               "description": "Create natural-looking selfies with celebrities in fun poses.",
-              "image": { "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_2.png"
+              }
             }
           ]
         },
@@ -412,12 +556,21 @@
           "block": "tool-intro",
           "title": "Celebrity Selfies",
           "description": "Take a selfie with any celebrity instantly using AI.",
-          "images": [{ "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Selfie-with-Celebrities_名人合拍_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Which celebrities?", "answer": "We support thousands of famous figures." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Which celebrities?",
+              "answer": "We support thousands of famous figures."
+            }
+          ]
         }
       }
     }
@@ -434,9 +587,15 @@
           "id": "hero",
           "title": "Create Side Hug Photos",
           "description": "Generate friendly side embrace moments with AI technology.",
-          "background_image": { "src": "/imgs/cms/Hug_侧身依抱_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Hug_侧身依抱_1.png"
+          },
           "buttons": [
-            { "title": "Try Side Hug", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Side Hug",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -445,7 +604,9 @@
             {
               "title": "Casual & Friendly",
               "description": "Create natural side hug moments with casual and warm expressions.",
-              "image": { "src": "/imgs/cms/Hug_侧身依抱_2.png" }
+              "image": {
+                "src": "/imgs/cms/Hug_侧身依抱_2.png"
+              }
             }
           ]
         },
@@ -453,12 +614,21 @@
           "block": "tool-intro",
           "title": "Side Hug Photos",
           "description": "Generate friendly side hug photos.",
-          "images": [{ "src": "/imgs/cms/Hug_侧身依抱_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/Hug_侧身依抱_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Is it fast?", "answer": "Yes, generation takes seconds." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Is it fast?",
+              "answer": "Yes, generation takes seconds."
+            }
+          ]
         }
       }
     }
@@ -475,9 +645,15 @@
           "id": "hero",
           "title": "Create Chinese Girlfriend Photos",
           "description": "Generate romantic couple photos with beautiful Chinese girlfriend AI.",
-          "background_image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png"
+          },
           "buttons": [
-            { "title": "Try Chinese Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try Chinese Girlfriend",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -486,7 +662,9 @@
             {
               "title": "Beautiful Moments",
               "description": "Create romantic couple photos with realistic Chinese girlfriend scenarios.",
-              "image": { "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Fake-Date_中国女友_2.png"
+              }
             }
           ]
         },
@@ -494,12 +672,21 @@
           "block": "tool-intro",
           "title": "AI Chinese Girlfriend",
           "description": "Romantic photos with a virtual Chinese girlfriend.",
-          "images": [{ "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Fake-Date_中国女友_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "High quality?", "answer": "Yes, we output HD images." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "High quality?",
+              "answer": "Yes, we output HD images."
+            }
+          ]
         }
       }
     }
@@ -516,9 +703,15 @@
           "id": "hero",
           "title": "Create French Girlfriend Photos",
           "description": "Generate romantic couple photos with beautiful French girlfriend AI.",
-          "background_image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png"
+          },
           "buttons": [
-            { "title": "Try French Girlfriend", "url": "/ai-image-generator", "icon": "Zap" }
+            {
+              "title": "Try French Girlfriend",
+              "url": "/ai-image-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -527,7 +720,9 @@
             {
               "title": "Parisian Romance",
               "description": "Create beautiful couple photos with French girlfriend in romantic settings.",
-              "image": { "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Fake-Date_法国女友_2.png"
+              }
             }
           ]
         },
@@ -535,12 +730,21 @@
           "block": "tool-intro",
           "title": "AI French Girlfriend",
           "description": "Romantic photos with a virtual French girlfriend in Paris.",
-          "images": [{ "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Fake-Date_法国女友_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Can I change background?", "answer": "Yes, specify in the prompt." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Can I change background?",
+              "answer": "Yes, specify in the prompt."
+            }
+          ]
         }
       }
     }
@@ -557,9 +761,15 @@
           "id": "hero",
           "title": "AI Art Style",
           "description": "Add unique artistic style effects to your photos.",
-          "background_image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/艺术_冰雕_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -570,19 +780,19 @@
             "examples": [
               {
                 "category": "AI Color Splash",
-                "prompt": "Generate AI Color Splash effect",
+                "prompt": "一个美丽的年轻女子站在繁忙的城市人行横道中央的电影全身镜头。选择性配色：女人是充满活力的自然色，而整个背景和其他行人都是不饱和的黑白。柔和的日光，浅景深，高对比度，专业的摄影风格。",
                 "image": "/img_video/imgs/艺术_AI局部留色视频特效_1.png",
                 "video": "/img_video/videos/艺术_AI局部留色视频特效.mp4"
               },
               {
                 "category": "AI Dragon Flight",
-                "prompt": "Generate AI Dragon Flight effect",
+                "prompt": "电影镜头，一个勇敢的年轻女孩（使用参考图1的面貌，保证生成的面部跟我所提供的面貌一样），一头长长的红色头发骑在一条巨大的深灰色龙的背上，中世纪骑士的服装，长长的飘逸的斗篷，龙呼吸着微弱的火花，在日落时翱翔在广阔的云海之上，一座雄伟的哥特式城堡矗立在山顶上，黄金时刻照明，史诗般的幻想氛围，8k分辨率，超现实，逼真。",
                 "image": "/img_video/imgs/艺术_AI御龙飞行视频_1.png",
                 "video": "/img_video/videos/艺术_AI御龙飞行视频.mp4"
               },
               {
                 "category": "Ice Sculpture",
-                "prompt": "Generate Ice Sculpture effect",
+                "prompt": "人物保持大声呐喊并伸手的姿势，身体从脚部向上迅速发生“冰封”特效变换。身体从有机材质变为半透明、带有冰裂纹的蓝色冰雕材质，伴有冷气散发的烟雾效果。动作起始于现实人物的呐喊，在中段完成材质替换，人物姿态在变换过程中保持凝固或微颤。",
                 "image": "/img_video/imgs/艺术_冰雕_1.png",
                 "video": "/img_video/videos/艺术_冰雕.mp4"
               }
@@ -594,9 +804,15 @@
           "title": "AI Art Style",
           "description": "Add various artistic style effects to photos, including ice sculpture, AI selective color, AI dragon riding and other creative artistic effects. Using our AI technology, make your photos show unique artistic charm.",
           "images": [
-            { "src": "/img_video/imgs/艺术_冰雕_2.png" },
-            { "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png" },
-            { "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png" }
+            {
+              "src": "/img_video/imgs/艺术_冰雕_2.png"
+            },
+            {
+              "src": "/img_video/imgs/艺术_AI局部留色视频特效_2.png"
+            },
+            {
+              "src": "/img_video/imgs/艺术_AI御龙飞行视频_2.png"
+            }
           ]
         },
         "features": {
@@ -605,8 +821,13 @@
             {
               "title": "Unique Art Styles",
               "description": "Support ice sculpture, selective color, dragon riding and other creative art styles, making your photos full of artistic sense.",
-              "image": { "src": "/img_video/imgs/艺术_冰雕_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/艺术_冰雕_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -614,13 +835,28 @@
           "block": "how-to",
           "title": "How to Use AI Art Style?",
           "description": "Add artistic effects to photos in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/艺术_冰雕_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/艺术_冰雕_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired art style type." },
-            { "title": "Step 2", "description": "Upload a clear photo." },
-            { "title": "Step 3", "description": "Click generate to see the artistic effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired art style type."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the artistic effect."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -629,7 +865,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What art styles are supported?", "answer": "We support ice sculpture, selective color, dragon riding and many other artistic style effects." }]
+          "items": [
+            {
+              "question": "What art styles are supported?",
+              "answer": "We support ice sculpture, selective color, dragon riding and many other artistic style effects."
+            }
+          ]
         }
       }
     }
@@ -646,9 +887,15 @@
           "id": "hero",
           "title": "AI Role Swap Photo",
           "description": "Achieve creative role swapping and scene transformation in your photos.",
-          "background_image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -659,49 +906,49 @@
             "examples": [
               {
                 "category": "AI Tiger Hug",
-                "prompt": "Generate AI Tiger Hug effect",
+                "prompt": "电影场景。突然，一只巨大而威严的老虎从他身后站起来，从背后给了他一个温柔的拥抱。老虎把它的大头靠在那个人的肩上。这个人笑得很开心，抓住了老虎的爪子。老虎的皮毛和那个人的表情上有难以置信的细节。超现实和温暖的氛围，流畅的自然运动，4k，超现实的纹理。",
                 "image": "/img_video/imgs/角色切换_AI老虎拥抱_1.png",
                 "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4"
               },
               {
                 "category": "Luxury Car",
-                "prompt": "Generate Luxury Car effect",
+                "prompt": "电影序列。突然，一辆光滑的白色豪华敞篷跑车从面前出现。车门正好在她面前打开。这位女士不慌不忙地走进车里，坐了下来。流畅的镜头运动，逼真的物理效果，4k",
                 "image": "/img_video/imgs/角色切换_坐上豪车_1.png",
                 "video": "/img_video/videos/角色切换_坐上豪车.mp4"
               },
               {
                 "category": "Interrogation Room",
-                "prompt": "Generate Interrogation Room effect",
+                "prompt": "A dimly lit, cold interrogation room with concrete walls. The same man in the light blue sweater, now handcuffed, looking down with a somber expression. Behind him stand two DEA officers in black tactical gear. On the metal table in front of him are several smartphones, stacks of cash, and a laptop. Harsh fluorescent lighting, cinematic drama, intense atmosphere",
                 "image": "/img_video/imgs/角色切换_审讯室_1.png",
                 "video": "/img_video/videos/角色切换_审讯室.mp4"
               },
               {
                 "category": "Scream",
-                "prompt": "Generate Scream effect",
+                "prompt": "A cinematic horror sequence. The man in the mirror closes his eyes for a second. Suddenly, the masked killer (Ghostface) behind him lunges forward, grabbing the man's throat and covering his mouth with a gloved hand. The camera rapidly zooms in on the man's face as his eyes widen in terror, struggling to breathe. Fast-paced action, intense suspense, jump scare, realistic movement, 4k, cinematic lighting",
                 "image": "/img_video/imgs/角色切换_尖叫_1.png",
                 "video": "/img_video/videos/角色切换_尖叫.mp4"
               },
               {
                 "category": "Meet Future Kid",
-                "prompt": "Generate Meet Future Kid effect",
+                "prompt": "一个电影镜头，镜头移开，露出一个中国小女孩（5岁)，是女人的小孩子，样貌五官跟女人极度的相识，女孩穿着同样的衣服。女孩跑进相框，站在女人旁边。两人看着镜头，一起微笑。品格与服装一致性高，动作流畅，温馨氛围，4k。",
                 "image": "/img_video/imgs/角色切换_遇见未来的小孩_1.png",
                 "video": "/img_video/videos/角色切换_遇见未来的小孩.mp4"
               },
               {
                 "category": "Meet Older Me",
-                "prompt": "Generate Meet Older Me effect",
+                "prompt": "电影镜头。当镜头移向左边时，这位有着优雅银发、穿着一模一样的衣服的老妇人走进了镜头。他们肩并肩站着，都看着镜头。在两个版本之间保持高度的字符一致性。无缝运动，超现实的时空旅行氛围，4k",
                 "image": "/img_video/imgs/角色切换_遇见老年的我_1.png",
                 "video": "/img_video/videos/角色切换_遇见老年的我.mp4"
               },
               {
                 "category": "Rain Walk",
-                "prompt": "Generate Rain Walk effect",
+                "prompt": "电影慢动作视频。一个穿着黑色西装的人非常缓慢的走在倾盆大雨的夜晚。水从他的脸上和脖子流下来的细节非常清晰。高角度镜头，缓慢变焦，对准他的脸。强烈的青色蓝色背光创造发光雾的效果。在闪烁的街灯的映照下，雨点晶莹剔透。飘渺的，喜怒无常的，戏剧性的。4k，逼真的流体模拟。",
                 "image": "/img_video/imgs/角色切换_雨中漫步_1.png",
                 "video": "/img_video/videos/角色切换_雨中漫步.mp4"
               },
               {
                 "category": "Rainy Night",
-                "prompt": "Generate Rainy Night effect",
+                "prompt": "电影感转场，图中人物。灯光从柔和的室内光变为戏剧性的蓝色霓虹月光。她闭上眼睛，仰起头，雨水在皮肤上闪烁并顺着脸颊流下。高细节，忧郁氛围，慢动作，写实风格。",
                 "image": "/img_video/imgs/角色切换_雨夜_1.png",
                 "video": "/img_video/videos/角色切换_雨夜.mp4"
               }
@@ -713,9 +960,15 @@
           "title": "AI Role Swap Photos",
           "description": "Achieve various creative role swap scenes for your photos.",
           "images": [
-            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-            { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
-            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
+            {
+              "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_雨中漫步_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png"
+            }
           ]
         },
         "features": {
@@ -724,8 +977,13 @@
             {
               "title": "Creative Scene Swap",
               "description": "Support AI tiger hug, rainy walk, meeting future child and other creative scenes.",
-              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -733,13 +991,28 @@
           "block": "how-to",
           "title": "How to Use AI Role Swap?",
           "description": "Achieve creative scene swaps in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired scene type." },
-            { "title": "Step 2", "description": "Upload a clear photo." },
-            { "title": "Step 3", "description": "Click generate to see the effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired scene type."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the effect."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -748,7 +1021,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What scenes are supported?", "answer": "We support many creative scenes." }]
+          "items": [
+            {
+              "question": "What scenes are supported?",
+              "answer": "We support many creative scenes."
+            }
+          ]
         }
       }
     }
@@ -765,9 +1043,15 @@
           "id": "hero",
           "title": "Add Visual Effects to Photos",
           "description": "Transform your photos with cinematic visual effects using AI.",
-          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "background_image": {
+            "src": "/img_video/imgs/视觉效果_AI爆炸效果_1.png"
+          },
           "buttons": [
-            { "title": "Try Visual Effects", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Visual Effects",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -778,48 +1062,48 @@
             "examples": [
               {
                 "category": "AI Explosion",
-                "prompt": "Generate AI Explosion effect",
+                "prompt": "主体人物突然分解，分裂成成千上万的动态粒子和碎片。电影冲击波效应将粒子推向镜头，使屏幕上充满了飞散的碎片。最后消失在画面中，高保真粒子物理，高能运动，流体过渡，高速快门美学。",
                 "image": "/img_video/imgs/视觉效果_AI爆炸效果_1.png",
                 "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4"
               },
               {
                 "category": "Epic Explosion Walk",
-                "prompt": "Generate Epic Explosion Walk effect",
+                "prompt": "一个电影般的动作序列，一个穿着白色西装的女人在鹅卵石街道上走向摄像机。【动作】：随着女人轻轻摆了一下右手，突然，背景中的一辆老式汽车爆炸，喷出巨大的橙色火焰和浓浓的黑烟。女人继续平静地走着，头也不回，保持着一种冷静的表情。[技术]：逼真的火焰和烟雾模拟，爆炸产生的明亮光线反射在女人的衣服和砖墙上。爆炸时相机轻微抖动的跟踪镜头。高对比度，高速快门效果，电影般的画质。",
                 "image": "/img_video/imgs/视觉效果_史诗级爆炸漫步_1.png",
                 "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4"
               },
               {
                 "category": "Change Helicopter Hangar",
-                "prompt": "Generate Change Helicopter Hangar effect",
+                "prompt": "高速电影动作镜头。一名女子被悬挂在一架飞行中的直升机上，一只手抓住起落架。她自信地飞吻并对着镜头挥手。镜头慢慢拉回镜头，展现了一座无边无际的欧洲城市的极端高度。她的长腰带和头发在高空的风中剧烈地飘动。逼真的物理效果，头发模拟，稳定的手持相机运动，高风险的时尚特技，生动的灯光，流畅自然的人体运动。",
                 "image": "/img_video/imgs/视觉效果_改变直升机机库_1.png",
                 "video": "/img_video/videos/视觉效果_改变直升机机库.mp4"
               },
               {
                 "category": "Ocean Dress",
-                "prompt": "Generate Ocean Dress effect",
+                "prompt": "慢动作在海浪中行走，浅蓝色的丝绸连衣裙在风中猛烈地摆动，裙摆与水花融合，波浪撞击腿部，电影般的慢动作，超现实的水物理。动态关键词：流动、飘动、飞溅、有节奏的波浪、优雅的步伐。",
                 "image": "/img_video/imgs/视觉效果_海洋连衣裙_1.png",
                 "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4"
               },
               {
                 "category": "Dimension Travel",
-                "prompt": "Generate Dimension Travel effect",
+                "prompt": "一段电影般的视频，一名男子以缓慢而自信的步伐走向摄像机。摄像机保持在一个非常低的角度，聚焦在他的白色运动鞋和他随身携带的塑料袋上。[过渡/效果]：背景环境迅速变形，按照后面的高楼的形状轮廓变成有发光的紫色大楼形状，然后变成一个宇宙星云，有旋转的蓝色火焰和北极光。当宇宙在他身后崩塌和重组时，这个人保持稳定。高能量，无缝过渡，充满活力的霓虹色彩，合成波美学，4k，流畅的运动",
                 "image": "/img_video/imgs/视觉效果_穿越维度_1.png",
                 "video": "/img_video/videos/视觉效果_穿越维度.mp4"
               },
               {
                 "category": "Into Mouth",
-                "prompt": "Generate Into Mouth effect",
+                "prompt": "第一人视角，张开嘴巴视角进入到嘴巴的过程",
                 "image": "/img_video/imgs/视觉效果_进入嘴巴_1.png",
                 "video": "/img_video/videos/视觉效果_进入嘴巴.mp4"
               },
-              { 
-                "category": "Explosion", 
-                "prompt": "Cinematic explosion background, action movie style photo",
+              {
+                "category": "Explosion",
+                "prompt": "主体人物突然分解，分裂成成千上万的动态粒子和碎片。电影冲击波效应将粒子推向镜头，使屏幕上充满了飞散的碎片。最后消失在画面中，高保真粒子物理，高能运动，流体过渡，高速快门美学。",
                 "image": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
               },
-              { 
-                "category": "Fantasy", 
-                "prompt": "Fantasy sea dress, magical ocean waves dress effect",
+              {
+                "category": "Fantasy",
+                "prompt": "慢动作在海浪中行走，浅蓝色的丝绸连衣裙在风中猛烈地摆动，裙摆与水花融合，波浪撞击腿部，电影般的慢动作，超现实的水物理。动态关键词：流动、飘动、飞溅、有节奏的波浪、优雅的步伐。",
                 "image": "/img_video/imgs/视觉效果_海洋连衣裙_2.png"
               }
             ]
@@ -830,9 +1114,15 @@
           "title": "Creative AI Photo Effects",
           "description": "From Hollywood-style explosions to magical fanstasies, transform your photos instantly.",
           "images": [
-            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" },
-            { "src": "/img_video/imgs/视觉效果_穿越维度_2.png" }
+            {
+              "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_穿越维度_2.png"
+            }
           ]
         },
         "features": {
@@ -841,8 +1131,13 @@
             {
               "title": "Cinematic Quality",
               "description": "Get professional visual effects in your photos without editing skills.",
-              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -850,13 +1145,28 @@
           "block": "how-to",
           "title": "How to Use AI Visual Effects?",
           "description": "Add effects in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/视觉效果_AI爆炸效果_1.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Select the effect you want." },
-            { "title": "Step 2", "description": "Upload your photo." },
-            { "title": "Step 3", "description": "Generate your masterpiece." }
+            {
+              "title": "Step 1",
+              "description": "Select the effect you want."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload your photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Generate your masterpiece."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -865,7 +1175,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "Is it free?", "answer": "Yes, try it for free." }]
+          "items": [
+            {
+              "question": "Is it free?",
+              "answer": "Yes, try it for free."
+            }
+          ]
         }
       }
     }
@@ -886,31 +1201,31 @@
             "examples": [
               {
                 "category": "Biting Lip Kiss",
-                "prompt": "Generate Biting Lip Kiss effect",
+                "prompt": "左边的人 咬住 右边人的下嘴唇 亲吻, 4k",
                 "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_1.png",
                 "video": "/img_video/videos/AIKissing_咬嘴唇之吻.mp4"
               },
               {
                 "category": "Normal Kiss",
-                "prompt": "Generate Normal Kiss effect",
+                "prompt": "The couple in the painting turn their heads to look at each other, then kiss passionately, expressing the love between them.",
                 "image": "/img_video/imgs/AI-Kissing_正常接吻_1.png",
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4"
               },
               {
                 "category": "French Kiss",
-                "prompt": "Generate French Kiss effect",
+                "prompt": "让图片中的2个人法式舌吻, 4k",
                 "image": "/img_video/imgs/AI-Kissing_法式接吻_1.png",
                 "video": "/img_video/videos/AIKissing法式接吻.mp4"
               },
               {
                 "category": "Cheek Kiss",
-                "prompt": "Generate Cheek Kiss effect",
+                "prompt": "左边的人 亲吻 右边人的脸颊, 4k",
                 "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
                 "video": "/img_video/videos/脸颊之吻.mp4"
               },
               {
                 "category": "Forehead Kiss",
-                "prompt": "Generate Forehead Kiss effect",
+                "prompt": "左边的人 亲吻 右边人的额头, 4k",
                 "image": "/img_video/imgs/AI-Kissing_额头之吻_1.png",
                 "video": "/img_video/videos/AIKissing_额头之吻.mp4"
               }
@@ -921,16 +1236,26 @@
           "id": "hero",
           "title": "Create Romantic Kissing Photos",
           "description": "Generate realistic kissing photos using AI.",
-          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "intro": {
           "block": "tool-intro",
           "title": "Kissing Photos",
           "description": "Romantic kissing moments captured with AI.",
-          "images": [{ "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" }]
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+            }
+          ]
         }
       }
     }
@@ -951,7 +1276,7 @@
             "examples": [
               {
                 "category": "360 Muscle Showcase",
-                "prompt": "Generate Muscle Showcase effect",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png",
                 "video": "/img_video/videos/AI-360-Rotation_肌肉展示.mp4"
               }
@@ -962,16 +1287,26 @@
           "id": "hero",
           "title": "Create Muscle Showcase Photos",
           "description": "Generate professional 360-degree muscle showcase photos with AI.",
-          "background_image": { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "intro": {
           "block": "tool-intro",
           "title": "Muscle Showcase",
           "description": "Show off your muscles with AI-generated 360-degree effects.",
-          "images": [{ "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png" }]
+          "images": [
+            {
+              "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png"
+            }
+          ]
         },
         "features": {
           "block": "feature-split",
@@ -979,8 +1314,13 @@
             {
               "title": "360° View",
               "description": "Get a full 360-degree view of your muscle physique.",
-              "image": { "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -988,18 +1328,38 @@
           "block": "how-to",
           "title": "How to Use AI Muscle Photo?",
           "description": "Generate muscle photos in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/AI-360-Rotation_肌肉展示_1.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Upload your photo." },
-            { "title": "Step 2", "description": "Select Muscle Showcase effect." },
-            { "title": "Step 3", "description": "Generate and share." }
+            {
+              "title": "Step 1",
+              "description": "Upload your photo."
+            },
+            {
+              "title": "Step 2",
+              "description": "Select Muscle Showcase effect."
+            },
+            {
+              "title": "Step 3",
+              "description": "Generate and share."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "Is it realistic?", "answer": "Yes, our AI creates highly realistic muscle effects." }]
+          "items": [
+            {
+              "question": "Is it realistic?",
+              "answer": "Yes, our AI creates highly realistic muscle effects."
+            }
+          ]
         },
         "more_tools": {
           "block": "more-tools",

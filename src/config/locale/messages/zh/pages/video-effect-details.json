@@ -11,9 +11,15 @@
           "id": "hero",
           "title": "生成热门 AI 接吻视频",
           "description": "使用我们先进的 A​​I 技术，将您的照片转换成真实的接吻视频。",
-          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+          },
           "buttons": [
-            { "title": "立即尝试 AI 接吻", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即尝试 AI 接吻",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -22,20 +28,20 @@
           "title": "AI 接吻生成器",
           "data": {
             "examples": [
-              { 
-                "category": "浪漫", 
-                "prompt": "夕阳下一对情侣浪漫接吻，电影感，4k 细节",
+              {
+                "category": "浪漫",
+                "prompt": "The couple in the painting turn their heads to look at each other, then kiss passionately, expressing the love between them.",
                 "image": "/imgs/cms/AI-Kissing_正常接吻_2.png"
               },
-              { 
-                "category": "法式接吻", 
-                "prompt": "两人的法式深吻，激情特写，高质量，逼真",
-                 "image": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              {
+                "category": "法式接吻",
+                "prompt": "让图片中的2个人法式舌吻, 4k",
+                "image": "/imgs/cms/AI-Kissing_法式接吻_2.png"
               },
-              { 
-                "category": "可爱", 
-                "prompt": "温柔的脸颊亲吻，可爱亲昵的瞬间，柔和光线",
-                 "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              {
+                "category": "可爱",
+                "prompt": "左边的人 亲吻 右边人的脸颊, 4k",
+                "image": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
               }
             ]
           }
@@ -45,9 +51,15 @@
           "title": "用 1PhotoAI 接吻视频生成器创造亲密时刻",
           "description": "使用我们的 AI 接吻视频生成器，您可以毫不费力地将任何两张照片变成激情的接吻视频，或者将照片中的角色转变为更亲密浪漫的角色，例如法式接吻。无论您是想找回失去的记忆，还是为爱人制造惊喜，这款 AI 接吻生成器都是您的独特风格和助手！",
           "images": [
-            { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
-            { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
-            { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+            {
+              "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+            }
           ]
         },
         "features": {
@@ -56,15 +68,25 @@
             {
               "title": "栩栩如生的 AI 接吻与法式接吻视频",
               "description": "体验我们 AI 接吻和法式接吻视频工具的魔力。将静态照片转换为具有流畅动作和真实表情的浪漫动画，就像接吻真的在发生一样。",
-              "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
-              "button": { "title": "立即尝试 AI 接吻视频生成器", "url": "#tool" }
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              },
+              "button": {
+                "title": "立即尝试 AI 接吻视频生成器",
+                "url": "#tool"
+              }
             },
             {
               "title": "多样化的配对选项",
               "description": "无论您是想创造情侣间的浪漫时刻、朋友间的有趣轻吻，还是虚拟角色间的激情接吻，我们的 AI 接吻视频生成器都能满足各种场景。",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "reverse": true,
-              "button": { "title": "立即尝试 AI 接吻视频生成器", "url": "#tool" }
+              "button": {
+                "title": "立即尝试 AI 接吻视频生成器",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -72,7 +94,10 @@
           "block": "how-to",
           "title": "如何使用 1PhotoAI 接吻视频生成器？",
           "description": "只需点击几下即可创建惊艳的接吻视频。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+          },
           "steps": [
             {
               "title": "步骤 1",
@@ -87,7 +112,10 @@
               "description": "确认以创建包含流畅接吻效果的视频。"
             }
           ],
-          "button": { "title": "创建 AI 接吻视频", "url": "#tool" }
+          "button": {
+            "title": "创建 AI 接吻视频",
+            "url": "#tool"
+          }
         },
         "related_tools": {
           "block": "related-tools",
@@ -96,25 +124,33 @@
             {
               "title": "AI 拥抱生成器",
               "description": "用 AI 创建温馨的拥抱视频。",
-              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_2.png"
+              },
               "url": "/video-effects/ai-hug"
             },
             {
               "title": "AI 双人接吻",
               "description": "生成浪漫接吻视频。",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI 扭臀舞",
               "description": "用 AI 创建热门扭臀舞视频。",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             },
-             {
+            {
               "title": "AI 肌肉生成器",
               "description": "为您的照片添加专业的健美肌肉。",
-              "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+              "image": {
+                "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
               "url": "/video-effects/ai-muscle"
             }
           ]
@@ -135,11 +171,11 @@
               "question": "最好的在线 AI 接吻和法式接吻视频生成器是什么？",
               "answer": "1PhotoAI 为亲密视频生成提供最逼真、最高质量的结果。"
             },
-             {
+            {
               "question": "AI 接吻生成器免费吗？",
               "answer": "是的，我们提供免费试用，让用户体验 AI 视频生成的魔力。"
             },
-             {
+            {
               "question": "在线 AI 接吻视频生成器安全吗？",
               "answer": "绝对安全。我们优先考虑用户隐私，并在处理后删除所有上传的照片。"
             }
@@ -151,22 +187,30 @@
           "items": [
             {
               "title": "AI 拥抱",
-              "image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_1.png"
+              },
               "url": "/video-effects/ai-hug"
             },
             {
               "title": "AI 慢动作",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI 扭臀舞视频生成器",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             },
             {
               "title": "AI 肌肉生成器",
-              "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+              "image": {
+                "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
               "url": "/video-effects/ai-muscle"
             }
           ]
@@ -186,9 +230,15 @@
           "id": "hero",
           "title": "专业 AI 肌肉转换",
           "description": "只需点击一下，即可在照片中获得您梦寐以求的身材。",
-          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "buttons": [
-            { "title": "立即添加肌肉", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即添加肌肉",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -197,14 +247,14 @@
           "title": "AI 肌肉生成器",
           "data": {
             "examples": [
-              { 
-                "category": "健美", 
-                "prompt": "男子展示巨大肌肉，有力地展示，专业健美体格",
+              {
+                "category": "健美",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/Muscle_肌肉展示_2.png"
               },
-              { 
-                "category": "360 视角", 
-                "prompt": "肌肉体格 360 度旋转，详细肌肉线条",
+              {
+                "category": "360 视角",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
               }
             ]
@@ -216,7 +266,9 @@
             {
               "title": "真实质感",
               "description": "自然的皮肤光效和肌肉纹理，看起来非常真实。",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
@@ -225,15 +277,22 @@
           "title": "用 AI 肌肉生成器获得健美身材",
           "description": "使用我们的 AI 肌肉生成器瞬间转变您的体格。无论您是想看到自己成为健美运动员的样子，还是只想增加一些线条，我们的 AI 都能创建与原始照片完美融合的逼真肌肉覆盖层。",
           "images": [
-            { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
-            { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            {
+              "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+            }
           ]
         },
         "how_to": {
           "block": "how-to",
           "title": "如何使用 AI 肌肉生成器？",
           "description": "几秒钟内获得梦想身材。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "steps": [
             {
               "title": "步骤 1",
@@ -248,7 +307,10 @@
               "description": "点击生成以查看您的全新肌肉外观。"
             }
           ],
-          "button": { "title": "立即添加肌肉", "url": "#tool" }
+          "button": {
+            "title": "立即添加肌肉",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
@@ -274,12 +336,16 @@
           "items": [
             {
               "title": "AI 接吻生成器",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI 扭臀舞",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -299,9 +365,15 @@
           "id": "hero",
           "title": "创建海滩夏日视频",
           "description": "使用 AI 生成的比基尼效果将您的照片转换为惊艳的海滩场景。",
-          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+          },
           "buttons": [
-            { "title": "立即试用 AI 比基尼", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即试用 AI 比基尼",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -310,14 +382,14 @@
           "title": "AI 比基尼生成器",
           "data": {
             "examples": [
-              { 
-                "category": "海滩", 
-                "prompt": "女子穿比基尼在海滩漫步，夏日氛围，自然光线",
+              {
+                "category": "海滩",
+                "prompt": "Sexy belly dance.",
                 "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
               },
-              { 
-                "category": "热带", 
-                "prompt": "热带氛围的比基尼海滩场景，日落余晖",
+              {
+                "category": "热带",
+                "prompt": "Sexy belly dance.",
                 "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
               }
             ]
@@ -329,7 +401,9 @@
             {
               "title": "夏日海滩氛围",
               "description": "创建自然光效和夏日氛围的逼真海滩场景。",
-              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
             }
           ]
         },
@@ -338,8 +412,12 @@
           "title": "变身海滩明星",
           "description": "我们的 AI 比基尼生成器将您的照片变成令人惊叹的海滩视频。非常适合创作夏日内容或想象自己置身于热带天堂。",
           "images": [
-            { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
-            { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+            }
           ]
         },
         "faq": {
@@ -356,9 +434,11 @@
           "block": "more-tools",
           "title": "尝试其他热门视频效果",
           "items": [
-             {
+            {
               "title": "AI 接吻生成器",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             }
           ]
@@ -378,9 +458,15 @@
           "id": "hero",
           "title": "添加有趣的抖动效果",
           "description": "使用 AI 驱动的身体抖动效果创建有趣的视频。",
-          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+          },
           "buttons": [
-            { "title": "试用抖动效果", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "试用抖动效果",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -389,14 +475,14 @@
           "title": "AI 抖动生成器",
           "data": {
             "examples": [
-              { 
-                "category": "有趣", 
-                "prompt": "跳舞人物的身体抖动效果，有趣的弹跳运动",
+              {
+                "category": "有趣",
+                "prompt": "Chest bouncing, breasts moving up and down.",
                 "image": "/imgs/cms/Jiggle_抖动身体_1.png"
               },
-              { 
-                "category": "动态", 
-                "prompt": "具有自然物理效果的动态身体抖动，娱乐效果",
+              {
+                "category": "动态",
+                "prompt": "Chest bouncing, breasts moving up and down.",
                 "image": "/imgs/cms/Jiggle_抖动身体_2.png"
               }
             ]
@@ -408,7 +494,9 @@
             {
               "title": "动态运动",
               "description": "自然有趣的身体运动，看起来逼真且富有娱乐性。",
-              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+              "image": {
+                "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+              }
             }
           ]
         },
@@ -417,15 +505,19 @@
           "title": "为您的视频增添活力",
           "description": "AI 抖动特效为您的角色增添有趣、弹跳的动态。非常适合创建娱乐性的社交媒体内容或只是博君一笑。",
           "images": [
-            { "src": "/imgs/cms/Jiggle_抖动身体_1.png" },
-            { "src": "/imgs/cms/Jiggle_抖动身体_2.png" }
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+            },
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+            }
           ]
         },
         "faq": {
           "block": "faq",
           "title": "常见问题",
           "items": [
-             {
+            {
               "question": "它是如何工作的？",
               "answer": "我们的 AI 跟踪身体运动并添加动态物理模拟。"
             }
@@ -435,9 +527,11 @@
           "block": "more-tools",
           "title": "尝试其他热门视频效果",
           "items": [
-             {
+            {
               "title": "AI 扭臀舞",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -457,9 +551,15 @@
           "id": "hero",
           "title": "生成热门扭臀视频",
           "description": "使用 AI 技术将照片转换为充满活力的扭臀舞视频。",
-          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+          },
           "buttons": [
-            { "title": "试用扭臀效果", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "试用扭臀效果",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -468,14 +568,14 @@
           "title": "AI 扭臀生成器",
           "data": {
             "examples": [
-              { 
-                "category": "充满活力", 
-                "prompt": "人物在时尚环境中充满活力地扭臀，病毒式舞蹈风格",
+              {
+                "category": "充满活力",
+                "prompt": "Tu.rn their back to the viewer and starts dancing with rhythmic hip movements. The hips bounce naturally in a twerking rhythm",
                 "image": "/imgs/cms/Twerk_扭臀舞_1.png"
               },
-              { 
-                "category": "专业", 
-                "prompt": "专业扭臀舞表演，高能量，俱乐部氛围",
+              {
+                "category": "专业",
+                "prompt": "Tu.rn their back to the viewer and starts dancing with rhythmic hip movements. The hips bounce naturally in a twerking rhythm",
                 "image": "/imgs/cms/Twerk_扭臀舞_2.png"
               }
             ]
@@ -487,7 +587,9 @@
             {
               "title": "流行舞蹈动作",
               "description": "创建具有逼真动作和能量的热门舞蹈视频。",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
             }
           ]
         },
@@ -496,15 +598,19 @@
           "title": "热门扭臀舞生成器",
           "description": "让您的照片跳舞！我们的 AI 扭臀生成器从静态图像创建高能量、热门的舞蹈视频。加入潮流，轻松创建热门内容。",
           "images": [
-            { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
-            { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+            },
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+            }
           ]
         },
         "faq": {
           "block": "faq",
           "title": "常见问题",
           "items": [
-             {
+            {
               "question": "使用简单吗？",
               "answer": "是的，只需上传照片，我们的 AI 会处理剩下的事情。"
             }
@@ -514,9 +620,11 @@
           "block": "more-tools",
           "title": "尝试其他热门视频效果",
           "items": [
-             {
+            {
               "title": "AI 拥抱生成器",
-              "image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_1.png"
+              },
               "url": "/video-effects/ai-hug"
             }
           ]
@@ -536,9 +644,15 @@
           "id": "hero",
           "title": "创建可爱脸颊之吻视频",
           "description": "用 AI 生成温柔亲昵的脸颊之吻瞬间。",
-          "background_image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png"
+          },
           "buttons": [
-            { "title": "试用脸颊之吻", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "试用脸颊之吻",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -547,20 +661,31 @@
             {
               "title": "温柔亲昵",
               "description": "创建具有自然脸颊之吻动画的甜蜜可爱瞬间。",
-              "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              }
             }
           ]
         },
         "intro": {
-            "block": "tool-intro",
-            "title": "温柔脸颊之吻瞬间",
-            "description": "创建适合朋友和家人的甜蜜亲昵脸颊之吻视频。",
-            "images": [{ "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" }]
+          "block": "tool-intro",
+          "title": "温柔脸颊之吻瞬间",
+          "description": "创建适合朋友和家人的甜蜜亲昵脸颊之吻视频。",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "常见问题",
-            "items": [{ "question": "可以使用竖屏照片吗？", "answer": "是的，我们的 AI 支持人像和横屏照片。" }]
+          "block": "faq",
+          "title": "常见问题",
+          "items": [
+            {
+              "question": "可以使用竖屏照片吗？",
+              "answer": "是的，我们的 AI 支持人像和横屏照片。"
+            }
+          ]
         }
       }
     }
@@ -577,9 +702,15 @@
           "id": "hero",
           "title": "创建热门流行舞蹈视频",
           "description": "使用 AI 将照片转换为充满活力的流行舞蹈表演。",
-          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+          },
           "buttons": [
-            { "title": "试用流行舞蹈", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "试用流行舞蹈",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -588,20 +719,31 @@
             {
               "title": "高能量动作",
               "description": "创建具有专业编舞和动作的流行舞蹈视频。",
-              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "流行舞蹈 AI 生成器",
-             "description": "瞬间创建有趣的流行舞蹈视频。",
-             "images": [{ "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }]
+          "block": "tool-intro",
+          "title": "流行舞蹈 AI 生成器",
+          "description": "瞬间创建有趣的流行舞蹈视频。",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "常见问题",
-             "items": [{ "question": "生成有多快？", "answer": "通常在 30 秒内。" }]
+          "block": "faq",
+          "title": "常见问题",
+          "items": [
+            {
+              "question": "生成有多快？",
+              "answer": "通常在 30 秒内。"
+            }
+          ]
         }
       }
     }
@@ -618,9 +760,15 @@
           "id": "hero",
           "title": "极限肌肉转换",
           "description": "使用 AI 在照片中获得终极健美体格。",
-          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "buttons": [
-            { "title": "试用超级肌肉", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "试用超级肌肉",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -629,15 +777,21 @@
             {
               "title": "专业体格",
               "description": "具有逼真质感和光效的极限肌肉定义。",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "极限 AI 肌肉",
-             "description": "使用超级肌肉 AI 将健美提升到一个新的水平。",
-             "images": [{ "src": "/imgs/cms/Muscle_肌肉展示_2.png" }]
+          "block": "tool-intro",
+          "title": "极限 AI 肌肉",
+          "description": "使用超级肌肉 AI 将健美提升到一个新的水平。",
+          "images": [
+            {
+              "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+            }
+          ]
         }
       }
     }
@@ -654,9 +808,15 @@
           "id": "hero",
           "title": "添加弹跳身体效果",
           "description": "创建具有逼真身体抖动运动的有趣视频。",
-          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+          },
           "buttons": [
-            { "title": "试用身体抖动", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "试用身体抖动",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -665,15 +825,21 @@
             {
               "title": "自然弹跳",
               "description": "具有自然物理效果的逼真有趣身体运动。",
-              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+              "image": {
+                "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "有趣抖动效果",
-             "description": "为您的视频增添一些弹跳。",
-             "images": [{ "src": "/imgs/cms/Jiggle_抖动身体_1.png" }]
+          "block": "tool-intro",
+          "title": "有趣抖动效果",
+          "description": "为您的视频增添一些弹跳。",
+          "images": [
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+            }
+          ]
         }
       }
     }
@@ -690,9 +856,15 @@
           "id": "hero",
           "title": "大师级扭臀舞视频",
           "description": "使用 AI 生成专业级扭臀舞表演。",
-          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+          },
           "buttons": [
-            { "title": "试用扭臀大师", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "试用扭臀大师",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -701,15 +873,21 @@
             {
               "title": "专业动作",
               "description": "流畅且充满活力的大师级舞蹈编舞。",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "扭臀大师",
-             "description": "终极扭臀舞生成器。",
-             "images": [{ "src": "/imgs/cms/Twerk_扭臀舞_1.png" }]
+          "block": "tool-intro",
+          "title": "扭臀大师",
+          "description": "终极扭臀舞生成器。",
+          "images": [
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+            }
+          ]
         }
       }
     }
@@ -726,9 +904,15 @@
           "id": "hero",
           "title": "创建温暖拥抱视频",
           "description": "使用 AI 技术生成充满情感和温馨的拥抱瞬间。",
-          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "buttons": [
-            { "title": "试用 AI 拥抱", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "试用 AI 拥抱",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -737,14 +921,14 @@
           "title": "AI 拥抱生成器",
           "data": {
             "examples": [
-              { 
-                "category": "温暖", 
-                "prompt": "朋友或情侣之间的温暖拥抱，情感拥抱，温馨瞬间",
+              {
+                "category": "温暖",
+                "prompt": "Make the two people hugging each other in the picture",
                 "image": "/imgs/cms/Hug_拥抱_1.png"
               },
-              { 
-                "category": "重逢", 
-                "prompt": "情感重逢拥抱，喜极而泣，电影感光线",
+              {
+                "category": "重逢",
+                "prompt": "Make the two people hugging each other in the picture",
                 "image": "/imgs/cms/Hug_拥抱_2.png"
               }
             ]
@@ -756,7 +940,9 @@
             {
               "title": "情感连接",
               "description": "创建具有逼真温暖拥抱动画的感人瞬间。",
-              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_2.png"
+              }
             }
           ]
         },
@@ -765,15 +951,22 @@
           "title": "用 1PhotoAI 创建温暖拥抱视频",
           "description": "使用我们的 AI 拥抱视频生成器，您可以毫不费力地将任何照片变成温馨的拥抱视频。无论是与异地朋友重逢，还是与爱人创造感人回忆，我们的 AI 技术都能确保自然且充满情感的结果。",
           "images": [
-            { "src": "/imgs/cms/Hug_拥抱_1.png" },
-            { "src": "/imgs/cms/Hug_拥抱_2.png" }
+            {
+              "src": "/imgs/cms/Hug_拥抱_1.png"
+            },
+            {
+              "src": "/imgs/cms/Hug_拥抱_2.png"
+            }
           ]
         },
         "how_to": {
           "block": "how-to",
           "title": "如何使用 AI 拥抱生成器？",
           "description": "只需点击几下即可创建惊艳的拥抱视频。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "steps": [
             {
               "title": "步骤 1",
@@ -788,7 +981,10 @@
               "description": "点击“创建”并等待魔法发生。"
             }
           ],
-          "button": { "title": "创建 AI 拥抱视频", "url": "#tool" }
+          "button": {
+            "title": "创建 AI 拥抱视频",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
@@ -814,12 +1010,16 @@
           "items": [
             {
               "title": "AI 接吻生成器",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI 扭臀舞",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -839,9 +1039,15 @@
           "id": "hero",
           "title": "360° 电影级旋转",
           "description": "创建具有流畅摄像机运动的专业 360 度旋转视频。",
-          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+          },
           "buttons": [
-            { "title": "试用 360 度旋转", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "试用 360 度旋转",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -850,14 +1056,14 @@
           "title": "AI 360 度旋转生成器",
           "data": {
             "examples": [
-              { 
-                "category": "角色", 
-                "prompt": "围绕人物或物体 360 度旋转，流畅的电影感镜头运动",
+              {
+                "category": "角色",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
               },
-              { 
-                "category": "产品", 
-                "prompt": "专业 360 度产品展示，工作室灯光，详细视角",
+              {
+                "category": "产品",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
               }
             ]
@@ -869,20 +1075,31 @@
             {
               "title": "流畅电影级",
               "description": "具有电影级质量和流畅过渡的专业镜头旋转。",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "电影级 AI 360 度旋转",
-             "description": "为角色和产品创建令人惊叹的 360 度旋转视频。",
-             "images": [{ "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }]
+          "block": "tool-intro",
+          "title": "电影级 AI 360 度旋转",
+          "description": "为角色和产品创建令人惊叹的 360 度旋转视频。",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "常见问题",
-             "items": [{ "question": "适用于物体吗？", "answer": "是的，非常适合产品展示。" }]
+          "block": "faq",
+          "title": "常见问题",
+          "items": [
+            {
+              "question": "适用于物体吗？",
+              "answer": "是的，非常适合产品展示。"
+            }
+          ]
         }
       }
     }
@@ -899,9 +1116,15 @@
           "id": "hero",
           "title": "戏剧性地球缩放效果",
           "description": "使用 AI 创建从太空到地球表面的惊艳缩放效果。",
-          "background_image": { "src": "/imgs/bg/tree.jpg" },
+          "background_image": {
+            "src": "/imgs/bg/tree.jpg"
+          },
           "buttons": [
-            { "title": "试用地球缩放", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "试用地球缩放",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -910,13 +1133,13 @@
           "title": "AI 地球缩放生成器",
           "data": {
             "examples": [
-              { 
-                "category": "放大", 
+              {
+                "category": "放大",
                 "prompt": "从太空放大到地球表面，戏剧性揭示，电影感",
                 "image": "/imgs/bg/tree.jpg"
               },
-              { 
-                "category": "缩小", 
+              {
+                "category": "缩小",
                 "prompt": "从城市街道缩小到太空中的地球全景，史诗般的规模",
                 "image": "/imgs/features/landing-page.png"
               }
@@ -929,20 +1152,31 @@
             {
               "title": "电影级揭示",
               "description": "具有从太空到地面水平流畅过渡的戏剧性缩放效果。",
-              "image": { "src": "/imgs/features/landing-page.png" }
+              "image": {
+                "src": "/imgs/features/landing-page.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "戏剧性地球缩放",
-             "description": "即时创建谷歌地球风格的缩放视频。",
-             "images": [{ "src": "/imgs/bg/tree.jpg" }]
+          "block": "tool-intro",
+          "title": "戏剧性地球缩放",
+          "description": "即时创建谷歌地球风格的缩放视频。",
+          "images": [
+            {
+              "src": "/imgs/bg/tree.jpg"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "常见问题",
-             "items": [{ "question": "分辨率是多少？", "answer": "我们支持高达 4K 的输出分辨率。" }]
+          "block": "faq",
+          "title": "常见问题",
+          "items": [
+            {
+              "question": "分辨率是多少？",
+              "answer": "我们支持高达 4K 的输出分辨率。"
+            }
+          ]
         }
       }
     }
@@ -959,9 +1193,15 @@
           "id": "hero",
           "title": "让照片跳起舞来",
           "description": "使用 AI 技术,让您的照片展现动感舞蹈。",
-          "background_image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+          },
           "buttons": [
-            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即尝试",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -973,7 +1213,11 @@
           "block": "tool-intro",
           "title": "AI 舞蹈生成器",
           "description": "让静态照片动起来,展现各种舞蹈风格。使用我们的 AI 技术,您可以让任何照片展现出专业的舞蹈动作,包括肚皮舞等多种热门舞蹈风格。",
-          "images": [{ "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" }]
+          "images": [
+            {
+              "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+            }
+          ]
         },
         "features": {
           "block": "feature-split",
@@ -981,8 +1225,13 @@
             {
               "title": "多种舞蹈风格",
               "description": "支持肚皮舞等多种舞蹈风格,让您的照片展现出专业的舞蹈动作。",
-              "image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
-              "button": { "title": "立即尝试", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+              },
+              "button": {
+                "title": "立即尝试",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -990,13 +1239,28 @@
           "block": "how-to",
           "title": "如何使用 AI 舞蹈生成器？",
           "description": "几秒钟内让照片跳起舞来。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+          },
           "steps": [
-            { "title": "步骤 1", "description": "选择您想要的舞蹈风格。" },
-            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
-            { "title": "步骤 3", "description": "点击生成,查看照片跳舞效果。" }
+            {
+              "title": "步骤 1",
+              "description": "选择您想要的舞蹈风格。"
+            },
+            {
+              "title": "步骤 2",
+              "description": "上传一张清晰的人物照片。"
+            },
+            {
+              "title": "步骤 3",
+              "description": "点击生成,查看照片跳舞效果。"
+            }
           ],
-          "button": { "title": "立即尝试", "url": "#tool" }
+          "button": {
+            "title": "立即尝试",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1005,7 +1269,12 @@
         "faq": {
           "block": "faq",
           "title": "常见问题",
-          "items": [{ "question": "支持哪些舞蹈风格？", "answer": "我们支持肚皮舞等多种舞蹈风格。" }]
+          "items": [
+            {
+              "question": "支持哪些舞蹈风格？",
+              "answer": "我们支持肚皮舞等多种舞蹈风格。"
+            }
+          ]
         }
       }
     }
@@ -1022,9 +1291,15 @@
           "id": "hero",
           "title": "AI 模仿特效",
           "description": "让您的照片模仿各种动作和舞蹈。",
-          "background_image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+          },
           "buttons": [
-            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即尝试",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1037,9 +1312,15 @@
           "title": "AI 模仿特效",
           "description": "让照片模仿各种动作,包括热辣钢管舞、扭臀舞、电摇舞、香奈儿舞、AI 站立一字马、Reze 舞、叉腰扭臂。使用我们的 AI 技术,让您的照片展现出各种动感十足的舞蹈和动作。",
           "images": [
-            { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
-            { "src": "/img_video/imgs/模仿_扭臀舞_2.png" },
-            { "src": "/img_video/imgs/模仿_电摇舞_2.png" }
+            {
+              "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+            },
+            {
+              "src": "/img_video/imgs/模仿_扭臀舞_2.png"
+            },
+            {
+              "src": "/img_video/imgs/模仿_电摇舞_2.png"
+            }
           ]
         },
         "features": {
@@ -1048,8 +1329,13 @@
             {
               "title": "丰富的动作库",
               "description": "支持热辣钢管舞、扭臀舞、电摇舞等多种热门动作,让您的照片充满活力。",
-              "image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
-              "button": { "title": "立即尝试", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+              },
+              "button": {
+                "title": "立即尝试",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1057,13 +1343,28 @@
           "block": "how-to",
           "title": "如何使用 AI 模仿特效?",
           "description": "几秒钟内让照片模仿各种动作。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+          },
           "steps": [
-            { "title": "步骤 1", "description": "选择您想要模仿的动作类型。" },
-            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
-            { "title": "步骤 3", "description": "点击生成,查看模仿效果。" }
+            {
+              "title": "步骤 1",
+              "description": "选择您想要模仿的动作类型。"
+            },
+            {
+              "title": "步骤 2",
+              "description": "上传一张清晰的人物照片。"
+            },
+            {
+              "title": "步骤 3",
+              "description": "点击生成,查看模仿效果。"
+            }
           ],
-          "button": { "title": "立即尝试", "url": "#tool" }
+          "button": {
+            "title": "立即尝试",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1072,7 +1373,12 @@
         "faq": {
           "block": "faq",
           "title": "常见问题",
-          "items": [{ "question": "支持哪些动作？", "answer": "我们支持热辣钢管舞、扭臀舞、电摇舞、香奈儿舞等多种动作。" }]
+          "items": [
+            {
+              "question": "支持哪些动作？",
+              "answer": "我们支持热辣钢管舞、扭臀舞、电摇舞、香奈儿舞等多种动作。"
+            }
+          ]
         }
       }
     }
@@ -1089,9 +1395,15 @@
           "id": "hero",
           "title": "AI 视觉效果",
           "description": "为您的照片添加震撼的视觉特效。",
-          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+          },
           "buttons": [
-            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即尝试",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1104,9 +1416,15 @@
           "title": "AI 视觉效果",
           "description": "为照片添加各种创意视觉效果,包括 AI 爆炸效果、史诗级爆炸漫步、海洋连衣裙、穿越维度、进入嘴巴、改变直升机机库。使用我们的 AI 技术,创造令人惊叹的视觉特效。",
           "images": [
-            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-            { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png" },
-            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" }
+            {
+              "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png"
+            }
           ]
         },
         "features": {
@@ -1115,8 +1433,13 @@
             {
               "title": "震撼视觉特效",
               "description": "支持爆炸效果、海洋连衣裙、穿越维度等多种创意视觉效果,让您的照片充满想象力。",
-              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-              "button": { "title": "立即尝试", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+              },
+              "button": {
+                "title": "立即尝试",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1124,13 +1447,28 @@
           "block": "how-to",
           "title": "如何使用 AI 视觉效果?",
           "description": "几秒钟内为照片添加震撼特效。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+          },
           "steps": [
-            { "title": "步骤 1", "description": "选择您想要的视觉效果类型。" },
-            { "title": "步骤 2", "description": "上传一张清晰的照片。" },
-            { "title": "步骤 3", "description": "点击生成,查看视觉效果。" }
+            {
+              "title": "步骤 1",
+              "description": "选择您想要的视觉效果类型。"
+            },
+            {
+              "title": "步骤 2",
+              "description": "上传一张清晰的照片。"
+            },
+            {
+              "title": "步骤 3",
+              "description": "点击生成,查看视觉效果。"
+            }
           ],
-          "button": { "title": "立即尝试", "url": "#tool" }
+          "button": {
+            "title": "立即尝试",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1139,7 +1477,12 @@
         "faq": {
           "block": "faq",
           "title": "常见问题",
-          "items": [{ "question": "支持哪些视觉效果？", "answer": "我们支持爆炸效果、海洋连衣裙、穿越维度等多种创意视觉效果。" }]
+          "items": [
+            {
+              "question": "支持哪些视觉效果？",
+              "answer": "我们支持爆炸效果、海洋连衣裙、穿越维度等多种创意视觉效果。"
+            }
+          ]
         }
       }
     }
@@ -1156,9 +1499,15 @@
           "id": "hero",
           "title": "AI 角色切换",
           "description": "实现创意角色切换和场景变换。",
-          "background_image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "buttons": [
-            { "title": "立即尝试", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "立即尝试",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1171,9 +1520,15 @@
           "title": "AI 角色切换",
           "description": "实现各种创意角色切换场景,包括 AI 老虎拥抱、雨中漫步、遇见未来的小孩、遇见老年的我、坐上豪车、审讯室、尖叫、雨夜。使用我们的 AI 技术,创造独特的场景转换效果。",
           "images": [
-            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-            { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
-            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
+            {
+              "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_雨中漫步_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png"
+            }
           ]
         },
         "features": {
@@ -1182,8 +1537,13 @@
             {
               "title": "创意场景切换",
               "description": "支持 AI 老虎拥抱、雨中漫步、遇见未来的小孩等多种创意场景,让您的照片充满故事性。",
-              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-              "button": { "title": "立即尝试", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+              },
+              "button": {
+                "title": "立即尝试",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1191,13 +1551,28 @@
           "block": "how-to",
           "title": "如何使用 AI 角色切换?",
           "description": "几秒钟内实现创意场景切换。",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "steps": [
-            { "title": "步骤 1", "description": "选择您想要的场景类型。" },
-            { "title": "步骤 2", "description": "上传一张清晰的人物照片。" },
-            { "title": "步骤 3", "description": "点击生成,查看场景切换效果。" }
+            {
+              "title": "步骤 1",
+              "description": "选择您想要的场景类型。"
+            },
+            {
+              "title": "步骤 2",
+              "description": "上传一张清晰的人物照片。"
+            },
+            {
+              "title": "步骤 3",
+              "description": "点击生成,查看场景切换效果。"
+            }
           ],
-          "button": { "title": "立即尝试", "url": "#tool" }
+          "button": {
+            "title": "立即尝试",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1206,7 +1581,12 @@
         "faq": {
           "block": "faq",
           "title": "常见问题",
-          "items": [{ "question": "支持哪些场景？", "answer": "我们支持 AI 老虎拥抱、雨中漫步、遇见未来的小孩等多种创意场景。" }]
+          "items": [
+            {
+              "question": "支持哪些场景？",
+              "answer": "我们支持 AI 老虎拥抱、雨中漫步、遇见未来的小孩等多种创意场景。"
+            }
+          ]
         }
       }
     }

@@ -17,6 +17,9 @@ export class AIStudioProvider implements AIProvider {
 
   constructor(configs: AIConfigs) {
     this.configs = configs;
+    if (configs.aistudio_api_base) {
+      this.baseUrl = configs.aistudio_api_base;
+    }
   }
 
   private get headers() {
@@ -51,13 +54,18 @@ export class AIStudioProvider implements AIProvider {
     const platform = this.getPlatformByModel(params.model, 'grok');
     const url = `${this.baseUrl}/api/${platform}/images`;
 
-    const body = {
-      action: 'generate', // Updated based on error "无效的action值: text2image, 支持: generate, edit"
+    const body: any = {
+      action: 'generate',
       prompt: params.prompt,
       model: params.model,
       size: params.options?.size || '1024x1024',
       count: params.options?.count || 1,
     };
+
+    if (params.options?.image_url) {
+      body.action = 'edit';
+      body.image_url = params.options.image_url;
+    }
 
     console.log('[AIStudio] Generating Image:', { url, body });
 
@@ -76,6 +84,7 @@ export class AIStudioProvider implements AIProvider {
     return {
       taskId: data.task_id,
       taskStatus: AITaskStatus.PENDING,
+      taskResult: data,
     };
   }
 
@@ -87,33 +96,43 @@ export class AIStudioProvider implements AIProvider {
     const url = `${this.baseUrl}/api/${platform}/videos`;
 
     const body: any = {
-      action: params.options?.action || 'text2video',
+      action: params.options?.image_url ? 'image2video' : 'text2video',
       prompt: params.prompt,
       model: params.model,
-      duration: params.options?.duration || 5,
+      duration: Number(params.options?.duration) || 5,
       aspect_ratio: params.options?.aspect_ratio || '16:9',
     };
 
     if (params.options?.image_url) {
-      body.action = 'image2video';
       body.image_url = params.options.image_url;
     }
 
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: this.headers,
-      body: JSON.stringify(body),
-    });
+    console.log('[AIStudio] Generating Video Request:', { url, body });
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: this.headers,
+        body: JSON.stringify(body),
+      });
 
-    const data = await res.json();
-    if (!res.ok || !data.task_id) {
-      throw new Error(data.error?.message || 'AI Studio Video Generate Failed');
+      const data = await res.json();
+      if (!res.ok || !data.task_id) {
+        throw new Error(data.error?.message || 'AI Studio Video Generate Failed');
+      }
+
+      return {
+        taskId: data.task_id,
+        taskStatus: AITaskStatus.PENDING,
+        taskResult: data,
+      };
+    } catch (err: any) {
+      console.error('[AIStudio] Video Fetch Error Details:', {
+        url,
+        error: err.message,
+        stack: err.stack,
+      });
+      throw err;
     }
-
-    return {
-      taskId: data.task_id,
-      taskStatus: AITaskStatus.PENDING,
-    };
   }
 
   /**
@@ -142,118 +161,135 @@ export class AIStudioProvider implements AIProvider {
     return {
       taskId: data.task_id,
       taskStatus: AITaskStatus.PENDING,
+      taskResult: data,
     };
   }
 
   /**
    * 任务查询
    */
-  async query({
-    taskId,
-    mediaType,
-    model,
-  }: {
+  private async doQuery(url: string, taskId: string, model?: string, platform?: string): Promise<any> {
+    console.log('[AIStudio] Querying Task:', { url, taskId, model, platform });
+
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: this.headers,
+        body: JSON.stringify({ task_id: taskId }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error?.message || 'AI Studio Query Failed');
+      }
+      return data;
+    } catch (err: any) {
+      console.error('[AIStudio] Query Fetch Error Details:', {
+        url,
+        taskId,
+        error: err.message,
+        stack: err.stack,
+      });
+      throw err;
+    }
+  }
+
+  async query(params: {
     taskId: string;
     mediaType?: string;
     model?: string;
+    platform?: string;
   }): Promise<AITaskResult> {
-    const platform = this.getPlatformByModel(model, mediaType === AIMediaType.MUSIC ? 'suno' : 'grok');
-    const url = `${this.baseUrl}/api/${platform}/tasks`;
+    const { taskId, model, mediaType, platform } = params;
+    const defaultPlatform = mediaType === AIMediaType.IMAGE ? 'grok' : (mediaType === AIMediaType.MUSIC ? 'suno' : 'kling');
+    
+    // Priority: Explicit platform param > model mapping > default
+    const targetPlatform = platform || this.getPlatformByModel(model, defaultPlatform);
+    const url = `${this.baseUrl}/api/${targetPlatform}/tasks`;
 
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: this.headers,
-      body: JSON.stringify({ task_id: taskId }),
-    });
+    const data = await this.doQuery(url, taskId, model, targetPlatform);
 
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.error?.message || 'AI Studio Query Failed');
-    }
-
-    const statusMap: Record<string, AITaskStatus> = {
-      pending: AITaskStatus.PENDING,
-      queued: AITaskStatus.PROCESSING,
-      processing: AITaskStatus.PROCESSING,
-      succeeded: AITaskStatus.SUCCESS,
-      failed: AITaskStatus.FAILED,
-      cancelled: AITaskStatus.CANCELED,
-      timeout: AITaskStatus.FAILED,
-    };
-
-    let status = AITaskStatus.PENDING;
-    if (data.status && statusMap[data.status]) {
-      status = statusMap[data.status];
-    } else if (data.response?.success) {
+    // --- 严格按照文档实现状态判断逻辑 ---
+    let status = AITaskStatus.PROCESSING;
+    
+    // 1. 检查 response.success
+    if (data.response?.success === true) {
       status = AITaskStatus.SUCCESS;
+    } else if (data.response?.success === false) {
+      status = AITaskStatus.FAILED;
     } else if (data.finished_at && !data.response?.success) {
-      // Finished but no success flag usually errors, but let's be careful. 
-      // If response has error, it might be failed.
+      // 2. 检查 finished_at (已完成但没有 success 标志通常视为失败)
+      status = AITaskStatus.FAILED;
+    } else if (data.status === 'succeeded' || data.status === 'success') {
+      // 3. 兼容性检查 status 字段
+      status = AITaskStatus.SUCCESS;
+    } else if (data.status === 'failed') {
       status = AITaskStatus.FAILED;
     }
 
     const result: AITaskResult = {
-      taskId: data.task_id,
+      taskId: data.id || data.task_id,
       taskStatus: status,
       taskResult: data,
     };
 
-    if (result.taskStatus === AITaskStatus.SUCCESS && this.configs.aistudio_custom_storage === 'true') {
+    // --- 严格按照文档提取结果数据 ---
+    if (status === AITaskStatus.SUCCESS) {
       const taskInfo: any = {};
-      
-      // Handle different response structures
-      const resultData = data.response?.data || data;
-      const images = resultData.images || (resultData.imageUrls ? resultData.imageUrls.map((url: string) => ({ url })) : null);
-      const video = resultData.video || (resultData.videoUrl ? { url: resultData.videoUrl } : null);
-      const music = resultData.music || (resultData.audioUrl ? [{ url: resultData.audioUrl }] : null);
+      const responseData = data.response?.data;
 
-      if (images) {
-        taskInfo.images = images.map((img: any) => ({ url: img.url }));
-        const files: AIFile[] = images.map((img: any) => ({
+      if (responseData) {
+        // 图片提取: response.data.imageUrls (文档强调是 imageUrls)
+        if (responseData.imageUrls && Array.isArray(responseData.imageUrls)) {
+          taskInfo.images = responseData.imageUrls.map((url: string) => ({ url }));
+        } else if (responseData.image_url) {
+          taskInfo.images = [{ url: responseData.image_url }];
+        } else if (responseData.url && !responseData.videoUrl && !responseData.audioUrl) {
+          taskInfo.images = [{ url: responseData.url }];
+        }
+        
+        // 视频提取: 增加详细日志和更多字段回退支持
+        console.log('[AIStudio] Extracting video result:', JSON.stringify(responseData));
+        
+        const videoUrl = responseData.videoUrl || 
+                         (responseData.videoUrls && responseData.videoUrls[0]) ||
+                         responseData.url ||
+                         responseData.output ||
+                         responseData.result;
+
+        if (videoUrl) {
+          taskInfo.videos = [{ url: videoUrl, duration: responseData.duration }];
+        } else {
+          console.warn('[AIStudio] No video URL found in response data:', responseData);
+        }
+
+        // 音乐提取: response.data.audioUrl 或 musicUrl
+        const audioUrl = responseData.audioUrl || responseData.musicUrl || responseData.url;
+        if (audioUrl && (platform === 'suno' || model?.includes('suno'))) {
+          taskInfo.songs = [{ audioUrl, title: responseData.title || 'Untitled' }];
+        }
+      }
+
+      // 如果开启了自定义存储，则执行转存逻辑
+      if (taskInfo.images && this.configs.aistudio_custom_storage === 'true') {
+        const files: AIFile[] = taskInfo.images.map((img: any) => ({
           url: img.url,
           key: `aistudio/images/${taskId}.png`,
           contentType: 'image/png',
         }));
-        // Only save files if specifically needed, but always populate taskInfo
-        if (this.configs.aistudio_custom_storage === 'true') {
-          const saved = await saveFiles(files);
-          if (saved) {
-            taskInfo.images = saved.map((f: AIFile) => ({ url: f.url }));
-          }
-        }
-      } else if (video) {
-        taskInfo.videos = [{ url: video.url, duration: video.duration }];
-        if (this.configs.aistudio_custom_storage === 'true') {
-          const files: AIFile[] = [{
-            url: video.url,
-            key: `aistudio/videos/${taskId}.mp4`,
-            contentType: 'video/mp4',
-          }];
-          const saved = await saveFiles(files);
-          if (saved) {
-            taskInfo.videos = [{ url: saved[0].url, duration: video.duration }];
-          }
-        }
-      } else if (music) {
-        taskInfo.songs = music.map((m: any) => ({
-          audioUrl: m.url || m.audioUrl,
-          title: m.title,
-          duration: m.duration,
-        }));
+        const saved = await saveFiles(files);
+        if (saved) taskInfo.images = saved.map((f: AIFile) => ({ url: f.url }));
+      } else if (taskInfo.videos && this.configs.aistudio_custom_storage === 'true') {
+        const video = taskInfo.videos[0];
+        const files: AIFile[] = [{
+          url: video.url,
+          key: `aistudio/videos/${taskId}.mp4`,
+          contentType: 'video/mp4',
+        }];
+        const saved = await saveFiles(files);
+        if (saved) taskInfo.videos = [{ url: saved[0].url, duration: video.duration }];
       }
-      result.taskInfo = taskInfo;
-    } else if (result.taskStatus === AITaskStatus.SUCCESS) {
-      // ✅ Even without custom storage, extract taskInfo so frontend can use it directly
-      const resultData = data.response?.data || data;
-      const images = resultData.images || (resultData.imageUrls ? resultData.imageUrls.map((url: string) => ({ url })) : null);
-      const video = resultData.video || (resultData.videoUrl ? { url: resultData.videoUrl } : null);
-      const music = resultData.music || (resultData.audioUrl ? [{ url: resultData.audioUrl }] : null);
 
-      const taskInfo: any = {};
-      if (images) taskInfo.images = images.map((img: any) => ({ url: img.url }));
-      if (video) taskInfo.videos = [{ url: video.url, duration: video.duration }];
-      if (music) taskInfo.songs = music.map((m: any) => ({ audioUrl: m.url || m.audioUrl, title: m.title, duration: m.duration }));
-      
       result.taskInfo = taskInfo;
     }
 
@@ -263,6 +299,7 @@ export class AIStudioProvider implements AIProvider {
   private getPlatformByModel(model?: string, defaultPlatform = 'grok'): string {
     if (!model) return defaultPlatform;
     const m = model.toLowerCase();
+    if (m.includes('flux')) return 'grok';
     if (m.includes('kling')) return 'kling';
     if (m.includes('dreamina')) return 'dreamina';
     if (m.includes('sora')) return 'sora';
@@ -270,10 +307,6 @@ export class AIStudioProvider implements AIProvider {
     if (m.includes('suno')) return 'suno';
     if (m.includes('lovart')) return 'lovart';
     if (m.includes('krea')) return 'krea';
-    // if (m.includes('flux')) return 'luma'; // Reverted: Caused error for Flux Dev (Grok)
-    // User requested "don't waste quota". Sending to wrong endpoint wastes quota (404/400).
-    // Safest bet: default to 'grok' matches previous behavior.
-    // I will add 'midjourney' if it appears.
     if (m.includes('midjourney') || m.includes('mj')) return 'midjourney';
     return defaultPlatform;
   }

@@ -11,9 +11,15 @@
           "id": "hero",
           "title": "Generate Viral AI Kissing Videos",
           "description": "Turn your photos into realistic kissing videos with our advanced AI technology.",
-          "background_image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+          },
           "buttons": [
-            { "title": "Try AI Kissing Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try AI Kissing Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -24,33 +30,33 @@
             "examples": [
               {
                 "category": "Normal Kiss",
-                "prompt": "Generate Normal Kiss effect",
+                "prompt": "The couple in the painting turn their heads to look at each other, then kiss passionately, expressing the love between them.",
                 "image": "/img_video/imgs/AI-Kissing_正常接吻_2.png",
                 "video": "/img_video/videos/AiKissing_正常接吻.mp4",
                 "badge": "HOT"
               },
               {
                 "category": "French Kiss",
-                "prompt": "Generate French Kiss effect",
+                "prompt": "让图片中的2个人法式舌吻, 4k",
                 "image": "/img_video/imgs/AI-Kissing_法式接吻_2.png",
                 "video": "/img_video/videos/AIKissing法式接吻.mp4",
                 "badge": "HOT"
               },
               {
                 "category": "Cheek Kiss",
-                "prompt": "Generate Cheek Kiss effect",
+                "prompt": "左边的人 亲吻 右边人的脸颊, 4k",
                 "image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png",
                 "video": "/img_video/videos/脸颊之吻.mp4"
               },
               {
                 "category": "Lip Bite Kiss",
-                "prompt": "Generate Lip Bite Kiss effect",
+                "prompt": "左边的人 咬住 右边人的下嘴唇 亲吻, 4k",
                 "image": "/img_video/imgs/AI-Kissing_咬嘴唇之吻_2.png",
                 "video": "/img_video/videos/AiKissing_咬嘴接吻.mp4"
               },
               {
                 "category": "Forehead Kiss",
-                "prompt": "Generate Forehead Kiss effect",
+                "prompt": "左边的人 亲吻 右边人的额头, 4k",
                 "image": "/img_video/imgs/AI-Kissing_额头之吻_2.png",
                 "video": "/img_video/videos/额头之吻.mp4"
               }
@@ -62,9 +68,15 @@
           "title": "Create Intimate Moments With 1PhotoAI Kissing Video Generator",
           "description": "With our AI Kissing Video Generator, you can effortlessly turn any two photos into a passionate kissing video, or transform the characters in your photos into more intimate and romantic characters features such as French kiss. Whether you want to recover a lost memory or create a surprise for your loved one, this AI kiss generator is your unique style and help!",
           "images": [
-            { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
-            { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
-            { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+            {
+              "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+            }
           ]
         },
         "features": {
@@ -73,15 +85,25 @@
             {
               "title": "Lifelike AI Kissing & French Kiss Videos",
               "description": "Experience the magic of our AI Kissing and French Kiss video tools. Transform static photos into romantic animations featuring smooth movements and authentic expressions, making it feel as though the kiss is happening in real life.",
-              "image": { "src": "/imgs/cms/AI-Kissing_法式接吻_2.png" },
-              "button": { "title": "Try AI Kissing Video Generator Now", "url": "#tool" }
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_法式接吻_2.png"
+              },
+              "button": {
+                "title": "Try AI Kissing Video Generator Now",
+                "url": "#tool"
+              }
             },
             {
               "title": "Versatile Pairing Options",
               "description": "Whether you want to create a romantic moment between a couple, a playful peck between friends, or a passionate kiss between fictional characters, our AI kissing video generator accommodates all scenarios.",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "reverse": true,
-              "button": { "title": "Try AI Kissing Video Generator Now", "url": "#tool" }
+              "button": {
+                "title": "Try AI Kissing Video Generator Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -89,7 +111,10 @@
           "block": "how-to",
           "title": "How to Use 1PhotoAI Kissing Video Generator?",
           "description": "Create amazing kissing videos in just a few clicks.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+          },
           "steps": [
             {
               "title": "Step 1",
@@ -104,7 +129,10 @@
               "description": "Confirm to create your video featuring the smooth kissing effect."
             }
           ],
-          "button": { "title": "Create AI Kissing Videos", "url": "#tool" }
+          "button": {
+            "title": "Create AI Kissing Videos",
+            "url": "#tool"
+          }
         },
         "related_tools": {
           "block": "related-tools",
@@ -113,29 +141,36 @@
             {
               "title": "AI Hug Generator",
               "description": "Create heartwarming hug videos with AI.",
-              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_2.png"
+              },
               "url": "/video-effects/ai-hug"
             },
             {
               "title": "AI Two-Person Kissing",
               "description": "Generate romantic kissing videos.",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI Twerk Dance",
               "description": "Create viral twerk dance videos using AI.",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             },
-             {
+            {
               "title": "AI Muscle Generator",
               "description": "Add professional bodybuilder muscles to your photos.",
-              "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+              "image": {
+                "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
               "url": "/video-effects/ai-muscle"
             }
           ]
-
         },
         "faq": {
           "block": "faq",
@@ -153,11 +188,11 @@
               "question": "What is the best AI kissing & French Kiss Video generator online?",
               "answer": "1PhotoAI offers the most realistic and high-quality results for intimate video generation."
             },
-             {
+            {
               "question": "Is AI kissing generator free?",
               "answer": "Yes, we offer free trials for users to experience the magic of AI video generation."
             },
-             {
+            {
               "question": "Is the AI kissing video generator online safe to use?",
               "answer": "Absolutely. We prioritize user privacy and delete all uploaded photos after processing."
             }
@@ -169,22 +204,30 @@
           "items": [
             {
               "title": "AI Hug",
-              "image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_1.png"
+              },
               "url": "/video-effects/ai-hug"
             },
             {
               "title": "AI Slow Motion",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_2.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_2.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI Twerk Video Generator",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             },
             {
               "title": "AI Muscle Generator",
-              "image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+              "image": {
+                "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+              },
               "url": "/video-effects/ai-muscle"
             }
           ]
@@ -204,9 +247,15 @@
           "id": "hero",
           "title": "Professional AI Muscle Transformation",
           "description": "Get the body you've always wanted in your photos with one click.",
-          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "buttons": [
-            { "title": "Add Muscles Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Add Muscles Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -217,14 +266,14 @@
             "examples": [
               {
                 "category": "Muscle Showcase",
-                "prompt": "Generate Muscle Showcase effect",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/img_video/imgs/Muscle_肌肉展示_2.png",
                 "video": "/img_video/videos/Muscle_肌肉展示.mp4",
                 "badge": "HOT"
               },
               {
                 "category": "360 Muscle Showcase",
-                "prompt": "Generate 360 Muscle Showcase effect",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/img_video/imgs/AI-360-Rotation_肌肉展示_2.png",
                 "video": "/img_video/videos/AI 360 Rotation.mp4"
               }
@@ -237,7 +286,9 @@
             {
               "title": "Realistic Texture",
               "description": "Natural skin lighting and muscle definition that looks authentic.",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
@@ -246,15 +297,22 @@
           "title": "Get Ripped With AI Muscle Generator",
           "description": "Instantly transform your physique with our AI Muscle Generator. Whether you want to see yourself as a bodybuilder or just add some definition, our AI creates realistic muscle overlays that blend perfectly with your original photo.",
           "images": [
-            { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
-            { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+            {
+              "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+            },
+            {
+              "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+            }
           ]
         },
         "how_to": {
           "block": "how-to",
           "title": "How to Use AI Muscle Generator?",
           "description": "Get your dream physique in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "steps": [
             {
               "title": "Step 1",
@@ -269,7 +327,10 @@
               "description": "Click Generate to see your new muscular look."
             }
           ],
-          "button": { "title": "Add Muscles Now", "url": "#tool" }
+          "button": {
+            "title": "Add Muscles Now",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
@@ -295,12 +356,16 @@
           "items": [
             {
               "title": "AI Kissing Generator",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI Twerk Dance",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -320,9 +385,15 @@
           "id": "hero",
           "title": "Create Beach Summer Videos",
           "description": "Transform your photos into stunning beach scenes with AI-generated bikini effects.",
-          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+          },
           "buttons": [
-            { "title": "Try AI Bikini Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try AI Bikini Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -331,14 +402,14 @@
           "title": "AI Bikini Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Beach", 
-                "prompt": "Woman in bikini walking on beach, summer vibe, natural lighting",
+              {
+                "category": "Beach",
+                "prompt": "Sexy belly dance.",
                 "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
               },
-              { 
-                "category": "Tropical", 
-                "prompt": "Bikini beach scene with tropical atmosphere, sunset glow",
+              {
+                "category": "Tropical",
+                "prompt": "Sexy belly dance.",
                 "image": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
               }
             ]
@@ -350,7 +421,9 @@
             {
               "title": "Summer Beach Vibes",
               "description": "Create realistic beach scenes with natural lighting and summer atmosphere.",
-              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
             }
           ]
         },
@@ -359,8 +432,12 @@
           "title": "Transform into a Beach Star",
           "description": "Our AI Bikini Generator transforms your photos into stunning beach videos. Perfect for creating summery content or envisioning yourself in a tropical paradise.",
           "images": [
-            { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
-            { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+            },
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+            }
           ]
         },
         "faq": {
@@ -377,9 +454,11 @@
           "block": "more-tools",
           "title": "Try Other Popular Video Effects",
           "items": [
-             {
+            {
               "title": "AI Kissing Generator",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             }
           ]
@@ -399,9 +478,15 @@
           "id": "hero",
           "title": "Add Fun Jiggle Effects",
           "description": "Create entertaining videos with AI-powered body jiggle effects.",
-          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+          },
           "buttons": [
-            { "title": "Try Jiggle Effect", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Jiggle Effect",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -412,7 +497,7 @@
             "examples": [
               {
                 "category": "Body Jiggle",
-                "prompt": "Generate Body Jiggle effect",
+                "prompt": "Chest bouncing, breasts moving up and down.",
                 "image": "/img_video/imgs/Jiggle_抖动身体_2.png",
                 "video": "/img_video/videos/jiggle_抖动身体.mp4"
               }
@@ -425,7 +510,9 @@
             {
               "title": "Dynamic Movement",
               "description": "Natural and fun body movements that look realistic and entertaining.",
-              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+              "image": {
+                "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+              }
             }
           ]
         },
@@ -434,15 +521,19 @@
           "title": "Add Energy to Your Videos",
           "description": "The AI Jiggle Effect adds fun, bouncy dynamics to your characters. It's perfect for creating entertaining social media content or just having a laugh.",
           "images": [
-            { "src": "/imgs/cms/Jiggle_抖动身体_1.png" },
-            { "src": "/imgs/cms/Jiggle_抖动身体_2.png" }
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+            },
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+            }
           ]
         },
         "faq": {
           "block": "faq",
           "title": "FAQs",
           "items": [
-             {
+            {
               "question": "How does it work?",
               "answer": "Our AI tracks body movement and adds dynamic physics simulations."
             }
@@ -452,9 +543,11 @@
           "block": "more-tools",
           "title": "Try Other Popular Video Effects",
           "items": [
-             {
+            {
               "title": "AI Twerk Dance",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -474,9 +567,15 @@
           "id": "hero",
           "title": "Generate Trending Twerk Videos",
           "description": "Transform photos into energetic twerk dance videos with AI technology.",
-          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+          },
           "buttons": [
-            { "title": "Try Twerk Effect", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Twerk Effect",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -485,14 +584,14 @@
           "title": "AI Twerk Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Energetic", 
-                "prompt": "Person twerking energetically in trendy environment, viral dance style",
+              {
+                "category": "Energetic",
+                "prompt": "Tu.rn their back to the viewer and starts dancing with rhythmic hip movements. The hips bounce naturally in a twerking rhythm",
                 "image": "/imgs/cms/Twerk_扭臀舞_1.png"
               },
-              { 
-                "category": "Professional", 
-                "prompt": "Professional twerk dance performance, high energy, club atmosphere",
+              {
+                "category": "Professional",
+                "prompt": "Tu.rn their back to the viewer and starts dancing with rhythmic hip movements. The hips bounce naturally in a twerking rhythm",
                 "image": "/imgs/cms/Twerk_扭臀舞_2.png"
               }
             ]
@@ -504,7 +603,9 @@
             {
               "title": "Trendy Dance Moves",
               "description": "Create popular dance videos with realistic movements and energy.",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
             }
           ]
         },
@@ -513,15 +614,19 @@
           "title": "Viral Twerk Dance Generator",
           "description": "Make your photos dance! Our AI Twerk Generator creates high-energy, trending dance videos from static images. Join the trend and create viral content effortlessly.",
           "images": [
-            { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
-            { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+            },
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+            }
           ]
         },
         "faq": {
           "block": "faq",
           "title": "FAQs",
           "items": [
-             {
+            {
               "question": "Is it easy to use?",
               "answer": "Yes, just upload a photo and our AI handles the rest."
             }
@@ -531,9 +636,11 @@
           "block": "more-tools",
           "title": "Try Other Popular Video Effects",
           "items": [
-             {
+            {
               "title": "AI Hug Generator",
-              "image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_1.png"
+              },
               "url": "/video-effects/ai-hug"
             }
           ]
@@ -553,9 +660,15 @@
           "id": "hero",
           "title": "Create Cute Cheek Kiss Videos",
           "description": "Generate gentle and affectionate cheek kiss moments with AI.",
-          "background_image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png"
+          },
           "buttons": [
-            { "title": "Try Cheek Kiss", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "Try Cheek Kiss",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -564,20 +677,31 @@
             {
               "title": "Gentle & Affectionate",
               "description": "Create sweet and cute moments with natural cheek kiss animations.",
-              "image": { "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_脸颊之吻_2.png"
+              }
             }
           ]
         },
         "intro": {
-            "block": "tool-intro",
-            "title": "Gentle Cheek Kiss Moments",
-            "description": "Create sweet and affectionate cheek kiss videos suitable for friends and family.",
-            "images": [{ "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png" }]
+          "block": "tool-intro",
+          "title": "Gentle Cheek Kiss Moments",
+          "description": "Create sweet and affectionate cheek kiss videos suitable for friends and family.",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Kissing_脸颊之吻_1.png"
+            }
+          ]
         },
         "faq": {
-            "block": "faq",
-            "title": "FAQs",
-            "items": [{ "question": "Can I use vertical photos?", "answer": "Yes, our AI supports both portrait and landscape photos." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Can I use vertical photos?",
+              "answer": "Yes, our AI supports both portrait and landscape photos."
+            }
+          ]
         }
       }
     }
@@ -594,9 +718,15 @@
           "id": "hero",
           "title": "Create Viral Pop Dance Videos",
           "description": "Transform photos into energetic pop dance performances with AI.",
-          "background_image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+          },
           "buttons": [
-            { "title": "Try Pop Dance", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "Try Pop Dance",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -605,20 +735,31 @@
             {
               "title": "High Energy Moves",
               "description": "Create trending dance videos with professional choreography and movements.",
-              "image": { "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Pop Dance AI Generator",
-             "description": "Create fun pop dance videos instantly.",
-             "images": [{ "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png" }]
+          "block": "tool-intro",
+          "title": "Pop Dance AI Generator",
+          "description": "Create fun pop dance videos instantly.",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-Dance-Generator_肚皮舞_1.png"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "FAQs",
-             "items": [{ "question": "How fast is generation?", "answer": "Usually under 30 seconds." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "How fast is generation?",
+              "answer": "Usually under 30 seconds."
+            }
+          ]
         }
       }
     }
@@ -635,9 +776,15 @@
           "id": "hero",
           "title": "Extreme Muscle Transformation",
           "description": "Get the ultimate bodybuilder physique in your photos with AI.",
-          "background_image": { "src": "/imgs/cms/Muscle_肌肉展示_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+          },
           "buttons": [
-            { "title": "Try Super Muscle", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "Try Super Muscle",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -646,15 +793,21 @@
             {
               "title": "Professional Physique",
               "description": "Extreme muscle definition with realistic texture and lighting.",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Extreme AI Muscle",
-             "description": "Take bodybuilding to the next level with Super Muscle AI.",
-             "images": [{ "src": "/imgs/cms/Muscle_肌肉展示_2.png" }]
+          "block": "tool-intro",
+          "title": "Extreme AI Muscle",
+          "description": "Take bodybuilding to the next level with Super Muscle AI.",
+          "images": [
+            {
+              "src": "/imgs/cms/Muscle_肌肉展示_2.png"
+            }
+          ]
         }
       }
     }
@@ -671,9 +824,15 @@
           "id": "hero",
           "title": "Add Bouncy Body Effects",
           "description": "Create fun videos with realistic body jiggle movements.",
-          "background_image": { "src": "/imgs/cms/Jiggle_抖动身体_2.png" },
+          "background_image": {
+            "src": "/imgs/cms/Jiggle_抖动身体_2.png"
+          },
           "buttons": [
-            { "title": "Try Body Jiggle", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "Try Body Jiggle",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -682,15 +841,21 @@
             {
               "title": "Natural Bounce",
               "description": "Realistic and entertaining body movements with natural physics.",
-              "image": { "src": "/imgs/cms/Jiggle_抖动身体_1.png" }
+              "image": {
+                "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Fun Jiggle Effects",
-             "description": "Add some bounce to your videos.",
-             "images": [{ "src": "/imgs/cms/Jiggle_抖动身体_1.png" }]
+          "block": "tool-intro",
+          "title": "Fun Jiggle Effects",
+          "description": "Add some bounce to your videos.",
+          "images": [
+            {
+              "src": "/imgs/cms/Jiggle_抖动身体_1.png"
+            }
+          ]
         }
       }
     }
@@ -707,9 +872,15 @@
           "id": "hero",
           "title": "Master Twerk Dance Videos",
           "description": "Generate professional-level twerk dance performances with AI.",
-          "background_image": { "src": "/imgs/cms/Twerk_扭臀舞_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+          },
           "buttons": [
-            { "title": "Try Twerk Master", "url": "/ai-video-generator", "icon": "Zap" }
+            {
+              "title": "Try Twerk Master",
+              "url": "/ai-video-generator",
+              "icon": "Zap"
+            }
           ]
         },
         "features": {
@@ -718,15 +889,21 @@
             {
               "title": "Professional Moves",
               "description": "Master-level dance choreography with smooth and energetic movements.",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" }
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Twerk Master",
-             "description": "The ultimate twerk dance generator.",
-             "images": [{ "src": "/imgs/cms/Twerk_扭臀舞_1.png" }]
+          "block": "tool-intro",
+          "title": "Twerk Master",
+          "description": "The ultimate twerk dance generator.",
+          "images": [
+            {
+              "src": "/imgs/cms/Twerk_扭臀舞_1.png"
+            }
+          ]
         }
       }
     }
@@ -743,9 +920,15 @@
           "id": "hero",
           "title": "Create Warm Hug Videos",
           "description": "Generate emotional and heartwarming hug moments with AI technology.",
-          "background_image": { "src": "/imgs/cms/Hug_拥抱_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "buttons": [
-            { "title": "Try AI Hug", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try AI Hug",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -756,32 +939,32 @@
             "examples": [
               {
                 "category": "Hug",
-                "prompt": "Generate Hug effect",
+                "prompt": "Make the two people hugging each other in the picture",
                 "image": "/img_video/imgs/Hug_拥抱_2.png",
                 "video": "/img_video/videos/hug_拥抱.mp4",
                 "badge": "HOT"
               },
               {
                 "category": "Side Hug",
-                "prompt": "Generate Side Hug effect",
+                "prompt": "侧身拥抱，男人搂着女人的肩膀，互相依靠，随意甜蜜，自然的姿势，半拥抱",
                 "image": "/img_video/imgs/Hug_侧身依抱_2.png",
                 "video": "/img_video/videos/hug_侧身依抱.mp4"
               },
               {
                 "category": "Princess Hug",
-                "prompt": "Generate Princess Hug effect",
+                "prompt": "The man carries the woman in a princess carry.",
                 "image": "/img_video/imgs/Hug_公主抱_2.png",
                 "video": "/img_video/videos/hug_公主抱.mp4"
               },
               {
                 "category": "Lift Hug",
-                "prompt": "Generate Lift Hug effect",
+                "prompt": "把她举起来，高举拥抱，男人把女人举到空中，她的脚离地，强烈的眼神交流，浪漫的高潮，动感姿势，电影般的构图",
                 "image": "/img_video/imgs/Hug_托举式抱_2.png",
                 "video": "/img_video/videos/hug_托举式抱.mp4"
               },
               {
                 "category": "Back Hug",
-                "prompt": "Generate Back Hug effect",
+                "prompt": "Affectionate back hug, man embracing woman from behind, chin resting on shoulder, hands interlaced over her waist, peaceful and protective atmosphere, soft lighting.",
                 "image": "/img_video/imgs/Hug_背后环抱_2.png",
                 "video": "/img_video/videos/hug_背后环抱.mp4"
               }
@@ -794,7 +977,9 @@
             {
               "title": "Emotional Connection",
               "description": "Create touching moments with realistic and warm embrace animations.",
-              "image": { "src": "/imgs/cms/Hug_拥抱_2.png" }
+              "image": {
+                "src": "/imgs/cms/Hug_拥抱_2.png"
+              }
             }
           ]
         },
@@ -803,15 +988,22 @@
           "title": "Create Warm Hug Videos With 1PhotoAI",
           "description": "With our AI Hug Video Generator, you can effortlessly turn any photos into a heartwarming hug video. Whether it's reuniting with a long-distance friend or creating a touching memory with a loved one, our AI technology ensures natural and emotional results.",
           "images": [
-            { "src": "/imgs/cms/Hug_拥抱_1.png" },
-            { "src": "/imgs/cms/Hug_拥抱_2.png" }
+            {
+              "src": "/imgs/cms/Hug_拥抱_1.png"
+            },
+            {
+              "src": "/imgs/cms/Hug_拥抱_2.png"
+            }
           ]
         },
         "how_to": {
           "block": "how-to",
           "title": "How to Use AI Hug Generator?",
           "description": "Create amazing hug videos in just a few clicks.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/imgs/cms/Hug_拥抱_1.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/imgs/cms/Hug_拥抱_1.png"
+          },
           "steps": [
             {
               "title": "Step 1",
@@ -826,7 +1018,10 @@
               "description": "Click Create and wait for the magic to happen."
             }
           ],
-          "button": { "title": "Create AI Hug Videos", "url": "#tool" }
+          "button": {
+            "title": "Create AI Hug Videos",
+            "url": "#tool"
+          }
         },
         "faq": {
           "block": "faq",
@@ -852,12 +1047,16 @@
           "items": [
             {
               "title": "AI Kissing Generator",
-              "image": { "src": "/imgs/cms/AI-Kissing_正常接吻_1.png" },
+              "image": {
+                "src": "/imgs/cms/AI-Kissing_正常接吻_1.png"
+              },
               "url": "/video-effects/ai-kissing"
             },
             {
               "title": "AI Twerk Dance",
-              "image": { "src": "/imgs/cms/Twerk_扭臀舞_2.png" },
+              "image": {
+                "src": "/imgs/cms/Twerk_扭臀舞_2.png"
+              },
               "url": "/video-effects/ai-twerk"
             }
           ]
@@ -877,9 +1076,15 @@
           "id": "hero",
           "title": "360° Cinematic Rotation",
           "description": "Create professional 360-degree rotation videos with smooth camera movements.",
-          "background_image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" },
+          "background_image": {
+            "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+          },
           "buttons": [
-            { "title": "Try 360 Rotation", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try 360 Rotation",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -888,14 +1093,14 @@
           "title": "AI 360 Rotation Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Character", 
-                "prompt": "360 degree rotation around person or object, smooth cinematic camera movement",
+              {
+                "category": "Character",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
               },
-              { 
-                "category": "Product", 
-                "prompt": "Professional 360 product showcase, studio lighting, detailed view",
+              {
+                "category": "Product",
+                "prompt": "The man takes off shirts, revealing a lean and muscular body. He raises his arms, showing off his his abs and biceps.",
                 "image": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
               }
             ]
@@ -907,20 +1112,31 @@
             {
               "title": "Smooth Cinematic",
               "description": "Professional camera rotation with cinematic quality and smooth transitions.",
-              "image": { "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png" }
+              "image": {
+                "src": "/imgs/cms/AI-360-Rotation_肌肉展示_2.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Cinematic AI 360 Rotation",
-             "description": "Create stunning 360-degree rotation videos for characters and products.",
-             "images": [{ "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png" }]
+          "block": "tool-intro",
+          "title": "Cinematic AI 360 Rotation",
+          "description": "Create stunning 360-degree rotation videos for characters and products.",
+          "images": [
+            {
+              "src": "/imgs/cms/AI-360-Rotation_肌肉展示_1.png"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "FAQs",
-             "items": [{ "question": "Does it work on objects?", "answer": "Yes, it works great for product showcases." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "Does it work on objects?",
+              "answer": "Yes, it works great for product showcases."
+            }
+          ]
         }
       }
     }
@@ -937,9 +1153,15 @@
           "id": "hero",
           "title": "Dramatic Earth Zoom Effects",
           "description": "Create stunning zoom effects from space to Earth surface with AI.",
-          "background_image": { "src": "/imgs/bg/tree.jpg" },
+          "background_image": {
+            "src": "/imgs/bg/tree.jpg"
+          },
           "buttons": [
-            { "title": "Try Earth Zoom", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Earth Zoom",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -948,13 +1170,13 @@
           "title": "AI Earth Zoom Generator",
           "data": {
             "examples": [
-              { 
-                "category": "Zoom In", 
+              {
+                "category": "Zoom In",
                 "prompt": "Zoom in from space to Earth surface, dramatic reveal, cinematic style",
                 "image": "/imgs/bg/tree.jpg"
               },
-              { 
-                "category": "Zoom Out", 
+              {
+                "category": "Zoom Out",
                 "prompt": "Zoom out from city street to full Earth view in space, epic scale",
                 "image": "/imgs/features/landing-page.png"
               }
@@ -967,20 +1189,31 @@
             {
               "title": "Cinematic Reveal",
               "description": "Dramatic zoom effects with smooth transitions from space to ground level.",
-              "image": { "src": "/imgs/features/landing-page.png" }
+              "image": {
+                "src": "/imgs/features/landing-page.png"
+              }
             }
           ]
         },
         "intro": {
-             "block": "tool-intro",
-             "title": "Dramatic Earth Zoom",
-             "description": "Create Google Earth-style zoom videos instantly.",
-             "images": [{ "src": "/imgs/bg/tree.jpg" }]
+          "block": "tool-intro",
+          "title": "Dramatic Earth Zoom",
+          "description": "Create Google Earth-style zoom videos instantly.",
+          "images": [
+            {
+              "src": "/imgs/bg/tree.jpg"
+            }
+          ]
         },
         "faq": {
-             "block": "faq",
-             "title": "FAQs",
-             "items": [{ "question": "What is the resolution?", "answer": "We support output resolutions up to 4K." }]
+          "block": "faq",
+          "title": "FAQs",
+          "items": [
+            {
+              "question": "What is the resolution?",
+              "answer": "We support output resolutions up to 4K."
+            }
+          ]
         }
       }
     }
@@ -997,9 +1230,15 @@
           "id": "hero",
           "title": "Make Your Photos Dance",
           "description": "Use AI technology to bring dynamic dance movements to your photos.",
-          "background_image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1011,7 +1250,11 @@
           "block": "tool-intro",
           "title": "AI Dance Generator",
           "description": "Bring static photos to life with various dance styles. Using our AI technology, you can make any photo perform professional dance moves, including belly dance and other popular styles.",
-          "images": [{ "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" }]
+          "images": [
+            {
+              "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+            }
+          ]
         },
         "features": {
           "block": "feature-split",
@@ -1019,8 +1262,13 @@
             {
               "title": "Multiple Dance Styles",
               "description": "Support belly dance and other popular dance styles, making your photos perform professional dance moves.",
-              "image": { "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1028,23 +1276,38 @@
           "block": "how-to",
           "title": "How to Use AI Dance Generator?",
           "description": "Make photos dance in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired dance style." },
-            { "title": "Step 2", "description": "Upload a clear photo of a person." },
-            { "title": "Step 3", "description": "Click generate to see the dancing effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired dance style."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo of a person."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the dancing effect."
+            }
           ],
           "data": {
             "examples": [
               {
                 "category": "Belly Dance",
-                "prompt": "Generate Belly Dance effect",
+                "prompt": "Sexy belly dance.",
                 "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png",
                 "video": "/img_video/videos/AIDanceGenerator_肚皮舞.mp4"
               }
             ]
           },
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1053,7 +1316,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What dance styles are supported?", "answer": "We support belly dance and many other dance styles." }]
+          "items": [
+            {
+              "question": "What dance styles are supported?",
+              "answer": "We support belly dance and many other dance styles."
+            }
+          ]
         }
       }
     }
@@ -1070,9 +1338,15 @@
           "id": "hero",
           "title": "AI Mimic Effect",
           "description": "Make your photos mimic various movements and dances.",
-          "background_image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1085,9 +1359,15 @@
           "title": "AI Mimic Effect",
           "description": "Make photos mimic various movements including hot pole dance, twerk, electro dance, Chanel dance, AI standing split, Reze dance, and waist twist. Using our AI technology, make your photos perform dynamic dances and actions.",
           "images": [
-            { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
-            { "src": "/img_video/imgs/模仿_扭臀舞_2.png" },
-            { "src": "/img_video/imgs/模仿_电摇舞_2.png" }
+            {
+              "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+            },
+            {
+              "src": "/img_video/imgs/模仿_扭臀舞_2.png"
+            },
+            {
+              "src": "/img_video/imgs/模仿_电摇舞_2.png"
+            }
           ]
         },
         "features": {
@@ -1096,8 +1376,13 @@
             {
               "title": "Rich Action Library",
               "description": "Support hot pole dance, twerk, electric dance and other popular actions, making your photos full of vitality.",
-              "image": { "src": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1105,56 +1390,71 @@
           "block": "how-to",
           "title": "How to Use AI Mimic Effects?",
           "description": "Make photos mimic actions in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/模仿_热辣钢管舞_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose the action type you want to mimic." },
-            { "title": "Step 2", "description": "Upload a clear photo of a person." },
-            { "title": "Step 3", "description": "Click generate to see the mimic effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose the action type you want to mimic."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo of a person."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the mimic effect."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "data": {
           "examples": [
             {
               "category": "Hot Pole Dance",
-              "prompt": "Generate Hot Pole Dance effect",
+              "prompt": "超现实的城市转型。画面中有一根银色的舞竿。她抓住杆子，做了一个有力的空中动作，在半空中做了一个完美的180度劈开。成百上千的美钞开始像雨一样从天上落在她身边。动态运动，地心引力的钢管舞，电影灯光，逼真的织物和货币物理",
               "image": "/img_video/imgs/模仿_热辣钢管舞_2.png",
               "video": "/img_video/videos/模仿_热辣钢管舞.mp4",
               "badge": "NEW"
             },
             {
               "category": "Twerk Dance",
-              "prompt": "Generate Twerk Dance effect",
+              "prompt": "Tu.rn their back to the viewer and starts dancing with rhythmic hip movements. The hips bounce naturally in a twerking rhythm",
               "image": "/img_video/imgs/模仿_扭臀舞_2.png",
               "video": "/img_video/videos/模仿_扭臀舞.mp4"
             },
             {
               "category": "Electric Dance",
-              "prompt": "Generate Electric Dance effect",
+              "prompt": "Turns sideways and squats down to show hips, begins twerking. The hips bounce up and down rapidly.",
               "image": "/img_video/imgs/模仿_电摇舞_2.png",
               "video": "/img_video/videos/模仿_电摇舞.mp4"
             },
             {
               "category": "Chanel Dance",
-              "prompt": "Generate Chanel Dance effect",
+              "prompt": "一个动态的舞蹈序列。舞者双脚并拢微侧站立，随后身体转向正对镜头，双臂自然向两侧平摊，手掌朝上，做出一个自信的“Voila”展示动作,舞者迅速收回双手，顺着腰腹部曲线下滑，同时双膝弯曲下蹲。身体呈现出一个由上至下的身体波浪（Body Roll），重心压低，胯部随之扭动，保持深蹲姿态，双腿张开，重心在左右脚间快速切换。双臂在胸前随节奏交替挥动，做出类似“切分音”的快速点手动作，身体随着节拍产生小幅度的震动（Pop）舞者从深蹲位顺畅站起，重心移至左腿，胯部向一侧顶出。她顺势抬起双手插入蓬松的卷发中，向后梳理头发，展现出一种慵懒而迷人的过渡感,身体跟随节奏轻微晃动，单手向镜头做一个随意的挥手动作，随后侧身展示侧面曲线，保持律动高能量，平滑的过渡，逼真的皮肤和织物物理，4k。",
               "image": "/img_video/imgs/模仿_香奈儿舞_2.png",
               "video": "/img_video/videos/模仿_香奈儿舞.mp4"
             },
             {
               "category": "AI Standing Split",
-              "prompt": "Generate AI Standing Split effect",
+              "prompt": "一个高能运动序列。角色一开始是伸开双臂站着不动。突然，做了一个完美的垂直180度劈腿，一条腿伸直，另一条腿牢牢地站稳。身体保持完美的平衡。摄像机捕捉到了从站立到分裂的快速、平稳的过渡。逼真的肌肉张力，自然的织物折叠，流畅的动作，4k。",
               "image": "/img_video/imgs/模仿_AI站立一字马_2.png",
               "video": "/img_video/videos/模仿_AI站立一字马.mp4"
             },
             {
               "category": "Reze Dance",
-              "prompt": "Generate Reze Dance effect",
+              "prompt": "舞者并拢双脚站立，左手高举过头顶并轻柔摆动，随后双臂回收至胸前形成圆弧状，身体随之轻微左右晃动。她迅速跳开双脚至宽站位，双臂随节拍交替上下摆动，肩膀配合手臂动作进行利落的震动（Pop），展现出极强的节奏点控制。舞者身体向右侧倾斜，左手划过额头，随后站直身体，右手指向镜头并做出一个“勾手”的挑逗动作，同时左腿向后轻微勾起，增加动态美感。她迅速转身侧对镜头，双手在胸前快速进行绕圈（Rolling）动作，随后顺着节拍向后方推手，眼神始终跟随手部动作后再转回镜头。舞者双臂向前推开，紧接着做一个快速的手部交叉动作，最后双手高举过头顶成 V 字型，并伴随一个轻盈的原地小跳收尾。",
               "image": "/img_video/imgs/模仿_Reze舞_2.png",
               "video": "/img_video/videos/模仿_Reze舞.mp4"
             },
             {
               "category": "Waist Twist",
-              "prompt": "Generate Waist Twist effect",
+              "prompt": "主体充满自信地看着镜头，身体轻微摇晃。双手自然插在身体两侧，眼神坚定地直视镜头，表情冷静而迷人，她流畅地转为双手叉腰的姿势。摇晃着身体，凸显腰部线条，微微张开双唇，目光锁定镜头",
               "image": "/img_video/imgs/模仿_叉腰扭臂_2.png",
               "video": "/img_video/videos/模仿_叉腰扭臂.mp4"
             }
@@ -1167,7 +1467,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What movements are supported?", "answer": "We support hot pole dance, twerk, electro dance, Chanel dance and many other movements." }]
+          "items": [
+            {
+              "question": "What movements are supported?",
+              "answer": "We support hot pole dance, twerk, electro dance, Chanel dance and many other movements."
+            }
+          ]
         }
       }
     }
@@ -1184,9 +1489,15 @@
           "id": "hero",
           "title": "AI Visual Effects",
           "description": "Add stunning visual effects to your photos.",
-          "background_image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1197,31 +1508,31 @@
             "examples": [
               {
                 "category": "AI Explosion",
-                "prompt": "Generate AI Explosion effect",
+                "prompt": "主体人物突然分解，分裂成成千上万的动态粒子和碎片。电影冲击波效应将粒子推向镜头，使屏幕上充满了飞散的碎片。最后消失在画面中，高保真粒子物理，高能运动，流体过渡，高速快门美学。",
                 "image": "/img_video/imgs/视觉效果_AI爆炸效果_2.png",
                 "video": "/img_video/videos/视觉效果_AI爆炸效果.mp4"
               },
               {
                 "category": "Epic Explosion Walk",
-                "prompt": "Generate Epic Explosion Walk effect",
+                "prompt": "一个电影般的动作序列，一个穿着白色西装的女人在鹅卵石街道上走向摄像机。【动作】：随着女人轻轻摆了一下右手，突然，背景中的一辆老式汽车爆炸，喷出巨大的橙色火焰和浓浓的黑烟。女人继续平静地走着，头也不回，保持着一种冷静的表情。[技术]：逼真的火焰和烟雾模拟，爆炸产生的明亮光线反射在女人的衣服和砖墙上。爆炸时相机轻微抖动的跟踪镜头。高对比度，高速快门效果，电影般的画质。",
                 "image": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png",
                 "video": "/img_video/videos/视觉效果_史诗级爆炸漫步.mp4"
               },
               {
                 "category": "Ocean Dress",
-                "prompt": "Generate Ocean Dress effect",
+                "prompt": "慢动作在海浪中行走，浅蓝色的丝绸连衣裙在风中猛烈地摆动，裙摆与水花融合，波浪撞击腿部，电影般的慢动作，超现实的水物理。动态关键词：流动、飘动、飞溅、有节奏的波浪、优雅的步伐。",
                 "image": "/img_video/imgs/视觉效果_海洋连衣裙_2.png",
                 "video": "/img_video/videos/视觉效果_海洋连衣裙.mp4"
               },
               {
                 "category": "Dimension Travel",
-                "prompt": "Generate Dimension Travel effect",
+                "prompt": "一段电影般的视频，一名男子以缓慢而自信的步伐走向摄像机。摄像机保持在一个非常低的角度，聚焦在他的白色运动鞋和他随身携带的塑料袋上。[过渡/效果]：背景环境迅速变形，按照后面的高楼的形状轮廓变成有发光的紫色大楼形状，然后变成一个宇宙星云，有旋转的蓝色火焰和北极光。当宇宙在他身后崩塌和重组时，这个人保持稳定。高能量，无缝过渡，充满活力的霓虹色彩，合成波美学，4k，流畅的运动",
                 "image": "/img_video/imgs/视觉效果_穿越维度_2.png",
                 "video": "/img_video/videos/视觉效果_穿越维度.mp4"
               },
               {
                 "category": "Into Mouth",
-                "prompt": "Generate Into Mouth effect",
+                "prompt": "第一人视角，张开嘴巴视角进入到嘴巴的过程",
                 "image": "/img_video/imgs/视觉效果_进入嘴巴_2.png",
                 "video": "/img_video/videos/视觉效果_进入嘴巴.mp4"
               }
@@ -1233,9 +1544,15 @@
           "title": "AI Visual Effects",
           "description": "Add various creative visual effects to photos, including AI explosion effect, epic explosion walk, ocean dress, dimension crossing, entering mouth, and helicopter hangar transformation. Using our AI technology, create stunning visual effects.",
           "images": [
-            { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-            { "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png" },
-            { "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png" }
+            {
+              "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_史诗级爆炸漫步_2.png"
+            },
+            {
+              "src": "/img_video/imgs/视觉效果_海洋连衣裙_2.png"
+            }
           ]
         },
         "features": {
@@ -1244,8 +1561,13 @@
             {
               "title": "Stunning Visual Effects",
               "description": "Support explosion effects, ocean dress, dimension crossing and other creative visual effects, making your photos full of imagination.",
-              "image": { "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1253,13 +1575,28 @@
           "block": "how-to",
           "title": "How to Use AI Visual Effects?",
           "description": "Add stunning effects to photos in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/视觉效果_AI爆炸效果_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired visual effect type." },
-            { "title": "Step 2", "description": "Upload a clear photo." },
-            { "title": "Step 3", "description": "Click generate to see the visual effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired visual effect type."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the visual effect."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "more_tools": {
           "block": "more-tools",
@@ -1268,7 +1605,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What visual effects are supported?", "answer": "We support explosion effects, ocean dress, dimension crossing and many other creative visual effects." }]
+          "items": [
+            {
+              "question": "What visual effects are supported?",
+              "answer": "We support explosion effects, ocean dress, dimension crossing and many other creative visual effects."
+            }
+          ]
         }
       }
     }
@@ -1285,9 +1627,15 @@
           "id": "hero",
           "title": "AI Role Swap",
           "description": "Achieve creative role swapping and scene transformation.",
-          "background_image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "background_image": {
+            "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "buttons": [
-            { "title": "Try Now", "url": "#tool", "icon": "Zap" }
+            {
+              "title": "Try Now",
+              "url": "#tool",
+              "icon": "Zap"
+            }
           ]
         },
         "tool": {
@@ -1300,9 +1648,15 @@
           "title": "AI Role Swap",
           "description": "Achieve various creative role swap scenes, including AI tiger hug, rainy walk, meeting future child, meeting old me, luxury car ride, interrogation room, scream, and rainy night. Using our AI technology, create unique scene transformations.",
           "images": [
-            { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-            { "src": "/img_video/imgs/角色切换_雨中漫步_2.png" },
-            { "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png" }
+            {
+              "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_雨中漫步_2.png"
+            },
+            {
+              "src": "/img_video/imgs/角色切换_遇见未来的小孩_2.png"
+            }
           ]
         },
         "features": {
@@ -1311,8 +1665,13 @@
             {
               "title": "Creative Scene Swap",
               "description": "Support AI tiger hug, rainy walk, meeting future child and other creative scenes, making your photos full of stories.",
-              "image": { "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
-              "button": { "title": "Try Now", "url": "#tool" }
+              "image": {
+                "src": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+              },
+              "button": {
+                "title": "Try Now",
+                "url": "#tool"
+              }
             }
           ]
         },
@@ -1320,61 +1679,76 @@
           "block": "how-to",
           "title": "How to Use AI Role Swap?",
           "description": "Achieve creative scene swaps in seconds.",
-          "video": { "src": "/videos/AI_Kissing.mp4", "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png" },
+          "video": {
+            "src": "/videos/AI_Kissing.mp4",
+            "poster": "/img_video/imgs/角色切换_AI老虎拥抱_2.png"
+          },
           "steps": [
-            { "title": "Step 1", "description": "Choose your desired scene type." },
-            { "title": "Step 2", "description": "Upload a clear photo of a person." },
-            { "title": "Step 3", "description": "Click generate to see the scene swap effect." }
+            {
+              "title": "Step 1",
+              "description": "Choose your desired scene type."
+            },
+            {
+              "title": "Step 2",
+              "description": "Upload a clear photo of a person."
+            },
+            {
+              "title": "Step 3",
+              "description": "Click generate to see the scene swap effect."
+            }
           ],
-          "button": { "title": "Try Now", "url": "#tool" }
+          "button": {
+            "title": "Try Now",
+            "url": "#tool"
+          }
         },
         "data": {
           "examples": [
             {
               "category": "AI Tiger Hug",
-              "prompt": "Generate AI Tiger Hug effect",
+              "prompt": "电影场景。突然，一只巨大而威严的老虎从他身后站起来，从背后给了他一个温柔的拥抱。老虎把它的大头靠在那个人的肩上。这个人笑得很开心，抓住了老虎的爪子。老虎的皮毛和那个人的表情上有难以置信的细节。超现实和温暖的氛围，流畅的自然运动，4k，超现实的纹理。",
               "image": "/img_video/imgs/角色切换_AI老虎拥抱_2.png",
               "video": "/img_video/videos/角色切换_AI老虎拥抱.mp4"
             },
             {
               "category": "Rain Walk",
-              "prompt": "Generate Rain Walk effect",
+              "prompt": "电影慢动作视频。一个穿着黑色西装的人非常缓慢的走在倾盆大雨的夜晚。水从他的脸上和脖子流下来的细节非常清晰。高角度镜头，缓慢变焦，对准他的脸。强烈的青色蓝色背光创造发光雾的效果。在闪烁的街灯的映照下，雨点晶莹剔透。飘渺的，喜怒无常的，戏剧性的。4k，逼真的流体模拟。",
               "image": "/img_video/imgs/角色切换_雨中漫步_2.png",
               "video": "/img_video/videos/角色切换_雨中漫步.mp4"
             },
             {
               "category": "Future Child",
-              "prompt": "Generate Future Child effect",
+              "prompt": "一个电影镜头，镜头移开，露出一个中国小女孩（5岁)，是女人的小孩子，样貌五官跟女人极度的相识，女孩穿着同样的衣服。女孩跑进相框，站在女人旁边。两人看着镜头，一起微笑。品格与服装一致性高，动作流畅，温馨氛围，4k。",
               "image": "/img_video/imgs/角色切换_遇见未来的小孩_2.png",
               "video": "/img_video/videos/角色切换_遇到未来小孩.mp4"
             },
             {
               "category": "Meet Old Self",
-              "prompt": "Generate Meet Old Self effect",
+              "prompt": "电影镜头。当镜头移向左边时，这位有着优雅银发、穿着一模一样的衣服的老妇人走进了镜头。他们肩并肩站着，都看着镜头。在两个版本之间保持高度的字符一致性。无缝运动，超现实的时空旅行氛围，4k",
               "image": "/img_video/imgs/角色切换_遇见老年的我_2.png",
               "video": "/img_video/videos/角色切换_遇到老年的我.mp4"
             },
             {
               "category": "Luxury Car",
-              "prompt": "Generate Luxury Car effect",
+              "prompt": "电影序列。突然，一辆光滑的白色豪华敞篷跑车从面前出现。车门正好在她面前打开。这位女士不慌不忙地走进车里，坐了下来。流畅的镜头运动，逼真的物理效果，4k",
               "image": "/img_video/imgs/角色切换_坐上豪车_2.png",
               "video": "/img_video/videos/角色切换_坐上豪车.mp4"
             },
             {
               "category": "Interrogation Room",
-              "prompt": "Generate Interrogation Room effect",
+              "prompt": "A dimly lit, cold interrogation room with concrete walls. The same man in the light blue sweater, now handcuffed, looking down with a somber expression. Behind him stand two DEA officers in black tactical gear. On the metal table in front of him are several smartphones, stacks of cash, and a laptop. Harsh fluorescent lighting, cinematic drama, intense atmosphere",
               "image": "/img_video/imgs/角色切换_审讯室_2.png",
               "video": "/img_video/videos/角色切换_审讯室.mp4"
             },
             {
               "category": "Scream",
-              "prompt": "Generate Scream effect",
+              "prompt": "A cinematic horror sequence. The man in the mirror closes his eyes for a second. Suddenly, the masked killer (Ghostface) behind him lunges forward, grabbing the man's throat and covering his mouth with a gloved hand. The camera rapidly zooms in on the man's face as his eyes widen in terror, struggling to breathe. Fast-paced action, intense suspense, jump scare, realistic movement, 4k, cinematic lighting",
               "image": "/img_video/imgs/角色切换_尖叫_2.png",
               "video": "/img_video/videos/角色切换_尖叫.mp4"
             },
             {
               "category": "Rainy Night",
-              "prompt": "Generate Rainy Night effect",
+              "prompt": "电影感转场，图中人物。灯光从柔和的室内光变为戏剧性的蓝色霓虹月光。她闭上眼睛，仰起头，雨水在皮肤上闪烁并顺着脸颊流下。高细节，忧郁氛围，慢动作，写实风格。",
               "image": "/img_video/imgs/角色切换_雨夜_2.png",
               "video": "/img_video/videos/角色切换_雨夜.mp4"
             }
@@ -1387,7 +1761,12 @@
         "faq": {
           "block": "faq",
           "title": "FAQs",
-          "items": [{ "question": "What scenes are supported?", "answer": "We support AI tiger hug, rainy walk, meeting future child and many other creative scenes." }]
+          "items": [
+            {
+              "question": "What scenes are supported?",
+              "answer": "We support AI tiger hug, rainy walk, meeting future child and many other creative scenes."
+            }
+          ]
         }
       }
     }

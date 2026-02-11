@@ -2,6 +2,9 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import { useSession } from '@/core/auth/client';
+import { useAppContext } from '@/shared/contexts/app';
+import { useToolContent } from './tool-content-context';
 import { Button } from '@/shared/components/ui/button';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { Upload, Sparkles, Play, ChevronRight, ZoomIn, Settings, ChevronLeft } from 'lucide-react';
@@ -48,6 +51,8 @@ interface ToolContentProps {
   generateButtonText?: string;
   /** 所需Credits数量 */
   creditsRequired?: number;
+  /** 工具的 slug 标识，用于确定 API 调用参数 */
+  toolSlug?: string;
 }
 
 /**
@@ -69,8 +74,13 @@ export function ToolContent({
   promptPlaceholder = 'Describe what you want to change...',
   promptMaxLength = 1200,
   generateButtonText = 'Generate',
-  creditsRequired = 4
+  creditsRequired = 4,
+  toolSlug = ''
 }: ToolContentProps) {
+  // API 对接所需 hooks
+  const { data: session } = useSession();
+  const { user } = useAppContext();
+  const { startGenerate, isGenerating } = useToolContent();
   // 根据 initialType 查找匹配的示例，用于从首页点击特效卡片后预选
   const initialExample = useMemo(() => {
     if (initialType) {
@@ -386,11 +396,67 @@ export function ToolContent({
         </div>
       )}
 
-      {/* Generate按钮 */}
-      <Button className="w-full gap-2 rounded-lg py-6 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700">
-        {generateButtonText}
-        <span className="ml-auto text-sm">-{creditsRequired} Credits</span>
-      </Button>
+      {/* Generate按钮 - 带积分检查和登录检查 */}
+      {session ? (
+        <Button 
+          onClick={async () => {
+            // 检查是否需要上传图片
+            if (['image', 'image-text'].includes(inputType || 'image') && !uploadedImage) {
+              alert('Please upload an image first');
+              return;
+            }
+            // 对于纯文本输入类型，检查是否有 prompt
+            if (inputType === 'text' && !prompt.trim()) {
+              alert('Please enter a prompt');
+              return;
+            }
+            // 确定 scene 和 action 参数
+            const isVideoOutput = toolType === 'video';
+            const scene = isVideoOutput ? 'image-to-video' : 'image-to-image';
+            const action = isVideoOutput ? 'image2video' : 'generate';
+            const mediaType = isVideoOutput ? 'video' : 'image';
+            
+            await startGenerate({
+              imageFile: uploadedImage!,
+              prompt: prompt || defaultPrompt,
+              mediaType,
+              scene,
+              options: {
+                action,
+                ...(showRatioSelector && { aspect_ratio: ratio }),
+                ...(showDurationSelector && { duration }),
+                ...(showQuantitySelector && { count: quantity }),
+              }
+            });
+          }}
+          disabled={isGenerating || (user?.credits?.remainingCredits || 0) < creditsRequired}
+          className="w-full gap-2 rounded-lg py-6 text-base font-semibold bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 active:scale-[0.98] transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+        >
+          {isGenerating ? (
+            <>
+              <span className="animate-spin text-xl">&#9676;</span>
+              Generating...
+            </>
+          ) : (user?.credits?.remainingCredits || 0) < creditsRequired ? (
+            <>
+              Insufficient Credits
+              <span className="ml-auto text-sm">Need {creditsRequired}</span>
+            </>
+          ) : (
+            <>
+              {generateButtonText}
+              <span className="ml-auto text-sm">-{creditsRequired} Credits</span>
+            </>
+          )}
+        </Button>
+      ) : (
+        <Button 
+          onClick={() => window.location.href = '/sign-in'}
+          className="w-full gap-2 rounded-lg py-6 text-base font-semibold bg-gray-800 hover:bg-gray-700 transition-all"
+        >
+          Sign in to Generate
+        </Button>
+      )}
     </div>
   );
 }
