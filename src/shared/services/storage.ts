@@ -1,4 +1,4 @@
-import { R2Provider, S3Provider, StorageManager, LocalProvider } from '@/extensions/storage';
+import { R2Provider, S3Provider, StorageManager, LocalProvider, AIStudioProvider } from '@/extensions/storage';
 import { Configs, getAllConfigs } from '@/shared/models/config';
 
 /**
@@ -7,6 +7,18 @@ import { Configs, getAllConfigs } from '@/shared/models/config';
 export function getStorageServiceWithConfigs(configs: Configs) {
   const storageManager = new StorageManager();
   let hasProvider = false;
+
+  // Add AI Studio provider if configured
+  if (configs.aistudio_api_key) {
+    storageManager.addProvider(
+      new AIStudioProvider({
+        apiKey: configs.aistudio_api_key,
+        baseUrl: configs.aistudio_api_base,
+      }),
+      !hasProvider // Set as default if first
+    );
+    hasProvider = true;
+  }
 
   // Add R2 provider if configured
   if (

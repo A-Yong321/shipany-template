@@ -167,3 +167,4 @@ export const storageManager = new StorageManager();
 export * from './s3';
 export * from './r2';
 export * from './local';
+export * from './aistudio';

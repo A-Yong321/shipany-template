@@ -96,6 +96,11 @@ export async function POST(request: Request) {
       options,
     };
 
+    // Prepend APP_URL to relative image URLs in options
+    if (params.options?.image_url && params.options.image_url.startsWith('/')) {
+      params.options.image_url = `${envConfigs.app_url}${params.options.image_url}`;
+    }
+
     // generate content
     const result = await aiProvider.generate({ params });
     if (!result?.taskId) {
