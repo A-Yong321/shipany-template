@@ -179,6 +179,10 @@ export class AIStudioProvider implements AIProvider {
       });
 
       const data = await res.json();
+      
+      // LOG: 详细记录上游响应数据以便调试
+      console.log('[AIStudio] Query Response Data:', JSON.stringify(data, null, 2));
+
       if (!res.ok) {
         throw new Error(data.error?.message || 'AI Studio Query Failed');
       }
@@ -248,9 +252,8 @@ export class AIStudioProvider implements AIProvider {
           taskInfo.images = [{ url: responseData.url }];
         }
         
-        // 视频提取: 增加详细日志和更多字段回退支持
-        console.log('[AIStudio] Extracting video result:', JSON.stringify(responseData));
-        
+        // 视频提取: 兼容多种字段格式
+        // 优先尝试 videoUrl/videoUrls，均失败则尝试通用的 url 字段
         const videoUrl = responseData.videoUrl || 
                          (responseData.videoUrls && responseData.videoUrls[0]) ||
                          responseData.url ||
@@ -260,7 +263,7 @@ export class AIStudioProvider implements AIProvider {
         if (videoUrl) {
           taskInfo.videos = [{ url: videoUrl, duration: responseData.duration }];
         } else {
-          console.warn('[AIStudio] No video URL found in response data:', responseData);
+             console.warn('[AIStudio] Video URL not found in response data:', responseData);
         }
 
         // 音乐提取: response.data.audioUrl 或 musicUrl

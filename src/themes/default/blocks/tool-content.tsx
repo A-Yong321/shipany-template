@@ -53,6 +53,8 @@ interface ToolContentProps {
   creditsRequired?: number;
   /** 工具的 slug 标识，用于确定 API 调用参数 */
   toolSlug?: string;
+  /** 可选模型列表 */
+  models?: { label: string; value: string }[];
 }
 
 /**
@@ -75,7 +77,8 @@ export function ToolContent({
   promptMaxLength = 1200,
   generateButtonText = 'Generate',
   creditsRequired = 4,
-  toolSlug = ''
+  toolSlug = '',
+  models = []
 }: ToolContentProps) {
   // API 对接所需 hooks
   const { data: session } = useSession();
@@ -98,6 +101,10 @@ export function ToolContent({
   const [quantity, setQuantity] = useState<number>(1);
   const [duration, setDuration] = useState<number>(5);
   const [resolution, setResolution] = useState<string>('1080p');
+  // Default to first model if available, otherwise fallback based on tool type
+  const [model, setModel] = useState<string>(
+    models.length > 0 ? models[0].value : (toolType === 'video' ? 'kling-v1' : 'flux-dev')
+  );
 
   // 选择示例时自动填入prompt
   const handleExampleClick = (example: Example) => {
@@ -231,6 +238,29 @@ export function ToolContent({
                 </button>
                );
             })}
+          </div>
+        </div>
+      )}
+
+      {/* Model Selection - Render if models props provided */}
+      {models.length > 0 && (
+        <div className="space-y-1.5">
+          <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Model</h2>
+          <div className="grid grid-cols-2 gap-2">
+            {models.map((m) => (
+              <button
+                key={m.value}
+                onClick={() => setModel(m.value)}
+                className={cn(
+                  "px-3 py-2 rounded-lg text-sm font-medium transition-all",
+                  model === m.value
+                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md"
+                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                )}
+              >
+                {m.label}
+              </button>
+            ))}
           </div>
         </div>
       )}
@@ -406,7 +436,7 @@ export function ToolContent({
               return;
             }
             // 对于纯文本输入类型，检查是否有 prompt
-            if (inputType === 'text' && !prompt.trim()) {
+            if ((inputType === 'text' || toolSlug === 'image-to-video') && !prompt.trim()) {
               alert('Please enter a prompt');
               return;
             }
@@ -421,6 +451,7 @@ export function ToolContent({
               prompt: prompt || defaultPrompt,
               mediaType,
               scene,
+              model: model, // Pass selected model
               options: {
                 action,
                 ...(showRatioSelector && { aspect_ratio: ratio }),

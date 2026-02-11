@@ -45,7 +45,7 @@ const formatBytes = (bytes?: number) => {
 
 const uploadImageFile = async (file: File) => {
   const formData = new FormData();
-  formData.append('files', file);
+  formData.append('file', file);
 
   const response = await fetch('/api/storage/upload-image', {
     method: 'POST',
@@ -57,11 +57,11 @@ const uploadImageFile = async (file: File) => {
   }
 
   const result = await response.json();
-  if (result.code !== 0 || !result.data?.urls?.length) {
+  if (result.code !== 0 || !result.data?.[0]?.url) {
     throw new Error(result.message || 'Upload failed');
   }
 
-  return result.data.urls[0] as string;
+  return result.data[0].url as string;
 };
 
 export function ImageUploader({

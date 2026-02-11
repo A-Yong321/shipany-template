@@ -136,6 +136,28 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
     );
   }
 
+  // Define models based on tool slug
+  let models: { label: string; value: string }[] = [];
+  
+  if (slug === 'image-to-image') {
+    models = [
+      { label: 'Grok (Flux)', value: 'flux-dev' },
+      { label: 'Dreamina', value: 'dreamina' },
+      { label: 'Kling', value: 'kling' },
+      { label: 'Lovart', value: 'lovart' },
+      { label: 'Krea', value: 'krea' },
+    ];
+  } else if (slug === 'image-to-video') {
+    models = [
+      { label: 'Kling', value: 'kling-v1' },
+      { label: 'Dreamina', value: 'dreamina' },
+      { label: 'Hailuo', value: 'hailuo' },
+      { label: 'Krea', value: 'krea' },
+      { label: 'Higgsfield', value: 'higgsfield' },
+      { label: 'HeyGen', value: 'heygen' },
+    ];
+  }
+
   return (
     <ToolContentProvider>
       <ToolDetailLayout
@@ -164,10 +186,10 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
           }
           promptMaxLength={slug === 'image-to-video' ? 400 : 1200}
           generateButtonText={slug === 'image-to-video' ? "Generate Video" : "Generate"}
-          creditsRequired={slug === 'image-to-video' ? 10 : 4}
+          creditsRequired={slug === 'image-to-video' ? 8 : 4}
+          models={models}
         />
       </ToolDetailLayout>
     </ToolContentProvider>
   );
 }
-

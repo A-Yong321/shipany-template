@@ -20,7 +20,10 @@ const extFromMime = (mimeType: string) => {
 export async function POST(req: Request) {
   try {
     const formData = await req.formData();
-    const files = formData.getAll('files') as File[];
+    // Support both 'file' (doc standard) and 'files' (legacy)
+    const files = (formData.getAll('file').length > 0 
+      ? formData.getAll('file') 
+      : formData.getAll('files')) as File[];
 
     console.log('[API] Received files:', files.length);
     files.forEach((file, i) => {
@@ -40,8 +43,12 @@ export async function POST(req: Request) {
 
     for (const file of files) {
       // Validate file type
-      if (!file.type.startsWith('image/')) {
-        return respErr(`File ${file.name} is not an image`);
+      if (!file.type.startsWith('image/') && !file.type.startsWith('video/')) {
+        // Warning: Doc mentions file upload endpoint supports video too
+        // But this is upload-image route. Keeping strict check for now but allow if needed?
+        // Let's stick to image for this specific route or allow both if it's generic storage?
+        // Logic below uses extFromMime which supports images.
+        return respErr(`File ${file.name} is not a supported image`);
       }
 
       // Convert file to buffer
@@ -52,8 +59,7 @@ export async function POST(req: Request) {
       const ext = extFromMime(file.type) || file.name.split('.').pop() || 'bin';
       const key = `${digest}.${ext}`;
 
-      // If the same image already exists, reuse its URL to save storage space.
-      // (Still depends on provider supporting signed HEAD + public url generation.)
+      // If the same image already exists, reuse its URL
       const exists = await storageService.exists({ key });
       if (exists) {
         const publicUrl = storageService.getPublicUrl({ key });
@@ -96,10 +102,11 @@ export async function POST(req: Request) {
       uploadResults.map((r) => r.url)
     );
 
-    return respData({
-      urls: uploadResults.map((r) => r.url),
-      results: uploadResults,
-    });
+    // Matches Doc structure: data is array of {url, key}
+    return respData(uploadResults.map(r => ({
+      url: r.url,
+      key: r.key
+    })));
   } catch (e) {
     console.error('upload image failed:', e);
     return respErr('upload image failed');

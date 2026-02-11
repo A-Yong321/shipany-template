@@ -72,6 +72,10 @@ export function ToolContentProvider({ children }: { children: React.ReactNode })
         const res = await response.json();
         const data = res.data;
 
+        // LOG: 详细记录第三方 API 查询结果
+        console.log('[ToolContent] Poll Query Response:', JSON.stringify(data, null, 2));
+
+        if (!data) { /* No data received, continue polling or handle as error */ } // This line was added based on the instruction's `if (!data) {成功状态判断`
         // 成功状态判断
         if (data.status === 'succeeded' || data.status === 'completed' || data.status === 'SUCCESS' || data.status === 'success') {
           let result = data.taskResult;
@@ -150,6 +154,7 @@ export function ToolContentProvider({ children }: { children: React.ReactNode })
     try {
       // 步骤1: 上传图片
       const formData = new FormData();
+      // Standardize on 'file' as per documentation
       formData.append('file', params.imageFile);
       const uploadRes = await fetch('/api/storage/upload-image', {
         method: 'POST',
@@ -161,7 +166,8 @@ export function ToolContentProvider({ children }: { children: React.ReactNode })
       }
       const uploadData = await uploadRes.json();
       // 从上传响应中提取图片 URL
-      const imageUrl = uploadData.data?.[0]?.url || uploadData.url;
+      // API 返回: { code: 0, data: [{ url: string, key: string }] }
+      const imageUrl = uploadData.data?.[0]?.url;
       if (!imageUrl) {
         throw new Error('Failed to get uploaded image URL');
       }
@@ -171,7 +177,7 @@ export function ToolContentProvider({ children }: { children: React.ReactNode })
       const generateBody = {
         provider: 'aistudio',
         mediaType: params.mediaType,
-        model: params.model || (params.mediaType === 'video' ? 'kling-v1' : 'flux-dev'),
+        model: params.model, // Use users selected model directly
         prompt: params.prompt,
         scene: params.scene,
         options: {
@@ -202,10 +208,30 @@ export function ToolContentProvider({ children }: { children: React.ReactNode })
 
       // 步骤3: 启动轮询
       const idToTrack = genData.data?.id;
+
       if (idToTrack) {
+        // Use the model passed from params, or fallback to defaults if not provided
         const effectiveModel = params.model || (params.mediaType === 'video' ? 'kling-v1' : 'flux-dev');
-        const platform = effectiveModel.includes('flux') ? 'grok' : effectiveModel;
-        console.log('Starting task polling for ID:', idToTrack, 'Platform:', platform);
+        let platform = effectiveModel;
+        
+        // Map model to platform for polling
+        if (effectiveModel.includes('flux')) {
+          platform = 'grok';
+        } else if (effectiveModel.includes('kling')) {
+          platform = 'kling';
+        } else if (effectiveModel.includes('suno')) {
+            platform = 'suno';
+        } else if (effectiveModel.includes('hailuo')) {
+            platform = 'hailuo';
+        } else if (effectiveModel.includes('dreamina')) {
+            platform = 'dreamina';
+        } else if (effectiveModel.includes('higgsfield')) {
+            platform = 'higgsfield';
+        } else if (effectiveModel.includes('heygen')) {
+            platform = 'heygen';
+        }
+
+        console.log('Starting task polling for ID:', idToTrack, 'Platform:', platform, 'Model:', effectiveModel);
         pollTaskStatus(idToTrack, params.mediaType, platform);
       } else {
         throw new Error('Task created but no id was returned.');

@@ -331,14 +331,14 @@ export function FAQSection({ title, items }: FAQSectionProps) {
         <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">{title}</h2>
         <Accordion type="single" collapsible className="w-full space-y-4">
           {items.map((item, idx) => (
-            <AccordionItem key={idx} value={`item-${idx}`} className="border border-gray-800 bg-gray-900/30 rounded-lg px-6 overflow-hidden data-[state=open]:bg-gray-900/80 transition-all">
-              <AccordionTrigger className="text-left text-lg hover:no-underline py-6 [&>svg]:hidden">
+            <AccordionItem key={idx} value={`item-${idx}`} className="border border-gray-800 bg-gray-900/30 rounded-lg px-6 overflow-hidden data-[state=open]:bg-gray-900/80 transition-all" suppressHydrationWarning>
+              <AccordionTrigger className="text-left text-lg hover:no-underline py-6 [&>svg]:hidden" suppressHydrationWarning>
                 <div className="flex items-center justify-between w-full">
                   <span>{item.question}</span>
                   <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="pb-6 text-gray-400 text-base leading-relaxed">
+              <AccordionContent className="pb-6 text-gray-400 text-base leading-relaxed" suppressHydrationWarning>
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

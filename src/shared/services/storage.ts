@@ -1,4 +1,4 @@
-import { R2Provider, S3Provider, StorageManager } from '@/extensions/storage';
+import { R2Provider, S3Provider, StorageManager, LocalProvider } from '@/extensions/storage';
 import { Configs, getAllConfigs } from '@/shared/models/config';
 
 /**
@@ -6,6 +6,7 @@ import { Configs, getAllConfigs } from '@/shared/models/config';
  */
 export function getStorageServiceWithConfigs(configs: Configs) {
   const storageManager = new StorageManager();
+  let hasProvider = false;
 
   // Add R2 provider if configured
   if (
@@ -28,8 +29,9 @@ export function getStorageServiceWithConfigs(configs: Configs) {
         endpoint: configs.r2_endpoint, // Optional custom endpoint
         publicDomain: configs.r2_domain,
       }),
-      true // Set R2 as default
+      !hasProvider // Set as default if first
     );
+    hasProvider = true;
   }
 
   // Add S3 provider if configured (future support)
@@ -42,7 +44,21 @@ export function getStorageServiceWithConfigs(configs: Configs) {
         secretAccessKey: configs.s3_secret_key,
         bucket: configs.s3_bucket,
         publicDomain: configs.s3_domain,
-      })
+      }),
+      !hasProvider
+    );
+    hasProvider = true;
+  }
+
+  // Fallback to Local Provider if no other provider is configured
+  if (!hasProvider) {
+    console.warn('[Storage] No cloud storage configured, using local storage.');
+    storageManager.addProvider(
+      new LocalProvider({
+        uploadDir: './public/uploads',
+        publicPath: '/uploads',
+      }),
+      true
     );
   }
 
