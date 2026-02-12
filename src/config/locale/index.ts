@@ -64,5 +64,6 @@ export const localeMessagesPaths = [
   'pages/explore',
   'pages/gallery',
   'pages/api-platform',
+  'pages/login',
 ];
 
