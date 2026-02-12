@@ -11,8 +11,18 @@ import { useToolContent } from './tool-content-context';
  * - 生成中: 展示 loading 覆盖层
  * - 生成完成: 展示图片/视频结果 + 下载按钮
  */
-export function ToolPreviewPlaceholder({ className }: { className?: string }) {
+export function ToolPreviewPlaceholder({ 
+  className, 
+  toolSlug,
+  inputType = 'image'
+}: { 
+  className?: string; 
+  toolSlug?: string;
+  inputType?: 'text' | 'image' | 'image-text';
+}) {
   const { generatedResult, resultType, isGenerating, error } = useToolContent();
+  
+  const isVideo = resultType === 'video' || toolSlug?.includes('video');
 
   /**
    * 处理结果下载
@@ -96,13 +106,17 @@ export function ToolPreviewPlaceholder({ className }: { className?: string }) {
         /* 未生成 - 占位提示 */
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
           <div className="mb-6 p-5 rounded-2xl bg-white/5 border border-white/10">
-            <Video className="w-10 h-10 text-white/90" strokeWidth={1.5} />
+            {isVideo ? (
+               <Video className="w-10 h-10 text-white/90" strokeWidth={1.5} />
+            ) : (
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/90"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            )}
           </div>
           <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 mb-3 tracking-wide">
             AI Generation Preview
           </h3>
           <p className="text-sm text-white/40 max-w-[260px] leading-relaxed font-light">
-            Upload an image and click Generate to see the result here
+            {inputType === 'image' || inputType === 'image-text' ? 'Upload image to generate' : 'Enter prompt to generate'}
           </p>
         </div>
       )}

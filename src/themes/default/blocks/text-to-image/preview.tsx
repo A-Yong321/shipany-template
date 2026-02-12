@@ -17,9 +17,10 @@ export function TextToImagePreview({
   const { generatedImage, generatedPrompt, isGenerating, error } = useTextToImage();
 
   // Prefer context data if available (real-time results)
-  const displayImage = generatedImage || propImage || '/imgs/cms/AI-Kissing_正常接吻_1.png';
-  const displayPrompt = generatedPrompt || propPrompt || 'Astronaut cat leaping on the moon';
-   const handleDownload = async () => {
+  const displayImage = generatedImage || propImage;
+  const displayPrompt = generatedPrompt || propPrompt;
+
+  const handleDownload = async () => {
     if (!displayImage) return;
     try {
       const response = await fetch(displayImage);
@@ -45,11 +46,14 @@ export function TextToImagePreview({
     <div className="flex h-full flex-col bg-background rounded-2xl overflow-hidden border border-border/50 shadow-sm">
       <div className="relative w-full h-full min-h-[500px] flex items-center justify-center bg-black/5">
         <div className="relative w-full h-full">
-           <img
-            src={displayImage}
-            alt="Preview"
-            className="absolute inset-0 w-full h-full object-contain" // Native img to bypass SSRF private IP check
-          />
+           {displayImage ? (
+             <img
+              src={displayImage}
+              alt="Preview"
+              className="absolute inset-0 w-full h-full object-contain" // Native img to bypass SSRF private IP check
+            />
+           ) : null}
+           
            {isLoading && (
              <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center z-20">
                <div className="flex flex-col items-center gap-3">
@@ -70,20 +74,19 @@ export function TextToImagePreview({
              </button>
            )}
            
-           {/* Only show overlay text if not showing a generated result */}
-           {!generatedImage && (
-             <>
-               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 pointer-events-none" />
-               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10 pointer-events-none">
-                  <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-md max-w-[80%] leading-tight">
-                    {displayPrompt}
-                  </h2>
-               </div>
-               <div className="absolute bottom-10 left-0 right-0 text-center z-10 pointer-events-none">
-                  <h3 className="text-lg font-semibold text-white mb-2">Create AI Images from Text</h3>
-                  <p className="text-sm text-white/70">Enter a prompt and click Generate to create stunning images</p>
-               </div>
-             </>
+           {/* Placeholder Layout (Legacy 'no result' state replaced) */}
+           {!displayImage && !isLoading && (
+             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 bg-[#0A0F1D]">
+                <div className="mb-6 p-5 rounded-2xl bg-white/5 border border-white/10">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/90"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                </div>
+                <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 mb-3 tracking-wide">
+                  AI Image Preview
+                </h3>
+                <p className="text-sm text-white/40 max-w-[260px] leading-relaxed font-light">
+                  Enter prompt to generate image
+                </p>
+             </div>
            )}
         </div>
       </div>

@@ -85,27 +85,16 @@ export function TextToVideoPreview() {
           </div>
         ) : (
           /* 未生成 - 占位提示 */
-          <div className="relative w-full h-full">
-            <video
-              src="/videos/AI_Kissing.mp4"
-              poster="/imgs/cms/AI-Kissing_正常接吻_1.png"
-              className="w-full h-full object-cover"
-              muted
-              loop
-              autoPlay
-              playsInline
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
-            <div className="absolute bottom-10 left-0 right-0 text-center z-10">
-              <h3 className="text-lg font-semibold text-white mb-2">Create AI Videos from Text</h3>
-              <p className="text-sm text-white/70">Enter a prompt and click Generate to create stunning videos</p>
+          <div className="relative w-full h-full flex flex-col items-center justify-center text-center px-4 bg-[#0A0F1D]">
+            <div className="mb-6 p-5 rounded-2xl bg-white/5 border border-white/10">
+              <Play className="w-10 h-10 text-white/90" strokeWidth={1.5} />
             </div>
-            {/* 播放图标覆盖 */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity">
-              <div className="bg-black/40 rounded-full p-4 backdrop-blur-sm">
-                <Play className="w-12 h-12 text-white fill-white" />
-              </div>
-            </div>
+            <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 mb-3 tracking-wide">
+              AI Video Preview
+            </h3>
+            <p className="text-sm text-white/40 max-w-[260px] leading-relaxed font-light">
+              Enter prompt to generate video
+            </p>
           </div>
         )}
       </div>

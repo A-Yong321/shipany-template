@@ -162,7 +162,7 @@ export async function ToolDetailTemplate({ params, namespace, searchParams }: To
     <ToolContentProvider>
       <ToolDetailLayout
         relatedEffects={
-          <ToolPreviewPlaceholder />
+          <ToolPreviewPlaceholder toolSlug={slug} inputType={inputType} />
         }
         bottomContent={bottomContent}
       >
