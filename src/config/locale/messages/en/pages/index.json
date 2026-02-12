@@ -191,12 +191,6 @@
             "hover_image": "/img_video/imgs/Muscle_肌肉展示_2.png"
           },
           {
-            "title": "Video Enhancer",
-            "url": "/video-enhancer",
-            "image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_1.png",
-            "hover_image": "/img_video/imgs/AI-Dance-Generator_肚皮舞_2.png"
-          },
-          {
             "title": "AI Hug Video",
             "url": "/video-effects/ai-hug",
             "image": "/img_video/imgs/Hug_侧身依抱_1.png",
@@ -211,34 +205,28 @@
         ],
         "photo_items": [
           {
-            "title": "Remove Background",
-            "url": "/remove-background",
+            "title": "AI Fake Date",
+            "url": "/photo-effects/ai-fake-date-photo",
             "image": "/img_video/imgs/AI-Fake-Date_中国女友_1.png",
             "hover_image": "/img_video/imgs/AI-Fake-Date_中国女友_2.png"
           },
           {
-            "title": "AI Image Enhancer",
-            "url": "/image-enhancer",
-            "image": "/img_video/imgs/AI-Kissing_脸颊之吻_1.png",
-            "hover_image": "/img_video/imgs/AI-Kissing_脸颊之吻_2.png"
+            "title": "Pregnant AI",
+            "url": "/photo-effects/ai-pregnant-photo",
+            "image": "/img_video/imgs/Pregnant-AI_怀孕_1.png",
+            "hover_image": "/img_video/imgs/Pregnant-AI_怀孕_2.png"
           },
           {
-            "title": "Photo to Cartoon",
-            "url": "/photo-to-cartoon",
-            "image": "/img_video/imgs/AI-Fake-Date_日本女友_1.png",
-            "hover_image": "/img_video/imgs/AI-Fake-Date_日本女友_2.png"
+            "title": "Celebrity Selfie",
+            "url": "/photo-effects/ai-celebrity-selfie",
+            "image": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_1.png",
+            "hover_image": "/img_video/imgs/AI-Selfie-with-Celebrities_名人合拍_2.png"
           },
           {
-            "title": "Face Swap",
-            "url": "/face-swap",
-            "image": "/img_video/imgs/角色切换_审讯室_1.png",
-            "hover_image": "/img_video/imgs/角色切换_审讯室_2.png"
-          },
-          {
-            "title": "Object Remover",
-            "url": "/object-remover",
-            "image": "/img_video/imgs/Hug_拥抱_1.png",
-            "hover_image": "/img_video/imgs/Hug_拥抱_2.png"
+            "title": "Art Style",
+            "url": "/photo-effects/art-style",
+            "image": "/img_video/imgs/艺术_冰雕_1.png",
+            "hover_image": "/img_video/imgs/艺术_冰雕_2.png"
           }
         ]
       },
